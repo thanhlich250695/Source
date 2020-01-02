@@ -1,0 +1,27 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+.horizontal-list{
+	> *{float:left}
+	> *:first-child{margin-left:0}
+}
+.main-menu{@include clearfix;
+	> li{position:relative;
+		> a{display:block;@include padding(20px);color:$color-base;font-weight:bold;text-transform:uppercase}	
+		&.active, &:hover{
+			> a{background-color:$color-main}
+		}
+		&:hover{
+			.sub-menu-wrap{top:13px;opacity:1;visibility:visible}
+		}
+	}
+}
+.sub-menu-wrap{@include position(absolute,20px null null 0);background-color:#fff;width:200px;margin-top:10px;@include padding(0);box-shadow:0 1px 2px rgba(0,0,0,0.15);transform:translateY(35px);opacity:0;visibility:hidden;@include clearfix;
+	li{
+		a{display:block;@include padding(8px 20px);color:$color-base}
+		&.active, &:hover{
+			> a{background-color:#f8f8f8;color:$color-main}
+		}
+	}
+}
+.wow{visibility:hidden}

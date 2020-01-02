@@ -1,0 +1,32 @@
+$background       : #090756 !default;
+
+// Color Font
+$color-base       : #fff !default;
+$color-main       : #45A3D6 !default;
+$color-second     : #65f2ff !default;
+$color-third      : #545E67 !default;
+$color-four       : #6C7C91 !default;
+$color-border     : #eaeaea !default;
+$color-link       : $color-main !default;
+
+$color-success       : #33cc66 !default;
+$color-error         : #fc4a4a !default;
+$color-warning       : #FFC82C !default;
+
+// Font Style
+$font-icon: 'Font Awesome 5 Free'!default;
+
+// Page
+$base-font: $font-stack-system;
+$base-font-size: 16px;
+$base-font-weight: 400;
+
+$primary-font: 'OpenSans-Regular';
+
+$max-width: 1170px;
+$main_sprites: "../images/main_sprites.png";
+$main_sprites_size: 600px 600px;
+$line-height: 1.42857143;
+//$grid-gutter-width: 30px !default; // bật khi xài bootstrap
+$gutter: 15px;
+

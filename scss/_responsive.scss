@@ -1,0 +1,31 @@
+@media (max-width:1024px){
+	header{
+		.menu{
+			justify-content: center;
+			.logo{flex:inherit;max-width:inherit;
+				img{width:50%;margin:0 auto;}
+			}
+			nav{display:none;}
+		}
+	}
+	.page-content{
+		.module-banner{
+			.context-banner{
+				// .text-banner{flex:0 0 100%;max-width:100%;padding-right:0;
+				// 	h1{font-size:1.313em;text-align: center}
+				// 	p{font-size:1em;margin-top:10px;}
+				// 	.func-seemore-banner{display:none;}
+				// }
+				.slide-banner{flex:0 0 100%;max-width:100%;
+					.swiper-container{
+						.swiper-wrapper{
+							.swiper-slide{
+								.item-slide{}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
