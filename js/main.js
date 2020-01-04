@@ -61,10 +61,10 @@ $(function($){
 });
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 440) {
-        $('header').addClass('fixed-header');
+    if ($(window).scrollTop() > $('header').height()) {
+        $('header').addClass('is-fixed');
     }
     else {
-        $('header').removeClass('fixed-header');
+        $('header').removeClass('is-fixed');
     }
 });
