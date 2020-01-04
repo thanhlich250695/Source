@@ -4023,7 +4023,7 @@ a, button, img {
 .avatar {
   border-radius: 100%; }
 
-.avatar-img, .module-banner.single-img .img-banner, .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide, .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-wrapper .swiper-slide, .module-organization .context-organization ul.organization-list li .item-organization span.img {
+.avatar-img, .module-banner.single-img .img-banner, .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide span.img, .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-wrapper .swiper-slide, .module-organization .context-organization ul.organization-list li .item-organization span.img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -4295,7 +4295,7 @@ body {
     #navBar {
       display: none; } }
 
-.avatar-img, .module-banner.single-img .img-banner, .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide, .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-wrapper .swiper-slide, .module-organization .context-organization ul.organization-list li .item-organization span.img {
+.avatar-img, .module-banner.single-img .img-banner, .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide span.img, .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-wrapper .swiper-slide, .module-organization .context-organization ul.organization-list li .item-organization span.img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -4323,7 +4323,7 @@ header .menu, header .menu nav ul {
     text-transform: capitalize; }
   .heading h2 {
     font-family: 'OpenSans-Bold';
-    color: #45A3D6;
+    color: #2989BE;
     font-weight: 700;
     font-size: 3em;
     position: absolute;
@@ -4332,7 +4332,7 @@ header .menu, header .menu nav ul {
 h3.title {
   font-size: 32px;
   position: relative;
-  font-family: 'OpenSans-Bold'; }
+  font-family: 'DINREGULAR'; }
   h3.title:after {
     content: '';
     position: absolute;
@@ -4340,7 +4340,7 @@ h3.title {
     left: 0;
     height: 5px;
     width: 100px;
-    background-color: #45A3D6; }
+    background-color: #2989BE; }
 
 /* Header */
 @-webkit-keyframes scaleImg {
@@ -4379,8 +4379,10 @@ header {
       flex: 0 0 20%;
       max-width: 20%; }
       header .menu .logo img {
-        display: block;
-        width: 70%; }
+        display: block; }
+      @media (min-width: 1024px) {
+        header .menu .logo img {
+          margin-top: -10px; } }
     header .menu nav {
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -4410,7 +4412,7 @@ header {
             header .menu nav ul li {
               margin-left: 15px; } }
           header .menu nav ul li.is-active a {
-            color: #45A3D6; }
+            color: #2989BE; }
             header .menu nav ul li.is-active a:after {
               width: 100%; }
           header .menu nav ul li a {
@@ -4432,9 +4434,9 @@ header {
               -webkit-transition: all 400ms ease;
               -o-transition: all 400ms ease;
               transition: all 400ms ease;
-              background-color: #45A3D6; }
+              background-color: #2989BE; }
             header .menu nav ul li a:hover {
-              color: #45A3D6; }
+              color: #2989BE; }
               header .menu nav ul li a:hover:after {
                 width: 100%; }
           header .menu nav ul li.language-list {
@@ -4535,7 +4537,7 @@ header {
       margin-left: auto;
       z-index: 11;
       padding: 40px 20px;
-      background-color: #45A3D6;
+      background-color: #2989BE;
       position: absolute;
       top: 50%;
       right: 0;
@@ -4608,9 +4610,9 @@ header {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       .module-banner .context-banner .text-banner h1 {
-        color: #45A3D6;
-        font-size: 60px;
-        font-family: 'OpenSans-Regular';
+        color: #2989BE;
+        font-size: 72px;
+        font-family: 'DINREGULAR';
         font-weight: 700; }
       .module-banner .context-banner .text-banner p {
         font-size: 1.25em;
@@ -4637,18 +4639,18 @@ header {
         margin-right: auto;
         margin-left: auto; }
         .module-banner .context-banner .text-banner .wrap-button a {
-          border: 2px solid #45A3D6;
+          border: 2px solid #2989BE;
           width: 200px;
           display: block;
           padding: 10px 20px;
           background-color: #fff;
-          color: #45A3D6;
+          color: #2989BE;
           font-weight: 600;
           font-size: 18px; }
           .module-banner .context-banner .text-banner .wrap-button a:last-child {
             margin-left: 20px; }
           .module-banner .context-banner .text-banner .wrap-button a:hover {
-            background-color: #45A3D6;
+            background-color: #2989BE;
             color: #fff; }
     .module-banner .context-banner .slide-banner .swiper-container .swiper-slide {
       width: 100%;
@@ -4730,10 +4732,10 @@ header {
       .module-about-us .context-about-us .content-about-us .desc {
         margin-top: 20px; }
         .module-about-us .context-about-us .content-about-us .desc h3 {
-          color: #45A3D6;
+          color: #2989BE;
           font-size: 32px;
           position: relative;
-          font-family: 'OpenSans-Bold';
+          font-family: 'DINREGULAR';
           margin-bottom: 20px; }
         .module-about-us .context-about-us .content-about-us .desc p {
           font-size: 1.125em;
@@ -4745,7 +4747,7 @@ header {
           line-height: 1.6;
           margin-bottom: 30px; }
           .module-about-us .context-about-us .content-about-us .desc p .func-seemore-about {
-            color: #45A3D6;
+            color: #2989BE;
             font-size: 1em;
             font-weight: 600;
             margin-left: 20px; }
@@ -4760,9 +4762,9 @@ header {
           border-bottom-left-radius: 20px;
           padding: 10px 15px;
           background: #e1e1e1;
-          color: #45A3D6; }
+          color: #2989BE; }
           .module-about-us .context-about-us .content-about-us .desc .func-seemore:hover {
-            background: #45A3D6; }
+            background: #2989BE; }
             .module-about-us .context-about-us .content-about-us .desc .func-seemore:hover a {
               color: #fff; }
 
@@ -4789,7 +4791,7 @@ header {
         -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
         .module-product.is-single .context-product .menu-product .title {
-          background-color: #45A3D6;
+          background-color: #2989BE;
           padding: 15px;
           color: #fff;
           font-size: 18px;
@@ -4935,10 +4937,12 @@ header {
           width: 45%; }
           .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide {
             max-width: 100%; }
-            .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide:after {
-              display: block;
-              content: '';
-              padding-top: 100%; }
+            .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide span.img {
+              display: block; }
+              .module-product.is-single .context-product .product-detail .image-product .gallery-top .swiper-wrapper .swiper-slide span.img:after {
+                display: block;
+                content: '';
+                padding-top: 100%; }
           .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs {
             margin-top: 10px; }
             .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-wrapper .swiper-slide {
@@ -4951,7 +4955,7 @@ header {
                 padding-top: 100%; }
             .module-product.is-single .context-product .product-detail .image-product .gallery-thumbs .swiper-slide-thumb-active {
               opacity: 1 !important;
-              border: 2px solid #45A3D6; }
+              border: 2px solid #2989BE; }
         .module-product.is-single .context-product .product-detail .content-product {
           margin-top: -10px;
           width: 55%;
@@ -4970,7 +4974,7 @@ header {
               font-size: 16px;
               font-family: "OpenSans-Bold";
               text-transform: capitalize;
-              color: #45A3D6; }
+              color: #2989BE; }
             .module-product.is-single .context-product .product-detail .content-product .r-content p {
               font-size: 16px;
               font-family: "OpenSans-Regular";
@@ -4987,7 +4991,7 @@ header {
       font-size: 100px;
       font-weight: bold; }
     .module-product .heading h2 {
-      color: #45A3D6;
+      color: #2989BE;
       font-weight: 700;
       font-size: 3em;
       position: absolute;
@@ -5020,12 +5024,12 @@ header {
           width: 100%;
           font-family: "OpenSans-Bold"; }
         .module-product .context-product .tag-list li.is-active {
-          background-color: #45A3D6; }
+          background-color: #2989BE; }
           .module-product .context-product .tag-list li.is-active a {
             color: #fff;
             font-weight: 700; }
         .module-product .context-product .tag-list li:hover {
-          background-color: #45A3D6; }
+          background-color: #2989BE; }
           .module-product .context-product .tag-list li:hover a {
             color: #fff; }
     .module-product .context-product .product-list {
@@ -5074,7 +5078,7 @@ header {
               text-align: center;
               text-transform: capitalize;
               font-size: 1.125em;
-              font-family: 'OpenSans-Bold'; }
+              font-family: 'DINREGULAR'; }
             .module-product .context-product .product-list li .item-product .desc p {
               -webkit-transition: all 400ms ease;
               -o-transition: all 400ms ease;
@@ -5094,7 +5098,7 @@ header {
               left: 0;
               height: 100%;
               width: 100%;
-              background-color: #45A3D6;
+              background-color: #2989BE;
               text-align: center;
               font-size: 0.938em;
               font-family: 'OpenSans-Regular';
@@ -5123,7 +5127,7 @@ header {
       font-size: 100px;
       font-weight: bold; }
     .module-contact .heading h2 {
-      color: #45A3D6;
+      color: #2989BE;
       font-weight: 700;
       font-size: 3em;
       position: absolute;
@@ -5156,7 +5160,7 @@ header {
           font-size: 1em;
           margin-left: 10px; }
           .module-contact .context-contact .infor-contact .r-infor p a {
-            color: #45A3D6;
+            color: #2989BE;
             font-weight: 700;
             text-decoration: underline; }
         .module-contact .context-contact .infor-contact .r-infor:last-child img {
@@ -5199,7 +5203,7 @@ header {
         font-size: 1em;
         text-align: center;
         padding: 15px 25px;
-        border-radius: 30px;
+        border-radius: 4px;
         cursor: pointer;
         font-weight: 600; }
         .module-contact .context-contact .form-contact form .r-input button:hover {
@@ -5220,7 +5224,7 @@ header {
       font-size: 100px;
       font-weight: bold; }
     .module-introduce .heading h2 {
-      color: #45A3D6;
+      color: #2989BE;
       font-weight: 700;
       font-size: 3em;
       position: absolute;
@@ -5228,7 +5232,7 @@ header {
   .module-introduce .context-introduce h3.title {
     font-size: 32px;
     position: relative;
-    font-family: 'OpenSans-Bold'; }
+    font-family: 'DINREGULAR'; }
     .module-introduce .context-introduce h3.title:after {
       content: '';
       position: absolute;
@@ -5236,7 +5240,7 @@ header {
       left: 0;
       height: 5px;
       width: 100px;
-      background-color: #45A3D6; }
+      background-color: #2989BE; }
   .module-introduce .context-introduce .desc-introduce {
     margin-bottom: 100px; }
     .module-introduce .context-introduce .desc-introduce p {
@@ -5303,7 +5307,7 @@ header {
             bottom: 0;
             left: 0;
             width: 3px;
-            background-color: #45A3D6; }
+            background-color: #2989BE; }
 
 .module-certificate.is-single {
   padding: 120px 12%; }
@@ -5320,7 +5324,7 @@ header {
     font-size: 100px;
     font-weight: bold; }
   .module-certificate .heading h2 {
-    color: #45A3D6;
+    color: #2989BE;
     font-weight: 700;
     font-size: 3em;
     position: absolute;
@@ -5401,7 +5405,8 @@ header {
       .module-job .context-job ul.job-list li a.item-job .desc h2 {
         margin-bottom: 15px;
         font-size: 32px;
-        font-family: 'OpenSans-ExtraBold'; }
+        font-family: 'DINREGULAR';
+        font-weight: 600; }
       .module-job .context-job ul.job-list li a.item-job .desc span {
         margin-bottom: 5px;
         font-size: 16px;
@@ -5414,7 +5419,7 @@ header {
         color: gray; }
         .module-job .context-job ul.job-list li a.item-job .desc p span {
           margin-bottom: 0;
-          color: #45A3D6;
+          color: #2989BE;
           margin-left: 10px;
           font-weight: bold; }
         .module-job .context-job ul.job-list li a.item-job .desc p:last-child {
@@ -5433,15 +5438,15 @@ header {
       -o-transition: all 400ms ease;
       transition: all 400ms ease; }
       .module-job .context-job ul.job-list li a.item-job .button-detail:hover {
-        background-color: #45A3D6;
+        background-color: #2989BE;
         color: #fff;
         border-color: #fff; }
   .module-job .context-job .job-detail h3 {
     font-size: 48px;
-    font-family: 'OpenSans-Bold'; }
+    font-family: 'DINREGULAR'; }
   .module-job .context-job .job-detail .desc {
     padding: 30px;
-    border: 1px solid #45A3D6;
+    border: 1px solid #2989BE;
     border-radius: 8px;
     margin-top: 20px; }
     .module-job .context-job .job-detail .desc span {
@@ -5485,7 +5490,7 @@ header {
     font-family: 'OpenSans-Bold';
     font-size: 16px;
     color: inherit;
-    background-color: #45A3D6;
+    background-color: #2989BE;
     padding: 10px 20px;
     color: #fff;
     text-transform: uppercase;
@@ -5495,10 +5500,10 @@ header {
     margin: 0 auto; }
 
 .module-diff-product .diff-product-title {
-  font-size: 24px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: 'OpenSans-Bold'; }
+  font-size: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'DINREGULAR'; }
 
 body.overlay-open-modal {
   overflow: hidden; }
@@ -5605,7 +5610,7 @@ body.overlay-open-modal .bl-modal {
         height: 150px; }
       .bl-modal .modal-container .module-modal form button {
         padding: 10px 20px;
-        background-color: #45A3D6;
+        background-color: #2989BE;
         font-size: 16px;
         font-family: 'OpenSans-Bold';
         color: #fff;

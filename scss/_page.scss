@@ -39,7 +39,9 @@ body{font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-
 	&.is-visible{z-index:999;visibility:visible;transform:scale(1);transition:transform 0.3s, visibility 0s 0s}
 	@include media-breakpoint-up(lg){display:none}
 }
-$color-main:#45A3D6;
+// $color-main:#45A3D6;
+$color-main:#2989BE;
+
 %backgroundCover--center{background-repeat:no-repeat;background-size:cover;background-position:center center}
 %flex--center{display:flex;align-items:center;}
 .heading{position: relative;margin-bottom:150px;text-align:center;
@@ -47,7 +49,7 @@ $color-main:#45A3D6;
     h2{font-family:'OpenSans-Bold';color:$color-main;font-weight:700;font-size:3em;position: absolute;z-index: 2;
     }
 }
-h3.title{font-size:32px;position:relative;font-family:'OpenSans-Bold';
+h3.title{font-size:32px;position:relative;font-family:'DINREGULAR';
     &:after{content:'';@include position(absolute, null null -15px 0);@include size(100px,5px);background-color:$color-main;}
 }
 /* Header */
@@ -65,20 +67,23 @@ h3.title{font-size:32px;position:relative;font-family:'OpenSans-Bold';
 header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
     .menu{height:90px;@extend %flex--center;padding:0 15%;
         .logo{flex-shrink:0;flex:0 0 20%;max-width:20%;
-            img{display:block;width:70%;}
+            img{display:block;}
+            @media(min-width:1024px){
+                img{margin-top:-10px}
+            }
         }
         nav{flex-grow:1;min-width:0;flex:0 0 80%;max-width:80%;
             ul{@extend %flex--center; justify-content:flex-end;
                 li{text-align:center;margin-left:30px;height:90px;display:flex;align-items:center;flex-shrink:0;
                     @media (max-width:1360px) and (min-width:1180px){margin-left:15px;}
                     &.is-active{
-                        a{color:#45A3D6;
+                        a{color:$color-main;
                             &:after{width:100%;}
                         }
                     }
                     a{font-size:1em;font-weight:600;display:inline-block;position:relative;color:#000;font-family: 'OpenSans-Bold';
-                        &:after{content:'';position: absolute;height:5px;width:0;margin:0 auto;left:0;bottom:-7px;width:0;transition:all 400ms ease;background-color:#45A3D6;}
-                        &:hover{color:#45A3D6;
+                        &:after{content:'';position: absolute;height:5px;width:0;margin:0 auto;left:0;bottom:-7px;width:0;transition:all 400ms ease;background-color:$color-main;}
+                        &:hover{color:$color-main;
                             &:after{width:100%;}
                         }
                     }
@@ -131,7 +136,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
     &:after{content:'';@include position(absolute,0 0 null 0);z-index:9;background-image: linear-gradient(to right,rgba(0,0,0,.3),rgba(0,0,0,0.5),rgba(0,0,0,0.7));@include size(100%);}
     .context-banner{position:relative;max-width:100%;text-align:center;
         .text-banner{@include position(absolute,50% 0 null 0);z-index:10;transform:translateY(-50%);
-            h1{color:$color-main;font-size:60px;font-family: 'OpenSans-Regular';font-weight:700;}
+            h1{color:$color-main;font-size:72px;font-family: 'DINREGULAR';font-weight:700;}
             p{font-size:1.25em; display: -webkit-box;max-width:1024px;margin:0 auto;
                 -webkit-line-clamp: 3;margin-top:10px;
                 -webkit-box-orient: vertical;  
@@ -176,7 +181,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
         .content-about-us{flex:0 0 60%;max-width:60%;
             padding-left:100px;
             .desc{margin-top:20px;
-                h3{color:$color-main;font-size:32px;position:relative;font-family:'OpenSans-Bold';margin-bottom:20px;
+                h3{color:$color-main;font-size:32px;position:relative;font-family:'DINREGULAR';margin-bottom:20px;
                 }
                 p{font-size:1.125em; display: -webkit-box;
                     -webkit-line-clamp: 5;
@@ -256,8 +261,11 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
                 .image-product{width:45%;
                     .gallery-top{
                         .swiper-wrapper{
-                            .swiper-slide{max-width:100%;@extend %backgroundCover--center;
-                                &:after{display:block;content:'';padding-top:100%;}
+                            .swiper-slide{max-width:100%;
+                                span.img{display:block;
+                                    @extend %backgroundCover--center;
+                                    &:after{display:block;content:'';padding-top:100%;}
+                                }
                             }
                         }
                     }
@@ -315,7 +323,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
                         }
                     }
                     .desc{padding:15px;position:relative;
-                        h3{color:#000;text-align: center;text-transform: capitalize;font-size:1.125em;font-family:'OpenSans-Bold'; }
+                        h3{color:#000;text-align: center;text-transform: capitalize;font-size:1.125em;font-family:'DINREGULAR'; }
                         p{transition:all 400ms ease;display:flex;align-items:center;justify-content: center;@include position(absolute,null 0 -100% 0);@include size(100%);background-color:$color-main;text-align: center;font-size:0.938em;font-family:'OpenSans-Regular';color:#000;@include padding(16px);
                             img{margin-right:5px;}
                         }
@@ -367,7 +375,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
                             &:nth-child(2){margin-left:auto;}
                         }
                     }
-                    button{background:#414141;transition:all 400ms ease;border:1px solid rgba(0,0,0,0.2);color:#fff;font-size:1em;text-align: center;padding:15px 25px;border-radius:30px;cursor: pointer;font-weight:600;
+                    button{background:#414141;transition:all 400ms ease;border:1px solid rgba(0,0,0,0.2);color:#fff;font-size:1em;text-align: center;padding:15px 25px;border-radius:4px;cursor: pointer;font-weight:600;
                         &:hover{background:#fff;color:#414141;}
                     }
                 }
@@ -382,7 +390,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
         }
     }
     .context-introduce{
-        h3.title{font-size:32px;position:relative;font-family:'OpenSans-Bold';
+        h3.title{font-size:32px;position:relative;font-family:'DINREGULAR';
             &:after{content:'';@include position(absolute, null null -15px 0);@include size(100px,5px);background-color:$color-main;}
         }
         .desc-introduce{margin-bottom:100px;
@@ -449,7 +457,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
             li{
                 a.item-job{color:inherit;@include padding(30px);box-shadow:0 4px 15px rgba(0,0,0,0.2);border-radius:8px;margin-bottom:50px;display:flex;align-items:center;
                     .desc{flex-grow:1;min-width:0;
-                        h2{margin-bottom:15px;font-size:32px;font-family:'OpenSans-ExtraBold';}
+                        h2{margin-bottom:15px;font-size:32px;font-family:'DINREGULAR';font-weight:600;}
                         span{margin-bottom:5px;font-size:16px;font-family:'OpenSans-Regular';color:gray;}
                         p{margin-bottom:5px;font-size:16px;font-family:'OpenSans-Regular';color:gray;
                             span{margin-bottom:0;color:$color-main;margin-left:10px;font-weight:bold;}
@@ -465,7 +473,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
             }
         }
         .job-detail{
-            h3{font-size:48px;font-family:'OpenSans-Bold';}
+            h3{font-size:48px;font-family:'DINREGULAR';}
             .desc{
                 @include padding(30px);border:1px solid $color-main;border-radius:8px;margin-top:20px;
                 span{margin-bottom:5px;font-size:16px;color:#000;font-weight:bold;font-family:"OpenSans-Regular";
@@ -491,6 +499,6 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;
     }
 }
 .module-diff-product{
-    .diff-product-title{font-size:24px;@include padding(15px null);font-family:'OpenSans-Bold'}
+    .diff-product-title{font-size:32px;@include padding(25px null);font-family:'DINREGULAR';}
     
 }
