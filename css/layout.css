@@ -6971,6 +6971,11 @@ body.compensate-for-scrollbar {
     max-width: calc(100% - 10px); } }
 
 @media (max-width: 578px) {
+  h3.title {
+    font-size: 24px; }
+    h3.title:after {
+      bottom: -10px;
+      width: 70px; }
   header .menu {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -7025,6 +7030,12 @@ body.compensate-for-scrollbar {
         padding-left: 0; }
         .page-content .module-about-us .context-about-us .content-about-us .desc {
           margin-top: 0; }
+          .page-content .module-about-us .context-about-us .content-about-us .desc h3 {
+            font-size: 24px; }
+          .page-content .module-about-us .context-about-us .content-about-us .desc p {
+            font-size: 16px; }
+          .page-content .module-about-us .context-about-us .content-about-us .desc .func-seemore {
+            margin-right: auto; }
       .page-content .module-about-us .context-about-us .img {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -7042,7 +7053,7 @@ body.compensate-for-scrollbar {
       .page-content .module-product .heading p {
         display: none; }
       .page-content .module-product .heading h2 {
-        font-size: 26px; }
+        font-size: 24px; }
     .page-content .module-product .context-product {
       margin-top: 10px; }
       .page-content .module-product .context-product .tag-list {
@@ -7058,14 +7069,23 @@ body.compensate-for-scrollbar {
             font-size: 16px; }
       .page-content .module-product .context-product .product-list li {
         width: 100%; }
+        .page-content .module-product .context-product .product-list li .item-product .desc h3 {
+          font-size: 16px; }
   .page-content .module-contact {
     padding: 20px; }
+    .page-content .module-contact.is-single {
+      padding: 50px 20px; }
+      .page-content .module-contact.is-single .heading {
+        margin-bottom: 70px; }
+        .page-content .module-contact.is-single .heading h2 {
+          left: 0;
+          right: 0; }
     .page-content .module-contact .heading {
       margin-bottom: 50px; }
       .page-content .module-contact .heading p {
         display: none; }
       .page-content .module-contact .heading h2 {
-        font-size: 26px; }
+        font-size: 24px; }
     .page-content .module-contact .context-contact {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -7101,11 +7121,23 @@ body.compensate-for-scrollbar {
       .page-content .module-introduce .heading p {
         display: none; }
       .page-content .module-introduce .heading h2 {
-        font-size: 32px; }
+        font-size: 24px;
+        right: 0;
+        left: 0;
+        margin: 0 auto; }
     .page-content .module-introduce .context-introduce .desc-introduce {
       margin-bottom: 40px; }
+      .page-content .module-introduce .context-introduce .desc-introduce p {
+        font-size: 14px; }
   .page-content .module-organization h3.title {
-    font-size: 24px; }
+    font-size: 24px;
+    text-align: center; }
+    .page-content .module-organization h3.title:after {
+      bottom: -10px;
+      width: 70px;
+      right: 0;
+      left: 0;
+      margin: 0 auto; }
   .page-content .module-organization .context-organization .organization-list {
     margin-top: 35px; }
     .page-content .module-organization .context-organization .organization-list li {
@@ -7115,4 +7147,81 @@ body.compensate-for-scrollbar {
       max-width: 100%; }
       .page-content .module-organization .context-organization .organization-list li .item-organization {
         margin-right: 0;
-        margin-bottom: 20px; } }
+        margin-bottom: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .page-content .module-organization .context-organization .organization-list li .item-organization span.img {
+          height: 80px;
+          width: 80px;
+          margin-right: 0; }
+        .page-content .module-organization .context-organization .organization-list li .item-organization .content {
+          margin-top: 10px;
+          text-align: center; }
+          .page-content .module-organization .context-organization .organization-list li .item-organization .content .infor {
+            padding-left: 0; }
+            .page-content .module-organization .context-organization .organization-list li .item-organization .content .infor:after {
+              display: none; }
+      .page-content .module-organization .context-organization .organization-list li:last-child .item-organization {
+        margin-bottom: 0; }
+  .page-content .module-certificate.is-single {
+    padding: 50px 20px; }
+    .page-content .module-certificate.is-single .heading {
+      margin-bottom: 50px; }
+      .page-content .module-certificate.is-single .heading p {
+        display: none; }
+      .page-content .module-certificate.is-single .heading h2 {
+        font-size: 24px;
+        margin: 0 auto;
+        right: 0;
+        left: 0; }
+  .page-content .module-certificate h3.title {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center; }
+    .page-content .module-certificate h3.title:after {
+      bottom: -10px;
+      width: 70px;
+      right: 0;
+      left: 0;
+      margin: 0 auto; }
+  .page-content .module-certificate .context-certificate .certificate-list li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .page-content .module-certificate .context-certificate .certificate-list li .item-certificate {
+      margin-right: 0;
+      max-width: 100%; }
+      .page-content .module-certificate .context-certificate .certificate-list li .item-certificate img {
+        height: 350px;
+        width: 100%; }
+      .page-content .module-certificate .context-certificate .certificate-list li .item-certificate .desc {
+        text-align: center; }
+  .page-content .module-job {
+    padding: 50px 20px; }
+    .page-content .module-job .heading {
+      margin-bottom: 70px; }
+      .page-content .module-job .heading p {
+        display: none; }
+      .page-content .module-job .heading h2 {
+        font-size: 24px;
+        margin: 0 auto;
+        right: 0;
+        left: 0; }
+    .page-content .module-job .context-job .job-list li .item-job {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .page-content .module-job .context-job .job-list li .item-job .desc h2 {
+        font-size: 24px; }
+      .page-content .module-job .context-job .job-list li .item-job .desc p, .page-content .module-job .context-job .job-list li .item-job .desc span {
+        font-size: 14px; }
+      .page-content .module-job .context-job .job-list li .item-job .button-detail {
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #2989BE;
+        color: #fff;
+        border: none; } }
