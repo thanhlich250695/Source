@@ -4435,9 +4435,8 @@ header {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 20;
         position: fixed;
-        top: -100%;
-        right: 0;
-        left: 0;
+        top: 90px;
+        left: -100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4451,7 +4450,7 @@ header {
         align-items: center;
         background-color: #fff; }
         header .menu .language-mobile-list .select-language.is-active {
-          top: 90px; }
+          left: 0; }
         header .menu .language-mobile-list .select-language a.opt {
           padding: 10px; }
           header .menu .language-mobile-list .select-language a.opt span {
