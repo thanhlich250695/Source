@@ -62,7 +62,7 @@ body.overlay-open-modal .bl-modal {z-index:1001;opacity:1;visibility:visible;tra
 		}
 		.module-modal{background:none;@include padding($gutter);
 			form{margin-top:20px;
-				input,textarea{font-family:'OpenSans-Regular';font-size:18px;width:100%;margin-bottom:15px;border:none;outline:none;box-shadow:0 2px 10px rgba(0,0,0,0.2);@include padding(20px 25px);border-radius:8px;
+				input,textarea{font-family:'OpenSans-Regular';font-size:18px;width:100%;margin-bottom:15px;border:1px solid #dedede;outline:none;box-shadow:0 2px 10px rgba(0,0,0,0.2);@include padding(20px 25px);border-radius:8px;
 					::placeholder{font-size:18px;}
 				}
 				textarea{height:150px;}
