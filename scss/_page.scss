@@ -27,7 +27,9 @@ body{font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-
 			&:after{bottom:0;transform:rotate(225deg)}
 		}
 	}
-	@include media-breakpoint-up(lg){display:none}
+    @include media-breakpoint-up(lg){display:none}
+    @media(max-width:1024px){display:block !important;}
+    
 }
 #navBar{@include position(fixed, 0 null 0 0);width:300px;@include padding(10px);padding-top:90px;z-index:0;transform:translateX(-100%);@extend %tr-all;visibility:hidden;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:rgba(#08070d,0.9);border-radius:5px;opacity:1;transform:scale(0);transform-origin:top left;transition:transform 0.3s, visibility 0s 0.3s;
 	li{position:relative;margin-bottom:20px;padding-right:40px;font-weight:400;font-size:20px;text-align:right;
@@ -37,7 +39,7 @@ body{font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-
 		&:last-child{margin-bottom:0}
 	}
 	&.is-visible{z-index:999;visibility:visible;transform:scale(1);transition:transform 0.3s, visibility 0s 0s}
-	@include media-breakpoint-up(lg){display:none}
+    @include media-breakpoint-up(xl){display:none}
 }
 // $color-main:#45A3D6;
 $color-main:#2989BE;
@@ -212,7 +214,13 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;transition:a
         padding-top:120px;
         .context-product{display:flex;align-items: flex-start;
             .menu-product{flex-shrink: 0;width:300px;border-radius:4px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.2);
-                .title{background-color: $color-main;@include padding(15px);color:#fff;font-size:18px;font-family:'OpenSans-Bold';}
+                .title{background-color: $color-main;@include padding(15px);color:#fff;font-size:18px;font-family:'OpenSans-Bold';
+                    display:flex;align-items:center;
+                    span{flex-grow:1;min-width:0;}
+                    img.icn-more{display:block;margin-left:auto;flex-shrink:0;@include size(16px);transition:all 400ms ease;display:none;
+                        &.is-active{transform:rotate(90deg);}
+                    }
+                }
                 .menu-list{background-color:#fff;@include padding(null 15px);
                     ul.lv1{
                         li{border-bottom:1px solid #dedede;

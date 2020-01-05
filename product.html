@@ -58,7 +58,7 @@
           </div>
           <div class="context-product">
             <div class="menu-product">
-              <div class="title">Danh mục sản phẩm</div>
+              <div class="title"><span>Danh mục sản phẩm</span><img class="icn-more" src="images/small-right.png"></div>
               <div class="menu-list">
                 <ul class="lv1">
                   <li>
@@ -192,8 +192,11 @@
       $(".item-lv2").click(function(){
       	$(this).parent().find('.lv3').toggleClass('is-show');
       	$(this).find('.icn-more').toggleClass('is-active')
-      
       }) 
+      $('.title').click(function(){
+      	$(this).find('.icn-more').toggleClass('is-active')
+      	$('.menu-list').toggleClass('is-active')
+      })
     </script>
   </body>
 </html>
