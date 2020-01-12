@@ -71,7 +71,7 @@ $(window).scroll(function(){
 // language mobile
 $(document).ready(function(){
 	if ($(window).width() <= 1024) {
-        $('.context-language').click(function(){
+        $('.language-mobile-list').click(function(){
 			$('.select-language').toggleClass('is-active')
 		});
     }

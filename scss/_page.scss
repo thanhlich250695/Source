@@ -434,7 +434,7 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;transition:a
 .module-organization{
     .context-organization{
         ul.organization-list{margin-top:70px;display:flex;align-items:flex-start;flex-wrap:wrap;
-            li{max-width:25%;flex-shrink:0;
+            li{flex-shrink:0;
                 .item-organization{margin-right:40px;margin-bottom:60px;
                     display:flex;align-items:center;
                     span.img{margin-right:20px;display:block;@extend %backgroundCover--center;@include size(100px);border-radius:50%;flex-shrink:0;
@@ -462,8 +462,8 @@ header{box-shadow: 0 2px 4px rgba(0,0,0,0.15);background-color:#fff;transition:a
     .title{margin-top:100px;}
     .context-certificate{
         ul.certificate-list{margin-top:70px;display:flex;align-items:flex-start;flex-wrap: wrap;
-            li{flex-shrink: 0;max-width:calc(100% /4 );flex:0 0 25%;    
-                .item-certificate{max-width:250px;margin-right:80px;margin-bottom:50px;
+            li{flex-shrink: 0;    
+                .item-certificate{margin-right:80px;margin-bottom:50px;
                     .img{display:block;@include size(250px,300px);
                     }
                     .desc{margin-top:10px;

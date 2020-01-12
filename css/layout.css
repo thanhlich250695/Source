@@ -5382,7 +5382,6 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .module-organization .context-organization ul.organization-list li {
-    max-width: 25%;
     -ms-flex-negative: 0;
     flex-shrink: 0; }
     .module-organization .context-organization ul.organization-list li .item-organization {
@@ -5467,13 +5466,8 @@ header {
   flex-wrap: wrap; }
   .module-certificate .context-certificate ul.certificate-list li {
     -ms-flex-negative: 0;
-    flex-shrink: 0;
-    max-width: calc(100% /4);
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%; }
+    flex-shrink: 0; }
     .module-certificate .context-certificate ul.certificate-list li .item-certificate {
-      max-width: 250px;
       margin-right: 80px;
       margin-bottom: 50px; }
       .module-certificate .context-certificate ul.certificate-list li .item-certificate .img {
