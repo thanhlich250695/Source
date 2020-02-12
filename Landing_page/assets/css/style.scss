@@ -160,6 +160,9 @@ $color-main:#633A1A;
 		animation-play-state: running;
 		background-image: linear-gradient(to right,rgba(0,143,229,0.8),rgba(0,143,229,1) ) ;color:#fff;font-size:32px;
 	}
+	@media(max-width:576px){
+		a.button-register{font-size:24px;padding:14px}
+	}
 
 }
 .footer{

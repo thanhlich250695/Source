@@ -2893,6 +2893,10 @@ p {
     background-image: linear-gradient(to right, rgba(0, 143, 229, 0.8), #008fe5);
     color: #fff;
     font-size: 32px; }
+  @media (max-width: 576px) {
+    .module-form-register a.button-register {
+      font-size: 24px;
+      padding: 14px; } }
 
 .footer img {
   width: 100%; }
