@@ -393,8 +393,8 @@
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -419,8 +419,8 @@
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2441,7 +2441,7 @@ p {
   overflow-x: hidden; }
 
 .module-menu {
-  z-index: 1;
+  z-index: 4;
   position: fixed;
   top: 0;
   right: 0;
@@ -2680,7 +2680,8 @@ p {
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+        background: #dedede; }
         .module-reason .context-reason .reason-item .reason-item_name p {
           padding-right: 50px; }
         .module-reason .context-reason .reason-item .reason-item_name img {
@@ -2719,7 +2720,8 @@ p {
             display: block;
             padding: 20px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f1 img {
-            width: 15%; }
+            width: 15%;
+            margin-bottom: 30px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f2 img {
             width: 25%; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.mt-0 {
@@ -2826,6 +2828,71 @@ p {
       display: block;
       margin: 0 auto;
       margin-bottom: 20px; }
+
+@keyframes pulse {
+  0% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 143, 229, 0.8)), to(#008fe5));
+    background-image: -webkit-linear-gradient(left, rgba(0, 143, 229, 0.8), #008fe5);
+    background-image: -o-linear-gradient(left, rgba(0, 143, 229, 0.8), #008fe5);
+    background-image: linear-gradient(to right, rgba(0, 143, 229, 0.8), #008fe5); }
+  50% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 176, 0, 0.8)), to(#ffb000));
+    background-image: -webkit-linear-gradient(left, rgba(255, 176, 0, 0.8), #ffb000);
+    background-image: -o-linear-gradient(left, rgba(255, 176, 0, 0.8), #ffb000);
+    background-image: linear-gradient(to right, rgba(255, 176, 0, 0.8), #ffb000); }
+  100% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(42, 135, 55, 0.8)), to(#2a8737));
+    background-image: -webkit-linear-gradient(left, rgba(42, 135, 55, 0.8), #2a8737);
+    background-image: -o-linear-gradient(left, rgba(42, 135, 55, 0.8), #2a8737);
+    background-image: linear-gradient(to right, rgba(42, 135, 55, 0.8), #2a8737); } }
+
+.module-form-register {
+  padding: 150px 0 150px;
+  background-image: url("https://www.dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2019/12/nhung-quan-an-ngon-tai-ha-giang-8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  text-align: center; }
+  .module-form-register:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%; }
+  .module-form-register a.button-register {
+    position: absolute;
+    z-index: 2;
+    padding: 20px 40px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border-radius: 20px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 143, 229, 0.8)), to(#008fe5));
+    background-image: -webkit-linear-gradient(left, rgba(0, 143, 229, 0.8), #008fe5);
+    background-image: -o-linear-gradient(left, rgba(0, 143, 229, 0.8), #008fe5);
+    background-image: linear-gradient(to right, rgba(0, 143, 229, 0.8), #008fe5);
+    color: #fff;
+    font-size: 32px; }
 
 .footer img {
   width: 100%; }
