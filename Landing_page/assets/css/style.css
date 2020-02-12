@@ -2723,10 +2723,7 @@ p {
             display: block;
             padding: 20px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f1 img {
-            width: 15%;
             margin-bottom: 30px; }
-          .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f2 img {
-            width: 25%; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.mt-0 {
             margin-top: 0; }
         .module-reason .context-reason .reason-item .reason-item_content.is-active {

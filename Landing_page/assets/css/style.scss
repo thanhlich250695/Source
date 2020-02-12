@@ -103,10 +103,10 @@ $color-main:#633A1A;
                 .block-image{justify-content:center;display: flex;margin-top:50px;margin-right:-20px;margin-left:-20px;
                     img{display:block;padding:20px;}
                     &.is-f1{
-                        img{width:15%; margin-bottom:30px;}
+                        img{ margin-bottom:30px;}
                     }
                     &.is-f2{
-                        img{width:25%; }
+                        img{ }
                     }
                     &.mt-0{margin-top:0;}
                 }
