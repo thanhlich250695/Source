@@ -393,8 +393,8 @@
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -419,8 +419,8 @@
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2529,7 +2529,6 @@ p {
           color: #633A1A; }
 
 .module-introduce {
-  background-color: #f2f4f8;
   padding-top: 100px;
   height: 100vh; }
   .module-introduce h2.title {
@@ -2578,7 +2577,10 @@ p {
           padding: 15px 20px; }
 
 .module-campaign {
-  padding-top: 100px; }
+  padding-top: 100px;
+  background-image: -webkit-linear-gradient(145deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important;
+  background-image: -o-linear-gradient(145deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important;
+  background-image: linear-gradient(-55deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important; }
   .module-campaign h2.title {
     text-align: center;
     font-size: 48px;
@@ -2587,6 +2589,7 @@ p {
     margin: 0 auto; }
   .module-campaign .context-campaign {
     padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 1440px;
     margin: 0 auto;
     position: relative; }
@@ -2670,7 +2673,7 @@ p {
       margin-bottom: 50px; }
       .module-reason .context-reason .reason-item .reason-item_name {
         cursor: pointer;
-        color: #2A8737;
+        color: #fff;
         padding: 30px;
         font-size: 36px;
         border: 1px solid #633A1A;
@@ -2681,7 +2684,7 @@ p {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background: #dedede; }
+        background: #095151; }
         .module-reason .context-reason .reason-item .reason-item_name p {
           padding-right: 50px; }
         .module-reason .context-reason .reason-item .reason-item_name img {
@@ -2731,14 +2734,34 @@ p {
 
 .module-benefit {
   padding: 100px 0 50px;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url("https://www.dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2019/12/nhung-quan-an-ngon-tai-ha-giang-8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  text-align: center; }
+  .module-benefit:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%; }
   .module-benefit h2.title {
+    position: relative;
+    z-index: 3;
     text-align: center;
     font-size: 48px;
-    color: #633A1A;
+    color: #fff;
     max-width: 1440px;
     margin: 0 auto; }
   .module-benefit .context-benefit {
+    position: relative;
+    z-index: 3;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 100px;
@@ -2846,7 +2869,107 @@ p {
     background-image: -o-linear-gradient(left, rgba(42, 135, 55, 0.8), #2a8737);
     background-image: linear-gradient(to right, rgba(42, 135, 55, 0.8), #2a8737); } }
 
-.module-form-register {
+.module-form {
+  padding: 100px 0 100px;
+  background-image: -webkit-linear-gradient(35deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important;
+  background-image: -o-linear-gradient(35deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important;
+  background-image: linear-gradient(55deg, rgba(35, 132, 141, 0.9) 0%, rgba(134, 201, 186, 0.13) 90%) !important; }
+  .module-form h2.title {
+    text-align: center;
+    font-size: 48px;
+    color: #095151;
+    max-width: 1440px;
+    margin: 0 auto; }
+  .module-form .context-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 50px auto 0; }
+    .module-form .context-form .block-text {
+      width: 50%; }
+      .module-form .context-form .block-text p {
+        color: #fff;
+        font-size: 24px; }
+        .module-form .context-form .block-text p span {
+          margin-right: 20px;
+          font-size: 72px;
+          color: #ffd100;
+          font-weight: bold;
+          font-family: 'OpenSans-Bold'; }
+        .module-form .context-form .block-text p:nth-child(2) {
+          margin-left: 40px; }
+        .module-form .context-form .block-text p:nth-child(3) {
+          margin-left: 80px; }
+        .module-form .context-form .block-text p:nth-child(4) {
+          margin-left: 120px; }
+        @media (max-width: 1024px) {
+          .module-form .context-form .block-text p {
+            margin-left: 0 !important; } }
+    .module-form .context-form .block-form {
+      width: 50%; }
+      .module-form .context-form .block-form form {
+        border: 2px dashed white !important;
+        padding: 30px;
+        background: #095151; }
+        .module-form .context-form .block-form form h3 {
+          color: #ffd100;
+          font-size: 48px;
+          text-align: center; }
+        .module-form .context-form .block-form form h4 {
+          color: #fff;
+          font-size: 21px;
+          text-align: center;
+          margin-bottom: 50px; }
+        .module-form .context-form .block-form form .form-el {
+          width: 100%; }
+          .module-form .context-form .block-form form .form-el input {
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px; }
+          .module-form .context-form .block-form form .form-el:last-child input {
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ae0808), to(#ae0808)) !important;
+            background-image: -webkit-linear-gradient(#ae0808, #ae0808) !important;
+            background-image: -o-linear-gradient(#ae0808, #ae0808) !important;
+            background-image: linear-gradient(#ae0808, #ae0808) !important; }
+  @media (max-width: 769px) {
+    .module-form .context-form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .module-form .context-form .block-text, .module-form .context-form .block-form {
+        width: 100%;
+        margin-top: 20px; }
+        .module-form .context-form .block-text p, .module-form .context-form .block-form p {
+          text-align: center; } }
+  @media (max-width: 568px) {
+    .module-form {
+      padding-top: 50px; }
+      .module-form h2.title {
+        font-size: 32px; }
+      .module-form .context-form {
+        margin-top: 10px; }
+        .module-form .context-form .block-text p, .module-form .context-form .block-form p {
+          font-size: 18px; }
+          .module-form .context-form .block-text p span, .module-form .context-form .block-form p span {
+            font-size: 32px; }
+        .module-form .context-form .block-text form .heading h3, .module-form .context-form .block-form form .heading h3 {
+          font-size: 32px; }
+        .module-form .context-form .block-text form .heading h4, .module-form .context-form .block-form form .heading h4 {
+          font-size: 21px; } }
+
+.module-register {
   padding: 150px 0 150px;
   background-image: url("https://www.dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2019/12/nhung-quan-an-ngon-tai-ha-giang-8.jpg");
   background-repeat: no-repeat;
@@ -2855,7 +2978,7 @@ p {
   background-size: cover;
   position: relative;
   text-align: center; }
-  .module-form-register:after {
+  .module-register:after {
     content: '';
     position: absolute;
     top: 0;
@@ -2864,7 +2987,7 @@ p {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%; }
-  .module-form-register a.button-register {
+  .module-register a.button-register {
     position: absolute;
     z-index: 2;
     padding: 20px 40px;
@@ -2894,7 +3017,7 @@ p {
     color: #fff;
     font-size: 32px; }
   @media (max-width: 576px) {
-    .module-form-register a.button-register {
+    .module-register a.button-register {
       font-size: 24px;
       padding: 14px; } }
 
