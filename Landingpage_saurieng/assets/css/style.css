@@ -2677,20 +2677,23 @@ p {
       font-weight: bold; }
   .module-certificate .context-certificate {
     padding-top: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch; }
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .module-certificate .context-certificate .item-certificate {
       width: calc(100% / 4);
       padding: 0 30px;
       -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+      margin-bottom: 60px; }
       .module-certificate .context-certificate .item-certificate .img {
         display: block;
         background-repeat: no-repeat;

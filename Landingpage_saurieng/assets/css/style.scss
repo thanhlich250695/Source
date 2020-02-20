@@ -125,9 +125,9 @@ $color-main:#633A1A;
     .heading{text-align: center;
         span{font-size:48px;font-weight: bold;;}
     }
-    .context-certificate{padding-top:50px;
-        display:flex;align-items:center;overflow:hidden;overflow-x:scroll;    -webkit-overflow-scrolling: touch;
-        .item-certificate{width:calc(100% / 4);padding:0 30px;flex-shrink:0;
+    .context-certificate{padding-top:50px;justify-content: center;;
+        display:flex;align-items:center;flex-wrap:wrap;
+        .item-certificate{width:calc(100% / 4);padding:0 30px;flex-shrink:0;margin-bottom:60px;
             .img{display:block;background-repeat: no-repeat;background-size: cover;background-position: center center;
                 &:after{content:'';display:block;padding-top:140%;}
             }
