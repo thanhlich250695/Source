@@ -2497,11 +2497,11 @@ p {
       margin-right: 20px;
       margin-left: 20px;
       display: block;
-      background-size: 130px 125px;
+      background-size: 100px 98px;
       background-position: center;
       background-repeat: no-repeat;
-      width: 130px;
-      height: 125px; }
+      width: 100px;
+      height: 98px; }
       .module-header .block-image .img:after {
         content: '';
         display: block;
@@ -2512,23 +2512,23 @@ p {
       text-align: center; }
       .module-header .block-text h1 span {
         display: block;
-        font-size: 32px;
+        font-size: 48px;
         margin-bottom: 10px; }
-        .module-header .block-text h1 span:nth-child(2) {
-          color: #0D984A; }
         .module-header .block-text h1 span:last-child {
           margin-bottom: 0;
-          color: #633A1A; }
+          color: #633A1A;
+          font-size: 32px; }
 
 .module-introduce {
   padding-top: 100px;
   padding-bottom: 50px; }
   .module-introduce h2.title {
     font-size: 32px;
-    color: #633A1A;
+    color: #000;
     max-width: 1440px;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .module-introduce .context-introduce {
     padding-top: 100px;
     max-width: 1440px;
@@ -2663,8 +2663,9 @@ p {
   .module-setup small {
     text-align: center;
     display: block;
-    font-size: 18px;
-    margin-top: 30px; }
+    font-size: 21px;
+    margin-top: 30px;
+    font-weight: bold; }
   .module-setup .context-module-setup {
     max-width: 1180px;
     margin: 0 auto;
@@ -2781,7 +2782,8 @@ p {
             display: -ms-flexbox;
             display: flex; }
             .module-reason .context-reason .reason-item .reason-item_content .block-image.block-1 img {
-              width: 225px; }
+              width: 225px;
+              height: 250px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f1 img {
             margin-bottom: 30px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.mt-0 {
@@ -2936,7 +2938,8 @@ p {
       .module-form .context-form .block-form form h4 {
         color: #fff;
         font-size: 18px;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 20px; }
       .module-form .context-form .block-form form p {
         text-align: center;
         color: #fff;
@@ -2963,6 +2966,9 @@ p {
           padding: 15px 20px;
           border-radius: 4px;
           margin-bottom: 20px; }
+        .module-form .context-form .block-form form .form-el label {
+          padding-left: 10px;
+          color: #fff; }
         .module-form .context-form .block-form form .form-el:last-child input {
           cursor: pointer;
           color: #fff;
@@ -2992,7 +2998,7 @@ p {
 
 @media (max-width: 568px) {
   .module-form {
-    padding-top: 50px; }
+    padding-top: 0; }
     .module-form h2.title {
       font-size: 24px; }
     .module-form .context-form {
@@ -3005,7 +3011,10 @@ p {
         font-size: 24px;
         margin-bottom: 10px; }
       .module-form .context-form .block-text form .heading h4, .module-form .context-form .block-form form .heading h4 {
-        font-size: 18px; } }
+        font-size: 18px;
+        margin-bottom: 20px; }
+      .module-form .context-form .block-text form .checkbox a, .module-form .context-form .block-form form .checkbox a {
+        font-size: 13px; } }
 
 .module-register {
   padding: 150px 0 150px;
@@ -3067,6 +3076,32 @@ p {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center; }
+    .footer .context-footer .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .footer .context-footer .contact .left {
+        text-align: left;
+        padding-right: 100px; }
+      @media (max-width: 1024px) {
+        .footer .context-footer .contact {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding: 0 20px;
+          text-align: center; }
+          .footer .context-footer .contact .left {
+            padding-right: 0;
+            text-align: center; }
+          .footer .context-footer .contact .right {
+            width: -webkit-fill-available; } }
     .footer .context-footer .name-contact {
       font-size: 24px;
       font-weight: bold; }
@@ -3075,8 +3110,15 @@ p {
       margin-bottom: 5px; }
     .footer .context-footer .title {
       font-size: 24px;
-      font-weight: bold;
-      margin-top: 30px; }
+      font-weight: bold; }
+    .footer .context-footer .detail {
+      padding-top: 0;
+      font-size: 24px;
+      font-weight: bold; }
+    .footer .context-footer .title-fanpage {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold; }
     .footer .context-footer .fanpage {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3166,9 +3208,12 @@ p {
       margin-top: 50px; }
       .module-header .block-text h1 span {
         font-size: 32px; }
+        .module-header .block-text h1 span:last-child {
+          font-size: 24px; }
     .module-header .block-image {
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-top: 0; }
       .module-header .block-image .img {
         width: 370px;
         margin-bottom: 20px; }
