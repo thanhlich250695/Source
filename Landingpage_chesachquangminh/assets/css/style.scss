@@ -109,6 +109,12 @@ $color-main:#633A1A;
         }
     }
 }
+.module-fanpage{padding: 50px 20px 50px;position:relative;height:700px;
+    h2.title{position:relative;z-index:3;text-align:center;font-size:32px;color:#000;max-width: 1440px;margin:0 auto;}
+    .context-fanpage{margin-top:30px;
+        .fb-page{position:absolute; right:0; left:0; margin:0 auto;width:fit-content;}
+    }
+}
 .module-introduce{padding:100px 10%;
     .heading{text-align: center;
         span{font-size:32px;font-weight: bold;;}
