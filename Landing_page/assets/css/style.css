@@ -2673,10 +2673,15 @@ p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      margin-bottom: 50px; }
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 50px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
       .module-setup .context-module-setup .item-setup .img {
         width: 30%; }
         .module-setup .context-module-setup .item-setup .img .img_setup {
@@ -2699,7 +2704,7 @@ p {
           font-weight: bold;
           font-size: 24px; }
         .module-setup .context-module-setup .item-setup .content p {
-          font-size: 16px; }
+          font-size: 21px; }
       .module-setup .context-module-setup .item-setup.is-right .content {
         padding-right: 30px; }
 
@@ -2757,7 +2762,7 @@ p {
         padding: 30px;
         border-top: none; }
         .module-reason .context-reason .reason-item .reason-item_content p {
-          font-size: 18px; }
+          font-size: 21px; }
         .module-reason .context-reason .reason-item .reason-item_content .block-image {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -2776,7 +2781,7 @@ p {
             display: -ms-flexbox;
             display: flex; }
             .module-reason .context-reason .reason-item .reason-item_content .block-image.block-1 img {
-              width: 275px; }
+              width: 225px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.is-f1 img {
             margin-bottom: 30px; }
           .module-reason .context-reason .reason-item .reason-item_content .block-image.mt-0 {
@@ -2931,8 +2936,24 @@ p {
       .module-form .context-form .block-form form h4 {
         color: #fff;
         font-size: 18px;
+        text-align: center; }
+      .module-form .context-form .block-form form p {
         text-align: center;
-        margin-bottom: 50px; }
+        color: #fff;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      .module-form .context-form .block-form form span {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+        text-align: center;
+        font-weight: bold; }
+        .module-form .context-form .block-form form span a {
+          font-size: 18px;
+          text-decoration: underline; }
+          .module-form .context-form .block-form form span a:hover {
+            color: #0068ff; }
       .module-form .context-form .block-form form .form-el {
         width: 100%; }
         .module-form .context-form .block-form form .form-el input {
@@ -3325,7 +3346,7 @@ p {
   padding: 10px; }
   .module-option .content-option span {
     display: block;
-    font-size: 16px;
+    font-size: 21px;
     margin-top: 10px;
     margin-bottom: 10px; }
 
