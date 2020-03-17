@@ -1,4 +1,5 @@
-html,body{font-size: 16px;font-family: 'Josefin Sans', sans-serif;color:#212529;}
+html,body{scroll-behavior: smooth; font-size: 16px;font-family: 'Josefin Sans', sans-serif;color:#212529;}
+
 .container{margin:0 auto;
     @media(min-width:1200px){
         width:1170px;
@@ -30,12 +31,8 @@ html,body{font-size: 16px;font-family: 'Josefin Sans', sans-serif;color:#212529;
 
 
 header{
-    height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url('../images/banner_home.jpg') fixed #444 center;
-    background-size: 100% auto;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    display:flex;align-items: center;justify-content: center;position: relative;
+    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url('https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/86728806_629131724573350_8313968323163324416_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=OACLijcF8eAAX9I9Urc&_nc_ht=scontent-hkg3-1.xx&oh=78433a36bbeb3e87bc323777152cc923&oe=5E951804') fixed #444; background-position: center center; background-size:100% 100%;background-repeat: no-repeat;
     .content-header{text-align: center;
         h1{color:#fff;font-size: 3rem;font-weight:bold;margin-bottom:1rem}
         p{font-size: 1.375rem;color:#bbb;;line-height:1.2;max-width: 768px;margin:0 auto;}
@@ -43,16 +40,79 @@ header{
     nav{color:#fff;display:flex;position:absolute;width: 100%;top:50px;justify-content: space-between;padding:0 10%}
 }
 .typed-cursor{display:none;}
-.content-page{
-    .about-us-home{margin-top:100px;
+.content-page{max-width:1280px;margin:0 auto;
+    .about-us-home{margin-top:50px;
         padding:40px 30px 50px;
-        background: #eceff4;
-        box-shadow: inset -15px -15px 15px 2px rgba(255, 255, 255, 0.65), inset 12px 12px 12px 1px rgba(117, 118, 120, 0.18);
         display:flex;align-items: flex-start;
-        .img{flex-shrink:0;width:50%;border-radius:10px;overflow: hidden;}
+        .block-image{display:flex;
+            img{width:calc(100% / 3 );}
+        }
+        .img{flex-shrink:0;width:50%;border-radius:10px;overflow: hidden;
+            .form-register{padding:40px 30px;background-image: linear-gradient(to right,#6700ff, #a100ff);;border-radius: 20px;
+                h3{color:#fff;font-size:2em;margin-bottom:10px}
+                .sub-desc{color:#fff;font-size:1.063em;margin-bottom:25px}
+                input{border:none;background:#fff;border-radius:4px;width:100%;height:44px;padding:0 20px;margin-bottom:20px;font-size:1.063em}
+            }
+        }
         .infor{flex-grow:1;min-width: 0;padding:0 30px;
             h2{font-size:3rem;}
-            .desc{margin-top:30px;font-size:1em;line-height:30px;}
+            .desc{margin-top:15px;font-size:1.313em;line-height:24px;}
+            .sub-desc{margin-top:30px;line-height:24px;font-size:1.063em;}
+            ul.list{margin-top:24px;font-size:1.063em}
+            .button{display: inline-block;margin-top:30px;
+               background-image: linear-gradient(to right,#6700ff, #a100ff);;border-radius: 20px;
+                a{color:#fff;font-size:1.313em;display:block;padding:18px 30px;}
+            }
+        }
+    }
+}
+@keyframes zoom{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+.hotline{position:fixed;right:20px;bottom:50px;z-index:2;width:75px;position:fixed;right:20px;bottom:50px;z-index:2;height:75px;border-radius:50%;overflow: hidden;animation: zoom infinite 500ms 1000ms alternate ease-in-out;
+    a{display:block;
+        img{display:block;width:100%;}
+    }
+}
+@media(max-width:568px){
+    header{
+        height:80vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url('https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/p960x960/87276272_633052767514579_2730587374680539136_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=ORbCLInEK9oAX98SOt7&_nc_ht=scontent-hkg3-2.xx&_nc_tp=6&oh=02ff28a95f59634ad8a414ddd47c8a8b&oe=5E9551DF') fixed #444; background-position: center center; background-size:cover;background-repeat: no-repeat;
+        .content-header{text-align: center;
+            h1{color:#fff;font-size: 3rem;font-weight:bold;margin-bottom:1rem}
+            p{font-size: 1.375rem;color:#bbb;;line-height:1.2;max-width: 768px;margin:0 auto;}
+        }
+        nav{color:#fff;display:flex;position:absolute;width: 100%;top:50px;justify-content: space-between;padding:0 10%}
+    }
+    .content-page{max-width:768px;margin:0 auto;
+        .about-us-home{margin-top:20px;
+            padding:40px 30px 0px;
+            display:flex;align-items: flex-start;flex-direction:column;
+            .block-image{display:flex;justify-content:center;
+                img{width:100px;height:100px;}
+            }
+            .img{order:1;flex-shrink:0;width:100%;border-radius:10px;overflow: hidden;
+                .form-register{padding:30px 20px;background-image: linear-gradient(to right,#6700ff, #a100ff);;border-radius: 20px;
+                    h3{color:#fff;font-size:24px;margin-bottom:10px}
+                    .sub-desc{color:#fff;font-size:1.063em;margin-bottom:25px}
+                    input{border:none;background:#fff;border-radius:4px;width:100%;height:44px;padding:0 20px;margin-bottom:20px;font-size:16px}
+                }
+            }
+            .infor{order:2;flex-grow:1;min-width: 0;padding:0;width:100%;
+                h2{font-size:24px;margin-top:20px;}
+                .desc{margin-top:15px;font-size:16px;line-height:24px;}
+                .sub-desc{margin-top:30px;line-height:24px;font-size:1.0.63em;}
+                ul.list{margin-top:24px;font-size:1.063em}
+                .button{display: inline-block;margin-top:30px;
+                   background-image: linear-gradient(to right,#6700ff, #a100ff);;border-radius: 20px;
+                    a{color:#fff;font-size:1.313em;display:block;padding:18px 30px;}
+                }
+            }
+            &:last-child{
+                .img{order:2;padding-bottom: 30px;}
+                .infor{order:1;margin-bottom:20px;}
+            }
         }
     }
 }
