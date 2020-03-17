@@ -2838,10 +2838,10 @@ header {
 @media (max-width: 568px) {
   header {
     height: 80vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05))), url("https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/p960x960/87276272_633052767514579_2730587374680539136_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=ORbCLInEK9oAX98SOt7&_nc_ht=scontent-hkg3-2.xx&_nc_tp=6&oh=02ff28a95f59634ad8a414ddd47c8a8b&oe=5E9551DF") fixed #444;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/p960x960/87276272_633052767514579_2730587374680539136_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=ORbCLInEK9oAX98SOt7&_nc_ht=scontent-hkg3-2.xx&_nc_tp=6&oh=02ff28a95f59634ad8a414ddd47c8a8b&oe=5E9551DF") fixed #444;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/p960x960/87276272_633052767514579_2730587374680539136_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=ORbCLInEK9oAX98SOt7&_nc_ht=scontent-hkg3-2.xx&_nc_tp=6&oh=02ff28a95f59634ad8a414ddd47c8a8b&oe=5E9551DF") fixed #444;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/p960x960/87276272_633052767514579_2730587374680539136_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=ORbCLInEK9oAX98SOt7&_nc_ht=scontent-hkg3-2.xx&_nc_tp=6&oh=02ff28a95f59634ad8a414ddd47c8a8b&oe=5E9551DF") fixed #444;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05))), url("../images/img_mobile.jpg") fixed #444;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }
