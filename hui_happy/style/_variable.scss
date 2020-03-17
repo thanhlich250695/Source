@@ -1,0 +1,38 @@
+$background       : #f2f4f8 !default;
+
+// Color Font
+$color-base       : rgba(0,0,0,0.87) !default;
+$color-secondary       : rgba(0,0,0,0.54) !default;
+$color-disabled       : rgba(0,0,0,0.38) !default;
+
+$color-main       : #F05E0F !default;
+$color-second     : transparent !default; // Chưa set
+$color-support    : #FBE89D !default;
+$color-ascent    : #F5CC5C  !default;
+$color-dark       : #000 !default;
+$color-light      : #fff !default;
+$color-grey       : rgba(0,0,0,0.5) !default;
+$color-price      : #FF3C00 !default; // Chưa set
+$color-border     : #EEEEEE !default;
+$color-link       : $color-main !default;
+
+$color-highlight-1: #F2AF83 !default;
+$color-highlight-2: #f66274 !default;
+
+$color-success    : #A2D92D !default;
+$color-error      : #F44628 !default;
+$color-warning    : #e3cf1e !default;
+$color-alert      : #F4CD2D !default;
+
+
+// Font Style
+$font-icon: 'Nucleo'!default;
+
+// Page
+$base-font-size: 16px;
+$base-font-weight: 400;
+
+$line-height: 1.42857143;
+//$grid-gutter-width: 30px !default; // bật khi xài bootstrap
+$gutter: 16px;
+
