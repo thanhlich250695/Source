@@ -2885,6 +2885,13 @@ header {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
+      .content-page .about-us-home .block-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .content-page .about-us-home .block-image img {
+          width: 100px;
+          height: 100px; }
       .content-page .about-us-home .img {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
