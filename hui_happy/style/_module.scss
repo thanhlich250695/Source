@@ -77,8 +77,8 @@ header{
 }
 @media(max-width:568px){
     header{
-        height:80vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url('../images/img_mobile.jpg') fixed #444; background-position: center center; background-size:cover;background-repeat: no-repeat;
+        height:55vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url('../images/img_mobile.jpg'); background-position:top; background-size:contain;background-repeat: no-repeat;
         .content-header{text-align: center;
             h1{color:#fff;font-size: 3rem;font-weight:bold;margin-bottom:1rem}
             p{font-size: 1.375rem;color:#bbb;;line-height:1.2;max-width: 768px;margin:0 auto;}

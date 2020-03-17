@@ -2837,13 +2837,13 @@ header {
 
 @media (max-width: 568px) {
   header {
-    height: 80vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05))), url("../images/img_mobile.jpg") fixed #444;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg") fixed #444;
-    background-position: center center;
-    background-size: cover;
+    height: 55vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05))), url("../images/img_mobile.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("../images/img_mobile.jpg");
+    background-position: top;
+    background-size: contain;
     background-repeat: no-repeat; }
     header .content-header {
       text-align: center; }
