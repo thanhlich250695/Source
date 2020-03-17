@@ -2888,7 +2888,10 @@ header {
       .content-page .about-us-home .block-image {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
         .content-page .about-us-home .block-image img {
           width: 100px;
           height: 100px; }
