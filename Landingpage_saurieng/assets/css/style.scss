@@ -50,7 +50,11 @@ $color-main:#633A1A;
             .box-content{margin-top:40px;color:#fff;
                 span{margin-right:10px;}
 				p{margin-bottom:10px;font-size:18px;}
-				.address{border-radius:8px;max-width:768px;background-color:#FFB000;;padding:10px 20px;color:#000;}
+                .address{border-radius:8px;max-width:768px;background-color:#FFB000;;padding:10px 20px;color:#000;margin-bottom:10px;
+                    &.is-hot{
+                        p{background:#ae0808;font-size:18px;color:#fff;width: fit-content;padding:10px 20px;margin:0 auto;margin-top:10px;border-radius:4px;}
+                    }
+                }
             }
         }
         .form-register{margin-left:auto;   border-radius: 10px;
