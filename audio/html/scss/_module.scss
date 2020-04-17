@@ -353,6 +353,7 @@
 		.item-product{padding:0 50px;width:50%;
 			display:flex;border-radius:4px;flex-direction:column;margin-top:50px;
 			.content{display:flex;align-items:center;padding:25px 20px;order:2;background-color:#fff;box-shadow:0px 10px 20px rgba(#000000, 0.2);
+				.wrap{width:100%;}
 				h3{font-size:2.25em;font-weight:bold;}
 				.line{width:100px;height:3px;background-color:#2CB453;margin-top:10px;}
 				p{font-size:16px;line-height: 23px;margin-top:10px;}
@@ -370,6 +371,15 @@
 			
 			.img{position:relative;order:1;width:100%;@extend %backgroundCover--center;
 				&:after{content:'';display:block;padding-top:100%;}
+			}
+		}
+		@media(max-width:768px){
+			.item-product{
+				width:100%;padding:0 20px;
+				.content{
+					h3{font-size:21px;}
+					p{font-size:14px;word-break: break-all}
+				}
 			}
 		}
 	}
