@@ -323,6 +323,11 @@
 						border:1px solid grey;border-radius:8px;display:flex;flex-direction:column;
 						img{width:200px;}
 					}
+					&.is-botique{
+						.item{width:45%;
+							img{width:450px;}
+						}
+					}
 				}
 			}
 			@media(max-width:768px){
