@@ -31,7 +31,6 @@ block modal
 	include page/modal_chitietsp.pug
 
 block javaScripts extend
-	script(src="https://unpkg.com/swiper/js/swiper.min.js")
 	script.
 		$(".func-detail").click(function(){
 			$("html").addClass("overlay-modal");
@@ -56,56 +55,5 @@ block javaScripts extend
 			} 
 			else {
 			$('.taskbar').removeClass('is-fixed');
-			}
-			});
-			var galleryThumbs = new Swiper('.gallery-thumbs', {
-			spaceBetween: 10,
-			slidesPerView: 5,
-			freeMode: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			});
-			var galleryTop = new Swiper('.gallery-top', {
-			spaceBetween: 10,
-			navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-			},
-			thumbs: {
-			swiper: galleryThumbs
-			}
-			});
-			var galleryThumbs = new Swiper('.gallery-thumbs2', {
-			spaceBetween: 10,
-			slidesPerView: 5,
-			freeMode: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			});
-			var galleryTop = new Swiper('.gallery-top2', {
-			spaceBetween: 10,
-			navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-			},
-			thumbs: {
-			swiper: galleryThumbs
-			}
-			});
-			var galleryThumbs = new Swiper('.gallery-thumbs3', {
-			spaceBetween: 10,
-			slidesPerView: 5,
-			freeMode: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			});
-			var galleryTop = new Swiper('.gallery-top3', {
-			spaceBetween: 10,
-			navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-			},
-			thumbs: {
-			swiper: galleryThumbs
 			}
 			});
