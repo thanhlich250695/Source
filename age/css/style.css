@@ -187,16 +187,18 @@ select {
 	  width:inherit!important;
 	  background-repeat:no-repeat;
 	}  
-	.step2{position:absolute;top:inherit;bottom:25px}
+	.step2{position:absolute;top:inherit;bottom:35px}
 	.step2 h1{ font-size: 22px}
 	.step2b.active{
 		padding-top:0 !important;
-		position:absolute;top:inherit;bottom:60px
+		position:absolute;top:inherit;bottom:80px
 	}
 	.step3.active{
 		padding-top:0 !important;
-		position:absolute;top:inherit;bottom:80px
+		position:absolute;top:inherit;bottom:80px;
+		
 	}
+	.step3 h1{font-size:22px}
 	.container {
 	  padding-top: 0;
 	  font-size: 16px;
