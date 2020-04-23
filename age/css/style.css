@@ -149,117 +149,6 @@ input[type=number]::-webkit-outer-spin-button {
 .step.active  {
   pointer-events: inherit;
 }
-@media (max-width: 600px){
-  .ad-survey { 
-	background-size: 100% 100vh !important;
-    margin: 0 auto; 
-    position: relative; 
-    color: #fff; 
-    width: 100%; 
-	min-height: 100vh !important;
-	height:inherit!important;
-	width:inherit!important;
-	overflow:inherit !important;
-	
-  }  
-  .container {
-    padding-top: 70px;
-    font-size: 16px;
-  }
-  p {
-    margin-bottom: 30px;
-  }
-  .btn {
-    font-size: 16px;
-    min-width: 150px; 
-  }
-  h1 {
-    font-size: 26px;
-  }
-  .img-fluid {
-    max-width: 50%;
-  }
-  .adtima {
-    top: 20px;
-  }
-  .column-survey  {
-    margin-top: 30px;
-  }
-  .icon-happy {
-    width: 30px;
-    height: 30px;
-  }
-  .icon-sad {
-    width: 30px;
-    height: 30px;
-  }
-  .step2 {
-    padding: 0 20px;
-  }
-  .step2 .btn {
-    font-size: 12px;
-    min-width: 110px;
-    padding-right: 20px;
-  }
-  .step2b {
-    padding: 0 20px;
-  }
-  .f-select {
-    margin-right: 0px;
-  }
-  .step2b .f-control {
-    height: 42px;
-    font-size: 16px;
-    width: 150px;
-    padding: 0 20px;
-    border-radius: 50px;
-    max-width: 200px !important;
-  }
-  .step2b .btn-sunmit {
-    padding: 12px;
-    min-width: 80px;
-  }
-  .step2 .btn-sunmit {
-    padding: 14px;
-    min-width: 80px;
-    border: none;
-  }
-  .step2b  .f-control.text {
-    height: 42px;
-    font-size: 16px;
-    width: 150px;
-    padding: 0 20px;
-  }
-  .step2b  .f-control.text {
-    height: 42px;
-    font-size: 16px;
-    width: 150px;
-    padding: 0 20px;
-  }
-  .step2  .f-select {
-    margin-right: 20px;
-  }
-  .step2  .f-control {
-    height: 42px;
-    font-size: 16px;
-    width: 150px;
-    padding: 0 20px;
-    border-radius: 50px;;
-  }
-  .txt {
-    display: block;
-    font-size: 12px;
-    margin-top: 20px;
-    font-style: italic;
-  }
-  .btn-send {
-    font-size: 12px;
-    max-width: 150px;
-    margin: auto;
-    height: 40px;
-    padding: 0 !important;
-  }
-}
 
 .action3 {
   pointer-events: none;
@@ -286,54 +175,176 @@ select {
 }
 .step3 h1{font-size:48px;font-weight:700;padding:0 20px;font-weight:700;
 }
+@media (max-width: 600px){
+	.ad-survey { 
+	  background-size: 100% 100vh !important;
+	  margin: 0 auto; 
+	  position: relative; 
+	  color: #fff; 
+	  width: 100%; 
+	  min-height: 100vh !important;
+	  height:inherit!important;
+	  width:inherit!important;
+	  background-repeat:no-repeat;
+	}  
+	.step2{position:absolute;top:inherit;bottom:25px}
+	.step2 h1{ font-size: 22px}
+	.step2b.active{
+		padding-top:0 !important;
+		position:absolute;top:inherit;bottom:60px
+	}
+	.step3.active{
+		padding-top:0 !important;
+		position:absolute;top:inherit;bottom:80px
+	}
+	.container {
+	  padding-top: 0;
+	  font-size: 16px;
+	}
+	p {
+	  margin-bottom: 30px;
+	}
+	.btn {
+	  font-size: 16px;
+	  min-width: 150px; 
+	}
+	h1 {
+	  font-size: 26px;
+	}
+	.img-fluid {
+	  max-width: 50%;
+	}
+	.adtima {
+	  top: 20px;
+	}
+	.column-survey  {
+	  margin-top: 0;
+	  height:100vh;
+	}
+	.icon-happy {
+	  width: 30px;
+	  height: 30px;
+	}
+	.icon-sad {
+	  width: 30px;
+	  height: 30px;
+	}
+	.step2 {
+	  padding: 0 20px;
+	}
+	.step2 .btn {
+	  font-size: 12px;
+	  min-width: 110px;
+	  padding-right: 20px;
+	}
+	.step2b {
+	  padding: 0 20px;
+	}
+	.f-select {
+	  margin-right: 0px;
+	}
+	.step2b .f-control {
+	  height: 42px;
+	  font-size: 16px;
+	  width: 150px;
+	  padding: 0 20px;
+	  border-radius: 50px;
+	  max-width: 200px !important;
+	}
+	.step2b .btn-sunmit {
+	  padding: 12px;
+	  min-width: 80px;
+	}
+	.step2 .btn-sunmit {
+	  padding: 14px;
+	  min-width: 80px;
+	  border: none;
+	}
+	.step2b  .f-control.text {
+	  height: 42px;
+	  font-size: 16px;
+	  width: 150px;
+	  padding: 0 20px;
+	}
+	.step2b  .f-control.text {
+	  height: 42px;
+	  font-size: 16px;
+	  width: 150px;
+	  padding: 0 20px;
+	}
+	.step2  .f-select {
+	  margin-right: 20px;
+	}
+	.step2  .f-control {
+	  height: 42px;
+	  font-size: 16px;
+	  width: 150px;
+	  padding: 0 20px;
+	  border-radius: 50px;;
+	}
+	.txt {
+	  display: block;
+	  font-size: 12px;
+	  margin-top: 20px;
+	  font-style: italic;
+	}
+	.btn-send {
+	  font-size: 12px;
+	  max-width: 150px;
+	  margin: auto;
+	  height: 40px;
+	  padding: 0 !important;
+	}
+  }
+  
 @media (max-width: 375px){
-	.step2{padding-top:320px!important;}
+	/* .step2{padding-top:320px!important;}
 	.step2 h1{ font-size: 22px!important;}
 	.step2b.active{
 		padding-top:360px !important;
 	}
 	.step3.active{
 		padding-top:360px !important;
-	}
+	} */
 	.btn-vote{margin-left:5px;margin-right:5px;}
 	.f-select.has-icon::after{    background-size: 14px 10px;
 		width: 14px;
 		height: 10px;}
 	.step3 h1{font-size:22px;font-weight:700;padding:0 20px;
 	}
-	  h1 {
-		font-size: 22px;
-		padding: 0 20px;
-	  }
-	  p {
-		margin-bottom: 20px;
-		padding: 0 20px
-	  }
-	  .step {
-		padding: 0;
-	  }
-	  .step2 .btn {
-		font-size: 14px;
-		min-width: 90px;
-		padding-right: 20px;
-	  }
-	  
-	 
-	  .icon-happy {
-		  margin-right: 10px;
-	  }
-	  .icon-sad {
+	h1 {
+	font-size: 22px;
+	padding: 0 20px;
+	}
+	p {
+	margin-bottom: 20px;
+	padding: 0 20px
+	}
+	.step {
+	padding: 0;
+	}
+	.step2 .btn {
+	font-size: 14px;
+	min-width: 90px;
+	padding-right: 20px;
+	}
+	
+	
+	.icon-happy {
 		margin-right: 10px;
-	  }
-	  .step2b .f-control.text {
-		width: 120px;
-	  }
 	}
-	@media (max-width: 320px){
-	  .column-survey {
-		margin-top: 10px;
-	  }
-	  h1 {
-		margin-bottom: 10px;
-	  }
+	.icon-sad {
+	margin-right: 10px;
 	}
+	.step2b .f-control.text {
+	width: 120px;
+	}
+}
+@media (max-width: 320px){
+	.column-survey {
+	margin-top: 10px;
+	}
+	h1 {
+	margin-bottom: 10px;
+	}
+}
