@@ -327,7 +327,7 @@
 						img{width:200px;}
 					}
 					&.is-botique{
-						.item{width:45%;
+						.item{width:45%; justify-content:center;
 							img{width:450px;}
 							@media(max-width:768px){
 								width:100%;
