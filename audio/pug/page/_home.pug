@@ -150,15 +150,13 @@ block Body
 					span Số điện thoại:
 					span 0376307374
 			.form-register
-				form.wow.slideInLeft(data-wow-duration="1s" data-wow-offset="100")
+				form.wow.slideInLeft(data-wow-duration="1s" data-wow-offset="100" name="cform" id="cform" target="_self" onsubmit="return postToGoogle();" action="")
 					span Gửi thông tin liên hệ và phản hồi, chúng tôi sẽ trả lời bạn trong thời gian sớm nhất
-					input(type="text" placeholder="Nhập họ và tên")
-					input(type="text" placeholder="Nhập Số điện thoại")
-					input(type="text" placeholder="Nhập email")
-					input(type="text" placeholder="Nhập địa chỉ")
-					textarea(placeholder="Nhập thông tin liên hệ và phản hồi")
-					a.button-submit(href="#!") Gửi
-
+					input(  id="nameField" type="text" name="entry.286525807" placeholder="Nhập họ và tên")
+					input(id="emailField" type="text" name="entry.231457848"  placeholder="Nhập email")
+					input( id="sdt" type="text" name="entry.1242046409" placeholder="Nhập Số điện thoại")
+					button.button-submit( type="submit" id="send" name="send") Gửi
+			h3(id="success-msg" class="text-center" style="display: none;") Your Message has been sended!
 
 				.maps.wow.slideInRight(data-wow-duration="1s" data-wow-offset="100")
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.6564103085225!2d105.77886988408048!3d21.08373803613736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345571447dc2b5%3A0xd64d979c759496c!2zxJDhuqFpIFRoYW5oIEF1ZGlv!5e0!3m2!1svi!2s!4v1587103664471!5m2!1svi!2s" width="100%" height="494" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

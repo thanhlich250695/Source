@@ -32,6 +32,7 @@ block modal
 
 block javaScripts extend
 	script(src="https://unpkg.com/swiper/js/swiper.min.js")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js")
 	script.
 		$(".func-detail").click(function(){
 			$("html").addClass("overlay-modal");
@@ -109,3 +110,31 @@ block javaScripts extend
 			swiper: galleryThumbs
 			}
 			});
+			function postToGoogle() {
+			//Xử lý lấy dữ liệu các input vào biến tương ứng thông qua ID của input
+				var name = $("#nameField").val();
+				var email = $("#emailField").val();
+				var sdt = $("#sdt").val();
+				//Đoạn giữa này có thể sử dụng để validate dữ liệu 1 lần nữa hoăc... bỏ qua nhé :D
+
+				//Xử lý gửi dữ liệu lên form
+				$.ajax({
+				//Chỉ định đích gửi dữ liệu đến: là form response đã tạo ở trên
+				url: "https://docs.google.com/forms/d/e/1FAIpQLSfqEjuoKd329esMjSbmct6GCCsQ-w3aSF3sK7m4nDdpi1JFYA/formResponse?",
+				//URL lấy từ link đã note ở trên nhé
+				data: { //gán các giá trị tương ứng vào các Input name tương ứng đã lấy ở trên
+				"entry.286525807": name,
+				"entry.231457848": email,
+				"entry.1242046409": sdt
+				},
+				type: "POST",
+				dataType: "jsonp", //các bạn có thể để xml, nhưng khi bật console lên sẽ thấy báo đỏ lòm vì ko cho cross, còn cái này nó vẫn cảnh báo nhưng màu xám thôi, ko đỏ :v
+				success: function(d)
+				{}, //do đã bảo ở trên là nó ko cho cross đâu, nên khi gửi data xong ko trả về success được, ko cần điền cái này nhé
+				error: function(x, y, z) {
+				$('#success-msg').show(); //hiện ra cái mess báo thành công khi gửi xong
+				}
+				});
+
+				return false;
+			}
