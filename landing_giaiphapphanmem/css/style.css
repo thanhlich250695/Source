@@ -340,12 +340,10 @@ header .banner .content-banner p {
   margin-bottom: 20px;
   color: #4c4c4c;
 }
-@media (max-width: 767px) {
-  .section-feature .wrapper-content p {
-    font-size: 16px;
-  }
-}
 @media (max-width: 1024px) {
+  .section-feature .wrapper-content {
+    padding: 20px 0;
+  }
   .section-feature .wrapper-content .img-wrapper {
     order: 1;
   }
@@ -360,6 +358,7 @@ header .banner .content-banner p {
 }
 .section-client .box-title {
   text-align: center;
+  padding: 0 20px;
 }
 .section-client .box-title h2 {
   padding-bottom: 10px;
@@ -398,6 +397,9 @@ header .banner .content-banner p {
 
 .section-contact {
   padding: 70px 0;
+}
+.section-contact .head {
+  padding: 0 20px;
 }
 .section-contact h2.title {
   font-size: 3em;
@@ -456,6 +458,7 @@ header .banner .content-banner p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   padding: 5px 20px;
+  border: 1px solid #dedede;
 }
 .section-contact .form-register form textarea {
   width: 100% !important;
