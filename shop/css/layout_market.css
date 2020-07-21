@@ -118,6 +118,7 @@ body.overlay-open .bl-popup .popup-container.is-show {
 .bl-popup {
   max-width: 600px;
   margin: 0 auto;
+  position: fixed;
 }
 .bl-popup.is-transparent {
   background-color: transparent !important;

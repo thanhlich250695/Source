@@ -11,7 +11,7 @@ body.overlay-open .bl-popup{z-index:1001;opacity:1;visibility:visible;@extend %t
 		&.is-show{bottom:0;right:0;left:0;@extend %tr-all; z-index:1000;}	
 	}
 }
-.bl-popup{max-width:600px;margin:0 auto;
+.bl-popup{max-width:600px;margin:0 auto;position:fixed;
 	&.is-transparent{background-color:transparent!important}
 	.popup-container{@include position(fixed, null);bottom:-100%;background-color:#fff;width:100%;opacity:1;
 		&.has-radius{border-radius:8px 8px 0 0;}
