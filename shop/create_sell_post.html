@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Market</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/core.css" rel="stylesheet" type="text/css">
+    <link href="css/layout_market.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="zMarket-layout">
+      <div class="page-content">
+        <div class="module-sell-post">
+          <div class="heading">
+            <h2 class="fs--xl fw-bold">Đăng tin rao bán</h2>
+            <p class="fs--m">Tin rao bán sẽ được đăng trên Zalo Shop, bạn cũng có thể chia sẻ trên nhật ký của mình</p>
+          </div>
+          <div class="context-sell-post">
+            <div class="bl-upload">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="title fs--m pr-3">Thêm ảnh rao bán (tối đa 10 ảnh)</p><span class="fs--s fw-bold">2/10</span>
+              </div>
+              <div class="image-upload-list">
+                <div class="image-upload is-uploaded">
+                  <div class="content"><img src="http://via.placeholder.com/120x90" alt=""><a class="func-remove" href="#remove"><i class="icn icn-small-remove"></i></a></div>
+                </div>
+                <div class="image-upload is-uploaded">
+                  <div class="content"><img src="http://via.placeholder.com/120x90" alt=""><a class="func-remove" href="#remove"><i class="icn icn-small-remove"></i></a></div>
+                </div>
+                <div class="image-upload func-open-multi-upload">
+                  <div class="content">
+                    <div class="wrap-edit"><i class="icn icn-upload"></i><span>Thêm ảnh</span></div>
+                  </div>
+                </div>
+              </div>
+              <form class="default-form">
+                <div class="form-row">
+                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Tiêu đề rao bán</span><span class="color-grey fs--m">0/50</span></label>
+                  <input type="text" placeholder="" value="">
+                </div>
+                <div class="box-notification">
+                  <div class="item is-success"><i class="icn icn-check-circle"></i><span>Chỉ nhập tên sản phẩm cần rao bán</span></div>
+                  <div class="item is-error"><i class="icn icn-circle-delete"></i><span>Không nhập số điện thoại vào tiêu đề</span></div>
+                </div>
+                <div class="form-row">
+                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Họ tên</span><span class="color-grey fs--m">0/50</span></label>
+                  <input type="text" placeholder="" value="">
+                </div>
+                <div class="form-row">
+                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Giá (VND)</span><span class="color-grey fs--m">0/50</span></label>
+                  <input type="text" placeholder="" value="">
+                </div>
+                <div class="form-row">
+                  <label class="fs--m">Danh mục</label>
+                  <div class="wrap-select func-open-danhmuc"><span>Đồ nội thất</span></div>
+                </div>
+                <div class="form-row">
+                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Mô tả</span><span class="color-grey fs--m">0/5000 </span></label>
+                  <textarea type="text" placeholder="" value=""></textarea>
+                </div>
+                <div class="form-row">
+                  <label class="fs--m">Chọn Tỉnh/Thành muốn rao</label>
+                  <div class="wrap-select func-open-tinhthanh"><span>Chọn Tỉnh/Thành</span></div>
+                </div>
+                <div class="form-row">
+                  <label class="fs--m">Chọn Quận/Huyện muốn rao</label>
+                  <div class="wrap-select func-open-quanhuyen"><span>Chọn Quận/Huyện</span></div>
+                </div>
+              </form>
+              <p class="policy-text fs--s">Bằng việc bấm vào nút đăng rao bán, bạn đã đồng ý với <a href="#!" class="color-link"> Điều khoản </a> của chúng tôi</p>
+              <div class="button"><a class="btn btn--m btn-primary w-100" href="detail_sell_post.html">Đăng tin rao bán</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="bl-popup">
+          <div class="popup-container" id="popup-multi-upload">
+            <div class="bl-popup-context context-select-upload"><a class="d-block camera" href="#chuphinhmoi">Chụp hình mới </a><a class="d-block gallery" href="#!">
+                <input type="file"><span>Tải tình từ thư viện máy ảnh</span></a><a class="d-block color-error func-close-popup" href="#chuphinhmoi">Cancel</a></div>
+          </div>
+          <div class="popup-container has-radius" id="popup-danhmuc">
+            <div class="bl-popup-heading"><span class="fs--l fw-medium">Danh mục</span><a class="func-close-popup" href="#!"><i class="icn icn-small-remove"></i></a></div>
+            <div class="bl-popup-context">
+              <ul class="select-list">
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                  <ul class="child-list">
+                    <li>
+                      <div class="item-child"><span>Đồ điện tử</span></div>
+                    </li>
+                    <li>
+                      <div class="item-child"><span>Đồ điện tử</span></div>
+                    </li>
+                    <li>
+                      <div class="item-child"><span>Đồ điện tử</span></div>
+                    </li>
+                    <li>
+                      <div class="item-child"><span>Đồ điện tử</span></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Đồ điện tử</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup-container has-radius" id="popup-tinhthanh">
+            <div class="bl-popup-heading"><span class="fs--l fw-medium">Chọn Tỉnh/Thành</span><a class="func-close-popup" href="#!"><i class="icn icn-small-remove"></i></a></div>
+            <div class="bl-popup-context">
+              <ul class="select-list">
+                <li>
+                  <div class="item"><span>Tỉnh/Thành 1</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Tỉnh/Thành 2</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup-container has-radius" id="popup-quanhuyen">
+            <div class="bl-popup-heading"><span class="fs--l fw-medium">Chọn Quận/Huyện</span><a class="func-close-popup" href="#!"><i class="icn icn-small-remove"></i></a></div>
+            <div class="bl-popup-context">
+              <ul class="select-list">
+                <li>
+                  <div class="item"><span>Quận/Huyện 1</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item"><span>Quận/Huyện 2</span>
+                    <div class="toggle"><i class="icn icn-small-right"></i></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      $(".func-open-multi-upload").click(function(){
+      	$("body").addClass("overlay-open");
+      	$("#popup-multi-upload").addClass("is-show");
+      });
+      $(".func-open-danhmuc").click(function(){
+      	$("body").addClass("overlay-open");
+      	$("#popup-danhmuc").addClass("is-show");
+      });
+      $(".func-open-tinhthanh").click(function(){
+      	$("body").addClass("overlay-open");
+      	$("#popup-tinhthanh").addClass("is-show");
+      });
+      $(".func-open-quanhuyen").click(function(){
+      	$("body").addClass("overlay-open");
+      	$("#popup-quanhuyen").addClass("is-show");
+      });
+      $(".func-close-popup").click(function(){
+      	$("body").removeClass("overlay-open");
+      	$(".popup-container").removeClass("is-show");
+      });
+      //- open list popup
+      $(".toggle").click(function(){
+      	$(this).toggleClass('is-active');
+      	$(this).parent().parent().find('ul.child-list').toggleClass('is-show');
+      });
+    </script>
+  </body>
+</html>
