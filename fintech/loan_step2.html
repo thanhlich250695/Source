@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Fintech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body class="newyear-version-hoa-dao">
+    <div class="zFintech-layout">
+      <div class="page-content">
+        <div class="bl-module module-register">
+          <div class="heading is-back is-mt-gutter"><a class="func-back func-open-modal-confirm" href="javascript:void(0);"><i class="icn icn-small-left"></i></a>
+            <h2 class="color-base fs--xl fw-bold">Đăng ký vay tín chấp</h2>
+          </div>
+          <div class="context-register">
+            <div class="form-title">
+              <div><span>Bước 2</span><strong>Xét duyệt</strong></div>
+              <div class="circle-step step-2">
+                <div></div><em>2/4</em>
+              </div>
+            </div>
+            <form>
+              <div class="context-step">
+                <p class="mb-4"><img class="img-tick" src="images/img_tick.png" alt="Zalo Fintech"></p>
+                <p class="fs--l fw-medium mb-3">Bạn có đủ điều kiện để đăng ký gói vay tín dụng!</p>
+                <div class="form-row mb-2">
+                  <div class="col-6"><span class="d-block color-grey fs--s text-uppercase">Số tiền vay tối đa</span><span class="d-block color-main fs--xl fw-medium">300.000.000đ</span></div>
+                  <div class="col-6"><span class="d-block color-grey fs--s text-uppercase">Kỳ hạn vay tối đa</span><span class="d-block color-main fs--xl fw-medium">12 tháng</span></div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col"><span class="d-block color-grey fs--s text-uppercase">Lãi suất</span><span class="d-block color-main fs--xl fw-medium">8%/năm</span></div>
+                </div>
+                <p class="fs--m mb-3">Các thông tin khai báo cần chính xác để gói vay được thông qua một cách nhanh chóng.</p>
+                <p class="fs--m mb-3">Các thông tin có thể thay đổi tuỳ vào quá trình xác thực thông tin của Ngân hàng.</p>
+              </div>
+              <hr class="line mb-3"><a class="btn btn-primary btn--m is-shadow w-100" href="loan_step3.html">Đăng ký hồ sơ vay</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-modal bl-modal-confirm">
+      <div class="modal-container">
+        <div class="bl-modal-heading">
+          <div class="func-close-modal"><i class="icn icn-small-remove"></i></div><span>Thông báo</span>
+        </div>
+        <div class="bl-module module-modal">
+          <!-- Thông báo 1-->
+          <p class="fs--l text-center">[Nội dung thông báo]</p>
+          <div class="d-flex justify-content-center mt-4"><a class="btn btn-default btn--m" href="#!">Hủy bỏ</a><a class="btn btn-primary btn--m m-left-1" href="#!">Đồng ý</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(".func-close-modal").click(function(){
+      	$("body").removeClass("overlay-open");
+      	$(".bl-modal").removeClass("is-show");
+      	$(".bl-popup").removeClass("is-show");
+      });
+      $(".func-open-modal-confirm").click(function(){
+      	$("body").addClass("overlay-open");
+      	$(".bl-modal-confirm").addClass("is-show");
+      });
+    </script>
+  </body>
+</html>

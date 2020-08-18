@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Fintech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="zFintech-layout">
+      <div class="page-content">
+        <div class="bl-module module-register is-premium">
+          <div class="heading is-mt-gutter"><a class="func-back func-open-modal-confirm" href="javascript:void(0);"><i class="icn icn-small-left is-small"></i></a>
+            <h2 class="color-base fs--xl fw-bold is-hide">Đăng ký vay tín chấp</h2>
+            <div class="premium-banner" style="background-image:url('https://via.placeholder.com/750x400')"></div>
+          </div>
+          <div class="context-register">
+            <div class="form-title">
+              <div><span>Bước 2</span><strong>Đăng ký vay</strong></div>
+              <div class="circle-step step-2">
+                <div></div><em>2/4</em>
+              </div>
+            </div>
+            <form>
+              <div class="context-step">
+                <p class="mb-4"><img class="img-tick" src="images/img_tick.png" alt="Zalo Fintech"></p>
+                <p class="fs--l fw-medium mb-3"> Xin chúc mừng, bạn đủ điều kiện đăng ký gói vay Siêu tốc Shinhan</p>
+                <div class="form-row mb-2">
+                  <div class="col-6 mb-2"><span class="d-block color-grey fs--s text-uppercase">Số tiền vay </span><span class="d-block color-main fs--xl fw-medium">10.000.000đ</span></div>
+                  <div class="col-6"><span class="d-block color-grey fs--s text-uppercase">Kỳ hạn tối đa</span><span class="d-block color-main fs--xl fw-medium">36 tháng</span></div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col"><span class="d-block color-grey fs--s text-uppercase">Lãi suất ưu đãi</span><span class="d-block color-main fs--xl fw-medium">16%/năm</span></div>
+                </div>
+                <div class="form-row">
+                  <div class="col"><span class="d-block fs--l mb-3 mt-3 fw-medium"> Thông tin người đăng ký</span>
+                    <input class="name-client is-invalid" type="text" placeholder="Họ và tên của bạn">
+                    <div class="invalid-feedback">Bạn vui lòng nhập tên chính xác</div>
+                  </div>
+                </div>
+                <p class="fs--m mb-3 mt-3">Bằng việc đăng ký hồ sơ vay tại <span class="text-nowrap">FE CREDIT</span>, bạn đồng ý quan tâm tài khoản chính thức của <span class="text-nowrap">FE CREDIT</span> để cập nhật các thông báo quan trọng về khoản vay khi hồ sơ của bạn được giải ngân thành công</p>
+              </div>
+              <hr class="line mb-3"><a class="btn btn-primary btn--m is-shadow w-100" href="loan_custom_step3.html">Đăng ký hồ sơ vay</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-modal bl-modal-confirm">
+      <div class="modal-container">
+        <div class="bl-modal-heading">
+          <div class="func-close-modal"><i class="icn icn-small-remove"></i></div><span>Thông báo</span>
+        </div>
+        <div class="bl-module module-modal">
+          <!-- Thông báo 1-->
+          <p class="fs--l text-center">[Nội dung thông báo]</p>
+          <div class="d-flex justify-content-center mt-4"><a class="btn btn-default btn--m" href="#!">Hủy bỏ</a><a class="btn btn-primary btn--m m-left-1" href="#!">Đồng ý</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/picker.js"></script>
+    <script>
+      $(".func-close-modal").click(function(){
+      	$("body").removeClass("overlay-open");
+      	$(".bl-modal").removeClass("is-show");
+      	$(".bl-popup").removeClass("is-show");
+      });
+      $(".func-open-modal-confirm").click(function(){
+      	$("body").addClass("overlay-open");
+      	$(".bl-modal-confirm").addClass("is-show");
+      });
+    </script>
+  </body>
+</html>

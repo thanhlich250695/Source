@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Fintech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="zFintech-layout">
+      <div class="page-content">
+        <div class="bl-module is-transparent">
+          <div class="d-flex align-items-center"><a class="func-back" href="index.html"><i class="icn icn-small-left"></i></a>
+            <div class="ml-auto d-flex align-items-center"><span class="color-second fs--m mr-3">0 sản phẩm</span><a class="func-filter" href="#!"><i class="icn icn-filter"></i></a></div>
+          </div>
+        </div>
+        <div class="bl-module module-null is-transparent">
+          <div class="text-center"><img class="img-null" src="images/img_search_null.png" alt="Zalo Fintech">
+            <p class="color-base fs--l fw-medium">Không tìm thấy thẻ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script>
+      var slider = document.querySelector('input[type=range]');
+      slider.addEventListener('input', function() {
+      this.setAttribute('value', this.value);
+      }, false);
+      
+      $(".func-close-modal").click(function(){
+      	$("body").removeClass("overlay-open");
+      	$(".bl-modal").removeClass("is-show");
+      	$(".bl-popup").removeClass("is-show");
+      });
+      $(".func-open-modal-compare").click(function(){
+      	$("body").addClass("overlay-open is-scroll");
+      	$(".bl-popup-compare").addClass("is-show");
+      	
+      });
+      $(".func-filter").click(function(){
+      	$("body").addClass("overlay-open");
+      	$(".bl-popup-filter").addClass("is-show");
+      });
+      // Window scroll
+      $(window).scroll(function() {
+      	if ($(this).scrollTop() > 400) {
+      		$('.button-dockbar-support').addClass('is-show');
+      	} else {
+      		$('.button-dockbar-support').removeClass('is-show');
+      	}
+      });
+      //- $(".func-open-modal-compare").click(function(){
+      //- 	$("body").addClass("compare-open");
+      //- 	$("#popup-compare").addClass("is-show");
+      //- });
+      //- $(".func-filter").click(function(){
+      //- 	$("body").addClass("filter-open");
+      //- 	$("#popup-filter").addClass("is-show");
+      //- });
+      
+      //- $(".func-close-modal").click(function(){
+      //- 	setTimeout(function(){
+      //- 		$("body").removeClass("compare-open");
+      //- 		$("body").removeClass("filter-open");
+      //- 	}, 500);
+      //- 	$(".popup-container").removeClass("is-show");
+      //- });
+    </script>
+  </body>
+</html>

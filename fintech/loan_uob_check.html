@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Fintech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="zFintech-layout">
+      <div class="page-content">
+        <div class="bl-module module-register is-premium">
+          <div class="heading is-mt-gutter"><a class="func-back func-open-modal-confirm" href="javascript:void(0);"><i class="icn icn-small-left is-small"></i></a>
+            <h2 class="color-base fs--xl fw-bold is-hide">Đăng ký vay tín chấp</h2>
+            <div class="premium-banner" style="background-image:url('https://via.placeholder.com/750x400')"></div>
+          </div>
+          <div class="context-register">
+            <div class="check text-center">
+              <p class="fs--l mb-4"> Sản phẩm vay này dành riêng cho nhà bán hàng trên sàn thương mại điện tử ở khu vực Tp.HCM</p>
+              <div class="policy func-open-policy"><i class="icn icn-bold-info"></i><span class="d-block fs--m">Điều khoản và điều kiện</span></div>
+            </div><a class="btn btn-primary btn--m is-shadow w-100 mt-4" href="loan_uob.html">Tôi đã hiểu và tiếp tục</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-modal bl-modal-policy">
+      <div class="modal-container">
+        <div class="bl-modal-heading">
+          <div class="func-close-modal"><i class="icn icn-small-remove"></i></div><span>Điều khoản và Điều kiện</span>
+        </div>
+        <div class="bl-module module-modal">
+          <!-- Thông báo 1-->
+          <div class="desc-policy">
+            <p>(a) Tôi đồng ý và cho phép Zalo gửi thông tin tôi cung cấp trong mẫu đơn đăng ký thẻ tín dụng này đến Ngân hàng Citibank, N.A. - Chi nhánh TP. Hồ Chí Minh và Chi nhánh Hà Nội (gọi tắt là "Citibank") để nhằm hỗ trợ tôi mở thẻ tín dụng Citi đã chọn. Xem Điều khoản Riêng tư của Citibank <a class="color-link" href="#!">(tại đây).</a></p>
+            <p>(b) Tôi cho phép Citibank liên hệ tôi về đơn mở thẻ tín dụng Citi của tôi và giới thiệu cho tôi những sản phẩm và dịch vụ liên quan của Citibank thông qua email hoặc số điện thoại mà tôi cung cấp.</p>
+            <p>(c) Tôi cũng đồng ý rằng Citibank có thể thu thập thông tin về tôi hoặc chuyển thông tin tôi đã cung cấp cho trung tâm thông tin tín dụng để xử lý hồ sơ mở thẻ tín dụng Citi của tôi.</p>
+            <p>(d) Nếu tôi đủ điều kiện để nhận được quà tặng theo chương trình khuyến mãi (nếu có) của Zalo, tôi cho phép Citibank thông báo Zalo khi và chỉ khi đơn mở thẻ tín dụng Citi của tôi được duyệt thành công để Zalo có thể gửi trao quà tặng cho tôi.</p>
+            <p>f) Tôi đồng ý và cho phép Zalo được thu thập, sử dụng và tiết lộ thông tin tôi cung cấp trong mẫu đơn mở thẻ tín dụng theo Điều khoản Riêng tư của Zalo.</p>
+          </div>
+          <div class="text-center mt-4"><a class="btn btn-primary btn--m func-close-modal" href="#!">Đồng ý</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/picker.js"></script>
+    <script>
+      $(".func-close-modal").click(function(){
+      	$("body").removeClass("overlay-open");
+      	$(".bl-modal").removeClass("is-show");
+      	$(".bl-popup").removeClass("is-show");
+      });
+      $(".func-open-policy").click(function(){
+      	$("body").addClass("overlay-open");
+      	$(".bl-modal-policy").addClass("is-show");
+      });
+    </script>
+  </body>
+</html>

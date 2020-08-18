@@ -1,0 +1,24 @@
+// Core variables and mixins bourbon
+@import "zalo_core_sass/bourbon";
+
+/* Body */
+html{-webkit-font-smoothing:antialiased}
+body{background:$background;font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-weight;line-height:$line-height;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
+	@media only screen and (max-width: 414px){font-size:calc(100% + 1 * (100vw - 360px)/ 39)}
+	&.is-transparent{background-color:#fff;
+		[class*="layout"]{background-color:transparent}
+	}
+	&.is-bg-white{
+		[class*="layout"]{background-color:#fff;}
+	}
+}
+
+/* Layout */
+[class*="layout"]{position:relative;background-color:$background;max-width:600px;@include margin(0 auto);}
+
+.page-content{position:relative;@include clearfix;
+	@include media-breakpoint-up(md){box-shadow:0 10px 20px rgba(0,0,0,0.15)}
+	::-webkit-scrollbar{display:none;background-color:transparent;width:7px;height:7px}
+	::-webkit-scrollbar-thumb{background-color:transparent;border-radius:10px}
+	::-webkit-scrollbar-track{background:none}
+}
