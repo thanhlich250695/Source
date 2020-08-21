@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{text-align: center;}
+		input{margin-top:20px}
+		.image-preview{margin-top:20px;width: 300px;min-height:100px;background-color:#f2f4f8;display:flex;align-items:center;justify-content:center;border:1px solid grey;margin: 0 auto;}
+		.image-preview img{width: 100%;display: none;}
+		#wrapCanvas{position: relative;}
+		#wrapCanvas .child{position: relative;}
+
+	</style>
+</head>
+<body>
+	<h1>Lấy 1 hình từ thư viện</h1>
+	<div class="block-image">
+		<input type="file" name="" id="inputFile" width="220" height="277">
+		<div class="image-preview" id="imagePreview">
+			<img src="" alt="image-preview__image" id="image-preview__image">
+			<span class="image-preview__text">Image Preview</span>
+		</div>
+	</div>
+	<a href="" id="download" download>download</a>
+	<a href="" id="downloadCanvas" download>download canvas</a>
+	<a  id="canvas">canvas</a>
+	<div id="wrapCanvas">
+		<canvas id="myCanvas" width="240" height="297" style="position:absolute;border:1px solid #d3d3d3;"></canvas>
+		<canvas id="myCanvas2" width="240" height="297" style="border:1px solid #d3d3d3;position:absolute;"></canvas>
+	</div>
+	
+</body>
+	<script src="./main.js"></script>
+</html>
