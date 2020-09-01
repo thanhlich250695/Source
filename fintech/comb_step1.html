@@ -27,12 +27,12 @@
               <div class="step is-here">
                 <div class="ico-wrap">
                   <div class="icn icn-check-circle"></div>
-                </div><span>Tìm gói vay</span>
+                </div><span>Nhập thông tin</span>
               </div>
               <div class="step">
                 <div class="ico-wrap">
                   <div class="icn icn-check-circle"></div>
-                </div><span>Xác nhận gói vay</span>
+                </div><span>Bổ sung thông tin</span>
               </div>
               <div class="step">
                 <div class="ico-wrap">
@@ -69,27 +69,32 @@
               <ul class="package-list">
                 <li>
                   <div class="item-package">
-                    <p>12 tháng</p>
+                    <p>6 tháng</p>
                   </div>
                 </li>
                 <li class="is-active">
+                  <div class="item-package">
+                    <p>12 tháng</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-package">
+                    <p>18 tháng</p>
+                  </div>
+                </li>
+                <li>
                   <div class="item-package">
                     <p>24 tháng</p>
                   </div>
                 </li>
                 <li>
                   <div class="item-package">
+                    <p>30 tháng</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-package">
                     <p>36 tháng</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="item-package">
-                    <p>48 tháng</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="item-package">
-                    <p>60 tháng</p>
                   </div>
                 </li>
               </ul>
@@ -114,49 +119,54 @@
             <div class="title"><span class="fs--l fw-bold color-base">Nhập thông tin người vay</span></div>
             <form>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Họ tên đầy đủ</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Họ tên đầy đủ</label>
                 <input class="form-control" type="text" placeholder="Nhập họ và tên" value="">
               </div>
               <div class="form-group">
-                <label class="d-block mb-2 color-second fs--s fw-medium text-uppercase" for="">Giới tính</label>
-                <div class="custom-control custom-radio custom-control-inline is-min">
-                  <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
-                  <label class="custom-control-label fs--l" for="customRadio1">Nam</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline is-min">
-                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
-                  <label class="custom-control-label fs--l" for="customRadio2">Nữ</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Chứng minh nhân dân</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Chứng minh nhân dân</label>
                 <input class="form-control" type="text" placeholder="" value="285663633">
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Ngày sinh</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Ngày sinh</label>
                 <div class="input-group align-items-center">
                   <input class="form-control js-date-picker" value="1 Sep 1990"><i class="icn icn-calendar-grid"></i>
                 </div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Nơi cư trú hiện tại</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Nơi cư trú hiện tại</label>
                 <div class="select-fa mb-2 func-open-modal-tinh-thanh"><span class="custom-select is-not-select">Chọn tỉnh thành</span></div>
                 <div class="select-fa mb-2 func-open-modal-quan-huyen"><span class="custom-select is-not-select">Chọn quận/huyện </span></div>
                 <div class="select-fa mb-2 func-open-modal-phuong-xa"><span class="custom-select is-not-select">Chọn Phường/xã Chọn Phường/xã Chọn Phường/xã Chọn Phường/xã</span></div>
-                <textarea class="form-control" placeholder="Nhập địa chỉ nhà" name="" cols="30" rows="2"></textarea>
+                <div class="wrap-input">
+                  <div class="form-group">
+                    <input class="form-control is-invalid" type="text" placeholder="Số nhà" value="">
+                    <div class="invalid-feedback">Lorem isum</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control is-invalid" type="text" placeholder="Tên đường" value="">
+                    <div class="invalid-feedback">Lorem isum</div>
+                  </div>
+                </div>
               </div>
               <div class="custom-control custom-checkbox is-min mb-3">
                 <input class="custom-control-input" type="checkbox" id="check1" checked>
                 <label class="custom-control-label fs--m" for="check1">Địa chỉ thường trú cũng là địa chỉ trên</label>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Địa chỉ thường trú</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Địa chỉ thường trú</label>
                 <div class="select-fa mb-2 func-open-modal-tinh-thanh"><span class="custom-select is-not-select">Chọn tỉnh thành</span></div>
                 <div class="select-fa mb-2 func-open-modal-quan-huyen"><span class="custom-select is-not-select">Chọn quận/huyện</span></div>
                 <div class="select-fa mb-2 func-open-modal-phuong-xa"><span class="custom-select is-not-select">Chọn Phường/xã</span></div>
-                <textarea class="form-control" placeholder="Nhập địa chỉ nhà" name="" cols="30" rows="2"></textarea>
+                <div class="wrap-input">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Số nhà" value="">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Tên đường" value="">
+                  </div>
+                </div>
               </div>
-              <div class="button"><a class="btn btn-primary btn--m is-shadow w-100" href="comb_step2.html">tìm gói vay</a></div>
+              <div class="button"><a class="btn btn-primary btn--m is-shadow w-100" href="comb_step2.html">Tìm gói vay</a></div>
             </form>
           </div>
         </div>

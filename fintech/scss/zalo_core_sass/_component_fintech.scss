@@ -20,15 +20,15 @@
 .avatar-img{@include position(absolute,0 null null 0);z-index:1;@include size(100%);@extend %backgroundCover--center;border-radius:100%}
 
 /* Button */
-.btn{display:inline-block;position:relative;background-color:#fff;vertical-align:middle;cursor:pointer;white-space:nowrap;color:$color-base;font-weight:700;line-height:1.25;border:0;text-align:center;@extend %borderRadius--m;@extend %userSelect-none;text-transform:uppercase;box-shadow:inset 0 0 0 1px #999;
+.btn{display:inline-block;position:relative;background-color:#fff;vertical-align:middle;cursor:pointer;white-space:nowrap;color:$color-base;font-weight:700;line-height:1.25;border:0;text-align:center;@extend %borderRadius--m;@extend %userSelect-none;box-shadow:inset 0 0 0 1px #999;
     &:hover{opacity:0.8}
 	&.btn-primary{color:#fff;background-color:tint($color-main,30%);background-image:linear-gradient(to right, $color-main, tint($color-main,30%));box-shadow:none;
 		&.disabled, &[disabled]{background-color:rgba(#D8D8D8,0.2) !important;opacity:1}
 	}
 	&.btn-outline-primary{color:$color-main;box-shadow:inset 0 0 0 1px $color-main}
     &.btn--s{height:33px;@include padding(10px 15px);font-size:0.688em}
-	&.btn--m{height:44px;@include padding(14px 30px);font-size:0.813rem;
-		@media only screen and (max-width : 349px){font-size:0.75rem}
+	&.btn--m{height:44px;@include padding(12px 30px);font-size:1rem;border-radius:8px;
+		@media only screen and (max-width : 349px){font-size:0.75rem;@include padding(14px 30px);}
 	}
 	&.btn--l{@include padding(14px 40px);font-size:0.938rem;
 		@media only screen and (max-width : 349px){font-size:0.813rem}

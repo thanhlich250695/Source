@@ -47,74 +47,92 @@
             </div>
           </div>
         </div>
-        <div class="bl-module module-loan-infor">
+        <div class="bl-module module-loan-infor is-custom-padding">
           <div class="context-loan-infor">
             <div class="r-infor mb-3">
               <div class="logo"><img src="images/logo_easy.png" alt=""></div>
             </div>
-            <div class="r-infor">
+            <div class="r-infor mb-4">
               <p class="desc">Chúng tôi cung cấp khoản vay sau phù hợp với bạn</p>
             </div>
-            <div class="r-infor">
-              <div class="suggest-loan-package">
-                <p>5.000.000 <sup>đ</sup></p>
-                <div class="detect-tooltip"><span>Lãi suất</span><span>5%</span>
-                  <div class="is-tooltip"><i class="icn icn-bold-info"></i>
-                    <div class="content-tooltip"><span class="fs--s color-base mx-0">Số tiền phải trả theo kỳ hạn là ước tính, số tiền thực tế có thể dao động nhẹ theo từng tháng</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="r-infor mb-0"><span class="label">Chọn kỳ hạn</span>
+            <div class="r-infor"><span class="label">Chọn số tiền muốn vay</span>
               <ul class="package-select">
                 <li>
                   <div class="item-package">
                     <div class="ico-wrap"><i class="icn icn-check-small"></i></div>
-                    <div class="time">
-                      <p>6 <small>tháng</small></p>
-                    </div>
-                    <div class="pay"><span>Khoản trả hàng tháng</span>
-                      <p>1.100.000đ</p>
+                    <div class="money">
+                      <p>12</p><span>triệu VND</span>
                     </div>
                   </div>
                 </li>
                 <li class="is-active">
                   <div class="item-package">
                     <div class="ico-wrap"><i class="icn icn-check-small"></i></div>
-                    <div class="time">
-                      <p>12 <small>tháng</small></p>
-                    </div>
-                    <div class="pay"><span>Khoản trả hàng tháng</span>
-                      <p>600.000đ</p>
+                    <div class="money">
+                      <p>15</p><span>triệu VND</span>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="item-package">
                     <div class="ico-wrap"><i class="icn icn-check-small"></i></div>
-                    <div class="time">
-                      <p>24 <small>tháng</small></p>
-                    </div>
-                    <div class="pay"><span>Khoản trả hàng tháng</span>
-                      <p>400.000đ</p>
+                    <div class="money">
+                      <p>28</p><span>triệu VND</span>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
+            <div class="r-infor"><span class="label">Kỳ hạn trả nợ vay</span>
+              <ul class="package-list">
+                <li>
+                  <div class="item-package">
+                    <p>6 tháng</p>
+                  </div>
+                </li>
+                <li class="is-active">
+                  <div class="item-package">
+                    <p>12 tháng</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-package">
+                    <p>24 tháng</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="r-infor">
+              <div class="package-infor">
+                <div class="c-infor">
+                  <div class="label">Lãi suất</div>
+                  <div class="value detect-tooltip"><span>5%/tháng</span><i class="icn icn-bold-info"></i>
+                    <div class="is-tooltip">
+                      <div class="content-tooltip">
+                        <p class="fs--s color-base mx-0">Số tiền phải trả theo kỳ hạn là ước tính, số tiền thực tế có thể dao động nhẹ theo từng tháng</p><span class="func-close-tooltip">Tôi đã hiểu</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-infor">
+                  <div class="label">Ước tính phải trả hàng tháng</div>
+                  <div class="value"><span>1.100.000đ</span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bl-module module-register is-custom-step">
+        <div class="bl-module module-register mt-5">
           <div class="context-register">
             <div class="title"><span class="fs--l fw-bold color-base">Nhập thông tin người vay</span></div>
             <form>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Họ tên đầy đủ <i>(Vui lòng nhập có dấu)</i></label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Họ tên đầy đủ <i>(Vui lòng nhập có dấu)</i></label>
                 <input class="form-control is-invalid" type="text" placeholder="" value="Nguyễn Văn Kha">
                 <div class="invalid-feedback">Bạn vui lòng nhập tên chính xác</div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-2 color-second fs--s fw-medium text-uppercase" for="">Giới tính</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Giới tính</label>
                 <div class="custom-control custom-radio custom-control-inline is-min">
                   <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
                   <label class="custom-control-label fs--l" for="customRadio1">Nam</label>
@@ -125,27 +143,27 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Ngày sinh</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Ngày sinh</label>
                 <div class="input-group align-items-center">
                   <input class="form-control js-date-picker" value="1 Sep 1990"><i class="icn icn-calendar-grid"></i>
                 </div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Chứng minh nhân dân</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Chứng minh nhân dân</label>
                 <input class="form-control" type="text" placeholder="" value="Nguyễn Văn Kha">
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Ngày cấp cmnd</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Ngày cấp cmnd</label>
                 <div class="input-group align-items-center">
                   <input class="form-control js-time" value="1 Sep 1990"><i class="icn icn-calendar-grid"></i>
                 </div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Nơi cấp cmnd</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Nơi cấp cmnd</label>
                 <div class="select-fa func-open-modal-tinh-thanh"><span class="custom-select is-not-select">Chọn nơi cấp</span></div>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Nơi cư trú hiện tại</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Nơi cư trú hiện tại</label>
                 <div class="select-fa mb-2 func-open-modal-tinh-thanh"><span class="custom-select is-not-select is-invalid">Chọn tỉnh thành</span>
                   <div class="invalid-feedback">Bạn vui lòng nhập tên chính xác</div>
                 </div>
@@ -159,7 +177,7 @@
                 <label class="custom-control-label fs--m" for="check1">Địa chỉ thường trú cũng là địa chỉ trên</label>
               </div>
               <div class="form-group">
-                <label class="d-block mb-1 color-second fs--s fw-medium text-uppercase" for="">Địa chỉ thường trú</label>
+                <label class="d-block mb-1 color-base fs--s fw-medium" for="">Địa chỉ thường trú</label>
                 <div class="select-fa mb-2 func-open-modal-tinh-thanh"><span class="custom-select is-not-select">Chọn tỉnh thành</span></div>
                 <div class="select-fa mb-2 func-open-modal-quan-huyen"><span class="custom-select is-not-select">Chọn quận/huyện</span></div>
                 <div class="select-fa mb-2 func-open-modal-phuong-xa"><span class="custom-select is-not-select">Chọn Phường/xã</span></div>

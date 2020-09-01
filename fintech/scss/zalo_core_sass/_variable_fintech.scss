@@ -1,11 +1,11 @@
 $background       : #f2f4f8 !default;
 
 // Color Font
-$color-base       : #000 !default;
+$color-base       : #2C3F58 !default;
 $color-main       : #3842B9 !default;
 $color-second     : #2C2D2E !default;
-$color-text       : #2C3F58 !default; //update v2
-$color-text-second: #8492A4 !default; //update v2
+
+$color-text-second: #778699 !default; //update v2
 $color-text-grey    : rgba(44, 63, 88, 0.4) !default; //update v2
 
 $color-dark       : #000 !default;
@@ -38,7 +38,8 @@ $main_sprites: "../images/main_sprites.png";
 $main_sprites_size: 600px 600px;
 $line-height: 1.42857143;
 //$grid-gutter-width: 30px !default; // bật khi xài bootstrap
-$gutter: 20px;
+
+$gutter: 20px;  //update v2
 
 // font-size
 $size-small:0.75em; //update v2
@@ -46,5 +47,4 @@ $size-normal:0.875em;//update v2
 $size-medium:1em;//update v2
 $size-large:1.125em;//update v2
 $size-xlarge:1.5em;//update v2
-
 
