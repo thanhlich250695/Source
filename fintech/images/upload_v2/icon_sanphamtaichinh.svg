@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fiza_home" transform="translate(-20.000000, -352.000000)">
+            <g id="quick-links" transform="translate(20.000000, 308.000000)">
+                <g id="Group-5" transform="translate(0.000000, 44.000000)">
+                    <g id="Icon/bound" fill="#F0F4F8" fill-rule="nonzero">
+                        <path d="M35,0 C17.5,0 0,0 0,35 C0,70 17.5,70 35,70 C52.5,70 70,70 70,35 C70,0 52.5,0 35,0 Z" id="Path-2"></path>
+                    </g>
+                    <g id="ico-01" transform="translate(18.000000, 22.000000)" stroke-width="2.08695652">
+                        <polygon id="Path" stroke="#FF9B00" fill="#FFECD2" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="38.9008696 31.7843478 24.8 31.7843478 27.7913043 27.9652174 27.7913043 17.0156522 38.9008696 17.0156522"></polygon>
+                        <line x1="27.7913043" y1="21.9547826" x2="38.9008696" y2="21.9547826" id="Path" stroke="#FF9B00" fill="#FFECD2" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="27.7913043" y1="26.8104348" x2="38.9008696" y2="26.8104348" id="Path" stroke="#FF9B00" fill="#FFECD2" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <circle id="Oval" stroke="#FF9B00" fill="#FFECD2" fill-rule="nonzero" cx="24.8" cy="26.24" r="5.54434783"></circle>
+                        <path d="M15.0886957,24.5704348 L2.31652174,24.5704348 C1.13331667,24.4779814 0.248924266,23.4441142 0.340869565,22.2608696 L0.340869565,2.43478261 C0.260846317,1.25805569 1.14100701,0.235333759 2.31652174,0.139130435 L32.5634783,0.139130435 C33.741776,0.231744588 34.6259748,1.25555367 34.546087,2.43478261 L34.546087,12.3547826" id="Path" stroke="#3842B9" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect id="Rectangle" stroke="#FF9B00" fill="#FFECD2" fill-rule="nonzero" x="5.31478261" y="13.3008696" width="9.77391304" height="5.14086957" rx="0.730434783"></rect>
+                        <line x1="5.31478261" y1="7.03304348" x2="8.35478261" y2="7.03304348" id="Path" stroke="#3842B9" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="12.5217391" y1="7.03304348" x2="15.5617391" y2="7.03304348" id="Path" stroke="#3842B9" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="19.7286957" y1="7.03304348" x2="22.7686957" y2="7.03304348" id="Path" stroke="#3842B9" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="26.9286957" y1="7.03304348" x2="29.9756522" y2="7.03304348" id="Path" stroke="#3842B9" stroke-linecap="round" stroke-linejoin="round"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

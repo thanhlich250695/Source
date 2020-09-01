@@ -48,7 +48,7 @@
 
 /* Form */
 input[type="radio"] + label, input[type="checkbox"] + label{@extend %userSelect-none}
-input:not([type="checkbox"]),input:not([type="radio"]),input:not([type="submit"]), select, textarea{display:inline-block;background-color:#fff;width:100%;font-size:0.938rem;font-family:$primary-font;@extend %borderRadius--m;border:1px solid #e2e2e2;-webkit-appearance:none;
+input:not([type="checkbox"]),input:not([type="radio"]),input:not([type="submit"]), select, textarea{display:inline-block;background-color:#fff;width:100%;font-size:1em;font-family:$primary-font;@extend %borderRadius--m;border:1px solid #e2e2e2;-webkit-appearance:none;
     &:focus{outline:0 none}
 	&:disabled{background-color:#eaeaea;color:rgba(0,0,0,0.5);border:solid 1px #ddd}
 	&.is-transparent{@include padding(12px 10px);border:0}
