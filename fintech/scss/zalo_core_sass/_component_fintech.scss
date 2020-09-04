@@ -26,11 +26,11 @@
 		&.disabled, &[disabled]{background-color:rgba(#D8D8D8,0.2) !important;opacity:1}
 	}
 	&.btn-outline-primary{color:$color-main;box-shadow:inset 0 0 0 1px $color-main}
-    &.btn--s{height:33px;@include padding(10px 15px);font-size:0.688em}
-	&.btn--m{height:44px;@include padding(12px 30px);font-size:1rem;border-radius:8px;
-		@media only screen and (max-width : 349px){font-size:0.75rem;@include padding(14px 30px);}
+    &.btn--s{height:34px;@include padding(10px 15px);font-size:$size-small}
+	&.btn--m{height:44px;@include padding(12px 30px);font-size:$size-medium;border-radius:8px;
+		@media only screen and (max-width : 349px){font-size:$size-small;@include padding(14px 30px);}
 	}
-	&.btn--l{@include padding(14px 40px);font-size:0.938rem;
+	&.btn--l{@include padding(14px 40px);font-size:$size-medium;
 		@media only screen and (max-width : 349px){font-size:0.813rem}
 	}
 	&.btn-outline-danger{color:$color-error;background-color:#fff;box-shadow:inset 0 0 0 1px $color-error}
