@@ -3,7 +3,7 @@
 
 /* Body */
 html{-webkit-font-smoothing:antialiased}
-body{background:$background;font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-weight;line-height:$line-height;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
+body{background:$background;color:$color-base;font-family:$primary-font;font-size:$base-font-size;font-weight:$base-font-weight;line-height:$line-height;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
 	@media only screen and (max-width: 414px){font-size:calc(100% + 1 * (100vw - 360px)/ 39)}
 	@media only screen and (max-width: 349px){font-size:calc(100% + 1 * (100vw - 375px)/ 30)}
 	&.is-transparent{background-color:#fff;
