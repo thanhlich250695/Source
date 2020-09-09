@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Ads</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="header is-fixed">
+        <div class="header-container"><a href="javascript:history.back()"><i class="icz icz-left"></i><span>Danh sách quảng cáo</span></a></div>
+        <div class="layer"></div>
+      </div>
+      <div class="body">
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="" value="06/01/2020 - 13/01/2020"><span class="icon is-left"><i class="icz icz-search"></i></span>
+          </div>
+        </div>
+        <div class="section-filter">
+          <div class="filter-group is-outside has-filter-box">
+            <ul>
+              <li><a class="tag is-outlined is-rounded is-active" href="javascript:void(0);">7 ngày gần nhất</a></li>
+              <li><a class="tag is-outlined is-rounded" href="javascript:void(0);">Đang chạy</a></li>
+            </ul>
+            <!-- Add class is-active vào Bộ lọc sau khi đã chạy chức năng lọc --><a class="tag is-outlined is-rounded is-button-filter func-popup-filterAd" href="javascript:void(0);"><i class="icz icz-fill-filter mr-1"> </i>Bộ lọc</a>
+          </div>
+        </div>
+        <div class="title mb-0"><span>35 quảng cáo</span></div>
+        <div class="section-campaign">
+          <div class="item-campaign"><a class="link-item" href="ad_detail_draft.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Bản nháp</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_active.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-success">Đang chạy</p>
+            </div>
+            <div class="action-group">
+              <div class="switch">
+                <input id="switch-1" type="checkbox" checked>
+                <label class="slider round" for="switch-1"></label>
+              </div>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_pause.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Tạm dừng</p>
+            </div>
+            <div class="action-group">
+              <div class="switch">
+                <input id="switch-2" type="checkbox">
+                <label class="slider round" for="switch-2"></label>
+              </div>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_waiting.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-warning">Đang chờ duyệt</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_denied.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-danger">Bị từ chối</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_complete.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Hoàn thành</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-tooltip">
+      <div class="tooltip-container" id="tooltip-default">
+        <div class="bl-tooltip-heading"><span>Tooltip default</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Đang cập nhật...</p>
+        </div>
+      </div>
+      <div class="tooltip-container" id="tooltip-web">
+        <div class="bl-tooltip-heading"><span>Quảng cáo website</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Quảng cáo website là hình thức quảng cáo tăng lượng truy cập về website của doanh nghiệp, cửa hàng.</p>
+          <p>Với hình thức quảng cáo Website, bạn có thể:</p>
+          <ul>
+            <li class="has-icon"><i class="icz icz-fill-check"></i>Chuyển mọi người đến đích như trang web, ứng dụng hoặc cửa hàng (Lượt click đến trang web)</li>
+            <li class="has-icon"><i class="icz icz-fill-check"></i>Tăng số người đi tới ứng dụng trên thiết bị di động hoặc máy tính của mình (Tương tác với ứng dụng)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tooltip-container" id="tooltip-oa">
+        <div class="bl-tooltip-heading"><span>Quảng cáo Zalo OA</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Đang cập nhật...</p>
+        </div>
+      </div>
+      <div class="tooltip-container" id="view-reason">
+        <div class="bl-tooltip-heading"><span>Lý do bị từ chối</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <ul>
+            <li>Nội dung sai chính tả, ngữ pháp.</li>
+            <li>Sản phẩm, dịch vụ cần giấy phép quảng cáo, vui lòng upload bổ sung</li>
+            <li>Vui lòng bổ sung dòng chữ "Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc" trong nội dung hoặc hình ảnh quảng cáo</li>
+          </ul>
+          <p class="has-text-primary has-text-weight-semibold">Lý do khác</p>
+          <ul class="mb-4">
+            <li>Quảng cáo đã bị từ chối do Zalo Ads nghi ngờ trang đích đã bị chỉnh sửa so với thời điểm quảng cáo được duyệt. Vui lòng không chỉnh sửa trang đích sau khi quảng cáo đã duyệt.</li>
+          </ul>
+          <p class="has-text-link has-text-weight-semibold mb-2">Xem thêm Chính sách quảng cáo<i class="icz icz-launch ml-2"></i></p>
+          <p class="has-text-link has-text-weight-semibold">Xem thêm các vi phạm và chính sách duyệt quảng cáo khác<i class="icz icz-launch ml-2"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-popup">
+      <div class="popup-container" id="popup-filterCampaign">
+        <div class="bl-popup-heading"><span>Bộ lọc chiến dịch</span><a class="func-close-popup" href="javascript:void(0)"><i class="icz icz-close"></i></a><a class="func-next" href="javascript:void(0)">Reset</a></div>
+        <div class="bl-popup-context has-fixed">
+          <div class="field mb-4">
+            <div class="control has-icons-right func-open-daterange">
+              <input class="input" type="text" placeholder="06/01/2020 - 13/01/2020"><span class="icon is-right"><i class="icz icz-fill-calendar"></i></span>
+            </div>
+          </div>
+          <div class="checkbox-list">
+            <h4 class="is-size-7 has-text-primary has-text-weight-semibold">Trạng thái chiến dịch</h4>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttcd-1" name="option" type="radio">
+                <label class="label-custom" for="ttcd-1">Tạm dừng</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttcd-2" name="option" type="radio">
+                <label class="label-custom" for="ttcd-2">Đang chạy</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttcd-3" name="option" type="radio">
+                <label class="label-custom" for="ttcd-3">Hoàn tất</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttcd-4" name="option" type="radio">
+                <label class="label-custom" for="ttcd-4">Không chạy</label>
+              </div>
+            </div>
+            <div class="mb-4"></div>
+            <h4 class="is-size-7 has-text-primary has-text-weight-semibold">Loại chiến dịch</h4>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-1" name="option" type="radio">
+                <label class="label-custom" for="lcd-1">QC Zalo Official Account</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-2" name="option" type="radio">
+                <label class="label-custom" for="lcd-2">QC Website</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-3" name="option" type="radio">
+                <label class="label-custom" for="lcd-3">QC Bài viết</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-4" name="option" type="radio">
+                <label class="label-custom" for="lcd-4">QC Album-Bài hát-Video Clip</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-5" name="option" type="radio">
+                <label class="label-custom" for="lcd-5">Tối ưu hóa hiển thị bài PR</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-6" name="option" type="radio">
+                <label class="label-custom" for="lcd-6">QC Video</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-7" name="option" type="radio">
+                <label class="label-custom" for="lcd-7">QC sản phẩm trên Zalo</label>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <button class="button is-primary is-large is-fullwidth">Áp dụng bộ lọc</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup-container" id="popup-filterAd">
+        <div class="bl-popup-heading"><span>Bộ lọc quảng cáo</span><a class="func-close-popup" href="javascript:void(0)"><i class="icz icz-close"></i></a><a class="func-next" href="javascript:void(0)">Reset</a></div>
+        <div class="bl-popup-context has-fixed">
+          <div class="field mb-4">
+            <div class="control has-icons-right">
+              <input class="input" type="text" placeholder="06/01/2020 - 13/01/2020"><span class="icon is-right"><i class="icz icz-fill-calendar"></i></span>
+            </div>
+          </div>
+          <div class="checkbox-list">
+            <h4 class="is-size-7 has-text-primary has-text-weight-semibold">Trạng thái quảng cáo</h4>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-1" name="option" type="radio">
+                <label class="label-custom" for="ttqc-1">Tạo mới</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-2" name="option" type="radio">
+                <label class="label-custom" for="ttqc-2">Chờ duyệt</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-3" name="option" type="radio">
+                <label class="label-custom" for="ttqc-3">Bị từ chối</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-4" name="option" type="radio">
+                <label class="label-custom" for="ttqc-4">Đang chạy</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-5" name="option" type="radio">
+                <label class="label-custom" for="ttqc-5">Tạm dừng</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-6" name="option" type="radio">
+                <label class="label-custom" for="ttqc-6">Hoàn tất</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-7" name="option" type="radio">
+                <label class="label-custom" for="ttqc-7">Dừng hoạt động</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-8" name="option" type="radio">
+                <label class="label-custom" for="ttqc-8">Không chạy (chiến dịch đã tạm dừng)</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="ttqc-9" name="option" type="radio">
+                <label class="label-custom" for="ttqc-9">Không chạy (chờ lịch chạy)</label>
+              </div>
+            </div>
+            <div class="mb-4"></div>
+            <h4 class="is-size-7 has-text-primary has-text-weight-semibold">Loại chiến dịch</h4>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-1" name="option" type="radio">
+                <label class="label-custom" for="lcd-1">QC Zalo Official Account</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-2" name="option" type="radio">
+                <label class="label-custom" for="lcd-2">QC Website</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-3" name="option" type="radio">
+                <label class="label-custom" for="lcd-3">QC Bài viết</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-4" name="option" type="radio">
+                <label class="label-custom" for="lcd-4">QC Album-Bài hát-Video Clip</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-5" name="option" type="radio">
+                <label class="label-custom" for="lcd-5">Tối ưu hóa hiển thị bài PR</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-6" name="option" type="radio">
+                <label class="label-custom" for="lcd-6">QC Video</label>
+              </div>
+            </div>
+            <div class="item-checkbox">
+              <div class="input-group-checkbox is-sr">
+                <input id="lcd-7" name="option" type="radio">
+                <label class="label-custom" for="lcd-7">QC sản phẩm trên Zalo</label>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <button class="button is-primary is-large is-fullwidth">Áp dụng bộ lọc</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-modal">
+      <div class="modal-container" id="modal-alert-1">
+        <div class="bl-modal-heading"><span>Có sự cố trong quá trình tải dữ liệu</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Dữ liệu bị abc xyz . . . .  vui lòng thử lại.</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large is-invisible">Secondary</button>
+            <button class="button is-primary is-large" href="#!">Primary</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-template-1">
+        <div class="bl-modal-heading"><span>{Tiêu đề}</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>{Nội dung}</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large" href="#!">Secondary</button>
+            <button class="button is-primary is-large" href="#!">Primary</button>
+          </div>
+          <div class="buttons is-centered">
+            <button class="button is-fullwidth is-primary is-large" href="#!">Primary</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-confirm-delete">
+        <div class="bl-modal-heading"><span>Thông báo</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Bạn có chắc muốn xóa [name] này?</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large" href="#!">Không</button>
+            <button class="button is-primary is-large" href="#!">Xác nhận</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-editName">
+        <div class="bl-modal-heading"><span>Tên chiến dịch</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <div class="field my-5">
+            <div class="control">
+              <textarea class="textarea is-special" type="textarea" placeholder="Nhập tên chiến dịch">Chiến dịch quảng cáo website Ducphat Bakerry 23/02/2020</textarea>
+            </div>
+          </div>
+          <button class="button is-primary is-large is-fullwidth">Lưu</button>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script>
+      $("#switch-main").change( function(){
+      	if($(this).is(':checked')) {}
+      	else {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-campaign-pause").addClass("is-show");
+      	};
+      });
+      $(".switch input").change( function(){
+      	if($(this).is(':checked')) {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	}
+      	else {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	};
+      });
+      $(".func-modal-editName").click(function(){
+      	$("html").addClass("overlay-modal");
+      	$("#modal-editName").addClass("is-show");
+      });
+      $(".func-close-modal").click(function(){
+      	$("html").removeClass("overlay-modal");
+      	$(".modal-container").removeClass("is-show");
+      });
+      
+      $(".func-tooltip-default").click(function(){
+      	$("body").addClass("overlay-tooltip");
+      	$("#tooltip-default").addClass("is-show");
+      });
+      $(".func-close-tooltip").click(function(){
+      	$("body").removeClass("overlay-tooltip");
+      	$(".tooltip-container").removeClass("is-show");
+      });
+      
+      $(".func-popup-filterAd").click(function(){
+      	$("html").addClass("overlay-popup");
+      	$(window).scrollTop(0);
+      	$("#popup-filterAd").addClass("is-show");
+      });
+      $(".func-close-popup").click(function(){
+      	$("html").removeClass("overlay-popup");
+      	$(".popup-container").removeClass("is-show");
+      });
+    </script>
+  </body>
+</html>

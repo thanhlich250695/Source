@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Ads</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="header is-fixed">
+        <div class="header-container"><a href="javascript:history.back()"><i class="icz icz-left"></i><span>Chi tiết chiến dịch</span></a><a class="func-next btn_createAdCampaignDetail" href="newWeb_ad_in_campaign.html">Tạo QC</a><a class="feature-hidden func-modal-template-1" href="javascript:void(0)" style="position:absolute;top:0;right:0">T/h khi bấm vào Tạo QC bật modal</a></div>
+        <div class="layer"></div>
+      </div>
+      <div class="body">
+        <!-- Case đang chạy-->
+        <div class="is-flex mb-2">
+          <p class="status is-success">Đang chạy</p>
+          <div class="switch ml-auto">
+            <input id="switch-main" type="checkbox" checked>
+            <label class="slider round" for="switch-main"></label>
+          </div>
+        </div>
+        <div class="notification is-info mb-2"><i class="icz icz-fill-bulb"></i>
+          <button class="delete"></button>
+          <h4>Suggest performance on ….</h4>
+          <p>Bạn thử thay đổi nội dung quảng cáo như: Hình ảnh, Mô tả để thu hút người xem hơn.</p>
+          <button class="button is-white is-small has-text-link">Action</button>
+        </div>
+        <!-- Case tạm dừng-->
+        <div class="is-flex mb-2">
+          <p class="status">Tạm dừng</p>
+          <div class="switch ml-auto">
+            <input id="switch-pause" type="checkbox">
+            <label class="slider round" for="switch-pause"></label>
+          </div>
+        </div>
+        <div class="notification is-warning"><i class="icz icz-warning-triangle"></i>
+          <button class="delete"></button>
+          <h4>Tạm dừng vì không đủ tiền trong tài khoản</h4>
+          <p>Số tiền hiện tại trong tài khoản của bạn không đủ để thực hiện quảng cáo Zalo Ads. Vui lòng nạp thêm tiền!</p>
+          <button class="button is-white is-small has-text-link" onclick="window.open('topup.html', '_blank')">Nạp thêm tiền</button>
+        </div>
+        <!-- Case không chạy-->
+        <div class="mb-2">
+          <p class="status">Không chạy</p>
+          <p class="is-size-6">Lý do: Tất cả quảng cáo đều là bản nháp</p>
+        </div>
+        <!-- Case Hoàn thành-->
+        <div class="mb-2">
+          <p class="status">Hoàn thành</p>
+        </div>
+        <hr class="separate is-outside">
+        <div class="section-preview">
+          <div class="heading"><span><i class="ico ico-preview mr-2"></i>Thông tin chiến dịch<a class="func-tooltip func-tooltip-default" href="javascript:void(0);"><i class="icz icz-warning-circle"></i></a></span></div>
+          <div class="section-info">
+            <div class="line-info"><span class="label-info">Tên chiến dịch</span>
+              <div class="context-info"><a class="func-modal-editName" href="#!"><span class="has-text-link">Chiến dịch quảng cáo website Ducphat Bakerry 23/02/2020</span></a></div>
+            </div>
+            <div class="line-info"><span class="label-info">Lịch chạy</span>
+              <div class="context-info"><span>06/01/2020 - 07/01/2020</span></div>
+            </div>
+            <div class="line-info"><span class="label-info">Loại chiến dịch</span>
+              <div class="context-info"><span>Quảng cáo Website</span></div>
+            </div>
+          </div>
+        </div>
+        <hr class="separate is-outside">
+        <div class="section-chart mb-0">
+          <div class="field is-calendar">
+            <div class="control has-icons-right">
+              <input class="input" type="text" placeholder="06/01/2020 - 13/01/2020"><span class="icon is-right"><i class="icz icz-fill-calendar"></i></span>
+            </div>
+          </div>
+          <div class="data-tabs mb-3">
+            <ul>
+              <li><a class="is-active" href="#!">Lượt nhấn</a></li>
+              <li><a href="#!">Chi phí</a></li>
+              <li><a href="#!">Hiển thị</a></li>
+            </ul>
+          </div>
+          <div class="section-chart"><img src="images/chart_data.png" alt="Zalo Ads"></div>
+          <div class="section-info">
+            <div class="line-info"><span class="label-info">Lượt nhấn</span>
+              <div class="context-info"><span>292 lượt</span></div>
+            </div>
+            <div class="line-info"><span class="label-info">Chi phí</span>
+              <div class="context-info"><span>988.000đ</span></div>
+            </div>
+            <div class="line-info"><span class="label-info">Hiển thị</span>
+              <div class="context-info"><span>120,029 lượt</span></div>
+            </div>
+            <div class="line-info"><span class="label-info">CTR</span>
+              <div class="context-info"><span>0.56</span></div>
+            </div>
+            <div class="line-info"><span class="label-info">Người xem</span>
+              <div class="context-info"><span>10.000</span></div>
+            </div>
+          </div>
+          <!--.header-tabs.is-outside.mb-3
+          .header-tabs-container
+          	ul
+          		li
+          			a.is-active(href="#!") Chi phí
+          		li
+          			a(href="#!") Lượt nhấn
+          		li
+          			a(href="#!") Hiển thị
+          		li
+          			a(href="#!") CTR
+          -->
+          <!--.section-chartimg(src="images/chart_performance.png" alt=page)
+          -->
+        </div>
+        <hr class="separate is-outside">
+        <div class="title mb-0"><span>35 quảng cáo</span></div>
+        <div class="section-campaign">
+          <div class="item-campaign"><a class="link-item" href="ad_detail_draft.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Bản nháp</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_active.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-success">Đang chạy</p>
+            </div>
+            <div class="action-group">
+              <div class="switch">
+                <input id="switch-1" type="checkbox" checked>
+                <label class="slider round" for="switch-1"></label>
+              </div>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_pause.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Tạm dừng</p>
+            </div>
+            <div class="action-group">
+              <div class="switch">
+                <input id="switch-2" type="checkbox">
+                <label class="slider round" for="switch-2"></label>
+              </div>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_waiting.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-warning">Đang chờ duyệt</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_denied.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status is-danger">Bị từ chối</p>
+            </div>
+          </div>
+          <div class="item-campaign"><a class="link-item" href="ad_detail_complete.html"></a>
+            <div class="ico-ad" style="background-image:url(https://via.placeholder.com/256x133)"></div>
+            <div class="desc">
+              <h2>Quảng cáo website Nevada</h2>
+              <p>Ngày kết thúc: 23/12/2019</p>
+              <p>Lượt hiển thị: 5.200</p>
+              <p>Lượt nhấn: 1.000</p>
+              <p>Chi phí: 500đ</p>
+              <p class="status">Hoàn thành</p>
+            </div>
+          </div>
+        </div><a class="button is-primary is-light is-fullwidth" href="campaign_detail_more_ads.html">Xem tất cả quảng cáo của chiến dịch</a>
+      </div>
+    </div>
+    <div class="bl-tooltip">
+      <div class="tooltip-container" id="tooltip-default">
+        <div class="bl-tooltip-heading"><span>Tooltip default</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Đang cập nhật...</p>
+        </div>
+      </div>
+      <div class="tooltip-container" id="tooltip-web">
+        <div class="bl-tooltip-heading"><span>Quảng cáo website</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Quảng cáo website là hình thức quảng cáo tăng lượng truy cập về website của doanh nghiệp, cửa hàng.</p>
+          <p>Với hình thức quảng cáo Website, bạn có thể:</p>
+          <ul>
+            <li class="has-icon"><i class="icz icz-fill-check"></i>Chuyển mọi người đến đích như trang web, ứng dụng hoặc cửa hàng (Lượt click đến trang web)</li>
+            <li class="has-icon"><i class="icz icz-fill-check"></i>Tăng số người đi tới ứng dụng trên thiết bị di động hoặc máy tính của mình (Tương tác với ứng dụng)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tooltip-container" id="tooltip-oa">
+        <div class="bl-tooltip-heading"><span>Quảng cáo Zalo OA</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <p>Đang cập nhật...</p>
+        </div>
+      </div>
+      <div class="tooltip-container" id="view-reason">
+        <div class="bl-tooltip-heading"><span>Lý do bị từ chối</span><a class="func-close-tooltip" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-tooltip-context">
+          <ul>
+            <li>Nội dung sai chính tả, ngữ pháp.</li>
+            <li>Sản phẩm, dịch vụ cần giấy phép quảng cáo, vui lòng upload bổ sung</li>
+            <li>Vui lòng bổ sung dòng chữ "Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc" trong nội dung hoặc hình ảnh quảng cáo</li>
+          </ul>
+          <p class="has-text-primary has-text-weight-semibold">Lý do khác</p>
+          <ul class="mb-4">
+            <li>Quảng cáo đã bị từ chối do Zalo Ads nghi ngờ trang đích đã bị chỉnh sửa so với thời điểm quảng cáo được duyệt. Vui lòng không chỉnh sửa trang đích sau khi quảng cáo đã duyệt.</li>
+          </ul>
+          <p class="has-text-link has-text-weight-semibold mb-2">Xem thêm Chính sách quảng cáo<i class="icz icz-launch ml-2"></i></p>
+          <p class="has-text-link has-text-weight-semibold">Xem thêm các vi phạm và chính sách duyệt quảng cáo khác<i class="icz icz-launch ml-2"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-popup">
+    </div>
+    <div class="bl-modal">
+      <div class="modal-container" id="modal-alert-1">
+        <div class="bl-modal-heading"><span>Có sự cố trong quá trình tải dữ liệu</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Dữ liệu bị abc xyz . . . .  vui lòng thử lại.</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large is-invisible">Secondary</button>
+            <button class="button is-primary is-large" href="#!">Primary</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-template-1">
+        <div class="bl-modal-heading"><span>{Tiêu đề}</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>{Nội dung}</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large" href="#!">Secondary</button>
+            <button class="button is-primary is-large" href="#!">Primary</button>
+          </div>
+          <div class="buttons is-centered">
+            <button class="button is-fullwidth is-primary is-large" href="#!">Primary</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-confirm-delete">
+        <div class="bl-modal-heading"><span>Thông báo</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Bạn có chắc muốn xóa [name] này?</p>
+          <div class="buttons is-centered is-2b">
+            <button class="button is-light is-large" href="#!">Không</button>
+            <button class="button is-primary is-large" href="#!">Xác nhận</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container" id="modal-editName">
+        <div class="bl-modal-heading"><span>Tên chiến dịch</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <div class="field my-5">
+            <div class="control">
+              <textarea class="textarea is-special" type="textarea" placeholder="Nhập tên chiến dịch">Chiến dịch quảng cáo website Ducphat Bakerry 23/02/2020</textarea>
+            </div>
+          </div>
+          <button class="button is-primary is-large is-fullwidth">Lưu</button>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script>
+      $("#switch-main").change( function(){
+      	if($(this).is(':checked')) {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	}
+      	else {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	};
+      });
+      $("#switch-pause").change( function(){
+      	if($(this).is(':checked')) {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	}
+      	else {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	};
+      });
+      $(".switch input").change( function(){
+      	if($(this).is(':checked')) {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	}
+      	else {
+      		$("html").addClass("overlay-modal");
+      		$("#modal-template-1").addClass("is-show");
+      	};
+      });
+      $(".func-modal-template-1").click(function(){
+      	$("html").addClass("overlay-modal");
+      	$("#modal-template-1").addClass("is-show");
+      });
+      $(".func-modal-editName").click(function(){
+      	$("html").addClass("overlay-modal");
+      	$("#modal-editName").addClass("is-show");
+      });
+      $(".func-close-modal").click(function(){
+      	$("html").removeClass("overlay-modal");
+      	$(".modal-container").removeClass("is-show");
+      });
+      
+      $(".func-tooltip-default").click(function(){
+      	$("body").addClass("overlay-tooltip");
+      	$("#tooltip-default").addClass("is-show");
+      });
+      $(".func-close-tooltip").click(function(){
+      	$("body").removeClass("overlay-tooltip");
+      	$(".tooltip-container").removeClass("is-show");
+      });
+    </script>
+  </body>
+</html>
