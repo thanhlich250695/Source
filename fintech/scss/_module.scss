@@ -1826,7 +1826,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle{right:-12px;left:auto}
 
 .heading{@include padding(12px null 12px);}
 
-.module-gold-price{
+.module-gold-price{background-color:$color-grey-2;
 	h1.title{font-size:$size-normal;color:$color-base;font-weight:bold;margin-bottom:8px;margin-top:12px;text-align:center;}
 	p.price{color:$color-main;font-size:1.5em;font-weight:800;text-align:center;margin-bottom:5px;}
 	.compare-group{text-align:center;margin-bottom:32px;
@@ -1986,7 +1986,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle{right:-12px;left:auto}
 		}
 	}
 }
-.module-notify-term{padding-bottom:0;
+.module-notify-term{padding-bottom:0;background-color:$color-grey-2;
 	.context-notify-term{display:flex;flex-direction:column;min-height:calc(100vh - 100px);
 		.notify-term-content{flex-grow:1;min-width:0;
 			p{font-size:$size-normal;margin-bottom:$gutter;line-height:22px;
@@ -2016,7 +2016,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle{right:-12px;left:auto}
 				strong{color:$color-base;}
 				@media only screen and (max-width:349px){font-size:10px;margin-top:10px;}
 			}
-			&.is-fixed{@include position(fixed, null 0 0 0);background-color:#fff;@include padding($gutter);border-radius:16px 16px 0 0}
+			&.is-fixed{@include position(fixed, null 0 0 0);background-color:#fff;@include padding($gutter);border-radius:16px 16px 0 0;box-shadow:0 2px 5px rgba(0, 0, 0, 0.12)}
 		}
 		.notify-term-action.is-fixed + .trans-bottom{padding-top:170px;}
 	}
