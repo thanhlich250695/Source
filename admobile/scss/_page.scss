@@ -274,8 +274,9 @@ ul.is-default{
 				.swiper-prev-product-ad{left:4px}
 			}
 			.ads-body + .ads-footer{min-height:46px;margin-top:-$gutter/2}
-			.ads-footer{position:relative;@include padding($gutter/2);text-align:center;
-				.ads-btn{color:$primary;font-size:$size-normal;font-weight:$weight-semibold}
+			.ads-footer{position:relative;@include padding($gutter/2 0);text-align:center;display:flex;align-items:center;
+				p{flex-grow:1;min-width:0;padding-right:$gutter;text-align:left;}
+				.ads-btn{color:$primary;font-size:$size-normal;font-weight:$weight-semibold;flex-shrink:0;}
 			}
 		}
 	}

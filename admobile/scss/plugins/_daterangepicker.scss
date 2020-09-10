@@ -95,8 +95,8 @@
 .daterangepicker .calendar-table .prev span{transform:rotate(135deg)}
 
 
-.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{min-width:32px;width:32px;height:32px;line-height:32px;font-size:$size-normal;font-weight:$weight-semibold;white-space:nowrap;text-align:center;vertical-align:middle;border:1px solid transparent;cursor:pointer;border-radius:4px;
-	@media only screen and (max-width:349px){font-size:$size-small;}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{min-width:32px;width:32px;height:38px;line-height:38px;font-size:$size-normal;font-weight:$weight-semibold;white-space:nowrap;text-align:center;vertical-align:middle;border:1px solid transparent;cursor:pointer;border-radius:4px;
+	@media only screen and (max-width:349px){font-size:$size-small;line-height:32px;height:32px;}
 
 }
 

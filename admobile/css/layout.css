@@ -7802,8 +7802,8 @@ button.dropdown-item.is-active {
 .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
   min-width: 32px;
   width: 32px;
-  height: 32px;
-  line-height: 32px;
+  height: 38px;
+  line-height: 38px;
   font-size: 0.875rem;
   font-weight: 600;
   white-space: nowrap;
@@ -7816,6 +7816,8 @@ button.dropdown-item.is-active {
 @media only screen and (max-width: 349px) {
   .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
     font-size: 0.75rem;
+    line-height: 32px;
+    height: 32px;
   }
 }
 
@@ -11987,13 +11989,29 @@ ul.is-default li:before {
 }
 .section-preview .ads-container.is-product-ad .ads-footer {
   position: relative;
-  padding: 8px;
+  padding: 8px 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-preview .ads-container.is-product-ad .ads-footer p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 0;
+  padding-right: 16px;
+  text-align: left;
 }
 .section-preview .ads-container.is-product-ad .ads-footer .ads-btn {
   color: #1745cf;
   font-size: 0.875rem;
   font-weight: 600;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .section-preview .section-ul {
   margin-right: -16px;
