@@ -329,7 +329,7 @@ ul.is-default{
 		&:last-child, &.is-nonbdr{border-bottom:0}
 		span.label-info{flex-shrink:0;width:50%;padding-right:$gutter;color:$grey}
 		.context-info{flex-grow:1;min-width:0;margin-left:auto;text-align:right;
-			span{color:$text;word-break:break-word;}
+			span{color:$text;word-break:break-word; direction:ltr;}
 		}
 		&.is-stk{flex-direction:column;align-items:center;background-color:$background-primary;@include margin(null $gutter);@include padding($gutter);@extend %is-radius;
 			span.label-info{width:100%;text-align:center;color:$text;font-weight:$weight-semibold}

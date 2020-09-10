@@ -1,6 +1,11 @@
-.result-daterangepicker{display:flex;align-items:center;background-color:$background-primary;@include padding(16px);@include margin(-16px);margin-top:-14px;
+.result-daterangepicker{display:flex;align-items:center;background-color:$background-primary;@include padding(12px 16px);@include margin(-16px);margin-top:-14px;
 	.label{flex-grow:1;min-width:0;margin-bottom:0;}
 	.date{flex-shrink:0;padding-left:15px;color:$text;font-size:$size-normal;font-weight:$weight-semibold;}
+	@media only screen and (max-width:349px){@include padding(12px 16px);
+		.label{font-size:$size-small}
+		.date{font-size:$size-small}
+
+	}
 }
 .func-select-ranges{display:flex;position:relative;align-items:center;border:1px solid #93989E;border-radius:$radius;@include padding(9px $gutter);
 	span{flex-grow:1;min-width:0;padding-right:10px;font-size:$size-medium;font-weight:$weight-semibold;}
@@ -20,6 +25,18 @@
 			}
 			&:last-child{
 				&:after{display:none;}
+			}
+		}
+	}
+	@media only screen and (max-width:349px){
+		span{font-size:$size-normal;}
+		.checkbox-list{
+			.item-checkbox{
+				.input-group{
+					label.label-custom{
+						span{font-size:0.75em;}
+					}
+				}
 			}
 		}
 	}
@@ -78,10 +95,16 @@
 .daterangepicker .calendar-table .prev span{transform:rotate(135deg)}
 
 
-.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{min-width:32px;width:32px;height:38px;line-height:38px;font-size:$size-normal;font-weight:$weight-semibold;white-space:nowrap;text-align:center;vertical-align:middle;border:1px solid transparent;cursor:pointer;border-radius:4px}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{min-width:32px;width:32px;height:32px;line-height:32px;font-size:$size-normal;font-weight:$weight-semibold;white-space:nowrap;text-align:center;vertical-align:middle;border:1px solid transparent;cursor:pointer;border-radius:4px;
+	@media only screen and (max-width:349px){font-size:$size-small;}
+
+}
 
 .daterangepicker .calendar-table th{color:$primary}
-.daterangepicker .calendar-table th.month{color:$text;font-weight:700;font-size:$size-medium;}
+.daterangepicker .calendar-table th.month{color:$text;font-weight:700;font-size:$size-medium;
+	@media only screen and (max-width:349px){font-size:$size-normal;}
+
+}
 .daterangepicker .calendar-table{background-color:$white;}
 
 .daterangepicker .calendar-table table{width:100%;@include margin(0);border-spacing:0;border-collapse:collapse}

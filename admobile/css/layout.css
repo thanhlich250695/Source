@@ -7491,7 +7491,7 @@ button.dropdown-item.is-active {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f1f4fd;
-  padding: 16px;
+  padding: 12px 16px;
   margin: -16px;
   margin-top: -14px;
 }
@@ -7509,6 +7509,17 @@ button.dropdown-item.is-active {
   color: #242e42;
   font-size: 0.875rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 349px) {
+  .result-daterangepicker {
+    padding: 12px 16px;
+  }
+  .result-daterangepicker .label {
+    font-size: 0.75rem;
+  }
+  .result-daterangepicker .date {
+    font-size: 0.75rem;
+  }
 }
 
 .func-select-ranges {
@@ -7613,6 +7624,14 @@ button.dropdown-item.is-active {
 }
 .func-select-ranges .checkbox-list .item-checkbox:last-child:after {
   display: none;
+}
+@media only screen and (max-width: 349px) {
+  .func-select-ranges span {
+    font-size: 0.875rem;
+  }
+  .func-select-ranges .checkbox-list .item-checkbox .input-group label.label-custom span {
+    font-size: 0.75em;
+  }
 }
 
 .daterangepicker {
@@ -7783,8 +7802,8 @@ button.dropdown-item.is-active {
 .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
   min-width: 32px;
   width: 32px;
-  height: 38px;
-  line-height: 38px;
+  height: 32px;
+  line-height: 32px;
   font-size: 0.875rem;
   font-weight: 600;
   white-space: nowrap;
@@ -7793,6 +7812,11 @@ button.dropdown-item.is-active {
   border: 1px solid transparent;
   cursor: pointer;
   border-radius: 4px;
+}
+@media only screen and (max-width: 349px) {
+  .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    font-size: 0.75rem;
+  }
 }
 
 .daterangepicker .calendar-table th {
@@ -7803,6 +7827,11 @@ button.dropdown-item.is-active {
   color: #242e42;
   font-weight: 700;
   font-size: 1rem;
+}
+@media only screen and (max-width: 349px) {
+  .daterangepicker .calendar-table th.month {
+    font-size: 0.875rem;
+  }
 }
 
 .daterangepicker .calendar-table {
@@ -12137,6 +12166,7 @@ ul.is-default li:before {
 .section-info .line-info .context-info span {
   color: #242e42;
   word-break: break-word;
+  direction: ltr;
 }
 .section-info .line-info.is-stk {
   -webkit-box-orient: vertical;
