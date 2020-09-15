@@ -1,0 +1,65 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+// Tooltip
+.bl-tooltip{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:rgba(#35425B, 0.85);overflow:hidden;
+	&.is-hidden{z-index:-1!important;opacity:0!important;visibility:hidden!important;}
+}
+.overlay-tooltip{}
+.overlay-tooltip{
+	.bl-tooltip{z-index:1001;opacity:1;visibility:visible;@extend %tr-all;
+		.tooltip-container{
+			&.is-show{bottom:0;@extend %tr-all;}
+		}
+	}
+}
+.bl-tooltip{
+	.tooltip-container{@include position(absolute, null);bottom:-100%;background-color:#fff;width:100%;border-top-left-radius:$gutter;border-top-right-radius:$gutter;overflow:hidden;
+		@include from($tablet){left:50%;width:600px;margin-left:-300px}
+		.bl-tooltip-heading{display:flex;justify-content:space-between;align-items:center;height:50px;@include padding(null $gutter);border-bottom:1px solid $border;
+			span{color:$text;font-size:$size-medium;font-weight:$weight-semibold}
+			.func-close-tooltip{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:inherit;
+				[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+			}
+		}
+		.bl-tooltip-context{max-height:400px;@include padding($gutter);font-size:$size-normal;overflow-y:scroll;-webkit-overflow-scrolling:touch;
+			p{margin-bottom:$gutter}
+			ul{
+				li{position:relative;margin-bottom:$gutter;padding-left:20px;
+					[class^=icz]{@include position(absolute, 2px null null 0);@include size(16px);@include padding(2px);color:$primary;font-size:0.75rem;vertical-align:middle}
+				}
+			}
+			@media only screen and (max-height:600px){max-height:280px}
+		}
+	}
+}
+
+// Modal
+.bl-modal{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:rgba(#35425B, 0.85);overflow:hidden;
+	&.is-hidden{z-index:-1!important;opacity:0!important;visibility:hidden!important;}
+}
+.overlay-modal{overflow:hidden;}
+.overlay-modal{
+	.bl-modal{z-index:1002;opacity:1;visibility:visible;@extend %tr-all;
+		.modal-container{
+			&.is-show{top:64px;transition:all 0.35s ease;}
+		}
+	}
+}
+.bl-modal{
+	.modal-container{@include position(absolute, null $gutter);top:-100%;background-color:#fff;@extend %is-radius;overflow:hidden;
+		@include from($tablet){left:50%;width:600px;margin-left:-300px}
+		.bl-modal-heading{display:flex;justify-content:space-between;align-items:center;height:50px;@include padding(null $gutter);border-bottom:1px solid $border;
+			span{color:$text;font-size:$size-medium;font-weight:$weight-semibold}
+			.func-close-modal{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:inherit;
+				[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+			}
+		}
+		.bl-modal-context{@include padding($gutter);
+			p{margin-bottom:$gutter}
+			.buttons.is-2b{@include margin(null (-$gutter/2));
+				.button{flex-shrink:0;width:calc(50% - 16px);@include margin(null ($gutter/2))}
+			}
+		}
+	}
+}
