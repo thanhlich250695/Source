@@ -95,7 +95,7 @@ select:invalid{color:#ccc}
 				svg{@include size($size-small)}
 				span{font-size:$size-medium;font-weight:$weight-semibold;padding-left:6px;color:#242424}
 			}
-			a.func-close{@include size(24px);border:0.5px dashed $grey-light;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;
+			a.func-close{@include size(24px);border:1px dashed #dedede;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;
 				svg{@include size($size-normal);}
 			}
 		}
