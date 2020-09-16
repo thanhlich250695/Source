@@ -39,8 +39,8 @@
               <div class="group-cta">
                 <div class="context step1"><span class="text">Các thao tác mà bạn có thể thực hiện</span>
                   <ul class="cta-list">
-                    <li><span class="cta cta-1"><a class="button is-medium" href="#!">Ẩn quảng cáo này</a></span></li>
-                    <li><span class="cta cta-2"><a class="button is-medium" href="#!">Báo xấu quảng cáo</a></span></li>
+                    <li><a class="button is-medium cta cta-1" href="#!">Ẩn quảng cáo này</a></li>
+                    <li><a class="button is-medium cta cta-2" href="#!">Báo xấu quảng cáo</a></li>
                   </ul><span class="text-footer"><span class="content">Quảng cáo từ adtima</span></span>
                 </div>
                 <div class="context step2 step2-ads-hide hidden"><span class="text">Vui lòng chia sẻ lý do bạn muốn ẩn quảng cáo này</span>
@@ -72,7 +72,7 @@
                   </ul>
                   <div class="notify-terms">
                     <div class="context-terms"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M6 0C2.691 0 0 2.691 0 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 9.5a.5.5 0 110-1 .5.5 0 010 1zm.791-3.179a.502.502 0 00-.291.455V7a.5.5 0 11-1 0v-.224c0-.584.343-1.119.873-1.363.509-.235.877-.858.877-1.163C7.25 3.561 6.69 3 6 3s-1.25.561-1.25 1.25a.5.5 0 11-1 0C3.75 3.01 4.76 2 6 2s2.25 1.01 2.25 2.25c0 .676-.586 1.669-1.459 2.071z" fill="#AAA" fill-rule="nonzero"/></svg><span>Tìm hiểu thêm về <a href="#!" target="_blank"> chính sách quảng cáo</a> của chúng tôi</span></div>
-                  </div><span class="text-footer"><span class="cta-footer"><a class="button is-primary is-medium" href="#!" disabled>Xác nhận</a></span></span>
+                  </div><span class="text-footer"><a class="button is-primary is-medium" href="#!" disabled>Xác nhận</a></span>
                 </div>
                 <div class="context step2 step2-ads-report hidden"><span class="text">Vui lòng chia sẻ lý do bạn muốn báo xấu quảng cáo này</span>
                   <ul class="checkbox-list">
@@ -107,7 +107,7 @@
                   </ul>
                   <div class="notify-terms">
                     <div class="context-terms"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M6 0C2.691 0 0 2.691 0 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 9.5a.5.5 0 110-1 .5.5 0 010 1zm.791-3.179a.502.502 0 00-.291.455V7a.5.5 0 11-1 0v-.224c0-.584.343-1.119.873-1.363.509-.235.877-.858.877-1.163C7.25 3.561 6.69 3 6 3s-1.25.561-1.25 1.25a.5.5 0 11-1 0C3.75 3.01 4.76 2 6 2s2.25 1.01 2.25 2.25c0 .676-.586 1.669-1.459 2.071z" fill="#AAA" fill-rule="nonzero"/></svg><span>Tìm hiểu thêm về <a href="#!" target="_blank"> chính sách quảng cáo</a> của chúng tôi</span></div>
-                  </div><span class="text-footer"><span class="cta-footer"><a class="button is-primary is-medium" href="#!" disabled>Xác nhận</a></span></span>
+                  </div><span class="text-footer"><a class="button is-primary is-medium cta-footer" href="#!" disabled>Xác nhận</a></span>
                 </div>
               </div>
             </div>
@@ -133,10 +133,10 @@
       	var lengthChecked = groupInput.length;
       	for(let i = 0; i<= lengthChecked; i++){
       		if(groupInput.length ===0){
-      			$(".cta-footer a.button").attr("disabled","disabled");
+      			$(".text-footer a.button").attr("disabled","disabled");
       		}
       		else{
-      			$(".cta-footer a.button").removeAttr("disabled");
+      			$(".text-footer a.button").removeAttr("disabled");
       		}
       	}
       });

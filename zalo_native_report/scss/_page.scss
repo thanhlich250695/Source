@@ -119,12 +119,10 @@ select:invalid{color:#ccc}
 					}
 					.cta-list{@include padding(null 32px);
 						li{
-							.cta{
-								a.button{width:100%;border:1px solid #CCCCCC;font-size:$size-medium;font-weight:$weight-normal;color:#242424;
-									&:focus,&:hover{background-color:red}
-								}
-								// background-color:#f5f5f5
+							a.button{width:100%;border:1px solid #CCCCCC;font-size:$size-medium;font-weight:$weight-normal;color:#242424;
+								&:focus,&:hover{background-color:red}
 							}
+							// background-color:#f5f5f5
 							&:last-child{margin-top:10px;}
 						}
 					}
@@ -155,13 +153,10 @@ select:invalid{color:#ccc}
 					}
 					.text-footer{display:flex;align-items:center;margin-top:14px;@include padding(null 32px);justify-content:center;background-color:$white;
 						@media only screen and (max-width:349px){@include padding(null 14px)}
-						span.cta-footer{@include padding(10px null);width:100%;
-							a.button{width:100%;background-color:#1A55DB;
-								&:hover,&:focus{background:red;}
-							}
+						a.button{width:100%;background-color:#1A55DB;@include margin(10px null);
+							&:hover,&:focus{background:red;}
 						}
 						span.content{font-size:$size-small;color:#cccccc;@include padding(6px);user-select:none;}
-						
 					}
 					&.hidden.step1{opacity:0;margin-left:-100%;height:0;}
 					&.step2.hidden{opacity:0;margin-right:-100%;height:0}
