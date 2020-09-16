@@ -42,6 +42,8 @@ $button-static-border-color: $border !default
   font-size: $size-normal
 =button-medium
   font-size: $size-medium
+  height: 40px
+  border-radius: 10px
 =button-large
   height: 3em
   font-size: $size-medium
@@ -144,9 +146,10 @@ $button-static-border-color: $border !default
         color: $color-invert
       &[disabled],
       fieldset[disabled] &
-        background-color: $color
+        background-color: #F0F0F0 !important
         border-color: transparent
         box-shadow: none
+        color: #C1C1C1 !important
       &.is-inverted
         background-color: $color-invert
         color: $color
@@ -245,7 +248,6 @@ $button-static-border-color: $border !default
     background-color: $button-disabled-background-color
     border-color: $button-disabled-border-color
     box-shadow: $button-disabled-shadow
-    opacity: $button-disabled-opacity
   &.is-fullwidth
     display: flex
     width: 100%
