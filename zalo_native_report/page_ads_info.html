@@ -126,11 +126,18 @@
       $(".cta-2").click(function(){
       	$(".step1").addClass('hidden');
       	$(".step2-ads-report").removeClass('hidden');
-      
       });
+      
       $("input[type='checkbox']").change(function(event){
-      	if(this.checked){
-      		$(".cta-footer a.button").removeAttr("disabled");
+      	var groupInput = document.querySelectorAll(".checkbox-list .item-opt input[type='checkbox']:checked");
+      	var lengthChecked = groupInput.length;
+      	for(let i = 0; i<= lengthChecked; i++){
+      		if(groupInput.length ===0){
+      			$(".cta-footer a.button").attr("disabled","disabled");
+      		}
+      		else{
+      			$(".cta-footer a.button").removeAttr("disabled");
+      		}
       	}
       });
     </script>

@@ -114,7 +114,9 @@ select:invalid{color:#ccc}
 			.group-cta{background-color:#EDEDED;position:relative;@extend %tr-all;display:flex;
 				.context{visibility: visible;opacity:1;@extend %tr-all;margin-left:0;width:100%;height:inherit;
 					&.step2{margin-left:inherit;margin-right:0;}
-					.text{display:block;text-align:center;font-size:0.813em;color:#666666;margin-bottom:14px;@include padding(14px 14px null);letter-spacing:-0.5px;}
+					.text{user-select:none;display:block;text-align:center;font-size:0.813em;color:#666666;margin-bottom:14px;@include padding(14px 4px null);letter-spacing:-0.22px;
+						@media only screen and (max-width:349px){font-size:$size-small;}
+					}
 					.cta-list{@include padding(null 32px);
 						li{
 							.cta{
@@ -155,7 +157,7 @@ select:invalid{color:#ccc}
 						span.cta-footer{@include padding(10px null);width:100%;
 							a.button{width:100%;background-color:#1A55DB;}
 						}
-						span.content{font-size:$size-small;color:#cccccc;@include padding(6px);}
+						span.content{font-size:$size-small;color:#cccccc;@include padding(6px);user-select:none;}
 						
 					}
 					&.hidden.step1{opacity:0;margin-left:-100%;height:0;}
