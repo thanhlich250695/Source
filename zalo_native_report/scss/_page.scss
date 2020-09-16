@@ -121,7 +121,7 @@ select:invalid{color:#ccc}
 						li{
 							.cta{
 								a.button{width:100%;border:1px solid #CCCCCC;font-size:$size-medium;font-weight:$weight-normal;color:#242424;
-									&:focus{background-color:#f5f5f5}
+									&:focus,&:hover{background-color:#f5f5f5}
 								}
 							}
 							&:last-child{margin-top:10px;}
