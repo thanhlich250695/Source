@@ -29,6 +29,8 @@ $(document).ready(function(){
 	})
 	
 	// chi phí quảng cáo
+	$('.for-auto-timelife').show();
+	$('.for-auto-tip').hide();
 	$('.group-ins .line-multiInput .auto-timelife input').click(function(){
         $('.for-auto-timelife').show();
         $('.for-auto-tip').hide();
