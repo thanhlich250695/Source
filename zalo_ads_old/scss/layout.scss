@@ -1,0 +1,229 @@
+// Core variables and mixins bourbon
+@import "bourbon/bourbon";
+
+@import "variable";
+@import "mixin_lib";
+@mixin widborder($widt,$widr,$widb,$widl){border-radius:$widt $widr $widb $widl;-moz-border-radius:$widt $widr $widb $widl;-webkit-border-radius:$widt $widr $widb $widl}
+@mixin radius($wid){border-radius:$wid;-moz-border-radius:$wid;-webkit-border-radius:$wid}
+
+// extension
+
+%clearfix{@include clearfix }
+%center{@include margin(null auto)}
+%transition{@include transition($transition-delay)} 
+%dropshadow{@include box-shadow($shadow)}
+%list-none{list-style:none;@include margin(0);@include padding(0)}
+
+%color-base{color:$color-base}
+%color-main{color:$color-main}
+%color-second{color:$color-main}
+.zad-old{
+	.clearfix{@extend %clearfix }
+	.space{@include padding(5px null)}
+	.space.x2{@include padding(10px null)}
+	.space.x3{@include padding(15px null)}
+	.space.x4{@include padding(20px null)}
+	.trans{@include transition(all 0.25s cubic-bezier(.53,.01,.35,1.5))}
+	.radius-base{@include radius(5px)}
+	.radius-main{@include radius(3px)}
+	.radius-none{@include radius(0)}
+	.show-on-small{display:none!important}
+	.show-inline-on-small{display:none!important}
+	@media only screen and (max-width:$large-screen){
+		.show-on-small{display:block!important}
+		.show-inline-on-small{display:inline-block!important}
+	}
+	@media only screen and (max-width:$large-screen){
+		.hide-on-med-and-down{display:none!important}
+	}
+	@media only screen and (max-width:1140px){
+		.hide-on-ipad{display:none!important}
+	}
+	@media only screen and (max-width:$small-screen){
+		.hide-on-small{display:none!important}
+	}
+}
+/* #Fonts
+================================================== */
+@font-face{font-family:"Roboto";font-weight:300;font-style:normal;src:url("../fonts/roboto/roboto-light-webfont.eot") format("embedded-opentype");
+src:url("../fonts/roboto/roboto-light-webfont.eot?#iefix") format("embedded-opentype"),
+url("../fonts/roboto/roboto-light-webfont.woff") format("woff"),
+url("../fonts/roboto/roboto-light-webfont.ttf") format("ttf"),
+url("../fonts/roboto/roboto-light-webfont.svg#roboto") format("svg")
+}
+@font-face{font-family:"Roboto";font-weight:500;font-style:normal;src:url("../fonts/roboto/roboto-medium-webfont.eot") format("embedded-opentype");
+src:url("../fonts/roboto/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"),
+url("../fonts/roboto/roboto-medium-webfont.woff") format("woff"),
+url("../fonts/roboto/roboto-medium-webfont.ttf") format("ttf"),
+url("../fonts/roboto/roboto-medium-webfont.svg#roboto") format("svg")
+}
+@font-face{font-family:"Roboto";font-weight:normal;font-style:normal;src:url("../fonts/roboto/roboto-regular-webfont.eot") format("embedded-opentype");
+src:url("../fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"),
+url("../fonts/roboto/roboto-regular-webfont.woff") format("woff"),
+url("../fonts/roboto/roboto-regular-webfont.ttf") format("ttf"),
+url("../fonts/roboto/roboto-regular-webfont.svg#roboto") format("svg")
+}
+@font-face{font-family:"Roboto";font-weight:bold;font-style:normal;src:url("../fonts/roboto/roboto-bold-webfont.eot") format("embedded-opentype");
+src:url("../fonts/roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"),
+url("../fonts/roboto/roboto-bold-webfont.woff") format("woff"),
+url("../fonts/roboto/roboto-bold-webfont.ttf") format("ttf"),
+url("../fonts/roboto/roboto-bold-webfont.svg#roboto") format("svg")
+}
+@font-face{font-family:"Roboto";font-weight:normal;font-style:italic;src:url("../fonts/roboto/roboto-italic-webfont.eot") format("embedded-opentype");
+src:url("../fonts/roboto/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"),
+url("../fonts/roboto/roboto-italic-webfont.woff") format("woff"),
+url("../fonts/roboto/roboto-italic-webfont.ttf") format("ttf"),
+url("../fonts/roboto/roboto-italic-webfont.svg#roboto") format("svg")
+}
+
+/* #Default
+================================================== */
+$primary-font:"Roboto", Helvetica Neue, Arial, sans-serif;
+$max-width:1400px;
+$main_sprites:"../images/main_sprites.1.0.15.png";
+$main_sprites_1x:"../images/main_sprites_1x.1.0.15.png";
+$main_sprites_size:400px 400px;
+$i_campaign:"../images/i_campaign.1.0.5.png";
+$i_campaign_1x:"../images/i_campaign_1x.1.0.4.png";
+$i_campaign_size:432px 36px;
+$i_campaign_active:"../images/i_campaign_active.1.0.1.png";
+$i_tools:"../images/editor_sprites.png";
+$i_tools_size:200px 200px;
+$line-height:1.42857143;
+$gutter-width:10px;
+
+/* #Reset
+================================================== */
+@import "reset";
+
+/* #Header
+================================================== */
+@import "header";
+
+/* #Sidebar
+================================================== */
+@import "slidebars";
+
+/* #Component
+================================================== */
+@import "component";
+
+/* #Module
+================================================== */
+@import "module";
+
+/* #Create
+================================================== */
+@import "create";
+
+/* #Modal
+================================================== */
+@import "modal";
+
+/* #Form
+================================================== */
+@import "form";
+
+/* #Table
+================================================== */
+@import "table";
+
+/* #mCustomScrollbar
+================================================== */
+@import "scrollbar";
+
+/* #datetimepicker
+================================================== */
+@import "datetimepicker";
+
+/* #daterangepicker
+================================================== */
+// @import "daterangepicker";
+
+/* #select
+================================================== */
+@import "bootstrapselect";
+
+/* #datatables
+================================================== */
+@import "datatables";
+
+@import "jquery.zaloimageupload";
+
+/* #zaloAds
+================================================== */
+@import "zaloAds";
+
+/* #indicator
+================================================== */
+@import "loading";
+
+/* #boostads
+================================================== */
+@import "boostads";
+
+/* #shame
+================================================== */
+@import "shame";
+@import "_mixin_lib";
+
+/* #swiper
+================================================== */
+//@import "swiper.min";
+@import "wheelcolorpicker";
+
+html, body{overflow-x:hidden}
+[canvas=container] {
+    padding-bottom: 50px;
+    &.hide-footer {
+        padding-bottom: 0;
+    }
+    &.hide-footer-on-med-and-down {
+        @media only screen and (max-width: $large-screen){
+            padding-bottom: 0;
+        }
+    }
+}
+body.zad-old > iframe {display:none!important;}
+.zad-old{
+	a{cursor:pointer}
+	.hide{display:none}
+	.max-width-350{max-width:350px}
+	.color-red{color:red!important}
+	.color-gray,.color-gray *{color:#888!important}
+	.font-bold{font-weight:bold!important;}
+	.pointer{cursor:pointer}
+	.visibility-hidden{visibility:hidden}
+	.firstLetterUpper{text-transform:lowercase;
+		&:first-letter{text-transform: uppercase}
+	}
+}
+
+/* #All Page
+================================================== */
+.zad-old{
+	.wrap-content{position:relative;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0px);
+		&.has-feedback{padding-bottom:60px}
+		.wrap-inside{max-width:$max-width;margin:24px auto 0;padding:0 15px;min-height:280px;
+			.content-page{float:none;width:100%;padding:0;
+				.page-inside{position:relative;@include radius(4px);box-shadow:1px 0 2px 0 rgba(130, 130, 130, 0.5)}
+				.page-outside{position:relative;margin-bottom:10px;@include clearfix;
+					@media only screen and (max-width:$large-screen){margin-bottom:0}
+				}
+			}
+			@media only screen and (max-width:$large-screen){margin-top:15px;padding:0}
+		}
+	}
+	.maintenance{display:block;background-color:#fff;max-width:700px;margin:0 auto;padding:40px 20px 20px;text-align:center;@include radius(3px);box-shadow:0 1px 2px 0 rgba(0,0,0,0.15);overflow:hidden;
+		p{color:$color-second;font-size:1em;line-height:1.6;letter-spacing:0.2px;
+			strong{color:#000;font-size:1.75em;font-weight:500}
+		}
+	}
+	.page-404{display:block;background-color:#fff;max-width:700px;margin:100px auto 0;padding:40px 50px 20px;text-align:center;@include radius(3px);box-shadow:0 1px 2px 0 rgba(0,0,0,0.15);
+		p{color:$color-second;font-size:0.875em;line-height:1.6;
+			strong{display:block;margin-bottom:15px;color:#000;font-size:1.75em;font-weight:500}
+		}
+		.i-denied{display:block;margin:-110px auto 20px}
+	}
+}
+@import "custom_style";

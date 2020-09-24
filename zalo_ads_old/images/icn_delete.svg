@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>trash-simple</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lookalike" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="2.0-Manage_Audience" transform="translate(-1266.000000, -298.000000)" stroke="#298FE4" stroke-width="1.35">
+            <g id="table" transform="translate(95.000000, 250.000000)">
+                <g id="Group" transform="translate(0.000000, 44.000000)">
+                    <g id="button" transform="translate(1167.000000, 0.000000)">
+                        <g id="trash-simple" transform="translate(5.000000, 5.000000)">
+                            <path d="M12,5 L12,12.7142857 C12,13.4243661 11.4403559,14 10.75,14 L3.25,14 C2.55964406,14 2,13.4243661 2,12.7142857 L2,5" id="Path" stroke-linejoin="round"></path>
+                            <line x1="0" y1="2.5" x2="14" y2="2.5" id="Path" stroke-linejoin="round"></line>
+                            <polyline id="Path" points="5 1 5 0 9 0 9 1"></polyline>
+                            <line x1="5.5" y1="7" x2="5.5" y2="11" id="Path" stroke-linejoin="round"></line>
+                            <line x1="8.5" y1="7" x2="8.5" y2="11" id="Path" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

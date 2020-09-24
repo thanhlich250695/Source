@@ -1,0 +1,46 @@
+// Background All
+$background       : #e0e8ef !default;
+
+// Color Font
+$color-base       : #191919 !default;
+$color-main       : #008fe5 !default;
+$color-second     : #3c4a5c !default;
+$color-third      : #9dacb3 !default;
+$color-four       : #67737f !default;
+$color-five       : #7c94a8 !default;
+$color-six        : #4a6b87 !default;
+$color-link       : $color-main !default;
+$color-hover      : #0174af !default;
+
+$color-price      : #f31b0c !default;
+$color-border     : #e3eaf3 !default;
+$color-highlight  : #EFC025 !default;
+
+$color-success    : #4caf50 !default;
+$color-error      : #fc4a4a !default;
+
+// Font Style
+$font-size-base   : 16px !default;
+$font-icon        : 'FontAwesome'!default;
+
+// media screen
+$tiny-screen-up: 321px !default;
+$small-screen-up: 545px !default;
+$medium-screen-up: 769px !default;
+$large-screen-up: 901px !default;
+$xlarge-screen-up: 1201px !default;
+$tiny-screen: 320px !default;
+$small-screen: 544px !default;
+$medium-screen: 768px !default;
+$large-screen: 900px !default;
+$xlarge-screen: 1200px !default;
+
+// CSS3
+$transition-delay : all 0.5s ease 0s!default;
+$transparent      : transparent !default;
+$radius			  : 5px !default;
+$radius-circle	  : 100% !default;
+
+$shadow           : 0 3px 5px 0 rgba(0, 0, 0, 0.25)!default;
+$shadow-hover     : 0 3px 5px 0 rgba(0, 0, 0, 0.45)!default;
+$text-shadow      : 0 1px 0 rgba(0, 0, 0, 0.2)!default;

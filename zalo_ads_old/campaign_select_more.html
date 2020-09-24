@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Zalo Ads</title>
+<link href="css/layout.css" rel="stylesheet">
+    <style>
+        .search-box{
+            float: none;
+            display: inline-block;
+            margin-left: 0;
+            position: relative;
+            width: 100%;
+        }
+        .search-box .dropdown-toggle::before{
+            position: absolute;
+            top: 50%;
+            right: 6px;
+            content: "";
+            height: 0;
+            width: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid gray;
+            margin-top: -3px;
+        }
+        .search-box .dropdown-toggle .filter-option{
+            display: block !important;
+            height: 30px;
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+            text-align: left;
+        }
+        .search-box .img-select{
+            float: left;
+            display: block;
+            margin-right: 10px;
+        }
+        .search-box strong{
+            color: #191919;
+            font-size: 0.75rem;
+            font-weight: normal;
+            line-height: 30px;
+        }
+        .search-box .dropdown-menu{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            max-width: 265px;
+            min-width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            max-height: 235px;
+            overflow: hidden;
+            min-height: 8px;
+        }
+        .search-box .dropdown-menu .bs-searchbox2{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 4px 8px;
+        }
+        .search-box .dropdown-menu .bs-searchbox2 .form-control{
+            margin-bottom: 0;
+            width: 100%;
+            float: none;
+        }
+        .search-box .dropdown-menu ul{
+            max-height: 330px;
+            overflow-y: auto;
+            min-height: 0px;
+        }
+        .search-box .dropdown-menu ul li{
+            height: 100%;
+            padding: 5px 10px;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            border-bottom: 1px solid rgb(221, 221, 221);
+            cursor: pointer;
+            text-align: left;
+            position: relative;
+            display: block;
+            color: #191919;
+            font-size: 0.75rem;
+            font-weight: normal;
+            line-height: 30px;
+        }
+
+    </style>
+</head>
+
+<body class="zad-old">
+
+<a href="#!" class="menu-help" data-toggle="modal" data-target="#popupContact-modal"><i class="icz icz-question-white"></i><strong>Liên hệ</strong></a>
+<div canvas="container">
+    <div class="wrap-header">
+		<a id="btnMenu" href="#!" class="menu-sliding js-toggle-left-slidebar">Menu Sliding</a>
+        <div class="top-header">
+            <div class="top-header-inside">
+                <a class="logo" href="campaign_list.html">Zalo</a>
+                <div class="right-header">
+                    <ul class="clearfix">
+                        <li class="item item-add-cash show-on-small"><a class="ico"><i class="icz icz-add-cash"></i></a></li>
+                        <li class="item dropdown"><a class="ico" id="dLabel7" role="button" data-toggle="dropdown"><i class="icz icz-notify"></i><span class="number">9</span></a>
+                            <div class="dropdown-menu sub-dropdown-menu clearfix" role="menu" aria-labelledby="dLabel7">
+                                <ul class="hgroup">
+                                    <li class="active"><a href="#htab-01" role="tab" data-toggle="tab">Tin nhắn hệ thống</a></li>
+                                    <li class="action-mark"><a href="#!">Đánh dấu là đã đọc</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <div class="nano" style="max-height:270px;">
+                                            <ul>
+                                                <li class="obj clearfix">
+                                                    <p class="blank">Chưa có thông báo nào từ hệ thống</p>
+                                                </li>
+                                                <li class="obj new clearfix">
+                                                    <a href="#!delete" class="func-delete" title="Xóa"><i class="icz icz-delete-mini"></i></a>
+                                                    <a href="javascript:void(0);" class="ic-unread" title="Đánh dấu là đã đọc"></a>
+                                                    <a href="#" class="link-obj"></a>
+                                                    <div class="desc">
+                                                        <p><span class="str">Lam Nguyen</span> vừa bình luận trên bài viết "Coca tưng bừng khai trư ơng..." của bạn<span class="timer">Cách đây 6 giờ</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="obj clearfix">
+                                                    <a href="#!delete" class="func-delete" title="Xóa"><i class="icz icz-delete-mini"></i></a>
+                                                    <a href="javascript:void(0);" class="ic-read" title="Đánh dấu là chưa đọc"></a>
+                                                    <div class="desc">
+                                                        <p><a href="#!"><span class="str">Lam Nguyen</span> vừa bình luận trên bài viết "Coca tưng bừng khai trư ơng..." của bạn<span class="timer">Cách đây 6 giờ</span></a></p>
+                                                    </div>
+                                                </li>
+                                                <li class="obj have-action clearfix">
+                                                    <a href="#!delete" class="func-delete" title="Xóa"><i class="icz icz-delete-mini"></i></a>
+                                                    <a href="javascript:void(0);" class="ic-read" title="Đánh dấu là chưa đọc"></a>
+                                                    <div class="desc">
+                                                        <p><a href="#!"><span class="str">Lam Nguyen</span> vừa bình luận trên bài viết "Coca tưng bừng khai trư ơng..." của bạn<span class="timer">Cách đây 6 giờ</span></a></p>
+                                                        <span class="action-ins">
+                                                            <a href="#!" title="Đồng ý"><i class="icz icz-accept-notify"></i></a><a href="#!" title="Từ chối"><i class="icz icz-deny-notify"></i></a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="more">Xem tất cả</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hide-on-med-and-down item dropdown"><a class="user" id="dLabel3" role="button" data-toggle="dropdown"><span class="avatar"><img src="http://placehold.it/90x90" alt="ZOA"></span><span class="user-name">Lâm Nguyễn Lâm Nguyễn</span></a>
+                            <ul class="dropdown-menu sub-action-menu clearfix" role="menu" aria-labelledby="dLabel3" style="width:170px">
+                                <li class="first"><a href="#!">Thông tin</a></li>
+                                <li><a href="#!">Thoát</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top-menu clearfix">
+            <div class="top-menu-inside">
+                <ul class="fl clearfix">
+                    <li><a href="#!" class="active"><span><i class="icz icz-home"></i></span></a></li>
+                    <li class="item dropdown">
+                        <a id="dLabel2" role="button" data-toggle="dropdown" class="sub-menu-main"><span><i class="icz icz-manage"></i>Quản lý</span></a>
+                        <ul class="dropdown-menu sub-action-menu clearfix" role="menu" aria-labelledby="dLabel1" style="width:195px">
+                            <li><a href="#!">Duyệt quảng cáo</a></li>
+                            <li><a href="#!">Người dùng</a></li>
+                            <li><a href="#!">Nhóm người dùng</a></li>
+                            <li><a href="#!">Chiến dịch</a></li>
+                            <li><a href="#!">Voucher</a></li>
+                            <li><a href="#!">Nhóm đối tượng quảng cáo</a></li>
+                        </ul>
+                    </li>
+                    <li class="item dropdown"><a href="#!" role="button" data-toggle="dropdown" class="sub-menu-main"><span><i class="icz icz-report"></i>Báo cáo</span></a>
+                        <ul class="dropdown-menu sub-action-menu clearfix" role="menu" aria-labelledby="dLabel1" style="width:180px">
+                            <li><a href="#!">Báo cáo nạp tiền</a></li>
+                            <li><a href="#!">Tình hình sử dụng tiền</a></li>
+                            <li><a href="#!">Chi tiết sử dụng tiền</a></li>
+                            <li><a href="#!">Báo cáo doanh thu</a></li>
+                        </ul>
+                    </li>
+                    <li class="item dropdown"><a href="#!" role="button" data-toggle="dropdown" class="sub-menu-main"><span><i class="icz icz-chart"></i>Thống kê</span></a>
+                        <ul class="dropdown-menu sub-action-menu clearfix" role="menu" aria-labelledby="dLabel1" style="width:180px">
+                            <li><a href="#!">Thống kê về người dùng</a></li>
+                            <li><a href="#!">Thống kê về quảng cáo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="fr clearfix">
+                    <li class="number-money">Số tiền còn lại: <strong>260,000đ</strong></li>
+                    <li class="add-money"><a href="#!" class="btn btn-default btn-cash"><i class="icz icz-cash"></i>Nạp tiền</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-content">
+        <div class="wrap-inside">
+            <div class="content-page">
+                <div class="page-outside page-manage">
+                    <div class="breadcrumb">
+                        <span class="title title-center"><i class="icz icz-bid-large align-middle"></i>Gói quảng cáo đấu giá</span>
+                    </div>
+                    <div class="func-bar-mobile">
+						<div class="ins-select fr mg-right-20">
+							<div class="wrap-select">
+								<select>
+									<option value="1" disabled selected>Sắp xếp theo</option>
+									<option value="2">Sắp kết thúc</option>
+									<option value="3">Sắp kết thúc</option>
+								</select>
+							</div>
+						</div>
+						<a href="#!" class="btn btn-sm fr mg-right-10 sb-toggle-right">Bộ lọc »</a>
+					</div>
+					<div class="func-bar ontop clearfix hide-on-med-and-down">
+						<div class="link-and-search wid100">
+							<div class="ins-select wid-1">
+								<div class="wrap-select">
+									<select>
+										<option value="1" disabled selected>Chọn loại quảng cáo</option>
+										<option value="2">Quảng cáo 1</option>
+										<option value="3">Quảng cáo 2</option>
+									</select>
+								</div>
+							</div>
+							<span class="line-func fl"></span>
+							<span class="label-controls-date">Chọn khoảng giá</span>
+							<div class="ins-search" style="max-width:100px">
+								<input class="nonMag" type="text" placeholder="Giá từ (VNĐ)">
+							</div>
+							<span class="label-controls-date">-</span>
+							<div class="ins-search" style="max-width:100px">
+								<input class="nonMag" type="text" placeholder="Giá đến (VNĐ)">
+							</div>
+							<a href="#!" class="btn btn-default btn-sm fl mg-right-10">Tìm kiếm</a>
+							<div class="ins-select fr end">
+								<div class="wrap-select">
+									<select>
+										<option value="1">Sắp kết thúc</option>
+										<option value="2">Sắp kết thúc</option>
+										<option value="3">Sắp kết thúc</option>
+									</select>
+								</div>
+							</div>
+							<span class="label-controls-date fr">Sắp xếp theo</span>
+						</div>
+					</div>
+                    <div class="all-campaign">
+						<div class="item-bid has-highlights">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S1</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<div class="desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+										<p>Consectetur adipiscing elit. Aenean euismod bibendum laoreet<br />consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+									</div>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Có <strong>14</strong> lượt đặt giá</span>
+										<span class="price-now">Giá bán: <strong>8,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Còn <strong>14</strong> giờ <strong>23</strong> phút <strong>59</strong> giây</span>
+										<a href="detail_bid.html" class="btn btn-bid">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bid has-highlights">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S1</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<div class="desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+										<p>Consectetur adipiscing elit. Aenean euismod bibendum laoreet<br />consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+									</div>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Có <strong>14</strong> lượt đặt giá</span>
+										<span class="price-now">Giá bán: <strong>8,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Còn <strong>14</strong> giờ <strong>23</strong> phút <strong>59</strong> giây</span>
+										<a href="detail_bid.html" class="btn btn-bid">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bid">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S2</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Có <strong>14</strong> lượt đặt giá</span>
+										<span class="price-now">Giá khởi điểm: <strong>1,108,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Còn <strong>14</strong> giờ <strong>23</strong> phút <strong>59</strong> giây</span>
+										<a href="detail_bid.html" class="btn btn-bid">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bid">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S2</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Có <strong>14</strong> lượt đặt giá</span>
+										<span class="price-now">Giá khởi điểm: <strong>1,108,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Còn <strong>14</strong> giờ <strong>23</strong> phút <strong>59</strong> giây</span>
+										<a href="detail_bid.html" class="btn btn-bid">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bid">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S2</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Có <strong>14</strong> lượt đặt giá</span>
+										<span class="price-now">Giá khởi điểm: <strong>1,108,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Còn <strong>14</strong> giờ <strong>23</strong> phút <strong>59</strong> giây</span>
+										<a href="detail_bid.html" class="btn btn-bid">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bid">
+							<div class="ins">
+								<div class="header-bid">
+									<h2><a href="#!">Gói quảng cáo S3</a></h2>
+								</div>
+								<div class="body-bid">
+									<p class="line-time"><i class="icz icz-calendar"></i>Thời gian chạy:<strong>02/04/2017 - 02/05/2017</strong></p>
+									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+								</div>
+								<div class="footer-bid">
+									<div class="left-fbid">
+										<span class="ldg">Chưa có lượt đặt giá</span>
+										<span class="price-now">Giá: <strong>8,000,000đ</strong></span>
+									</div>
+									<div class="right-fbid">
+										<span class="time-left">Chưa bắt đầu</span>
+										<a href="detail_bid.html" class="btn btn-bid disabled">Đặt giá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <!-- End Content-->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- End Page-->
+<div ng-controller="HeaderMenuComponentController as header" off-canvas="sb-menu left reveal" class="sb-slidebar" ng-click="$event.stopPropagation();">
+    <div class="menu-inside">
+        <div class="info-slidebar">
+            <span class="avatar-info" style="background-image:url(images/temp/img_avatar.png)"></span>
+            <div class="desc-info">
+                <span class="name">Lâm Nguyễn</span>
+                <span class="number-money">Số tiền còn lại: <strong>260,000đ</strong></span>
+                <a href="#!" class="btn btn-default btn-cash"><i class="icz icz-cash"></i>Nạp tiền</a>
+            </div>
+        </div>
+        <ul class="clearfix collapsible" data-collapsible="accordion">
+            <li><a href="#!"><i class="icz icz-cm"></i>Danh sách chiến dịch</a></li>
+            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><i class="icz icz-manage"></i>Quản lý</a>
+                <ul class="inside-inside panel-collapse collapse" id="collapse1">
+                    <li><a href="#!">Duyệt quảng cáo</a></li>
+                    <li><a href="#!">Người dùng</a></li>
+                    <li><a href="#!">Nhóm người dùng</a></li>
+                    <li><a href="#!">Chiến dịch</a></li>
+                    <li><a href="#!">Voucher</a></li>
+                    <li><a href="#!">Nhóm đối tượng quảng cáo</a></li>
+                </ul>
+            </li>
+            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><i class="icz icz-report"></i>Báo cáo</a>
+                <ul class="inside-inside panel-collapse collapse" id="collapse2">
+                    <li><a href="#!">Báo cáo nạp tiền</a></li>
+                    <li><a href="#!">Tình hình sử dụng tiền</a></li>
+                    <li><a href="#!">Chi tiết sử dụng tiền</a></li>
+                    <li><a href="#!">Báo cáo doanh thu</a></li>
+                </ul>
+            </li>
+            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><i class="icz icz-chart"></i>Thống kê</a>
+                <ul class="inside-inside panel-collapse collapse" id="collapse3">
+                    <li><a href="#!">Thống kê về người dùng</a></li>
+                    <li><a href="#!">Thống kê về quảng cáo</a></li>
+                </ul>
+            </li>
+            <li><a href="#!" data-toggle="modal" data-target="#popupContact-modal"><i class="icz icz-help"></i>Liên hệ</a></li>
+        </ul>
+    </div>
+</div>
+<!-- End Sidebar -->
+<!-- jquery js -->
+<script src="js/jquery.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/slidebars.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<script>
+$(document).ready(function(){
+    $('.item-campaign .ins').click(function() {
+        $('.item-campaign').removeClass('active');
+        console.log($(this).parent(".item-campaign").find(".inside"));
+        $(this).parents(".item-campaign").addClass('active');
+    });
+    $('.func-close').click(function() {
+        $('.item-campaign').removeClass('active');
+    });
+})
+</script>
+<!-- Select-->
+<script src="js/bootstrap-select.js"></script>
+<script src="js/jquery.hideseek.min.js"></script>
+<script>
+window.zaSlides = new slidebars();
+window.zaSlides.exit();
+
+	window.zaSlides.init();
+	$('#btnMenu').on( 'click', function () {
+		window.zaSlides.open('sb-menu');
+	});
+	//
+	//zaLog('header controller');
+	$( window.zaSlides.events ).on( 'opened', function () {
+		$( '[canvas="container"]' ).addClass( 'js-close-any-slidebar' );
+	} );
+
+	$( window.zaSlides.events ).on( 'closed', function () {
+		$( '[canvas="container"]' ).removeClass( 'js-close-any-slidebar' );
+	} );
+
+	$( 'body' ).on( 'click', '.js-close-any-slidebar', function ( event ) {
+		event.stopPropagation();
+		window.zaSlides.close();
+	} );
+
+	$('#hideseekInput').hideseek({
+        nodata: 'No results found',
+        highlight: true,
+//        hidden_mode: true
+    });
+
+	function selectSearchboxValue(value) {
+        console.log(value);
+        //update label and img
+    }
+</script>
+</body>
+</html>
