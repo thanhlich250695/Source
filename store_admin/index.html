@@ -166,72 +166,242 @@
           <div class="header-intro d-flex align-items-center mb-3">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0">
-                <li class="d-flex align-items-center breadcrumb-item active" aria-current="page"><img class="img-qrcode mr-2" src="images/qrcode.png"><span>Chào mừng đến shop của bạn</span></li>
+                <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
               </ol>
             </nav>
+            <div class="func-header-intro ml-auto"><a class="btn btn-primary btn--m ml-2" href="product_create.html">Thêm sản phẩm</a><a class="btn btn-outline-primary btn--m ml-2" href="#!">Thêm danh sách</a></div>
           </div>
           <form>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                   <div class="bl-module">
-                    <div class="group-filter mb-4">
-                      <ul>
-                        <li>
-                          <h4 class="mb-1">Lượt xem s.phẩm hôm nay</h4>
-                          <p><strong>256</strong><small>lượt</small></p>
-                        </li>
-                        <li>
-                          <h4 class="mb-1">Đơn hàng hôm nay</h4>
-                          <p><strong>8</strong><small>lượt</small></p>
-                        </li>
-                        <li>
-                          <h4 class="mb-1">Doanh thu hôm nay</h4>
-                          <p><strong>5.320.000</strong><small>VNĐ</small></p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="chart-container">
-                      <div class="d-flex align-items-center mb-3">
-                        <h3>Thống kê đơn hàng / sản phẩm</h3>
-                        <div class="ml-auto dropdown"><a class="btn btn-default btn--s dropdown-toggle" href="#!" role="button" id="dropdown-table" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3 tháng</a>
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-table">
-                            <ul>
-                              <li><a href="#!">Tuần</a></li>
-                              <li class="is-checked"><a href="#!">3 tháng</a></li>
-                              <li><a href="#!">6 tháng</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div><img class="d-block ml-auto mr-auto" src="images/img_chart1.png" alt="Store Admin">
-                    </div>
-                  </div>
-                  <div class="bl-module">
-                    <h3 class="mb-2">Thiết lập cửa hàng</h3>
-                    <p class="color-grey fs--m mb-3">Thiết lập giao diện banner, bố cục nội dung theo ý muốn của bạn</p><a class="btn btn-outline-primary btn--m" href="#!">Thiết lập ngay</a>
-                  </div>
-                  <div class="bl-module">
-                    <h3 class="mb-2">Thiết lập vận chuyển</h3>
-                    <p class="color-grey fs--m mb-3">Kết nối ngay với những nhà vận chuyển mà bạn tin tưởng.</p><a class="btn btn-outline-primary btn--m" href="#!">Thiết lập ngay</a>
-                  </div><a class="btn btn-primary btn--m" href="javascript:void(0);" data-toggle="modal" data-target="#modal-confirm">Modal thông báo 1</a>
-                </div>
-                <div class="col-4">
-                  <div class="bl-module">
-                    <div class="heading-module">
-                      <h3>Đơn hàng</h3>
-                      <div class="ml-auto"><a class="btn btn-default btn--s" href="#!">Xem tất cả</a></div>
-                    </div>
-                    <div class="body-module">
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="chart-container mb-3"><img class="d-block ml-auto mr-auto" src="images/img_chart2.png" alt="Store Admin"></div>
-                        </div>
+                    <ul class="nav nav-tabs mb-3">
+                      <li class="nav-item"><a class="nav-link active" href="#">Tất cả sản phẩm</a></li>
+                      <li class="nav-item"><a class="nav-link has-new" href="#">Hết hàng</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Chờ duyệt</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="input-group mr-2" style="width:300px">
+                        <div class="input-group-append"><span class="input-group-ico"><i class="ica ica-search"></i></span></div>
+                        <input class="form-control" type="text" placeholder="SKU/ Tên sản phẩm">
                       </div>
-                      <div class="row">
-                        <div class="col-4"><strong class="d-block fs--xl text-center" style="color:#48B0F7">988</strong><span class="d-block fs--m text-center">Status 1</span></div>
-                        <div class="col-4"><strong class="d-block fs--xl text-center" style="color:#FCD402">25</strong><span class="d-block fs--m text-center">Status 2</span></div>
-                        <div class="col-4"><strong class="d-block fs--xl text-center" style="color:#35CABB">313</strong><span class="d-block fs--m text-center">Status 3</span></div>
-                      </div>
+                      <select class="custom-select mr-2" style="width:180px">
+                        <option selected disabled>Danh mục</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <select class="custom-select mr-2" style="width:180px">
+                        <option selected disabled>Trạng thái</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="group-func"><span class="color-grey fs--m">Đã chọn <strong class="color-base">2/100</strong> sản phẩm</span>
+                      <div class="ml-auto"><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye"></i>Hiện</a><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye-slash"></i>Ẩn</a><a class="btn btn-outline-danger btn--s ml-2" href="javascript:void(0);" data-toggle="modal" data-target="#modal-confirm"><i class="ica ica-trash"></i>Xóa</a></div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table mb-0">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="align-middle" scope="col" style="width:30px">
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </th>
+                            <th class="align-middle" scope="col" style="width:30px">#</th>
+                            <th class="align-middle" scope="col" style="width:64px"></th>
+                            <th class="align-middle" scope="col" style="width:100px">Sản phẩm</th>
+                            <th class="align-middle" scope="col" style="width:100px">SKU</th>
+                            <th class="align-middle" scope="col" style="width:100px">Danh mục</th>
+                            <th class="align-middle" scope="col">Thuộc tính</th>
+                            <th class="align-middle" scope="col" style="width:170px">Giá (đ)</th>
+                            <th class="align-middle" scope="col">Số lượng</th>
+                            <th class="align-middle" scope="col">Hiển thị</th>
+                            <th class="align-middle" scope="col">Thao tác</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="11">
+                              <div class="text-center">Không có kết quả cần tìm</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product word-break" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td><span class="word-break">tp67</span></td>
+                            <td><span class="word-break">Công nghệ</span></td>
+                            <td>12</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <p>200.000 ~ 500.000<br /><span class="color-error">100.000 ~ 300.000</span></p><a class="func-faqs" data-toggle="tooltip" data-html="true" title="&lt;b&gt;[Tên Event đang tham gia]&lt;/b&gt;&lt;br /&gt;Thời gian diễn ra event: DD/MM/YYYY HH:MM"><i class="ica ica-faq"></i></a>
+                              </div>
+                            </td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>Công nghệ</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                            <td>
+                              <div class="d-flex align-items-center"><a class="func-item mr-2" href="#!"><i class="ica ica-edit"></i></a><a class="func-item mr-2" href="#!"><i class="ica ica-duplicate"></i></a><a class="btn btn-ads btn--s" href="javascript:void(0);" data-toggle="modal" data-target="#modal-ads">ADS</a></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot class="tfoot-light">
+                          <tr>
+                            <td colspan="11">
+                              <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mr-2"><span class="color-grey flex-shrink-0 mr-2">Hiển thị</span>
+                                  <select class="form-control form-control-sm">
+                                    <option selected value="1">20</option>
+                                    <option value="2">30</option>
+                                    <option value="3">40</option>
+                                    <option value="4">50</option>
+                                  </select>
+                                </div>
+                                <div class="total-table"><span class="color-grey">1-10 of 100</span></div>
+                                <nav class="ml-auto">
+                                  <ul class="pagination pagination-sm justify-content-end">
+                                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i class="ica ica-angle-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="ica ica-angle-right"></i></a></li>
+                                  </ul>
+                                </nav>
+                              </div>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -263,16 +433,23 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="modal-ads" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xxl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">[Title]</h5><a class="close" href="javascript:void(0);" data-dismiss="modal" aria-label="Close"><i class="ica ica-close"></i></a>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer"><a class="btn btn-outline-primary btn--m" type="button" data-dismiss="modal">Bỏ qua</a><a class="btn btn-primary btn--m" type="button">Đồng ý</a></div>
+        </div>
+      </div>
+    </div>
     <!-- Include Plugin-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      //- $(window).on('load', function () {
-      //- 	$("#modal-login").modal("show");
-      //- });
-    </script>
+    <script></script>
   </body>
 </html>
