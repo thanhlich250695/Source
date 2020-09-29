@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="admin-layout">
+      <header>
+        <div class="header-topbar">
+          <div class="logo"><a href="index.html"></a></div>
+          <div class="menu-user">
+            <ul>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-info">
+                    <div class="avatar avatar--s"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></span></div><span class="name text-truncate">OA Page Title</span></span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-page">
+                  <ul>
+                    <li><a href="#!">Page 0A 1</a></li>
+                    <li><a href="#!">Page 0A 2</a></li>
+                    <li class="has-button"><a class="btn btn-primary btn--m" href="#!">Quản lý Official Account</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-info">
+                    <div class="avatar avatar--s"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></span></div><span class="name text-truncate">Laguna Loire</span></span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                  <ul>
+                    <li><a href="#!">Profile</a></li>
+                    <li><a href="#!">Sign out</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="lang">VI</span></a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-min" aria-labelledby="dropdown-lang">
+                  <ul>
+                    <li><a href="#!">VI</a></li>
+                    <li><a href="#!">EN</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-menu">
+          <ul class="menu-oa">
+            <li><a class="justify-content-center active" href="#!"><i class="ica ica-home"></i></a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-chat-typing-circle"></i>Broadcast</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m1">
+                <ul>
+                  <li><a href="#!">Broadcast 1</a></li>
+                  <li><a href="#!">Broadcast 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#!"><i class="ica ica-chats-circle"></i>Chat</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-todo"></i>Quản lý nội dung</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m4">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-chart-v"></i>Thống kê</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m3">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-blocks"></i>Quản lý</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m2">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="menu-oa is-right">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-store"></i>Cửa hàng</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m5">
+                <ul>
+                  <li><a href="#!">Broadcast 1</a></li>
+                  <li><a href="#!">Broadcast 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-megaphone"></i>Quảng cáo</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m6">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="page-content">
+        <nav class="sidebar-navigation">
+          <ul id="menu-accordion">
+            <li class="menu-category"><a href="index.html"><i class="ica ica-home"></i><span>Cửa hàng</span></a></li>
+            <li class="menu-category">
+              <div id="heading-1"><a class="active" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"><i class="ica ica-archive"></i><span>Sản phẩm</span></a></div>
+              <div class="collapse show" id="collapse-1" aria-labelledby="heading-1" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="active menu-link" href="product.html">Sản phẩm</a></li>
+                  <li class="menu-item"><a class="menu-link" href="category.html">Danh mục</a></li>
+                  <li class="menu-item"><a class="menu-link" href="event.html">Khuyến mãi</a></li>
+                  <li class="menu-item"><a class="menu-link" href="evaluate.html">Đánh giá sản phẩm</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-2"><a data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-receipt"></i><span>Đơn hàng</span></a></div>
+              <div class="collapse" id="collapse-2" aria-labelledby="heading-2" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="order_list.html">Đơn hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Phản hồi khách hàng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-3"><a data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-chart-v"></i><span>Thống kê</span></a></div>
+              <div class="collapse" id="collapse-3" aria-labelledby="heading-3" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="stat_all.html">Tổng quan</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_customer.html">Thống kê khách hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_order.html">Thống kê đơn hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_store.html">Thống kê cửa hàng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-4"><a data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-cog"></i><span>Thiết lập</span></a></div>
+              <div class="collapse" id="collapse-4" aria-labelledby="heading-4" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="setting.html">Thiết lập cửa hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Thiết lập kho</a></li>
+                  <li class="menu-item"><a class="menu-link" href="setting_shipping.html">Thiết lập vận chuyển</a></li>
+                  <li class="menu-item"><a class="menu-link" href="setting_payment.html">Thiết lập thanh toán</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Thiết lập phản hồi nhanh</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Kết nối API</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-content">
+          <div class="header-intro d-flex align-items-center mb-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#!">Danh mục</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tạo danh mục</li>
+              </ol>
+            </nav>
+          </div>
+          <form>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-8">
+                  <div class="bl-module">
+                    <div class="form-group mb-0">
+                      <label for="">Tên danh mục <i>*</i></label>
+                      <input class="form-control is-invalid" type="text" placeholder="">
+                      <div class="invalid-feedback">Lorem ipsum</div><small class="mt-2">Giới hạn [n] ký tự</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="custom-control custom-checkbox is-min mb-2">
+                    <input class="custom-control-input" type="checkbox" id="check1" checked>
+                    <label class="custom-control-label fs--m fw-medium" for="check1">Hiển thị danh mục</label>
+                  </div>
+                  <div class="bl-module module-qrcode is-min">
+                    <div class="qrcode-wrap"><img src="images/qrcode.png"><a class="btn btn-outline-primary btn--s" href="#!">Tải .PNG</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="bl-module">
+                    <div class="d-flex align-items-center mb-2">
+                      <h3>Danh sách sản phẩm</h3>
+                    </div><a class="btn btn-outline-primary btn--m" href="javascript:void(0);" data-toggle="modal" data-target="#modal-addproduct"><i class="ica ica-plus"></i>Thêm sản phẩm</a>
+                  </div>
+                  <div class="bl-module">
+                    <div class="d-flex align-items-center mb-2">
+                      <h3>Danh sách sản phẩm</h3><a class="btn btn-default btn--s ml-auto" href="javascript:void(0);" data-toggle="modal" data-target="#modal-addproduct"><i class="ica ica-plus"></i>Thêm sản phẩm</a>
+                    </div>
+                    <div class="group-func"><span class="color-grey fs--m">Đã chọn <strong class="color-base">2/100</strong> sản phẩm</span>
+                      <div class="ml-auto"><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye"></i>Hiện</a><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye-slash"></i>Ẩn</a><a class="btn btn-outline-danger btn--s ml-2" href="#!"><i class="ica ica-trash"></i>Xóa</a></div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table mb-0">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="align-middle" scope="col" style="width:40px">
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </th>
+                            <th class="align-middle" scope="col" style="width:40px">#</th>
+                            <th class="align-middle" scope="col" style="width:64px"></th>
+                            <th class="align-middle" scope="col">Tên sản phẩm</th>
+                            <th class="align-middle" scope="col" style="width:80px">SKU</th>
+                            <th class="align-middle" scope="col">Thuộc tính</th>
+                            <th class="align-middle" scope="col" style="width:170px">Giá (đ)</th>
+                            <th class="align-middle" scope="col">Số lượng</th>
+                            <th class="align-middle" scope="col">Hiển thị</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="9">
+                              <div class="text-center">Không có kết quả cần tìm</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <p>200.000 ~ 500.000<br /><span class="color-error">100.000 ~ 300.000</span></p><a class="func-faqs" data-toggle="tooltip" data-html="true" title="&lt;b&gt;[Tên Event đang tham gia]&lt;/b&gt;&lt;br /&gt;Thời gian diễn ra event: DD/MM/YYYY HH:MM"><i class="ica ica-faq"></i></a>
+                              </div>
+                            </td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="check-table">
+                                <label class="custom-control-label" for="check-table">&nbsp;</label>
+                              </div>
+                            </td>
+                            <td>1</td>
+                            <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                            <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                            <td>tp67</td>
+                            <td>12</td>
+                            <td>200.000</td>
+                            <td>12</td>
+                            <td><i class="ica ica-done"></i></td>
+                          </tr>
+                        </tbody>
+                        <tfoot class="tfoot-light">
+                          <tr>
+                            <td colspan="9">
+                              <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mr-2"><span class="color-grey flex-shrink-0 mr-2">Hiển thị</span>
+                                  <select class="form-control form-control-sm">
+                                    <option selected value="1">20</option>
+                                    <option value="2">30</option>
+                                    <option value="3">40</option>
+                                    <option value="4">50</option>
+                                  </select>
+                                </div>
+                                <div class="total-table"><span class="color-grey">1-10 of 100</span></div>
+                                <nav class="ml-auto">
+                                  <ul class="pagination pagination-sm justify-content-end">
+                                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i class="ica ica-angle-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="ica ica-angle-right"></i></a></li>
+                                  </ul>
+                                </nav>
+                              </div>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="button-wrap"><a class="btn btn-danger btn--m" href="#!">Xóa</a>
+                    <div class="ml-auto"><a class="btn btn-primary btn--m ml-2" href="#!">Lưu</a><a class="btn btn-outline-primary btn--m ml-2" href="#!">Hủy</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <p class="fs--m">© 2019 Một sản phẩm của Zalo Group</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-addproduct" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thêm sản phẩm</h5><a class="close" href="javascript:void(0);" data-dismiss="modal" aria-label="Close"><i class="ica ica-close"></i></a>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="input-group mr-2" style="width:300px">
+                <div class="input-group-append"><span class="input-group-ico"><i class="ica ica-search"></i></span></div>
+                <input class="form-control" type="text" placeholder="SKU/ Tên sản phẩm">
+              </div>
+              <select class="custom-select mr-2" style="width:180px">
+                <option selected disabled>Trạng thái</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="group-func"><span class="color-grey fs--m">Đã chọn <strong class="color-base">2/100</strong> sản phẩm</span>
+              <div class="ml-auto"><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye"></i>Hiện</a><a class="btn btn--s ml-2" href="#!"><i class="ica ica-eye-slash"></i>Ẩn</a><a class="btn btn-outline-danger btn--s ml-2" href="#!"><i class="ica ica-trash"></i>Xóa</a></div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="align-middle" scope="col" style="width:40px">
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </th>
+                    <th class="align-middle" scope="col" style="width:40px">#</th>
+                    <th class="align-middle" scope="col" style="width:64px"></th>
+                    <th class="align-middle" scope="col" style="width:180px">Tên sản phẩm</th>
+                    <th class="align-middle" scope="col" style="width:180px">Danh mục</th>
+                    <th class="align-middle" scope="col" style="width:80px">SKU</th>
+                    <th class="align-middle" scope="col">Thuộc tính</th>
+                    <th class="align-middle" scope="col" style="width:170px">Giá (đ)</th>
+                    <th class="align-middle" scope="col">Số lượng</th>
+                    <th class="align-middle" scope="col">Hiển thị</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <p>200.000 ~ 500.000<br /><span class="color-error">100.000 ~ 300.000</span></p><a class="func-faqs" data-toggle="tooltip" data-html="true" title="&lt;b&gt;[Tên Event đang tham gia]&lt;/b&gt;&lt;br /&gt;Thời gian diễn ra event: DD/MM/YYYY HH:MM"><i class="ica ica-faq"></i></a>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check-table">
+                        <label class="custom-control-label" for="check-table">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td><img class="img-product img--s" src="https://via.placeholder.com/200x200" alt="Store Admin"></td>
+                    <td><a class="link-product" href="#!">Apple Watch 4 44mm (GPS) Viền Nhôm Xám - Dây Đen</a></td>
+                    <td>Danh mục ABC</td>
+                    <td>tp67</td>
+                    <td>12</td>
+                    <td>200.000</td>
+                    <td>12</td>
+                    <td><i class="ica ica-done"></i></td>
+                  </tr>
+                </tbody>
+                <tfoot class="tfoot-light">
+                  <tr>
+                    <td colspan="10">
+                      <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center mr-2"><span class="color-grey flex-shrink-0 mr-2">Hiển thị</span>
+                          <select class="form-control form-control-sm">
+                            <option selected value="1">20</option>
+                            <option value="2">30</option>
+                            <option value="3">40</option>
+                            <option value="4">50</option>
+                          </select>
+                        </div>
+                        <div class="total-table"><span class="color-grey">1-10 of 100</span></div>
+                        <nav class="ml-auto">
+                          <ul class="pagination pagination-sm justify-content-end">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i class="ica ica-angle-left"></i></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="ica ica-angle-right"></i></a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-outline-primary btn--m" type="button" data-dismiss="modal">Bỏ qua</a><a class="btn btn-primary btn--m" type="button">Đồng ý</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      //- $(window).on('load', function () {
+      //- 	$("#modal-login").modal("show");
+      //- });
+    </script>
+  </body>
+</html>

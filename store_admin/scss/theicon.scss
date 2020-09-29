@@ -1,0 +1,938 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "theicon";
+  src:url("../fonts/theicon/theicon.eot");
+  src:url("../fonts/theicon/theicon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/theicon/theicon.woff") format("woff"),
+    url("../fonts/theicon/theicon.ttf") format("truetype"),
+    url("../fonts/theicon/theicon.svg#theicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+font-family: "theicon" !important;
+content: attr(data-icon);
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+speak: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ica-"]:before,
+[class*=" ica-"]:before {
+font-family: "theicon" !important;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+speak: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.ica-plus:before {
+content: "\f01a";
+}
+.ica-minus:before {
+content: "\f02a";
+}
+.ica-level-circle-left:before {
+content: "\f03a";
+}
+.ica-level-circle-up:before {
+content: "\f04a";
+}
+.ica-level-up:before {
+content: "\f05a";
+}
+.ica-arrow-up-right:before {
+content: "\f07a";
+}
+.ica-level-right:before {
+content: "\f08a";
+}
+.ica-arrows-alt-v:before {
+content: "\f09a";
+}
+.ica-arrows-alt-oblique:before {
+content: "\f10a";
+}
+.ica-arrows-cross-right:before {
+content: "\f11a";
+}
+.ica-arrows-double-up:before {
+content: "\f12a";
+}
+.ica-arrow-double-line-up:before {
+content: "\f13a";
+}
+.ica-file:before {
+content: "\f14a";
+}
+.ica-blank-document:before {
+content: "\f15a";
+}
+.ica-text-document:before {
+content: "\f16a";
+}
+.ica-old-document:before {
+content: "\f17a";
+}
+.ica-img-document:before {
+content: "\f18a";
+}
+.ica-zip:before {
+content: "\f19a";
+}
+.ica-photo:before {
+content: "\f20a";
+}
+.ica-new-document:before {
+content: "\f21a";
+}
+.ica-upload-document:before {
+content: "\f22a";
+}
+.ica-copy-document:before {
+content: "\f23a";
+}
+.ica-folder:before {
+content: "\f24a";
+}
+.ica-img-folder:before {
+content: "\f25a";
+}
+.ica-favorite-folder:before {
+content: "\f26a";
+}
+.ica-download-folder:before {
+content: "\f27a";
+}
+.ica-new-folder:before {
+content: "\f28a";
+}
+.ica-cloud-folder:before {
+content: "\f29a";
+}
+.ica-open-folder:before {
+content: "\f30a";
+}
+.ica-lock-folder:before {
+content: "\f31a";
+}
+.ica-favorite-file:before {
+content: "\f32a";
+}
+.ica-chart-v:before {
+content: "\f33a";
+}
+.ica-columns:before {
+content: "\f34a";
+}
+.ica-rows:before {
+content: "\f35a";
+}
+.ica-blocks:before {
+content: "\f36a";
+}
+.ica-pinterest-columns:before {
+content: "\f37a";
+}
+.ica-list:before {
+content: "\f38a";
+}
+.ica-seperator:before {
+content: "\f39a";
+}
+.ica-tree-list:before {
+content: "\f40a";
+}
+.ica-scale:before {
+content: "\f41a";
+}
+.ica-duplicate:before {
+content: "\f42a";
+}
+.ica-copy:before {
+content: "\f43a";
+}
+.ica-full-screen:before {
+content: "\f44a";
+}
+.ica-drag:before {
+content: "\f45a";
+}
+.ica-redo:before {
+content: "\f46a";
+}
+.ica-target:before {
+content: "\f47a";
+}
+.ica-refresh:before {
+content: "\f48a";
+}
+.ica-plus-square:before {
+content: "\f49a";
+}
+.ica-mail:before {
+content: "\f50a";
+}
+.ica-open-mail:before {
+content: "\f51a";
+}
+.ica-favorite-mail:before {
+content: "\f52a";
+}
+.ica-download-mail:before {
+content: "\f53a";
+}
+.ica-sending:before {
+content: "\f54a";
+}
+.ica-chat-typing-circle:before {
+content: "\f55a";
+}
+.ica-chat-circle:before {
+content: "\f56a";
+}
+.ica-chats-circle:before {
+content: "\f57a";
+}
+.ica-chat-typing-square:before {
+content: "\f58a";
+}
+.ica-chat-square:before {
+content: "\f59a";
+}
+.ica-chats-square:before {
+content: "\f60a";
+}
+.ica-at:before {
+content: "\f61a";
+}
+.ica-send:before {
+content: "\f62a";
+}
+.ica-forward:before {
+content: "\f63a";
+}
+.ica-switch-setting:before {
+content: "\f64a";
+}
+.ica-notification:before {
+content: "\f65a";
+}
+.ica-wifi:before {
+content: "\f66a";
+}
+.ica-bluetooth:before {
+content: "\f67a";
+}
+.ica-mobile-data:before {
+content: "\f68a";
+}
+.ica-personal-hotspot:before {
+content: "\f69a";
+}
+.ica-battery-full:before {
+content: "\f70a";
+}
+.ica-battery-two-three:before {
+content: "\f71a";
+}
+.ica-battery-one-three:before {
+content: "\f72a";
+}
+.ica-battery-empty:before {
+content: "\f73a";
+}
+.ica-battery-charge:before {
+content: "\f74a";
+}
+.ica-airplane-mode:before {
+content: "\f75a";
+}
+.ica-air-play:before {
+content: "\f76a";
+}
+.ica-fingerprint:before {
+content: "\f77a";
+}
+.ica-call:before {
+content: "\f78a";
+}
+.ica-call-end:before {
+content: "\f79a";
+}
+.ica-voice-mail:before {
+content: "\f80a";
+}
+.ica-face-time:before {
+content: "\f81a";
+}
+.ica-airdrop:before {
+content: "\f82a";
+}
+.ica-vibrate:before {
+content: "\f83a";
+}
+.ica-wallet:before {
+content: "\f84a";
+}
+.ica-connection:before {
+content: "\f85a";
+}
+.ica-adjust:before {
+content: "\f86a";
+}
+.ica-saturation:before {
+content: "\f87a";
+}
+.ica-temperature:before {
+content: "\f88a";
+}
+.ica-sharpen:before {
+content: "\f89a";
+}
+.ica-clarity:before {
+content: "\f90a";
+}
+.ica-colour:before {
+content: "\f91a";
+}
+.ica-magic-wand:before {
+content: "\f92a";
+}
+.ica-crop:before {
+content: "\f93a";
+}
+.ica-rotate:before {
+content: "\f94a";
+}
+.ica-flip-h:before {
+content: "\f95a";
+}
+.ica-flip-v:before {
+content: "\f96a";
+}
+.ica-perspective-h:before {
+content: "\f97a";
+}
+.ica-perspective-v:before {
+content: "\f98a";
+}
+.ica-horisont:before {
+content: "\f99a";
+}
+.ica-merge:before {
+content: "\f100a";
+}
+.ica-eraser:before {
+content: "\f101a";
+}
+.ica-target-arrow:before {
+content: "\f102a";
+}
+.ica-menu:before {
+content: "\f103a";
+}
+.ica-console:before {
+content: "\f104a";
+}
+.ica-gamepad:before {
+content: "\f105a";
+}
+.ica-ipod:before {
+content: "\f106a";
+}
+.ica-calculator:before {
+content: "\f107a";
+}
+.ica-desktop:before {
+content: "\f108a";
+}
+.ica-mobile:before {
+content: "\f109a";
+}
+.ica-tablet:before {
+content: "\f110a";
+}
+.ica-mouse:before {
+content: "\f111a";
+}
+.ica-keyboard:before {
+content: "\f112a";
+}
+.ica-printer:before {
+content: "\f113a";
+}
+.ica-hotspot:before {
+content: "\f114a";
+}
+.ica-usb-drive:before {
+content: "\f115a";
+}
+.ica-cd:before {
+content: "\f116a";
+}
+.ica-done:before {
+content: "\f117a";
+}
+.ica-tape:before {
+content: "\f118a";
+}
+.ica-headphones:before {
+content: "\f119a";
+}
+.ica-sound-mixer:before {
+content: "\f120a";
+}
+.ica-speaker:before {
+content: "\f121a";
+}
+.ica-piano:before {
+content: "\f122a";
+}
+.ica-radio:before {
+content: "\f123a";
+}
+.ica-projector:before {
+content: "\f124a";
+}
+.ica-alarm-clock:before {
+content: "\f125a";
+}
+.ica-stop-watch:before {
+content: "\f126a";
+}
+.ica-flashlight:before {
+content: "\f127a";
+}
+.ica-light-bulb:before {
+content: "\f128a";
+}
+.ica-socket:before {
+content: "\f129a";
+}
+.ica-usb-cable:before {
+content: "\f130a";
+}
+.ica-baterry:before {
+content: "\f131a";
+}
+.ica-remote:before {
+content: "\f132a";
+}
+.ica-drums:before {
+content: "\f133a";
+}
+.ica-sim:before {
+content: "\f134a";
+}
+.ica-sd-card:before {
+content: "\f135a";
+}
+.ica-tv:before {
+content: "\f136a";
+}
+.ica-paragraph:before {
+content: "\f137a";
+}
+.ica-text-color:before {
+content: "\f138a";
+}
+.ica-text-size:before {
+content: "\f139a";
+}
+.ica-quote:before {
+content: "\f140a";
+}
+.ica-coding:before {
+content: "\f141a";
+}
+.ica-list-ul:before {
+content: "\f142a";
+}
+.ica-align-left:before {
+content: "\f143a";
+}
+.ica-align-center:before {
+content: "\f144a";
+}
+.ica-align-right:before {
+content: "\f145a";
+}
+.ica-increase-indent:before {
+content: "\f146a";
+}
+.ica-decrease-indent:before {
+content: "\f147a";
+}
+.ica-symbol:before {
+content: "\f148a";
+}
+.ica-draw:before {
+content: "\f149a";
+}
+.ica-translate:before {
+content: "\f150a";
+}
+.ica-hot:before {
+content: "\f151a";
+}
+.ica-star:before {
+content: "\f152a";
+}
+.ica-heart:before {
+content: "\f153a";
+}
+.ica-broken-heart:before {
+content: "\f154a";
+}
+.ica-like:before {
+content: "\f155a";
+}
+.ica-dislike:before {
+content: "\f156a";
+}
+.ica-eye:before {
+content: "\f157a";
+}
+.ica-eye-slash:before {
+content: "\f158a";
+}
+.ica-lock:before {
+content: "\f159a";
+}
+.ica-open-lock:before {
+content: "\f160a";
+}
+.ica-bell:before {
+content: "\f161a";
+}
+.ica-bell-slash:before {
+content: "\f162a";
+}
+.ica-microphone:before {
+content: "\f163a";
+}
+.ica-microphone-slash:before {
+content: "\f164a";
+}
+.ica-trash:before {
+content: "\f165a";
+}
+.ica-rss:before {
+content: "\f166a";
+}
+.ica-warning:before {
+content: "\f167a";
+}
+.ica-bolt:before {
+content: "\f168a";
+}
+.ica-check-square:before {
+content: "\f169a";
+}
+.ica-check-circle:before {
+content: "\f170a";
+}
+.ica-plus-circle:before {
+content: "\f171a";
+}
+.ica-minus-circle:before {
+content: "\f172a";
+}
+.ica-close-circle:before {
+content: "\f173a";
+}
+.ica-info-circle:before {
+content: "\f174a";
+}
+.ica-sort-h:before {
+content: "\f175a";
+}
+.ica-sort-v:before {
+content: "\f176a";
+}
+.ica-repeat:before {
+content: "\f177a";
+}
+.ica-suffle:before {
+content: "\f178a";
+}
+.ica-shield-check:before {
+content: "\f179a";
+}
+.ica-shield-off:before {
+content: "\f180a";
+}
+.ica-broken-shield:before {
+content: "\f181a";
+}
+.ica-bookmark:before {
+content: "\f182a";
+}
+.ica-history:before {
+content: "\f183a";
+}
+.ica-upload-square:before {
+content: "\f184a";
+}
+.ica-share:before {
+content: "\f185a";
+}
+.ica-search:before {
+content: "\f186a";
+}
+.ica-globe:before {
+content: "\f187a";
+}
+.ica-filter:before {
+content: "\f188a";
+}
+.ica-sort:before {
+content: "\f189a";
+}
+.ica-archive:before {
+content: "\f190a";
+}
+.ica-archive-folder:before {
+content: "\f191a";
+}
+.ica-cog:before {
+content: "\f192a";
+}
+.ica-sliders-v:before {
+content: "\f193a";
+}
+.ica-setting-tool:before {
+content: "\f194a";
+}
+.ica-edit:before {
+content: "\f195a";
+}
+.ica-edit-line:before {
+content: "\f196a";
+}
+.ica-link:before {
+content: "\f197a";
+}
+.ica-unlink:before {
+content: "\f198a";
+}
+.ica-tag:before {
+content: "\f199a";
+}
+.ica-sidebar:before {
+content: "\f200a";
+}
+.ica-layer-slideshow:before {
+content: "\f201a";
+}
+.ica-layers:before {
+content: "\f202a";
+}
+.ica-cloud-upload:before {
+content: "\f203a";
+}
+.ica-cloud-download:before {
+content: "\f204a";
+}
+.ica-location-arrow:before {
+content: "\f205a";
+}
+.ica-dashboard:before {
+content: "\f206a";
+}
+.ica-camera:before {
+content: "\f207a";
+}
+.ica-webcam:before {
+content: "\f208a";
+}
+.ica-usb:before {
+content: "\f209a";
+}
+.ica-usb-type-c:before {
+content: "\f210a";
+}
+.ica-robot-head:before {
+content: "\f211a";
+}
+.ica-home:before {
+content: "\f212a";
+}
+.ica-nexting-box:before {
+content: "\f213a";
+}
+.ica-pin:before {
+content: "\f214a";
+}
+.ica-pin-location:before {
+content: "\f215a";
+}
+.ica-map:before {
+content: "\f216a";
+}
+.ica-playlist:before {
+content: "\f217a";
+}
+.ica-music:before {
+content: "\f218a";
+}
+.ica-shield-active:before {
+content: "\f219a";
+}
+.ica-password:before {
+content: "\f220a";
+}
+.ica-adjust-oblique:before {
+content: "\f221a";
+}
+.ica-faq:before {
+content: "\f222a";
+}
+.ica-user:before {
+content: "\f223a";
+}
+.ica-plus-playlist:before {
+content: "\f224a";
+}
+.ica-route:before {
+content: "\f225a";
+}
+.ica-users:before {
+content: "\f226a";
+}
+.ica-hide:before {
+content: "\f227a";
+}
+.ica-external-link:before {
+content: "\f228a";
+}
+.ica-help:before {
+content: "\f229a";
+}
+.ica-calendar:before {
+content: "\f230a";
+}
+.ica-location:before {
+content: "\f231a";
+}
+.ica-attachment:before {
+content: "\f232a";
+}
+.ica-dashboard-time:before {
+content: "\f233a";
+}
+.ica-todo:before {
+content: "\f234a";
+}
+.ica-calendar-2:before {
+content: "\f235a";
+}
+.ica-download:before {
+content: "\f236a";
+}
+.ica-text:before {
+content: "\f237a";
+}
+.ica-floppy:before {
+content: "\f238a";
+}
+.ica-close:before {
+content: "\f239a";
+}
+.ica-delivery-box:before {
+content: "\f240a";
+}
+.ica-gift:before {
+content: "\f241a";
+}
+.ica-pencil:before {
+content: "\f242a";
+}
+.ica-receipts:before {
+content: "\f243a";
+}
+.ica-share-arrow:before {
+content: "\f244a";
+}
+.ica-three-dots:before {
+content: "\f245a";
+}
+.ica-three-dots-v:before {
+content: "\f246a";
+}
+.ica-qrcode:before {
+content: "\f247a";
+}
+.ica-cart:before {
+content: "\f248a";
+}
+.ica-cart-2:before {
+content: "\f249a";
+}
+.ica-cart-plus:before {
+content: "\f250a";
+}
+.ica-cart-plus-2:before {
+content: "\f251a";
+}
+.ica-male:before {
+content: "\f252a";
+}
+.ica-female:before {
+content: "\f253a";
+}
+.ica-logout:before {
+content: "\f254a";
+}
+.ica-login:before {
+content: "\f255a";
+}
+.ica-apple:before {
+content: "\f256a";
+}
+.ica-android:before {
+content: "\f257a";
+}
+.ica-windows:before {
+content: "\f258a";
+}
+.ica-flickr:before {
+content: "\f259a";
+}
+.ica-google-plus:before {
+content: "\f260a";
+}
+.ica-instagram:before {
+content: "\f261a";
+}
+.ica-linkedin:before {
+content: "\f262a";
+}
+.ica-pinterest:before {
+content: "\f263a";
+}
+.ica-twitter:before {
+content: "\f265a";
+}
+.ica-vimeo-square:before {
+content: "\f266a";
+}
+.ica-youtube:before {
+content: "\f267a";
+}
+.ica-visa:before {
+content: "\f268a";
+}
+.ica-delivery-truck:before {
+content: "\f269a";
+}
+.ica-angle-down:before {
+content: "\f270a";
+}
+.ica-angle-left:before {
+content: "\f271a";
+}
+.ica-angle-right:before {
+content: "\f272a";
+}
+.ica-angle-up:before {
+content: "\f273a";
+}
+.ica-angle-double-down:before {
+content: "\f274a";
+}
+.ica-angle-double-left:before {
+content: "\f275a";
+}
+.ica-angle-double-right:before {
+content: "\f276a";
+}
+.ica-angle-double-up:before {
+content: "\f277a";
+}
+.ica-arrow-up:before {
+content: "\f278a";
+}
+.ica-arrow-down:before {
+content: "\f279a";
+}
+.ica-arrow-left:before {
+content: "\f280a";
+}
+.ica-arrow-right:before {
+content: "\f281a";
+}
+.ica-pen:before {
+content: "\61";
+}
+.ica-support-center:before {
+content: "\62";
+}
+.ica-fill-star:before {
+content: "\63";
+}
+.ica-key:before {
+content: "\64";
+}
+.ica-megaphone:before {
+content: "\65";
+}
+.ica-play:before {
+content: "\66";
+}
+.ica-share-arrow-2:before {
+content: "\67";
+}
+.ica-geolocation:before {
+content: "\68";
+}
+.ica-timer-history:before {
+content: "\69";
+}
+.ica-money:before {
+content: "\6a";
+}
+.ica-money-hand:before {
+content: "\6b";
+}
+.ica-sale:before {
+content: "\6c";
+}
+.ica-store:before {
+content: "\6d";
+}
+.ica-receipt:before {
+content: "\6e";
+}
+.ica-receipt-approved:before {
+content: "\6f";
+}
+.ica-briefcase:before {
+content: "\70";
+}
+.ica-facebook:before {
+content: "\71";
+}
+.ica-bold-negative:before {
+content: "\72";
+}
+.ica-bold-neutral:before {
+content: "\73";
+}
+.ica-bold-positive:before {
+content: "\74";
+}
+  

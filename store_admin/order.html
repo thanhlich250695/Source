@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <!--link(rel="icon" type="image/ico" href="images/fav.ico")-->
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="admin-layout">
+      <header>
+        <div class="header-topbar">
+          <div class="logo"><a href="index.html"></a></div>
+          <div class="menu-user">
+            <ul>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-info">
+                    <div class="avatar avatar--s"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></span></div><span class="name text-truncate">OA Page Title</span></span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-page">
+                  <ul>
+                    <li><a href="#!">Page 0A 1</a></li>
+                    <li><a href="#!">Page 0A 2</a></li>
+                    <li class="has-button"><a class="btn btn-primary btn--m" href="#!">Quản lý Official Account</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-info">
+                    <div class="avatar avatar--s"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></span></div><span class="name text-truncate">Laguna Loire</span></span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                  <ul>
+                    <li><a href="#!">Profile</a></li>
+                    <li><a href="#!">Sign out</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="lang">VI</span></a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-min" aria-labelledby="dropdown-lang">
+                  <ul>
+                    <li><a href="#!">VI</a></li>
+                    <li><a href="#!">EN</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-menu">
+          <ul class="menu-oa">
+            <li><a class="justify-content-center active" href="#!"><i class="ica ica-home"></i></a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-chat-typing-circle"></i>Broadcast</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m1">
+                <ul>
+                  <li><a href="#!">Broadcast 1</a></li>
+                  <li><a href="#!">Broadcast 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#!"><i class="ica ica-chats-circle"></i>Chat</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-todo"></i>Quản lý nội dung</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m4">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-chart-v"></i>Thống kê</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m3">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-blocks"></i>Quản lý</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m2">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="menu-oa is-right">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-store"></i>Cửa hàng</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m5">
+                <ul>
+                  <li><a href="#!">Broadcast 1</a></li>
+                  <li><a href="#!">Broadcast 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdown-m6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ica ica-megaphone"></i>Quảng cáo</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-m6">
+                <ul>
+                  <li><a href="#!">Official Account 1</a></li>
+                  <li><a href="#!">Official Account 2</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="page-content">
+        <nav class="sidebar-navigation">
+          <ul id="menu-accordion">
+            <li class="menu-category"><a href="index.html"><i class="ica ica-home"></i><span>Cửa hàng</span></a></li>
+            <li class="menu-category">
+              <div id="heading-1"><a class="active" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"><i class="ica ica-archive"></i><span>Sản phẩm</span></a></div>
+              <div class="collapse show" id="collapse-1" aria-labelledby="heading-1" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="active menu-link" href="product.html">Sản phẩm</a></li>
+                  <li class="menu-item"><a class="menu-link" href="category.html">Danh mục</a></li>
+                  <li class="menu-item"><a class="menu-link" href="event.html">Khuyến mãi</a></li>
+                  <li class="menu-item"><a class="menu-link" href="evaluate.html">Đánh giá sản phẩm</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-2"><a data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-receipt"></i><span>Đơn hàng</span></a></div>
+              <div class="collapse" id="collapse-2" aria-labelledby="heading-2" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="order_list.html">Đơn hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Phản hồi khách hàng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-3"><a data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-chart-v"></i><span>Thống kê</span></a></div>
+              <div class="collapse" id="collapse-3" aria-labelledby="heading-3" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="stat_all.html">Tổng quan</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_customer.html">Thống kê khách hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_order.html">Thống kê đơn hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="stat_store.html">Thống kê cửa hàng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-category">
+              <div id="heading-4"><a data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-2"><i class="ica ica-cog"></i><span>Thiết lập</span></a></div>
+              <div class="collapse" id="collapse-4" aria-labelledby="heading-4" data-parent="#menu-accordion">
+                <ul>
+                  <li class="menu-item"><a class="menu-link" href="setting.html">Thiết lập cửa hàng</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Thiết lập kho</a></li>
+                  <li class="menu-item"><a class="menu-link" href="setting_shipping.html">Thiết lập vận chuyển</a></li>
+                  <li class="menu-item"><a class="menu-link" href="setting_payment.html">Thiết lập thanh toán</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Thiết lập phản hồi nhanh</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#!">Kết nối API</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-content">
+          <div class="header-intro d-flex align-items-center mb-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item active"><span>Đơn hàng #5687999</span><span class="ig">Mã nhóm #12345678 - <span class="timer">Ngày đặt: 12/02/2019 12:00<span></span></li>
+              </ol>
+            </nav>
+          </div>
+          <form>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-8">
+                  <div class="bl-module module-3steps">
+                    <div class="context-3steps">
+                      <div class="step is-active">
+                        <div class="ico-wrap"></div><span>Đơn hàng mới</span>
+                      </div>
+                      <div class="step is-here">
+                        <div class="ico-wrap"></div><span>Đang xử lý</span>
+                      </div>
+                      <div class="step">
+                        <div class="ico-wrap"></div><span>Đang vận chuyển</span>
+                      </div>
+                      <div class="step">
+                        <div class="ico-wrap"></div><span>Thành công</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6 height-100">
+                      <div class="bl-module is-same-height">
+                        <h3 class="mb-2">Khách hàng</h3>
+                        <div class="d-flex align-items-center mb-2"><i class="ica ica-user mr-2"></i><span class="fs--m color-grey">Anh Vũ</span></div>
+                        <div class="d-flex align-items-center mb-2"><i class="ica ica-call mr-2"></i><span class="fs--m color-grey">099.999.9999</span></div>
+                        <div class="group-func-more"><a class="func-default ml-2" href="javascript:void(0);" data-toggle="modal" data-target="#modal-call"><i class="ica ica-call"></i></a><a class="func-default ml-2" href="#!"><i class="ica ica-chat-circle"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="bl-module is-same-height">
+                        <h3 class="mb-2">Nhận hàng</h3>
+                        <div class="d-flex align-items-center mb-2"><i class="ica ica-user mr-2"></i><span class="fs--m color-grey">Anh Vũ</span></div>
+                        <div class="d-flex align-items-center mb-2"><i class="ica ica-call mr-2"></i><span class="fs--m color-grey">099.999.9999</span></div>
+                        <div class="d-flex align-items-center mb-2"><i class="ica ica-pin mr-2"></i><span class="fs--m color-grey">182 Lê Đại Hành. Quận 11. Tp. Hồ Chí Minh</span></div>
+                        <div class="group-func-more"><a class="func-default ml-2" href="javascript:void(0);" data-toggle="modal" data-target="#modal-edit-info"><i class="ica ica-pencil"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Giao hàng</h3>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Đơn vị vận chuyển</label>
+                      <div class="col-6 d-flex align-items-center"><span class="fs--m color-base">Tự vận chuyển</span></div>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Phương thức vận chuyển</label>
+                      <div class="col-6 d-flex align-items-center"><span class="fs--m color-base">Giao hàng cấp tốc</span></div>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Phí vận chuyển</label>
+                      <div class="col-6 d-flex align-items-center"><span class="fs--m color-base">50.000đ</span></div>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Dự kiến giao hàng</label>
+                      <div class="col-6 d-flex align-items-center"><span class="fs--m color-base">24h</span></div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Thông tin đơn hàng</h3>
+                    <table class="table table-bordered mb-0">
+                      <thead class="thead-light">
+                        <tr>
+                          <th class="align-middle" scope="col">Sản phẩm - ProductID - SKU</th>
+                          <th class="align-middle" scope="col">Giá gốc (đ)</th>
+                          <th class="align-middle" scope="col">Giá bán (đ)</th>
+                          <th class="align-middle" scope="col" style="width:80px">Số lượng</th>
+                          <th class="align-middle" scope="col">Thành tiền (đ)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class="link-product" href="#!">Cafe Romano</a> - #123455 - tp67</td>
+                          <td class="text-right">200.000</td>
+                          <td class="text-right">200.000 <br /><span class="color-error">-30%</span></td>
+                          <td class="text-right">1</td>
+                          <td class="text-right"><strong>200.000</strong></td>
+                        </tr>
+                        <tr>
+                          <td><a class="link-product" href="#!">Cafe Romano</a> - #123455 - tp67</td>
+                          <td class="text-right">200.000</td>
+                          <td class="text-right">200.000 <br /><span class="color-error">-30%</span></td>
+                          <td class="text-right">1</td>
+                          <td class="text-right"><strong>200.000</strong></td>
+                        </tr>
+                        <tr>
+                          <td class="text-right" colspan="4">Tạm tính (đ)</td>
+                          <td class="text-right">200.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right" colspan="4">Phí vận chuyển (đ)</td>
+                          <td class="text-right">20.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right" colspan="4">Tổng tiền (đ)</td>
+                          <td class="text-right"><strong class="fs--xl">220.000</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="bl-module">
+                    <h3 class="mb-2">Chuyển trạng thái</h3>
+                    <div class="row">
+                      <div class="col-8">
+                        <select class="custom-select">
+                          <option value="1" selected>Chọn trạng thái kế tiếp</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-4 pl-0"><a class="btn btn-primary btn--m" href="#!">Cập nhật</a></div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Thanh toán</h3>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Phương thức</label>
+                      <div class="col-8 d-flex align-items-center"><span class="fs--m color-base">COD</span></div>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Tình trạng</label>
+                      <div class="col-8 d-flex align-items-center"><span class="fs--m color-base">Chưa thanh toán</span></div>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <label class="col-4 col-form-label mb-0" for="">Mã giao dịch</label>
+                      <div class="col-8 d-flex align-items-center"><span class="fs--m color-base">1232554566225</span></div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Ghi chú khách hàng</h3>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="fs--m color-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Ghi chú Admin</h3>
+                    <div class="row">
+                      <div class="col-12">
+                        <textarea class="form-control mb-2" type="textarea" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry</textarea>
+                        <div class="d-flex align-items-start"><span class="color-grey fs--s">0/500</span><a class="btn btn-outline-primary btn--m ml-auto" href="#!">Lưu lại</a></div>
+                        <div class="noted-list mt-3">
+                          <ul>
+                            <li>
+                              <p class="color-base fs--m">{Nội dung ghi chú}</p>
+                              <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                              <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00 | Đơn hàng mới</p>
+                            </li>
+                            <li>
+                              <p class="color-base fs--m">{Nội dung ghi chú}</p>
+                              <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                              <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00 | Đơn hàng mới</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bl-module">
+                    <h3 class="mb-2">Lịch sử cập nhật đơn hàng</h3>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="flow-list">
+                          <ul>
+                            <li class="active">
+                              <div class="context">
+                                <p class="color-base fs--m fw-medium">{Trạng thái đơn hàng}</p>
+                                <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                                <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00</p>
+                              </div>
+                            </li>
+                            <li class="active">
+                              <div class="context">
+                                <p class="color-base fs--m fw-medium">{Trạng thái đơn hàng}</p>
+                                <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                                <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="context">
+                                <p class="color-base fs--m fw-medium">{Trạng thái đơn hàng}</p>
+                                <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                                <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="context">
+                                <p class="color-base fs--m fw-medium">{Trạng thái đơn hàng}</p>
+                                <p class="color-grey fs--s">Bởi: {Tên admin}</p>
+                                <p class="color-grey fs--s">Vào lúc: 17/02/2019 12:00</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <p class="fs--m">© 2019 Một sản phẩm của Zalo Group</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-call" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Gọi cho PhongVu</h5><a class="close" href="javascript:void(0);" data-dismiss="modal" aria-label="Close"><i class="ica ica-close"></i></a>
+          </div>
+          <div class="modal-body">
+            <div class="qrcode-user"><img src="images/qrcode_user.jpg" alt="Store Admin"></div>
+            <p class="text-center"><strong>099.6336.111</strong></p>
+          </div>
+          <div class="modal-footer justify-content-center"><a class="btn btn-outline-primary btn--m" type="button">Đóng lại</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-feedback" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Phản hồi & Đánh giá</h5><a class="close" href="javascript:void(0);" data-dismiss="modal" aria-label="Close"><i class="ica ica-close"></i></a>
+          </div>
+          <div class="modal-body bg-grey">
+            <div class="row">
+              <div class="col-5">
+                <div class="bl-module module-product">
+                  <h4 class="heading mb-4">Thông tin sản phẩm</h4>
+                  <div class="d-flex align-items-start"><img class="img-product img--s flex-shrink-0 mr-2" src="https://via.placeholder.com/200x200" alt="Store Admin">
+                    <div class="desc">
+                      <h2 class="text-truncate mb-1">Adapter Sạc Xe Hơi 2 Cổng Anker PowerDrive+ 42W Hỗ Trợ Sạc Nhanh QC 3.0 - A2224(021/H21) (Trắng) - Hàng Chính Hãng</h2>
+                      <p class="mb-1">500,000đ - Số lượng: 1</p>
+                      <p>Tổng tiền: 500,000đ</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bl-module mb-0">
+                  <h4 class="heading mb-4">Thông tin người nhận</h4>
+                  <div class="d-flex align-items-center mb-2"><i class="ica ica-user mr-2"></i><span class="color-base fs--m color-grey">Anh Vũ</span></div>
+                  <div class="d-flex align-items-center mb-2"><i class="ica ica-call mr-2"></i><span class="color-base fs--m color-grey">099.999.9999</span></div>
+                  <div class="d-flex align-items-center mb-2"><i class="ica ica-pin mr-2"></i><span class="color-base fs--m color-grey">182 Lê Đại Hành. Quận 11. Tp. HCM</span></div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="bl-module">
+                  <h4 class="heading mb-4">Lý do phản ánh</h4>
+                  <form class="mb-3">
+                    <div class="custom-control custom-radio is-min mb-2">
+                      <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
+                      <label class="custom-control-label fs--m" for="customRadio1">Không gọi được người mua</label>
+                    </div>
+                    <div class="custom-control custom-radio is-min mb-2">
+                      <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
+                      <label class="custom-control-label fs--m" for="customRadio2">Người mua không bắt máy nhận hàng</label>
+                    </div>
+                    <div class="custom-control custom-radio is-min">
+                      <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio">
+                      <label class="custom-control-label fs--m" for="customRadio3">Người mua spam đơn hàng</label>
+                    </div>
+                  </form>
+                  <textarea class="form-control" type="textarea" rows="4">Nhập phản ảnh của bạn ...</textarea><small class="mt-2">Tối đa 1000 ký tự</small>
+                </div>
+                <div class="bl-module mb-0">
+                  <h4 class="heading mb-4">Đánh giá của bạn?</h4>
+                  <ul class="rating-list">
+                    <li>
+                      <input type="radio" id="radio-emo1" name="radio">
+                      <label for="radio-emo1"><i class="ica ica-bold-negative"></i><span>Negative</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" id="radio-emo2" name="radio">
+                      <label for="radio-emo2"><i class="ica ica-bold-neutral"></i><span>Neutral</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" id="radio-emo3" name="radio">
+                      <label for="radio-emo3"><i class="ica ica-bold-positive"></i><span>Positive</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-outline-primary btn--m" type="button" data-dismiss="modal">Bỏ qua</a><a class="btn btn-primary btn--m" type="button">Gửi</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-edit-info" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Chỉnh sửa thông tin người nhận hàng</h5><a class="close" href="javascript:void(0);" data-dismiss="modal" aria-label="Close"><i class="ica ica-close"></i></a>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row mb-2">
+                <label class="col-4 col-form-label mb-0" for="">Tên người nhận</label>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="" value="Laguna La">
+                </div>
+              </div>
+              <div class="form-group row mb-2">
+                <label class="col-4 col-form-label mb-0" for="">Số điện thoại</label>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="" value="0999999999">
+                </div>
+              </div>
+              <div class="form-group row mb-2">
+                <label class="col-4 col-form-label mb-0" for="">Tỉnh/ thành</label>
+                <div class="col-8">
+                  <select class="custom-select">
+                    <option value="1" selected>Tp. Hồ Chí Minh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row mb-2">
+                <label class="col-4 col-form-label mb-0" for="">Quận/ huyện</label>
+                <div class="col-8">
+                  <select class="custom-select">
+                    <option value="1" selected>Quận 11</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row mb-2">
+                <label class="col-4 col-form-label mb-0" for="">Địa chỉ</label>
+                <div class="col-8">
+                  <input class="form-control" type="text" placeholder="" value="182 Lê Đại Hành">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer"><a class="btn btn-outline-primary btn--m" type="button">Bỏ qua</a><a class="btn btn-primary btn--m" type="button">Lưu</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      //- $(window).on('load', function () {
+      //- 	$("#modal-login").modal("show");
+      //- });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+/*!
+* Layout
+* @author Lam Nguyen
+*/
+
+ /* Ellips */
+ .ellips-2{overflow:hidden;text-overflow:ellipsis;display:block;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word}
+ 
+/* Avatar */
+.avatar{position:relative;@extend %borderRadius-circle;}
+.avatar--s{@include size(36px);line-height:36px}
+.avatar--m{@include size(48px);line-height:48px}
+.avatar--l{@include size(96px);line-height:96px}
+.avatar-img{@include position(absolute,0 null null 0);z-index:1;@include size(100%);@extend %backgroundCover--center;@extend %borderRadius-circle;}
+
+/* Product */
+.img-product{display:block;height:auto;
+	&.img--s{max-width:64px}
+}
+
+/* Button */
+.btn{display:inline-block;background-color:#fff;vertical-align:middle;cursor:pointer;white-space:nowrap;color:$color-base;font-weight:500;font-family:$primary-font;border:0 none;border-radius:4px;text-align:center;@extend %userSelect-none;box-shadow:inset 0 0 0 1px $color-border;
+	&:hover, &:focus{background-color:shade(#fff, 5%);color:$color-base}
+	&.disabled, &[disabled]{cursor:not-allowed;pointer-events:none;box-shadow:none;opacity:0.35;}
+	&.btn-default{background-color:rgba(#6C7C91, 0.15);color:$color-third}
+	&.btn-outline-primary{color:$color-main;background-color:#fff;box-shadow:inset 0 0 0 1px $color-main;
+		&:hover, &:focus{background-color:#fff;opacity:0.85}
+	}
+	&.btn-primary{color:#fff;background-color:$color-main;box-shadow:none;
+		&:hover, &:focus{background-color:shade($color-main, 5%);color:#fff}
+	}
+	&.btn-outline-secondary{color:$color-second;background-color:#fff;box-shadow:inset 0 0 0 1px $color-second;
+		&:hover, &:focus{background-color:#fff;opacity:0.85}
+	}
+	&.btn-secondary{color:#fff;background-color:$color-second;box-shadow:none;
+		&:hover, &:focus{background-color:shade($color-second, 5%);color:#fff}
+	}
+	&.btn-link-secondary{color:$color-second;text-decoration:underline;box-shadow:none;border:0;
+		&:hover, &:focus{background-color:tint($color-second, 90%)}
+	}
+	&.btn-link{background:transparent;color:$color-main;text-decoration:underline;box-shadow:none;border:0;
+		&:hover, &:focus{background-color:tint($color-main, 90%)}
+	}
+	&.btn-outline-danger{background-color:#fff;color:$color-error;box-shadow:inset 0 0 0 1px $color-error;border:0;
+		&:hover, &:focus{background-color:#fff;opacity:0.85;}
+	}
+	&.btn-danger{background-color:$color-error;color:#fff;box-shadow:none;border:0;
+		&:hover, &:focus{background-color:shade($color-error,8%)}
+	}
+	&.btn-ads{background-color:$color-success;color:#fff;box-shadow:none;border:0;
+		&:hover, &:focus{background-color:shade($color-success,8%)}
+	}
+	&.btn--s{@include padding(5px 10px);font-size:0.813rem;font-weight:400}
+	&.btn--m{@include padding(8px 20px);font-size:0.875rem}
+	&.btn--l{@include padding(13px 30px);font-size:1.063rem}
+	&.is-selected{background-color:$color-main;color:#fff;box-shadow:none}
+	&.dropdown-toggle{padding-right:25px;
+		&:after{right:6px}
+	}
+	[class^=ica]{display:inline-block;@include size(16px);margin-right:5px;@include padding(0);font-size:1rem;vertical-align:middle}
+}
+
+/* Form */
+.form-group{
+	label{display:block;margin-bottom:$gutter/3;color:$color-grey;font-size:0.875rem;
+		i{color:$color-error}
+	}
+}
+.form-control{height:auto;font-family:$primary-font;}
+.form-control-sm{font-size:0.813rem}
+.editor-wrap{min-height:300px;border:1px solid #ced4da;border-radius:0.25rem}
+
+// Status
+.status{display:inline-block;min-height:16px;color:$color-base;
+	&.status-bg{@include padding(2px 3px);font-size:0.688rem;border-radius:3px}
+	&.status-locked{color:#eda21b;
+		&.status-bg{background-color:#eda21b;color:#fff}
+	}
+    &.status-pending{color:#eda21b;
+		&.status-bg{background-color:#eda21b;color:#fff}
+	}
+	&.status-success{color:#0f9d58;
+		&.status-bg{background-color:#0f9d58;color:#fff}
+	}
+	&.status-doing{color:#0c74bb;
+		&.status-bg{background-color:#0c74bb;color:#fff}
+	}
+	&.status-fail{color:#888;
+		&.status-bg{background-color:#888;color:#fff}
+	}
+	&.status-denied, &.status-end{color:#d00;
+		&.status-bg{background-color:#d00;color:#fff}
+	}
+}
+
+/* Utility - Ratio */
+.aspectRatio{position:relative;
+	&.aspectRatio--100{
+		&:before{content:"";display:block;padding-top:100%}
+	}
+	&.aspectRatio--16-9{
+		&:before{content:"";display:block;padding-top:56.25%}
+	}
+	&.aspectRatio--16-10{
+		&:before{content:"";display:block;padding-top:62.5%}
+	}
+}
+
+/* Input file Container */
+.inputfile-container{@include position(absolute,0 null null 0);@include size(100%);
+	.inputfile{@include size(0.1px);opacity:0;overflow:hidden;position:absolute;z-index:-1}
+	.inputfile + label{display:block;@include size(100%);cursor:pointer}
+	.inputfile:focus + label, .inputfile + label:hover{}
+}
+
+/* Switch */
+.switch{position:relative;display:inline-block;@include size(46px, 26px);
+	input{opacity:0;width:0;height:0}
+	.slider{@include position(absolute, 0);background-color:#ccc;cursor:pointer;transition:.4s;
+		&:before{@include position(absolute, null null 3px 3px);content:"";background-color:white;@include size(20px);transition:.4s;}
+	}
+	input:checked + .slider{background-color:$color-success}
+	input:focus + .slider{}
+	input:checked + .slider:before{transform:translateX(20px)}
+	.slider.round{border-radius:34px}
+	.slider.round:before{border-radius:50%}
+}
+
+/* Star */
+.rating{float:left;border:none;
+	&.disabled{position:relative;
+		&:before{@include position(absolute, 0);content:"";z-index:2;background:transparent;}
+	}
+}
+.rating > input{display:none} 
+.rating > label:before{background:none;overflow:inherit;width:auto;height:auto;@include margin(10px);font-size:2rem;font-family:$font-icon;display:block;content:"\ea13"}
+.rating > label:after{display:none}
+.rating > .half:before{content:"\ea25";position:absolute}
+.rating > label{color:#ddd;float:right;margin-bottom:0}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label{color:$color-main} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label{color:$color-main}
+
+::-webkit-input-placeholder{color:rgba(0,0,0,0.2);font-weight:400}
+::-moz-placeholder{color:rgba(0,0,0,0.2);font-weight:400}
+:-ms-input-placeholder{color:rgba(0,0,0,0.2);font-weight:400}
+:-moz-placeholder{color:rgba(0,0,0,0.2);font-weight:400}
