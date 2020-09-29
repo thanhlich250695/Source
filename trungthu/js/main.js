@@ -3,10 +3,9 @@ var bg_video_m = document.getElementById('bg_video_m');
 
 if(window.innerWidth > 981){
 	bg_video.play();
-
+	setTimeout(function(){ $(".brand").addClass('hide'); }, 24000);
 	bg_video.addEventListener('ended', function () {
-		setTimeout(function(){ $(".brand").addClass('hide'); }, 24000);
-		bg_video.pause();
+	bg_video.pause();
 	}, 0);
 }
 if(window.innerWidth < 980){
