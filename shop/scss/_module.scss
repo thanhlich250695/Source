@@ -30,8 +30,8 @@ body.overlay-open{overflow:hidden;
 	&:before{@include position(fixed, 0 0 null 0 );content:'';background-color:rgba(0, 0, 0, 0.75) !important;z-index:10;opacity:1;height:100%;}
 }
 body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %tr-all;
-	.popup-container{@extend %tr-all;height:0%;
-		&.is-show{bottom:0;right:0;left:0;@extend %tr-all;z-index:1050;height:96.5%;}	
+	.popup-container{@extend %tr-all;
+		&.is-show{bottom:0;right:0;left:0;@extend %tr-all;z-index:1050;}	
 	}
 }
 .bl-popup{max-width:600px;margin:0 auto;position:fixed;

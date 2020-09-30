@@ -1115,15 +1115,11 @@ body.overlay-open .bl-popup {
   opacity: 1;
   visibility: visible;
 }
-body.overlay-open .bl-popup .popup-container {
-  height: 0%;
-}
 body.overlay-open .bl-popup .popup-container.is-show {
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 1050;
-  height: 96.5%;
 }
 
 .bl-popup {
