@@ -51,7 +51,7 @@ body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %t
 			}
 		}
 		.bl-popup-footer{@include padding($gutter);border-top:1px solid $color-border;
-			.button-dockbar{@include position(fixed, null 0 0 0);z-index:100;background-color:#fff;@include padding($gutter);border-top:1px solid $color-border;
+			.button-dockbar{@include position(absolute, null 0 0 0);z-index:100;background-color:#fff;@include padding($gutter);border-top:1px solid $color-border;
 				a{color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;background-color:#1744CF;height:44px;border-radius:8px;}
 			}
 		}
@@ -192,9 +192,9 @@ body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %t
 			.content{font-size:0.875em;line-height:22px;font-weight:600;color:#3964EA}
 		}
 		.search{
-			.form-group{position:relative;background-color:#F0F4F8;border-radius:8px;overflow:hidden;
+			.form-group{position:relative;background-color:#F0F4F8;border-radius:8px;overflow:hidden;height:36px;
 				[class^="icn"]{@include position(absolute, 10px null null 16px);@include size(1rem);font-size:1rem;@include padding(0);}
-				input{@include padding(null 30px null 44px);height:36px;font-size:1em;border-radius:8px;background-color:#f0f4f8;border:1px solid transparent;line-height:40px;
+				input{@include padding(null 30px null 44px);font-size:1em;border-radius:8px;background-color:#f0f4f8;border:1px solid transparent;height:36px;
 					&:focus{border-color:$color-main;box-shadow: 0 0 0 0.125em rgba(50,115,220,.25);}
 				}
 			}
@@ -1114,7 +1114,9 @@ ul.quick-filter{display:flex;align-items:center;overflow-y:auto;@include margin(
 				&.is-plus{font-size:1rem;@include size(1rem);margin-left:4px;margin-right:-2px;}
 				&.icn-small-down{font-size:1.125rem;@include size(1.125rem);margin-right:-6px;margin-left:4px;}
 			}
-			.text{display:block;font-size:0.75em;color:#778699;line-height:18px;flex-shrink:0;}
+			.text{display:block;font-size:0.75em;color:#778699;line-height:18px;flex-shrink:0;
+				strong{color:#2C3F58;font-weight:600;}
+			}
 		}
 	}
 }
