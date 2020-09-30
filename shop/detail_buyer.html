@@ -22,9 +22,6 @@
   <body>
     <div class="zMarket-layout">
       <div class="page-content">
-        <div class="module-toast">
-          <div class="toast-container"><span> Đã ... thành công</span></div>
-        </div>
         <div class="feature-dockbar">
           <div class="context-feature-dockbar">
             <nav class="breadcrumb">
@@ -42,33 +39,31 @@
           </div>
           <div class="trans-feature-dockbar"></div>
         </div>
-        <div class="bl-module module-post-detail">
-          <div class="img-post">
-            <div class="swiper-container swiper-img">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item-img" data-fancybox="gallery" href="http://via.placeholder.com/500x500" style="background-image:url(http://via.placeholder.com/500x500)"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item-img" data-fancybox="gallery" href="http://via.placeholder.com/500x500" style="background-image:url(http://via.placeholder.com/500x500)"></div>
-                </div>
+        <div class="bl-module module-buyer-detail">
+          <h1 class="product-name">Ford Everest 2020 TitaNIUM+ Ambient KM + PK 150 TR mới về</h1>
+          <p class="product-price">875.000.000 đ</p>
+          <ul class="info-list">
+            <li><i class="icn icn-pin-outline"></i><span>Quận 1, Tp.Hcm</span></li>
+            <li><i class="icn icn-clock"></i><span>Tin đăng 4 tiếng trước</span></li>
+          </ul>
+          <ul class="product-image-list is-6">
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)"></span></a></li>
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)"></span></a></li>
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)"></span></a></li>
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)"></span></a></li>
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)"></span></a></li>
+            <li><a data-fancybox="gallery" href="http://via.placeholder.com/200x200"><span class="item-image" style="background-image:url(http://via.placeholder.com/200x200)">
+                  <div class="layer-view-detail"> +5</div></span></a></li>
+          </ul>
+          <div class="desc-buyer">
+            <div class="info-user"><span class="title">Người đăng</span>
+              <div class="user-avatar">
+                <div class="avatar avatar--s">
+                  <div class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></div>
+                </div><span class="d-block fs--m fw-medium">An Teo</span>
               </div>
-            </div>
-            <div class="swiper-pagination" id="img-pagination"></div>
-          </div>
-          <div class="desc-post">
-            <div class="d-flex justify-content-between m-bottom-3"><span class="d-block color-base fs--xxl fw-bold">27.000đ</span></div>
-            <h1 class="color-base fs--m fw-normal mb-1">CARPRIE Quiet 120mm DC 12V 3 4pin LED Effects Clear Computer Case Cooling Fan</h1><span class="d-block color-grey fs--s">Tin đăng 4 tiếng trước. Khu vực Quận 1</span>
-            <div class="info-user">
-              <div class="avatar avatar--s">
-                <div class="avatar-img" style="background-image:url(http://via.placeholder.com/200x200)"></div>
-              </div><span class="d-block fs--m fw-bold">An Teo</span>
             </div>
             <div class="status-group">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="status is-success"><span>Status</span></div>
-              </div>
-              <p class="notify is-error">Sản phẩm này chưa được duyệt vì sản phẩm nằm trong danh sách các sản phẩm không được duyệt</p>
               <ul class="func-detail-list">
                 <li><a class="item" href="#!">
                     <div class="icon-container"><i class="icn icn-tag-check"></i></div><span>Đánh dấu đã bán</span></a></li>
@@ -83,7 +78,7 @@
                 <li><a class="item" href="#!">
                     <div class="icon-container"><i class="icn icn-clock-2"></i></div><span>Rao bán</span></a></li>
               </ul>
-            </div>
+            </div><span class="fs--l fw-bold">Thông tin mô tả</span>
             <div class="desc">
               <p>CÒN TIN CÒN MÁY NHÉ CÁC BẠN.</p>
               <p>Mình có ship COD toàn quốc nhé.</p>
@@ -175,13 +170,6 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/fancybox.min.js"></script>
     <script>
-      var swiper = new Swiper('.swiper-img', {
-      	slidesPerView: 1,
-      	spaceBetween: 0,
-      	pagination: {
-      		el: '#img-pagination',
-      	},
-      });
       $(".func-open-toast").click(function(){
       	$(".module-toast").addClass("is-show");
       	setTimeout(function () {
@@ -195,16 +183,10 @@
       $(".page-content").click(function(){
       	$(".feature-share-list").removeClass("is-active");
       });
-      
-      //- check trường hợp 1 nút func-detail-list
-      var checkLengthButton = function(){
-      	var groupButton = document.querySelector(".func-detail-list");
-      	var button = document.querySelectorAll(".func-detail-list li");
-      	if(button.length === 1){
-      		groupButton.classList.add("is-single")
-      	}
+      //- check mansory image
+      const checkImageList = function(){
+      	//- var imageList = document.qu
       };
-      checkLengthButton();
     </script>
   </body>
 </html>

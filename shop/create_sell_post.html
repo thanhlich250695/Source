@@ -47,28 +47,28 @@
               </div>
               <form class="default-form">
                 <div class="form-row">
-                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Tiêu đề rao bán</span><span class="color-grey fs--m">0/50</span></label>
-                  <input type="text" placeholder="Nhập tiêu đề rao bán" value="">
+                  <label class="d-flex align-items-center justify-content-between w-100" for="input1"><span class="fs--m">Tiêu đề rao bán</span><span class="color-grey fs--m">0/50</span></label>
+                  <input id="input1" type="text" placeholder="Nhập tiêu đề rao bán" value="">
                 </div>
                 <div class="box-notification">
                   <div class="item is-success"><i class="icn icn-check-circle"></i><span>Chỉ nhập tên sản phẩm cần rao bán</span></div>
                   <div class="item is-error"><i class="icn icn-circle-delete"></i><span>Không nhập số điện thoại vào tiêu đề</span></div>
                 </div>
                 <div class="form-row">
-                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Họ tên</span><span class="color-grey fs--m">0/50</span></label>
-                  <input type="text" placeholder="Nhập họ tên" value="">
+                  <label class="d-flex align-items-center justify-content-between w-100" for="input2"><span class="fs--m">Họ tên</span><span class="color-grey fs--m">0/50</span></label>
+                  <input id="input2" type="text" placeholder="Nhập họ tên" value="">
                 </div>
                 <div class="form-row">
-                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Giá (VND)</span></label>
-                  <input type="text" placeholder="Nhập giá rao bán" value="">
+                  <label class="d-flex align-items-center justify-content-between w-100" for="input3"><span class="fs--m">Giá (VND)</span></label>
+                  <input id="input3" type="text" placeholder="Nhập giá rao bán" value="">
                 </div>
                 <div class="form-row">
                   <label class="fs--m">Danh mục</label>
                   <div class="wrap-select func-open-danhmuc"><span>Đồ nội thất</span></div>
                 </div>
                 <div class="form-row">
-                  <label class="d-flex align-items-center justify-content-between w-100"><span class="fs--m">Mô tả</span><span class="color-grey fs--m">0/5000 </span></label>
-                  <textarea type="text" placeholder="Nhập mô tả sản phẩm" value=""></textarea>
+                  <label class="d-flex align-items-center justify-content-between w-100" for="input4"><span class="fs--m">Mô tả</span><span class="color-grey fs--m">0/5000 </span></label>
+                  <textarea id="input4" type="text" placeholder="Nhập mô tả sản phẩm" value=""></textarea>
                 </div>
                 <div class="form-row">
                   <label class="fs--m">Chọn Tỉnh/Thành muốn rao</label>
@@ -95,6 +95,11 @@
                   </div>
                 </div>
               </form>
+              <div class="share-timeline"><span class="label">Chia sẻ lên dòng thời gian sau khi đăng tin</span>
+                <label class="switch switch-theme">
+                  <input type="checkbox"><span class="slider round"></span>
+                </label>
+              </div>
               <p class="policy-text fs--s">Bằng việc bấm vào nút đăng rao bán, bạn đã đồng ý với <a href="#!" class="color-link" target="_blank"> Điều khoản </a> của chúng tôi</p>
               <div class="button"><a class="btn btn--m btn-primary w-100" href="detail_sell_post.html">Đăng tin rao bán</a></div>
             </div>
