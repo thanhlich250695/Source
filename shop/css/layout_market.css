@@ -1132,7 +1132,7 @@ body.overlay-open .bl-popup .popup-container.is-show {
 }
 .bl-popup .popup-container {
   position: fixed;
-  bottom: -100%;
+  bottom: -120%;
   background-color: #fff;
   width: 100%;
   opacity: 1;
@@ -1143,6 +1143,7 @@ body.overlay-open .bl-popup .popup-container.is-show {
 .bl-popup .popup-container#popup-filter-advance .bl-popup-context {
   padding-bottom: 80px;
   height: calc(100vh - 90px);
+  overflow-y: auto;
 }
 .bl-popup .popup-container .bl-popup-heading {
   display: -webkit-box;

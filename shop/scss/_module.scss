@@ -36,10 +36,10 @@ body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %t
 }
 .bl-popup{max-width:600px;margin:0 auto;position:fixed;
 	&.is-transparent{background-color:transparent!important}
-	.popup-container{@include position(fixed, null);bottom:-100%;background-color:#fff;width:100%;opacity:1;
+	.popup-container{@include position(fixed, null);bottom:-120%;background-color:#fff;width:100%;opacity:1;
 		&.has-radius{border-radius:8px 8px 0 0;}
 		&#popup-filter-advance{
-			.bl-popup-context{padding-bottom:80px;height:calc(100vh - 90px);}
+			.bl-popup-context{padding-bottom:80px;height:calc(100vh - 90px);overflow-y:auto;}
 		}
 		.bl-popup-heading{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;border-bottom:1px solid $color-border !important; height:auto!important;padding-top:15px;position:relative;padding-bottom:12px;padding-left:20px;padding-right:20px;
 			span{color:#2C3F58;font-size:1.125em;position:relative;top:-2px}
