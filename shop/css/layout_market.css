@@ -1238,6 +1238,7 @@ body.overlay-open .bl-popup .popup-container.is-show {
 .bl-popup .popup-container .bl-popup-context {
   height: calc(100vh - 78px);
   overflow-y: scroll;
+  padding-bottom: 80px;
   -webkit-overflow-scrolling: touch;
 }
 .bl-popup .popup-container .bl-popup-context .default-form .input-group {

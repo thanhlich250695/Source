@@ -55,7 +55,7 @@ body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %t
 				a{color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;background-color:#1744CF;height:44px;border-radius:8px;}
 			}
 		}
-		.bl-popup-context{height:calc(100vh - 78px);overflow-y: scroll;-webkit-overflow-scrolling: touch;
+		.bl-popup-context{height:calc(100vh - 78px);overflow-y: scroll;padding-bottom:80px;-webkit-overflow-scrolling: touch;
 			.default-form{
 				.input-group{@include padding(null 20px);}
 			}
