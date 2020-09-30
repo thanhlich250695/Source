@@ -30,8 +30,8 @@ body.overlay-open{overflow:hidden;
 	&:before{@include position(fixed, 0 0 null 0 );content:'';background-color:rgba(0, 0, 0, 0.75) !important;z-index:10;opacity:1;height:100%;}
 }
 body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %tr-all;
-	.popup-container{@extend %tr-all;
-		&.is-show{bottom:0;right:0;left:0;@extend %tr-all; z-index:1000;}	
+	.popup-container{@extend %tr-all;height:0%;
+		&.is-show{bottom:0;right:0;left:0;@extend %tr-all;z-index:1050;height:96.5%;}	
 	}
 }
 .bl-popup{max-width:600px;margin:0 auto;position:fixed;
@@ -55,7 +55,7 @@ body.overlay-open .bl-popup{z-index:1050;opacity:1;visibility:visible;@extend %t
 				a{color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;background-color:#1744CF;height:44px;border-radius:8px;}
 			}
 		}
-		.bl-popup-context{height:calc(100vh - 70px);overflow-y: scroll;-webkit-overflow-scrolling: touch;
+		.bl-popup-context{height:calc(100vh - 78px);overflow-y: scroll;-webkit-overflow-scrolling: touch;
 			.default-form{
 				.input-group{@include padding(null 20px);}
 			}
@@ -1224,7 +1224,7 @@ ul.select-list{
 /* Slide */
 
 
-.bl-slide{z-index:1051;display:block;visibility:hidden;@include position(fixed, 16px -100% 0 null);@extend %tr-all;overflow:hidden;background-color:#fff;width:100%;border-radius:8px 8px 0 0;
+.bl-slide{z-index:1051;display:block;visibility:hidden;@include position(fixed, 22px -100% 0 null);@extend %tr-all;overflow:hidden;background-color:#fff;width:100%;border-radius:8px 8px 0 0;
 	&.is-show{right:0;visibility:visible;}
 	#slide-filter{z-index:1052;}
 	.slide-container{width:100%;border-radius:8px 8px 0 0;

@@ -1115,11 +1115,15 @@ body.overlay-open .bl-popup {
   opacity: 1;
   visibility: visible;
 }
+body.overlay-open .bl-popup .popup-container {
+  height: 0%;
+}
 body.overlay-open .bl-popup .popup-container.is-show {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1050;
+  height: 96.5%;
 }
 
 .bl-popup {
@@ -1232,7 +1236,7 @@ body.overlay-open .bl-popup .popup-container.is-show {
   border-radius: 8px;
 }
 .bl-popup .popup-container .bl-popup-context {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 78px);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
@@ -5110,7 +5114,7 @@ ul.select-list.custom-for-modal li:first-child .item {
   display: block;
   visibility: hidden;
   position: fixed;
-  top: 16px;
+  top: 22px;
   right: -100%;
   bottom: 0;
   overflow: hidden;
