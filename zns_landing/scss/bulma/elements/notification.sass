@@ -1,0 +1,71 @@
+$notification-background-color: $white !default
+$notification-code-background-color: $scheme-main !default
+$notification-radius: $radius-small !default
+$notification-padding: 1rem 2rem 1rem 2.5rem !default
+
+.notification
+  @extend %block
+  border-left: 2px solid $notification-background-color
+  border-radius: $notification-radius
+  padding: $notification-padding
+  position: relative
+  border: 1px solid hsl(213, 19%, 88%)
+  background-color: $white
+  & + .notification
+    margin-top: -6px
+  @extend %is-shadow-1
+  [class^=icz]
+    @include position(absolute, 14px null null 10px)
+    width: 24px
+    padding: 4px
+    font-size: 1rem
+  .delete
+    background-color: transparent
+    transform: scale(1.5)
+    &:before
+      background-color: #242E42
+      height: 1px
+    &:after
+      background-color: #242E42
+      width: 1px
+  h4
+    display: block
+    font-size: $size-normal
+    font-weight: $weight-semibold
+    a
+      color: #248aff !important
+      text-decoration: none !important
+      margin-left: 8px
+  p
+    font-size: $size-small
+  .button.is-white
+    margin-bottom: -$gutter
+    padding-left: 0
+    padding-right: 0
+      
+  a:not(.button):not(.dropdown-item)
+    color: currentColor
+    text-decoration: underline
+  strong
+    color: currentColor
+  code,
+  pre
+    background: $notification-code-background-color
+  pre code
+    background: transparent
+  & > .delete
+    position: absolute
+    right: 0.75rem
+    top: 1rem
+  .title,
+  .subtitle,
+  .content
+    color: currentColor
+  // Colors
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      border-left: 2px solid $color
+      [class^=icz]
+        color: $color
