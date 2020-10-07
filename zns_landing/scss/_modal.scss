@@ -1,6 +1,69 @@
 // Core variables and mixins bourbon
 @import "bourbon";
+// Animation
+.ico-success{
+	&.is-active-ico{
+		@keyframes outline{
+			from{
+				stroke-dasharray:0, 345.576px;
+			}
+			to{
+				stroke-dasharray:345.576px, 345.576px;
+			}
+		}
+		#outline{
+			animation:.38s ease-in outline;
+			transform:rotate(0deg);
+			transform-origin:center;
+		}
+		
+		@keyframes circle{
+			from{
+				transform:scale(1);
+			}
+			to{
+				transform:scale(0);
+			}
+		}
+		#white-circle{
+			animation:.35s ease-in .35s forwards circle;
+			transform:none;
+			transform-origin:center;
+		}
+		
+		@keyframes check{
+			from{
+				stroke-dasharray:0, 75px;
+			}
+			to{
+				stroke-dasharray:75px, 75px;
+			}
+		}
+		#check{
+			animation:0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+			stroke-dasharray:0, 75px;
+		}
+	}
+	
+	
+	@keyframes check-group{
+		from{
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(1.09);
+		}
+		to{
+			transform:scale(1);
+		}
+	}
+	#check-group{
+		animation:.32s ease-in-out 1.03s check-group;
+		transform-origin:center;
+	}
+}
 
+	
 
 // Modal
 .bl-modal{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:#242E42;overflow:hidden;
@@ -33,7 +96,8 @@
 			}
 			.context-register{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:$white;@include padding(48px);
 				.head{
-					[class^="icz"]{display:block;background-color:$white;color:$success;@include size(64px);@include margin(null auto);font-size:4rem;}
+					.ico-success{display:block;@include size(78px);@include margin(null auto);}
+					
 					h2{font-size:$size-xlarge;line-height:36px;font-weight:$weight-bold;color:$text;margin-top:24px;text-align:center;}
 					p{color:$text;font-size:$size-normal;line-height:22px;max-width:576px;@include margin(14px auto 24px);text-align:center;}
 				}
@@ -146,15 +210,26 @@
 	.bl-modal{
 		.modal-container{
 			.bl-modal-heading{
-				.func-close-modal{right:14px}
+				.func-close-modal{top:20px;right:20px;@include size(24px);
+					[class^="icz"]{font-size:1.5rem;@include size(24px);@include padding(0);}
+				}
 			}
-			.bl-modal-context{margin-left:24px !important;margin-right:24px !important;
+			.bl-modal-context{margin:10vh 24px !important;
 				.context-modal{
 					&.context-send-template{
 						.col-left{display:none;}
 						.col-right{@include padding(24px);
 							.head{text-align:center;}
-							.text{text-align:center;}
+							.text{text-align:center;font-size:0.813em;}
+							.form-send-template{
+								.field{
+									.control{height:44px;
+										input{height:26px;font-size:$size-normal}
+										.label{top:12px;font-size:$size-normal;}
+										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
+									}
+								}
+							}
 						}
 					}
 					&.context-register{@include padding(24px);
@@ -166,7 +241,12 @@
 						.body{
 							.form-register{
 								.field{width:100%;
-									.func-back-form{position:inherit;left:inherit;top:inherit;justify-content:center;margin-top:16px;}
+									.func-back-form{position:inherit;left:inherit;top:inherit;justify-content:center;margin-top:16px;@include padding(16px null)}
+									.control{height:44px;
+										input{height:26px;font-size:$size-normal}
+										.label{top:12px;font-size:$size-normal;}
+										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
+									}
 								}
 							}
 						}

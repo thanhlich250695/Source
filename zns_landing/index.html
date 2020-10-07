@@ -21,6 +21,9 @@
   </head>
   <body>
     <main class="zns-landing">
+      <header class="header">
+        <div class="context"><a href="#!"><img class="logo-zad" src="images/img_logo_zad.png" alt="Logo ZAD"></a><span class="group-cta"><a class="button is-normal is-outlined func-send-template" href="#!">Gửi tin nhắn mẫu</a><a class="button is-primary is-normal" href="#form-register">Đăng ký ngay</a></span></div>
+      </header>
       <section class="section-hero">
         <div class="context">
           <div class="col-left"><img class="logo" src="images/img_logo.png" alt="Logo Zalo Notification Service">
@@ -33,7 +36,6 @@
                   <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup1.png');"></span></a></div>
                   <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup2.png');"></span></a></div>
                   <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup3.png');"></span></a></div>
-                  <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup1.png');"></span></a></div>
                 </div>
               </div>
               <div class="swiper-pagination" id="mockup-pagination"></div>
@@ -193,7 +195,7 @@
               </div>
             </div>
             <div class="col-right">
-              <h2 class="head">Ưu điểm của ZNS</h2>
+              <h2 class="head">Gửi tin nhắn mẫu</h2>
               <p class="text">Nhập thông tin bên dưới để nhận tin nhắn mẫu</p>
               <div class="body">
                 <form class="form-send-template">
@@ -218,7 +220,15 @@
             </div>
           </div>
           <div class="context-modal context-register is-hide">
-            <div class="head"><i class="icz icz-fill-check"></i>
+            <div class="head">
+              <svg class="ico-success" width="133px" height="133px" viewBox="0 0 133 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <circle id="filled-circle" fill="#09AB4C" cx="66.5" cy="66.5" r="54.5"></circle>
+                  <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5"></circle>
+                  <circle id="outline" stroke="#09AB4C" stroke-width="6" cx="66.5" cy="66.5" r="54.5"></circle>
+                  <polyline id="check" stroke="#FFFFFF" stroke-width="6" points="41 70 56 85 92 49"></polyline>
+                </g>
+              </svg>
               <h2>Gửi tin nhắn thành công</h2>
               <p>Tin nhắn đã được gửi đến số điện thoại Zalo của bạn. Bạn là doanh nghiệp muốn sử dụng Zalo để chăm sóc khách hàng? Vui lòng nhập thông tin đăng ký bên dưới.</p>
             </div>
@@ -366,15 +376,19 @@
       	$("#modal-form").removeClass("is-show");
       	$(".context-send-template").removeClass("is-hide");
       	$(".context-register").addClass("is-hide");
+      	$(".ico-success").removeClass("is-active-ico");
       });
       //- chuyển content modal
       $(".func-send").click(function(){
       	$(".context-send-template").addClass("is-hide");
       	$(".context-register").removeClass("is-hide");
+      	$(".ico-success").addClass("is-active-ico");
       });
       $(".func-back-form").click(function(){
       	$(".context-send-template").removeClass("is-hide");
       	$(".context-register").addClass("is-hide");
+      	$(".ico-success").removeClass("is-active-ico");
+      
       });
       //- style css focus input
       $("input").focus(function(){
@@ -385,6 +399,17 @@
       $(".swiper-slide").click(function(){
       	$(".swiper-slide").removeClass("swiper-slide-active");
       	$(this).addClass("swiper-slide-active")
+      });
+      //- check height scroll
+      $(window).scroll(function() {
+      	var height = $(window).scrollTop();
+      
+      	if(height  > $(".section-hero").height()) {
+      		$(".header").addClass("is-fixed")
+      	}
+      	else{
+      		$(".header").removeClass("is-fixed")
+      	}
       });
     </script>
   </body>
