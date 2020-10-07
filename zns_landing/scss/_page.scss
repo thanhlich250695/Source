@@ -42,7 +42,7 @@ body, html{height:100%;
 					.swiper-pagination-bullet{background-color:#989EA5;opacity:0.5; @include size(8px);@include margin(0 5px);border-radius:50%}
 					.swiper-pagination-bullet-active{position:relative;background-color:#1744CF;@include size(8px);opacity:1;}
 				}
-				.swiper-mockup{overflow:hidden;border-radius:28px;background-color:$white;
+				.swiper-mockup{overflow:hidden;border-radius:28px;background-color:#3E8EF4;
 					.swiper-wrapper{
 						.swiper-slide{
 							.item-mockup{display:block;
@@ -60,7 +60,7 @@ body, html{height:100%;
 		.context{justify-content:space-between;
 			.col-left{flex-grow:1;min-width:0;
 				.logo{width:362px;height:72px;margin:inherit;margin-bottom:36px;}
-				.text{font-size:1.25em;line-height:32px;text-align:left;max-width:408px;}
+				.text{font-size:1.25em;line-height:32px;text-align:left;max-width:375px;}
 				.group-cta{display:flex;max-width:inherit;
 					.button{
 						&:first-child{margin-right:1rem;}
@@ -81,7 +81,7 @@ body, html{height:100%;
 							.swiper-slide{
 								.item-mockup{
 									.img-mockup{
-										&:after{padding-top:560px;}
+										&:after{padding-top:562px;}
 									}
 								}
 							}
@@ -117,7 +117,7 @@ body, html{height:100%;
 				.list{display:flex;justify-content:space-between;flex-wrap:wrap;
 					.item{width:48%;
 						.desc{max-width:300px;}
-						&:last-child{width:100%;
+						&:last-child{width:100%;margin-bottom:0;
 						}
 						
 					}
@@ -126,7 +126,9 @@ body, html{height:100%;
 		}
 	}
 	@media(min-width:1024px){padding-top:0;
-		.img-about{display:block;width:100%;margin-top:48px;}
+		.img-about{display:block;margin-top:48px;background-position:center center !important;background-repeat:no-repeat !important;background-size:cover !important;@include size(100%, 350px);
+			
+		}
 		.context{
 			.about-box{background-image:url(../images/img_box_pc.png);border-color:#CDD2DD;@include padding(24px 85px);
 				.text{color:$text;font-size:$size-xlarge;font-weight:$weight-bold;line-height:36px;}
@@ -134,7 +136,7 @@ body, html{height:100%;
 			.about-benefit{@include margin(120px null 100px);
 				.head{font-size:2.25em;font-weight:$weight-bold;line-height:48px;max-width:696px;@include margin(null auto 64px);}
 				.list{display:flex;justify-content:space-between;
-					.item{width:inherit;
+					.item{width:inherit;margin-bottom:0;
 						.bullet{margin-bottom:32px;}
 						.title{font-size:$size-xlarge;font-weight:$weight-bold;line-height:36px;}
 						.desc{max-width:305px;}
@@ -212,10 +214,11 @@ body, html{height:100%;
 				.swiper-pagination{
 					&#template-pagination{display:none;}
 				}
-				.swiper-container{box-shadow:0px 61px 84px rgba(67,86,100,0.14);
+				.swiper-container{overflow:inherit;
 					.swiper-wrapper{
 						.swiper-slide{
 							.desc{display:none;}
+							.img{box-shadow:0px 61px 84px rgba(67,86,100,0.14);}
 						}
 					}
 				}
@@ -273,7 +276,7 @@ body, html{height:100%;
 				.help{display:none;}
 				.control{position:relative;height:54px;background-color:$white;border-radius:$radius-small;padding-top:14px;
 					input{border-color:transparent;box-shadow:none;padding-right:15px;padding-left:15px;font-size:$size-medium;font-weight:$weight-semibold;color:$text;width:98%;@include position(absolute, null 1px 1px 1px);height:35px;}
-					.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;color:#5F656D;@extend %tr-all;pointer-events:none;}
+					.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;font-weight:$weight-normal;color:#989EA5;@extend %tr-all;pointer-events:none;}
 					input:not(:focus):valid ~ .label,input:focus ~ .label{top:5px;font-size:$size-normal;}
 					&.is-invalid{border:1px solid $danger;}
 					&.is-focus{box-shadow:0 0 4px rgb(23,68,207,0.5);}
@@ -281,7 +284,7 @@ body, html{height:100%;
 				.control.is-invalid + .help{display:block;}
 				&:last-child{
 					.button{border:1px solid $white;width:100%;background-color:transparent;color:$white;@extend %tr-all;
-						&:hover{background-color:$white;color:$text;}
+						&:hover{background-color:$white;color:$primary;}
 					}
 				}
 			}
@@ -296,7 +299,7 @@ body, html{height:100%;
 				.field{flex-shrink:0;width:50%;@include padding(null 12px);margin-bottom:24px;
 					&:nth-last-child(2){width:100%;}
 					&:last-child{width:333px;@include margin(null auto);
-						.button{border:1px solid $white;width:100%;background-color:transparent;color:$white;}
+						.button{border:1px solid $white;width:100%;margin-top:12px;background-color:transparent;color:$white;}
 					}
 				}
 			}

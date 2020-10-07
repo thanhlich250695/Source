@@ -46,7 +46,8 @@
           <div class="about-box">
             <p class="text">Zalo Notification Service (ZNS) là dịch vụ gửi tin chăm sóc khách hàng qua API tới các số điện thoại đang sử dụng Zalo</p>
           </div>
-        </div><img class="img-about" src="images/img_bg_about.png" alt="Img ZNS">
+        </div>
+        <div class="img-about" style="background:url(images/img_bg_about.png)"></div>
         <div class="context">
           <div class="about-benefit">
             <h2 class="head">ZNS được thiết kế nhằm đáp ứng nhiều đối tượng sử dụng khác nhau</h2>
@@ -93,13 +94,13 @@
           <div class="template-content">
             <div class="swiper-container gallery-top">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_2.png" alt="Img ZNS">
+                <div class="swiper-slide"><img class="img" src="images/img_type_template_1.png" alt="Img ZNS">
                   <p class="desc">Những tin liên quan đến quá trình tạo hoặc thay đổi trạng thái của tài khoản người dùng.<br>Ví dụ: Tin OTP, tin xác nhận tài khoản thành công, tin báo tài khoản sắp hết hạn…</p>
                 </div>
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_1.png" alt="Img ZNS">
+                <div class="swiper-slide"><img class="img" src="images/img_type_template_2.png" alt="Img ZNS">
                   <p class="desc">Những tin thông báo và cập nhật giao dịch mua bán giữa Khách hàng và Doanh nghiệp.<br>Ví dụ: Tin sao kê tiền điện, tin xác nhận mua hàng thành công, tin báo trạng thái đơn hàng…</p>
                 </div>
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_1.png" alt="Img ZNS">
+                <div class="swiper-slide"><img class="img" src="images/img_type_template_3.png" alt="Img ZNS">
                   <p class="desc">Những tin thông báo và cập nhật quan hệ tài  chính giữa Khách hàng và Doanh nghiệp.<br/>Ví dụ: Sao kê thẻ tín dụng, tin xác nhận giải ngân thành công, tin nhắc nợ…</p>
                 </div>
               </div>
@@ -284,19 +285,20 @@
       var swiper = new Swiper('.swiper-mockup', {
       	slidesPerView: 1,
       	loop: false,
-      	speed: 600,
+      	speed: 1000,
       	pagination: {
       		el: '#mockup-pagination',
       		clickable: true,
       	},
       	autoplay: {
-      		delay: 1000,
+      		delay: 3000,
       	},
       });
       var galleryTop = new Swiper('.gallery-top', {
       	slidesPerView: 1,
       	spaceBetween: 10,
       	loop: false,
+      	autoHeight:true,
       	effect: "fade",
       	fadeEffect: { crossFade: true },
       	loopedSlides: 1,

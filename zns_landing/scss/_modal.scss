@@ -41,7 +41,7 @@
 					.form-register{display:flex;flex-wrap:wrap;@include margin(null -10px);
 						.field{width:50%;@include padding(null 10px);
 							&:nth-last-child(2){width:100%}
-							&:last-child{position:relative;width:100%;text-align:center;
+							&:last-child{position:relative;width:100%;text-align:center;margin-top:8px;
 								.func-back-form{@include position(absolute, 10px null null 10px);display:flex;align-items:center;color:inherit;
 									[class^="icz"]{color:$text;margin-right:8px;font-size:0.875rem;}
 									span{font-size:$size-medium;display:block;line-height:24px;color:$text;}
@@ -56,7 +56,7 @@
 						.help{display:none;}
 						.control{position:relative;height:54px;background-color:$white;border-radius:$radius-small;padding-top:14px;border:1px solid #DCE1E7;
 							input{border-color:transparent;box-shadow:none;padding-right:15px;padding-left:15px;font-size:$size-medium;font-weight:$weight-semibold;color:$text;width:98%;@include position(absolute, null 1px 1px 1px);height:35px;}
-							.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;color:#5F656D;@extend %tr-all;pointer-events:none;}
+							.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;font-weight:$weight-normal;color:#989EA5;@extend %tr-all;pointer-events:none;}
 							input:not(:focus):valid ~ .label,input:focus ~ .label{top:5px;font-size:$size-normal;}
 							&.is-invalid{border:1px solid $danger;}
 							&.is-focus{border:1px solid #1744CF;box-shadow:0 0 4px rgb(23,68,207,0.5);}
@@ -79,7 +79,7 @@
 								.help{display:none;}
 								.control{position:relative;height:54px;background-color:$white;border-radius:$radius-small;padding-top:14px;border:1px solid #DCE1E7;
 									input{border-color:transparent;box-shadow:none;padding-right:15px;padding-left:15px;font-size:$size-medium;font-weight:$weight-semibold;color:$text;width:98%;@include position(absolute, null 1px 1px 1px);height:35px;}
-									.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;color:#5F656D;@extend %tr-all;pointer-events:none;}
+									.label{@include position(absolute, 14px null null 16px);font-size:$size-medium;font-weight:$weight-normal;color:#989EA5;@extend %tr-all;pointer-events:none;}
 									input:not(:focus):valid ~ .label,input:focus ~ .label{top:5px;font-size:$size-normal;}
 									&.is-invalid{border:1px solid $danger;}
 									&.is-focus{border:1px solid #1744CF;box-shadow:0 0 4px rgb(23,68,207,0.5);}
