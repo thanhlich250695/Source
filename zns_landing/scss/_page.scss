@@ -296,7 +296,7 @@ body, html{height:100%;
 				.help{display:none;}
 				.control{position:relative;height:44px;background-color:$white;border-radius:$radius-small;padding-top:14px;
 					input{border-color:transparent;box-shadow:none;padding-right:15px;padding-left:15px;font-size:$size-normal;font-weight:$weight-semibold;color:$text;width:98%;@include position(absolute, null 1px 1px 1px);height:30px;}
-					.label{@include position(absolute, 12px null null 16px);font-size:$size-normal;font-weight:$weight-normal;color:#989EA5;@extend %tr-all;pointer-events:none;}
+					.label{@include position(absolute, 11px null null 16px);font-size:$size-normal;font-weight:$weight-normal;color:#989EA5;@extend %tr-all;pointer-events:none;}
 					input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
 					&.is-invalid{border:1px solid $danger;}
 					&.is-focus{box-shadow:0 0 4px rgb(23,68,207,0.5);}

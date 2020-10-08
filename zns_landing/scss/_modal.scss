@@ -225,7 +225,7 @@
 								.field{
 									.control{height:44px;
 										input{height:26px;font-size:$size-normal}
-										.label{top:12px;font-size:$size-normal;}
+										.label{top:11px;font-size:$size-normal;}
 										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
 									}
 								}
@@ -244,7 +244,7 @@
 									.func-back-form{position:inherit;left:inherit;top:inherit;justify-content:center;margin-top:16px;@include padding(16px null)}
 									.control{height:44px;
 										input{height:26px;font-size:$size-normal}
-										.label{top:12px;font-size:$size-normal;}
+										.label{top:11px;font-size:$size-normal;}
 										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
 									}
 								}
