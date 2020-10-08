@@ -1,7 +1,7 @@
 // Core variables and mixins bourbon
 @import "../../../zalo_core_sass/bourbon";
 
-@import "../../../zalo_core_sass/variable";
+@import "../../../zalo_core_sass/variable_market";
 @import "../../../zalo_core_sass/mixin_lib";
 
 // Plugin bootstrap
@@ -10,7 +10,7 @@
 @import "../../../zalo_core_sass/bootstrap/mixins";
 
 // Fonts
-@import "../../../zalo_core_sass/font";
+@import "font";
 @import "../../../zalo_core_sass/nucleo/nucleo";
 
 

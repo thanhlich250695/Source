@@ -26,21 +26,24 @@
           <div class="tl-head"><i class="icn icn-users"></i><span class="text">Tin được xem bởi tất cả bạn bè Zalo</span></div>
           <div class="tl-body">
             <div class="content">
-              <p>HIỆN DỰ ÁN ĐANG TRONG QUÁ TRÌNH BÀN GIAO 1 TÒA, CƯ DÂN ĐANG RỤC RỊCH ĐI NHẬN NHÀ</p>
-              <p>Em có bán căn góc đẹp của tòa, bàn giao nội thất cao cấp có thể đi xem nhà thực tế</p>
-              <p>Tiện ích đầy đủ: yoga, gym, BBQ, công viên....</p>
-              <p>Có trường tiểu học Kim Đồng và mẫu giáo quốc tế Nhật Bản trong khuôn viên</p>
-              <p>Có tòa Park Hyatt cao 69 tầng, sang năm sẽ xây dựng</p><span class="img" style="background-image:url(images/img_sharetimeline.png)"></span><span class="img" style="background-image:url(images/img_sharetimeline2.png)"></span><span class="img" style="background-image:url(images/img_sharetimeline3.png)"></span>
+              <textarea placeholder="Nhập mô tả">Lorem isum  Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum  Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum Lorem isum </textarea><span class="img" style="background-image:url(images/img_sharetimeline.png)"></span><span class="img" style="background-image:url(images/img_sharetimeline2.png)"></span><span class="img" style="background-image:url(images/img_sharetimeline3.png)"></span>
             </div>
             <div class="info"><span class="text"><span class="link">Shop.me</span><span class="title">Sang nhượng căn hộ dự án Sunrise City 3PN, 3WC. CĂN GÓC VIEW LANDMARK, PARK HYATT SANG CHẢNH </span><span class="desc">2,500,000,000 - Quận 3, Tp.Hồ Chí Minh</span></span><span class="cta"><a class="func-share" href="#func-share"><i class="icn icn-share"></i></a></span></div>
           </div>
-          <div class="tl-footer"><a class="btn btn-primary btn--m w-100" href="#!">Đăng lên nhật ký</a></div>
+          <div class="tl-footer is-fixed"><a class="btn btn-primary btn--m w-100" href="#!">Đăng lên nhật ký</a></div>
         </div>
       </div>
     </div>
     <!-- Include Plugin-->
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
+    <script>
+      $('textarea').each(function () {
+      	this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+      	}).on('input', function () {
+      	this.style.height = 'auto';
+      	this.style.height = (this.scrollHeight) + 'px';
+      });
+    </script>
   </body>
 </html>
