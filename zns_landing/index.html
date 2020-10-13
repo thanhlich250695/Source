@@ -12,8 +12,10 @@
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
     <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="Zalo Notification Service - Gửi thông báo tới khách hàng giá tiết kiệm">
+    <meta property="og:description" content="Zalo Notification Service là dịch vụ gửi thông báo chăm sóc khách hàng tới các số điện thoại qua ứng dụng Zalo.">
+    <meta property="og:image" content="images/share_fb.png">
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link href="css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="css/layout.css" rel="stylesheet" type="text/css">
@@ -22,20 +24,27 @@
   <body>
     <main class="zns-landing">
       <header class="header">
-        <div class="context"><a href="#!"><img class="logo-zad" src="images/img_logo_zad.png" alt="Logo ZAD"></a><span class="group-cta"><a class="button is-normal is-outlined func-send-template" href="#!">Gửi tin nhắn mẫu</a><a class="button is-primary is-normal" href="#form-register">Đăng ký ngay</a></span></div>
+        <div class="context"><a class="logo-zad" href="#!"></a><span class="group-cta"><a class="button is-normal is-outlined" href="send_template.html">Nhận ZNS mẫu</a><a class="button is-primary is-normal" href="#form-register">Đăng ký ngay</a></span></div>
       </header>
       <section class="section-hero">
         <div class="context">
-          <div class="col-left"><img class="logo" src="images/img_logo.png" alt="Logo Zalo Notification Service">
-            <h1 class="text">Gửi nội dung chăm sóc khách hàng với chi phí tiết kiệm</h1><span class="group-cta"><a class="button is-primary is-large" href="#form-register">Đăng ký ngay</a><a class="button is-large is-outlined func-send-template" href="#!">Gửi tin nhắn mẫu</a></span>
+          <div class="col-left"><span class="logo"></span>
+            <h1 class="text">Gửi thông báo chăm sóc khách hàng với chi phí tiết kiệm</h1><span class="group-cta"><a class="button is-primary is-large" href="#form-register">Đăng ký ngay</a><a class="button is-large is-outlined" href="send_template.html"> Nhận ZNS mẫu</a></span>
           </div>
-          <div class="col-right"><img class="img-mockup" src="images/img_mockup.png" alt="image mockup">
+          <div class="col-right">
+            <div class="img-mockup-main"></div>
             <div class="content-mockup-inside">
               <div class="swiper-container swiper-mockup">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup1.png');"></span></a></div>
-                  <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup2.png');"></span></a></div>
-                  <div class="swiper-slide"><a class="item-mockup" href="#!"><span class="img-mockup" style="background-image:url('images/img_content_mockup3.png');"></span></a></div>
+                  <div class="swiper-slide">
+                    <div class="item-mockup"><span class="img-mockup is-mockup1"></span></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-mockup"><span class="img-mockup is-mockup2"></span></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-mockup"><span class="img-mockup is-mockup3"></span></div>
+                  </div>
                 </div>
               </div>
               <div class="swiper-pagination" id="mockup-pagination"></div>
@@ -46,16 +55,16 @@
       <section class="section-about">
         <div class="context">
           <div class="about-box">
-            <p class="text">Zalo Notification Service (ZNS) là dịch vụ gửi tin chăm sóc khách hàng qua API tới các số điện thoại đang sử dụng Zalo</p>
+            <p class="text">Zalo Notification Service (ZNS) là dịch vụ gửi thông báo chăm sóc khách hàng qua API tới các số điện thoại đang sử dụng Zalo</p>
           </div>
         </div>
-        <div class="img-about" style="background:url(images/img_bg_about.png)"></div>
+        <div class="img-about"></div>
         <div class="context">
           <div class="about-benefit">
             <h2 class="head">ZNS được thiết kế nhằm đáp ứng nhiều đối tượng sử dụng khác nhau</h2>
             <ul class="list">
               <li class="item"><span class="bullet"> </span><span class="title">Doanh nghiệp lớn</span><span class="desc">Muốn gửi nội dung chuyên nghiệp tới khách hàng với chi phí tối ưu</span></li>
-              <li class="item"><span class="bullet"> </span><span class="title">SME</span><span class="desc">Có thể tích hợp API của ZNS để tự động hóa việc gửi tin tới người dùng cuối</span></li>
+              <li class="item"><span class="bullet"> </span><span class="title">SME</span><span class="desc">Có thể tích hợp API của ZNS để tự động hóa việc gửi thông báo tới người dùng cuối</span></li>
               <li class="item"><span class="bullet"> </span><span class="title">Startup</span><span class="desc">Sở hữu DNA công nghệ để kiến tạo kênh chăm sóc khách hàng mới trên Zalo</span></li>
             </ul>
           </div>
@@ -64,30 +73,30 @@
       <section class="section-type-template">
         <div class="context">
           <div class="thumb-content">
-            <h2 class="head">Các loại mẫu tin ZNS</h2>
+            <h2 class="head">Các loại ZNS</h2>
             <div class="swiper-container gallery-top-desktop">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p class="desc">Những tin liên quan đến quá trình tạo hoặc thay đổi trạng thái của tài khoản người dùng.<br>Ví dụ: Tin OTP, tin xác nhận tài khoản thành công, tin báo tài khoản sắp hết hạn…</p>
+                  <p class="desc">Thông báo và cập nhật quan hệ tài chính giữa Người nhận và Doanh nghiệp.<br/>Ví dụ: Sao kê thẻ tín dụng, xác nhận giải ngân thành công, thông báo nhắc nợ...</p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="desc">Những tin thông báo và cập nhật giao dịch mua bán giữa Khách hàng và Doanh nghiệp.<br>Ví dụ: Tin sao kê tiền điện, tin xác nhận mua hàng thành công, tin báo trạng thái đơn hàng…</p>
+                  <p class="desc">Thông báo và cập nhật giao dịch mua bán giữa Người nhận và Doanh nghiệp.<br>Ví dụ: Sao kê tiền điện, cập nhật trạng thái đơn hàng, xác nhận chuyển hàng thành công...</p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="desc">Những tin thông báo và cập nhật quan hệ tài  chính giữa Khách hàng và Doanh nghiệp.<br/>Ví dụ: Sao kê thẻ tín dụng, tin xác nhận giải ngân thành công, tin nhắc nợ…</p>
+                  <p class="desc">Thông báo về quá trình tạo hoặc thay đổi trạng thái tài khoản người dùng.<br>Ví dụ: OTP, xác nhận tài khoản thành công, thông báo tài khoản sắp hết hạn</p>
                 </div>
               </div>
             </div>
             <div class="swiper-container gallery-thumbs">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p>Tin về biến động tài khoản</p>
+                  <p>ZNS quan hệ tài chính</p>
                 </div>
                 <div class="swiper-slide">
-                  <p>Tin về giao dịch mua bán</p>
+                  <p>ZNS giao dịch mua bán</p>
                 </div>
                 <div class="swiper-slide">
-                  <p>Tin về quan hệ tài chính</p>
+                  <p>ZNS biến động tài khoản</p>
                 </div>
               </div>
             </div>
@@ -96,14 +105,14 @@
           <div class="template-content">
             <div class="swiper-container gallery-top">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_1.png" alt="Img ZNS">
-                  <p class="desc">Những tin liên quan đến quá trình tạo hoặc thay đổi trạng thái của tài khoản người dùng.<br>Ví dụ: Tin OTP, tin xác nhận tài khoản thành công, tin báo tài khoản sắp hết hạn…</p>
+                <div class="swiper-slide"><span class="img is-img1"></span>
+                  <p class="desc">Thông báo và cập nhật quan hệ tài chính giữa Người nhận và Doanh nghiệp.<br/>Ví dụ: Sao kê thẻ tín dụng, xác nhận giải ngân thành công, thông báo nhắc nợ...</p>
                 </div>
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_2.png" alt="Img ZNS">
-                  <p class="desc">Những tin thông báo và cập nhật giao dịch mua bán giữa Khách hàng và Doanh nghiệp.<br>Ví dụ: Tin sao kê tiền điện, tin xác nhận mua hàng thành công, tin báo trạng thái đơn hàng…</p>
+                <div class="swiper-slide"><span class="img is-img2"></span>
+                  <p class="desc">Thông báo và cập nhật giao dịch mua bán giữa Người nhận và Doanh nghiệp.<br>Ví dụ: Sao kê tiền điện, cập nhật trạng thái đơn hàng, xác nhận chuyển hàng thành công...</p>
                 </div>
-                <div class="swiper-slide"><img class="img" src="images/img_type_template_3.png" alt="Img ZNS">
-                  <p class="desc">Những tin thông báo và cập nhật quan hệ tài  chính giữa Khách hàng và Doanh nghiệp.<br/>Ví dụ: Sao kê thẻ tín dụng, tin xác nhận giải ngân thành công, tin nhắc nợ…</p>
+                <div class="swiper-slide"><span class="img is-img3"></span>
+                  <p class="desc">Thông báo về quá trình tạo hoặc thay đổi trạng thái tài khoản người dùng.<br>Ví dụ: OTP, xác nhận tài khoản thành công, thông báo tài khoản sắp hết hạn</p>
                 </div>
               </div>
             </div>
@@ -115,67 +124,74 @@
         <div class="context">
           <h2 class="head">Ưu điểm nổi bật</h2>
           <ul class="list">
-            <li class="item"><span class="img" style="background-image:url(images/img_advantage_1.png)"></span><span class="title">Nội dung đa dạng</span><span class="desc">Gửi tin với giới hạn hàng trăm ký tự có dấu và định dạng phong phú (tin dạng bảng, nội dung chứa ảnh, nút CTA…)</span></li>
-            <li class="item"><span class="img" style="background-image:url(images/img_advantage_2.png)"></span><span class="title">Chi phí tiết kiệm</span><span class="desc">Chỉ trả phí trên tin gửi thành công với giá cạnh tranh so với giải pháp truyền thống. Không trả thêm các chi phí khác.</span></li>
-            <li class="item"><span class="img" style="background-image:url(images/img_advantage_3.png)"></span><span class="title">Tương tác 2 chiều</span><span class="desc">Tiếp tục duy trì hội thoại qua Tài khoản Doanh nghiệp (Official Account) nếu người nhận phản hồi với tin nhắn.</span></li>
-            <li class="item"><span class="img" style="background-image:url(images/img_advantage_4.png)"></span><span class="title">Tiếp cận chủ động</span><span class="desc">Được thông báo để gửi qua giải pháp khác nếu tin gửi không thành công. Tuy nhiên, hầu hết smartphone ở Việt Nam đều đang có Zalo.</span></li>
-            <li class="item"><span class="img" style="background-image:url(images/img_advantage_5.png)"></span><span class="title">Theo dõi dễ dàng</span><span class="desc">Nắm thông tin lượt gửi thành công theo ngày với khả năng theo dõi lượt tương tác qua nút bấm nếu nút dẫn tới web/ app Doanh nghiệp.</span></li>
+            <li class="item"><span class="img"></span><span class="title">Nội dung đa dạng</span><span class="desc">Gửi thông báo với giới hạn hàng trăm ký tự có dấu và định dạng phong phú (tin dạng bảng, nội dung chứa ảnh, nút CTA…)</span></li>
+            <li class="item"><span class="img"></span><span class="title">Chi phí tiết kiệm</span><span class="desc">Chỉ trả phí trên ZNS gửi thành công với giá cạnh tranh so với giải pháp truyền thống. Không trả thêm các chi phí khác.</span></li>
+            <li class="item"><span class="img"></span><span class="title">Tương tác 2 chiều</span><span class="desc">Tiếp tục duy trì hội thoại qua Tài khoản Doanh nghiệp (Official Account) nếu người nhận phản hồi với tin nhắn.</span></li>
+            <li class="item"><span class="img"></span><span class="title">Tiếp cận chủ động</span><span class="desc">Được thông báo để sử dụng giải pháp khác nếu gửi ZNS không thành công. Tuy nhiên, hầu hết smartphone ở Việt Nam đều đang có Zalo.</span></li>
+            <li class="item"><span class="img"></span><span class="title">Theo dõi dễ dàng</span><span class="desc">Nắm thông tin lượt gửi thành công theo ngày với khả năng theo dõi lượt tương tác qua nút bấm nếu nút dẫn tới web/ app Doanh nghiệp.</span></li>
           </ul>
         </div>
       </section>
       <section class="section-register" id="form-register">
         <div class="context">
           <h2 class="head">Đăng ký thử nghiệm</h2>
-          <p class="text">Nhận <strong>50,000 </strong>tin ZNS miễn phí trong 1 tháng đầu khi đăng ký ngay hôm nay.</p>
-          <form class="form-register">
+          <p class="text">Nhận <strong>50,000 </strong>ZNS miễn phí trong 1 tháng đầu khi đăng ký ngay hôm nay.</p>
+          <form class="form-register" name="cform" id="cform" target="_self" action="" data-form-validate="true" method="post" novalidate="novalidate">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="nameField" data-rule-required="true" data-msg-required="Vui lòng nhập tên người liên hệ." name="nameField" required>
                 <label class="label">Tên người liên hệ</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="phoneField" data-rule-required="true" data-msg-required="Vui lòng nhập số điện thoại." value="" name="phoneField" required>
                 <label class="label">Số điện thoại</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="nameInterpriseField" data-rule-required="true" data-msg-required="Vui lòng nhập tên doanh nghiệp." value="" name="nameInterpriseField" required>
                 <label class="label">Tên doanh nghiệp</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="email" id="emailField" data-rule-required="true" data-msg-required="Vui lòng nhập email công ty." value="" name="emailField" required>
                 <label class="label">Email công ty</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="positionField" data-rule-required="true" data-msg-required="Vui lòng nhập chức vụ hiện tại." value="" name="positionField" required>
                 <label class="label">Chức vụ hiện tại</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="numberMontlyField" data-rule-required="true" data-msg-required="Vui lòng nhập Lượng tin CSKH gửi hàng tháng." value="" name="numberMontlyField" required>
                 <label class="label">Lượng tin CSKH gửi hàng tháng</label>
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input" type="text" required>
+                <input class="input" type="text" id="numberPresentField" data-rule-required="true" data-msg-required="Vui lòng nhập Các mẫu tin CSKH hiện tại." value="" name="numberPresentField" required>
                 <label class="label">Các mẫu tin CSKH hiện tại</label>
               </div>
             </div>
-            <div class="field has-text-centered"><a class="button is-large is-outlined" href="#!">Đăng ký ngay</a></div>
+            <div class="field has-text-centered">
+              <button class="button is-large is-outlined" id="send" type="submit" name="cform">Đăng ký ngay</button>
+            </div>
           </form>
-          <div class="notice"><i class="icz icz-c-info"></i><span class="text">Mẫu tin sẽ được duyệt trước bởi Zalo và ưu đãi không dành cho tin quảng cáo. Zalo sẽ chỉ liên hệ lại nếu thấy dịch vụ có thể đáp ứng nhu cầu Doanh nghiệp.</span></div>
+          <div class="notice"><span class="text"> <i class="icz icz-c-info"></i>Mẫu tin sẽ được duyệt trước bởi Zalo và ưu đãi không dành cho tin quảng cáo. Zalo sẽ chỉ liên hệ lại nếu thấy dịch vụ có thể đáp ứng nhu cầu Doanh nghiệp.</span></div>
         </div>
       </section>
       <footer class="footer"><span class="text">© 2020 Zalo Notification Service. Một dịch vụ của Zalo</span></footer>
+      <div class="notice-submit-success">
+        <div class="context-notice">
+          <div class="content"><i class="icz icz-fill-check"></i><span><strong>Cảm ơn bạn đã để lại thông tin.</strong>Chúng tôi sẽ liên hệ lại với bạn trong vòng 3 ngày làm việc để tư vấn chi tiết về dịch vụ.</span></div><a class="func-close-notice" href="javascript:void(0);"><i class="icz icz-close"></i></a>
+        </div>
+      </div>
     </main>
     <div class="bl-modal">
       <div class="modal-container" id="modal-form">
@@ -233,52 +249,51 @@
               <p>Tin nhắn đã được gửi đến số điện thoại Zalo của bạn. Bạn là doanh nghiệp muốn sử dụng Zalo để chăm sóc khách hàng? Vui lòng nhập thông tin đăng ký bên dưới.</p>
             </div>
             <div class="body">
-              <form class="form-register">
+              <form class="form-register" name="cform-1" id="cform-1" target="_self" action="">
                 <div class="field">
-                  <div class="control is-invalid">
-                    <input class="input" type="text" required>
+                  <div class="control">
+                    <input class="input" type="text" id="nameField-1" value="" invalid="this.setCustomValidity('Vui lòng nhập họ và tên')" required>
                     <label class="label">Tên người liên hệ</label>
                   </div>
-                  <p class="help has-text-danger">Nội dung báo lỗi</p>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="text" required>
+                    <input class="input" type="number" id="phoneField-1" value="" invalid="this.setCustomValidity('Nhập đúng định dạng số điện thoại')" required>
                     <label class="label">Số điện thoại</label>
                   </div>
                 </div>
                 <div class="field">
-                  <div class="control is-invalid">
-                    <input class="input" type="text" required>
+                  <div class="control">
+                    <input class="input" type="text" id="nameInterpriseField-1" value="" invalid="this.setCustomValidity('Vui lòng nhập tên Doanh Nghiệp')" required>
                     <label class="label">Tên doanh nghiệp</label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="text" required>
+                    <input class="input" type="text" id="emailField-1" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" invalid="this.setCustomValidity('Vui lòng nhập đúng định dạng Email')" required>
                     <label class="label">Email công ty</label>
                   </div>
                 </div>
                 <div class="field">
-                  <div class="control is-invalid">
-                    <input class="input" type="text" required>
+                  <div class="control">
+                    <input class="input" type="text" id="positionField-1" value="" invalid="this.setCustomValidity('Vui lòng nhập chức vụ hiện tại')" required>
                     <label class="label">Chức vụ hiện tại</label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="text" required>
+                    <input class="input" type="number" id="numberMontlyField-1" value="" invalid="this.setCustomValidity('Vui lòng nhập Lượng tin CSKH gửi hàng tháng')" required>
                     <label class="label">Lượng tin CSKH gửi hàng tháng</label>
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="text" required>
+                    <input class="input" type="text" id="numberPresentField-1" value="" invalid="this.setCustomValidity('Vui lòng nhập Các mẫu tin CSKH hiện tại')" required>
                     <label class="label">Các mẫu tin CSKH hiện tại</label>
                   </div>
                 </div>
-                <div class="field">
-                  <button class="button is-primary is-large" href="#!" disabled><span>Đăng ký ngay</span></button><a class="func-back-form" href="#!"><i class="icz icz-arrow-left"></i><span>Gửi tin nhắn mẫu khác</span></a>
+                <div class="field has-text-centered">
+                  <button class="button is-primary is-large" type="submit" id="send" name="send">Đăng ký ngay</button><a class="func-back-form" href="#!"><i class="icz icz-arrow-left"></i><span>Gửi tin nhắn mẫu khác</span></a>
                 </div>
               </form>
             </div>
@@ -291,80 +306,92 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      var menu = ['Tin về quan hệ tài chính', 'Tin về giao dịch mua bán', 'Tin về biến động tài khoản'];
-      var swiper = new Swiper('.swiper-mockup', {
-      	slidesPerView: 1,
-      	loop: false,
-      	speed: 1000,
-      	pagination: {
-      		el: '#mockup-pagination',
-      		clickable: true,
-      	},
-      	autoplay: {
-      		delay: 3000,
-      	},
-      });
-      var galleryTop = new Swiper('.gallery-top', {
-      	slidesPerView: 1,
-      	spaceBetween: 10,
-      	loop: false,
-      	autoHeight:true,
-      	effect: "fade",
-      	fadeEffect: { crossFade: true },
-      	loopedSlides: 1,
-      	pagination: {
-      		el: '#template-pagination',
-      		clickable: true,
-      	},
-      	breakpoints:{
-      		1024:{
-      			pagination: {
-      				el: '.pagination-control-desktop',
-      				clickable: true,
-      				renderBullet: function (index, className) {
-      				return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      $(document).ready(function() {
+      	var swiper = new Swiper('.swiper-mockup', {
+      		slidesPerView: 1,
+      		loop: false,
+      		speed: 1000,
+      		pagination: {
+      			el: '#mockup-pagination',
+      			clickable: true,
+      		},
+      		autoplay: {
+      			delay: 3000,
+      		},
+      	});
+      	var menu = ['ZNS quan hệ tài chính', 'ZNS giao dịch mua bán', 'ZNS biến động tài khoản'];
+      	var galleryTop = new Swiper('.gallery-top', {
+      		slidesPerView: 1,
+      		spaceBetween: 10,
+      		loop: false,
+      		autoHeight:true,
+      		effect: "fade",
+      		fadeEffect: { crossFade: true },
+      		loopedSlides: 1,
+      		pagination: {
+      			el: '#template-pagination',
+      			clickable: true,
+      		},
+      		breakpoints:{
+      			1024:{
+      				pagination: {
+      					el: '.pagination-control-desktop',
+      					clickable: true,
+      					renderBullet: function (index, className) {
+      					return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      					},
       				},
-      			},
-      			effect: "fade",
-      			fadeEffect: { crossFade: true },
-      			virtualTranslate: true,
-      			autoplayDisableOnInteraction: true,
+      				effect: "fade",
+      				fadeEffect: { crossFade: true },
+      				virtualTranslate: true,
+      				autoplayDisableOnInteraction: true,
+      			}
       		}
+      	});
+      	var galleryDesktop = new Swiper('.gallery-top-desktop', {
+      		slidesPerView: 1,
+      		effect: "fade",
+      		breakpoints:{
+      			1024:{
+      				spaceBetween: 10,
+      				loop: false,
+      				loopedSlides: 1, //looped slides should be the same
+      				fadeEffect: { crossFade: true },
+      				virtualTranslate: true,
+      				autoplayDisableOnInteraction: true,
+      				effect: "fade",
+      				pagination: {
+      					el: '.pagination-control-desktop',
+      					clickable: true,
+      					renderBullet: function (index, className) {
+      					return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      					},
+      				},
+      			}
+      		}
+      	});
+      	var galleryThumbs = new Swiper('.gallery-thumbs', {
+      		spaceBetween: 10,
+      		slidesPerView: 1.4,
+      		touchRatio: 0.2,
+      		loop: false,
+      		loopedSlides: 1, //looped slides should be the same
+      		slideToClickedSlide: true,
+      	});
+      	galleryTop.controller.control = galleryThumbs;
+      	galleryDesktop.controller.control = galleryThumbs;
+      	galleryThumbs.controller.control = galleryTop;
+      });
+      //- check height scroll
+      $(window).scroll(function() {
+      	var height = $(window).scrollTop();
+      	if(height  > $(".section-hero").height()) {
+      		$(".header").addClass("is-fixed")
+      	}
+      	else{
+      		$(".header").removeClass("is-fixed")
       	}
       });
-      var galleryDesktop = new Swiper('.gallery-top-desktop', {
-      	slidesPerView: 1,
-      	effect: "fade",
-      	breakpoints:{
-      		1024:{
-      			spaceBetween: 10,
-      			loop: false,
-      			loopedSlides: 1, //looped slides should be the same
-      			fadeEffect: { crossFade: true },
-      			virtualTranslate: true,
-      			autoplayDisableOnInteraction: true,
-      			effect: "fade",
-      			pagination: {
-      				el: '.pagination-control-desktop',
-      				clickable: true,
-      				renderBullet: function (index, className) {
-      				return '<span class="' + className + '">' + (menu[index]) + '</span>';
-      				},
-      			},
-      		}
-      	}
-      });
-      var galleryThumbs = new Swiper('.gallery-thumbs', {
-      	spaceBetween: 10,
-      	slidesPerView: 1.4,
-      	touchRatio: 0.2,
-      	loop: false,
-      	loopedSlides: 1, //looped slides should be the same
-      	slideToClickedSlide: true,
-      });
-      galleryTop.controller.control = galleryThumbs;
-      galleryDesktop.controller.control = galleryThumbs;
-      galleryThumbs.controller.control = galleryTop;
       
       //- open modal gửi mẫu tin
       $(".func-send-template").click(function(){
@@ -390,26 +417,29 @@
       	$(".ico-success").removeClass("is-active-ico");
       
       });
-      //- style css focus input
-      $("input").focus(function(){
-      	$(".control").removeClass("is-focus");
-      	$(this).parent().addClass("is-focus");
-      })
       //- active gallery-thumbs
       $(".swiper-slide").click(function(){
       	$(".swiper-slide").removeClass("swiper-slide-active");
       	$(this).addClass("swiper-slide-active")
       });
-      //- check height scroll
-      $(window).scroll(function() {
-      	var height = $(window).scrollTop();
-      
-      	if(height  > $(".section-hero").height()) {
-      		$(".header").addClass("is-fixed")
-      	}
-      	else{
-      		$(".header").removeClass("is-fixed")
-      	}
+      $(".func-close-notice").click(function(){
+      	$(".notice-submit-success").removeClass("is-active");
+      });
+      $(document).ready(function() {
+      	$("form[data-form-validate='true']").each(function() {
+      		$(this).validate({
+      			submitHandler: function() { return postToGoogle(); },
+      			rules: {
+      				"phoneField": {
+      					minlength: 8,
+      					number: true
+      				},
+      				"numberMontlyField": {
+      					number: true
+      				},
+      			},
+      		});
+      	})
       });
     </script>
   </body>

@@ -83,7 +83,6 @@
 
 .bl-modal{
 	.modal-container{@include position(absolute, null);top:-100%;background:#242E42;
-		
 		.bl-modal-heading{
 			.func-close-modal{flex-shrink:0;@include size(50px);color:$grey-light;@include position(absolute, 36px 36px null null);
 				[class^=icz]{display:inline-block;@include size(50px);@include padding(7px);font-size:2rem;vertical-align:middle}
@@ -223,10 +222,10 @@
 							.text{text-align:center;font-size:0.813em;}
 							.form-send-template{
 								.field{
-									.control{height:44px;
-										input{height:26px;font-size:$size-normal}
-										.label{top:11px;font-size:$size-normal;}
-										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
+									.control{height:48px;
+										input{height:26px;font-size:$size-normal;padding-left:12px;padding-right:12px;}
+										.label{top:13px;left:13px;font-size:$size-normal;}
+										input:not(:focus):valid ~ .label,input:focus ~ .label{top:4px;font-size:$size-small;}
 									}
 								}
 							}
@@ -242,10 +241,10 @@
 							.form-register{
 								.field{width:100%;
 									.func-back-form{position:inherit;left:inherit;top:inherit;justify-content:center;margin-top:16px;@include padding(16px null)}
-									.control{height:44px;
-										input{height:26px;font-size:$size-normal}
-										.label{top:11px;font-size:$size-normal;}
-										input:not(:focus):valid ~ .label,input:focus ~ .label{top:3px;font-size:$size-small;}
+									.control{height:48px;
+										input{height:26px;font-size:$size-normal;padding-left:12px;padding-right:12px;}
+										.label{top:13px;left:13px;font-size:$size-normal;}
+										input:not(:focus):valid ~ .label,input:focus ~ .label{top:4px;font-size:$size-small;}
 									}
 								}
 							}

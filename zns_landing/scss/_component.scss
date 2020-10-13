@@ -17,107 +17,6 @@
 	.avatar--l{@include size(44px);line-height:44px}
 	.avatar-img{@include position(absolute,0 null null 0);z-index:1;@include size(100%);@extend %backgroundCover--center;@extend %is-radius-rounded;}
 
-	/* Status */ 
-	.status{position:relative;padding-left:$gutter/1.5;color:$text;font-size:$size-normal;
-		&:before{@include position(absolute, 6px null null 0);content:"";background-color:$grey;@include size(8px);@extend %is-radius-rounded;}
-		&.is-success{
-			&:before{background-color:$success}
-		}
-		&.is-warning{
-			&:before{background-color:$warning}
-		}
-		&.is-danger{
-			&:before{background-color:$danger}
-		}
-		&.is-info{
-			&:before{background-color:$info}
-		}
-		&.is-draft{
-			&:before{background-color:$grey}
-		}
-	}
-	/* type template */
-	.type-template{position:relative;padding-left:$gutter/1.5;color:$text;font-size:$size-small;
-		&:before{@include position(absolute, 4px null null -4px);content:"";background-color:$grey;@include size(10px);@extend %is-radius-rounded;}
-		&.is-s1{
-			&:before{background-color:$color-table-1}
-		}
-		&.is-s2{
-			&:before{background-color:$color-table-2}
-		}
-		&.is-s3{
-			&:before{background-color:$color-table-3}
-		}
-		&.is-s4{
-			&:before{background-color:$color-table-4}
-		}
-		&.is-s5{
-			&:before{background-color:$color-table-5}
-		}
-		&.is-s6{
-			&:before{background-color:$color-table-6}
-		}
-		&.is-s7{
-			&:before{background-color:$color-table-7}
-		}
-		&.is-s8{
-			&:before{background-color:$color-table-8}
-		}
-		&.is-s9{
-			&:before{background-color:$color-table-9}
-		}
-		&.is-s10{
-			&:before{background-color:$color-table-10}
-		}
-		&.is-s11{
-			&:before{background-color:$color-table-11}
-		}
-		&.is-s12{
-			&:before{background-color:$color-table-12}
-		}
-		&.is-s13{
-			&:before{background-color:$color-table-13}
-		}
-		&.is-s14{
-			&:before{background-color:$color-table-14}
-		}
-		&.is-s15{
-			&:before{background-color:$color-table-15}
-		}
-		&.is-s16{
-			&:before{background-color:$color-table-16}
-		}
-		&.is-s17{
-			&:before{background-color:$color-table-17}
-		}
-		&.is-s18{
-			&:before{background-color:$color-table-18}
-		}
-		&.is-other{
-			&:before{background-color:$color-table-other}
-		}
-		&.is-default{
-			&:before{background-color:$color-table-default}
-		}
-	}
-	/* Input file Container */
-	.inputfile-container{@include position(absolute,0 null null 0);@include size(100%);
-		.inputfile{@include size(0.1px);opacity:0;overflow:hidden;position:absolute;z-index:-1}
-		.inputfile + label{display:block;position:relative;z-index:10;@include size(100%);cursor:pointer}
-		.inputfile:focus + label, .inputfile + label:hover{}
-	}
-
-	/* Switch */
-	.switch{position:relative;display:inline-block;@include size(40px, 24px);
-		input{opacity:0;width:0;height:0}
-		.slider{@include position(absolute, 0);background-color:#D7E1EA;cursor:pointer;transition:.4s;
-			&:before{@include position(absolute, null null 4px 4px);content:"";background-color:white;@include size(16px);transition:.4s;box-shadow:0 2px 2px rgba(0, 0, 0, 0.2)}
-		}
-		input:checked + .slider{background-color:$primary}
-		input:checked + .slider:before{transform:translateX(16px)}
-		.slider.round{border-radius:34px}
-		.slider.round:before{border-radius:50%}
-	}
 	/* Custom Radio */
 	[type="radio"]:checked,[type="radio"]:not(:checked){position:absolute;left:-9999px}
 	[type="radio"]:checked + label,[type="radio"]:not(:checked) + label{position:relative;display:inline-block;padding-left:24px;cursor:pointer;color:$text;font-size:$size-normal;line-height:1}
@@ -166,14 +65,6 @@
 				.name-oa{max-width:162px;}
 			}
 		}
-	}
-
-	/* Custom Tag */ 
-	.tag{
-		strong{font-weight:$weight-semibold;
-			&.is-value{margin-left:6px;color:$primary;}
-		}
-		.tag-link{display:flex;align-items:center;height:100%;color:inherit}
 	}
 
 	/* Custom Dropdown */
@@ -309,6 +200,3 @@
 		.tippy-arrow:before{border-top-color:$text!important}
 		*{pointer-events:initial}
 	}
-
-	/* Ico */
-	.ico-new{display:inline-block;background:url(../images/v2/label_new_v2.png) 0 0 no-repeat;background-size:cover;@include size(30px, 16px);vertical-align:middle;}
