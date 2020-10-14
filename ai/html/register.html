@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body class="is-transparent">
+    <header class="has-bg">
+      <div class="js-toggle-left-slidebar js-menu-mobile">
+        <div class="trigger-menu"><span class="three-bars-icon"></span></div>
+      </div>
+      <div class="container max-width">
+        <div class="row top-container">
+          <div class="col-lg-10 col-l"><a class="logo" href="index.html"><img src="images/logo.png" alt="Logo AI challenge"></a>
+            <div class="menu-wrap">
+              <nav>
+                <ul class="horizontal-list main-menu nav-container" id="top-menu">
+                  <li class="active"><a href="#intro">Home</a></li>
+                  <li><a href="#challenge">Challenges</a></li>
+                  <li><a href="#Portal">Portal</a></li>
+                  <li><a href="#timeline">Timeline</a></li>
+                  <li><a href="regulations.html">Regulations</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="user-info">
+              <div class="avatar avatar--sm"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/100x100)"></span></div><a class="btn btn-primary btn--m d-none d-lg-block" href="register.html">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div canvas="container">
+      <div class="as-layout">
+        <div class="page-content">
+          <div class="container">
+            <div class="block-d block-register">
+              <div class="title-register">
+                <h2>Registration</h2>
+              </div>
+              <form class="default-form register-form" action="/" method="get">
+                <!--.group-container
+                h5 Your Information
+                .form-row.form-block
+                	label(for="fullname") Full name
+                	input(id="fullname" name="name" type="text" placeholder="")
+                .form-row.form-block
+                	label(for="company") My current university or company
+                	input(id="company" name="company" type="text" placeholder="")
+                -->
+                <div class="split-info">
+                  <div class="form-row form-block">
+                    <label for="name">Nickname</label>
+                    <input id="name" name="name" type="text" placeholder="">
+                  </div>
+                  <div class="form-row form-block">
+                    <label for="fullname">Full name</label>
+                    <input id="fullname" name="name" type="text" placeholder="">
+                  </div>
+                  <div class="form-row form-block">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="">
+                  </div>
+                  <div class="form-row form-block">
+                    <label for="company">My current university or company</label>
+                    <input id="company" name="company" type="text" placeholder="">
+                  </div>
+                  <div class="form-row form-block">
+                    <label for="member-number">Member</label>
+                    <div class="relative" style="width:115px">
+                      <input id="member-number" name="member-number" type="number" placeholder="" value="2"><a class="func-up" href="#!"></a><a class="func-down" href="#!"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="split-info is-right">
+                  <div class="form-row form-block">
+                    <label for="group-avatar">Avatar</label>
+                    <div class="avatar-upload-container"><span class="ico-avatar"></span>
+                      <div class="inputfile-container">
+                        <input class="inputfile" id="avt" type="file">
+                        <label for="avt"></label>
+                      </div>
+                    </div>
+                    <div class="avatar-upload-container hidden"><img src="http://via.placeholder.com/160x160" alt="Project">
+                      <div class="func-edit"><i class="ica-edit"></i></div>
+                      <div class="inputfile-container">
+                        <input class="inputfile" id="avt" type="file">
+                        <label for="avt"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <div class="group-container">
+                  <h5>Team Information</h5>
+                  <div class="group-row-wrap">
+                    <!--span.ico-avatar-plus--><span class="num">#1</span>
+                    <div class="group-row">
+                      <div class="form-row form-block">
+                        <label for="m1-name">Full name</label>
+                        <input id="m1-name" name="m1-name" type="text" placeholder="">
+                      </div>
+                      <div class="form-row form-block">
+                        <label for="">Mobile number</label>
+                        <div class="input-f">
+                          <div class="v-region"><span class="tf">+84</span>
+                            <div class="dropdown-flag">
+                              <ul>
+                                <li class="selected"><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input class="v-number" id="m1-phone" name="m1-phone" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-row form-block">
+                        <label for="m1-email">Email</label>
+                        <input id="m1-email" name="m1-email" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-row-wrap">
+                    <!--span.ico-avatar-plus--><span class="num">#2</span>
+                    <div class="group-row">
+                      <div class="form-row form-block">
+                        <label for="m2-name">Full name</label>
+                        <input id="m2-name" name="m2-name" type="text" placeholder="">
+                      </div>
+                      <div class="form-row form-block">
+                        <label for="">Mobile number</label>
+                        <div class="input-f">
+                          <div class="v-region"><span class="tf">+84</span>
+                            <div class="dropdown-flag hidden">
+                              <ul>
+                                <li class="selected"><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                                <li><img src="images/flag_vn.jpg" alt="Project"><span><strong>Vietnam</strong> <em>+84</em></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input class="v-number" id="m2-phone" name="m2-phone" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-row form-block">
+                        <label for="m2-email">Email</label>
+                        <input id="m2-email" name="m2-email" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row is-end">
+                  <p>I agree to the <a href="#!" target="_blank">Terms and Conditions</a></p><a class="btn btn-primary btn--m" href="#!">Submit</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div off-canvas="slidebar-1 left overlay">
+      <div class="slidebar-container">
+        <div class="js-toggle-left-slidebar js-menu-mobile">
+          <div class="trigger-menu"><span class="three-bars-icon close"></span></div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#challenge">Challenges</a></li>
+          <li><a href="#!">Portal</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="regulations.html">Regulations</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="register.html">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-container">
+          <div class="title-modal"><span>Thông báo</span></div><a class="func-close" title="Đóng lại" data-dismiss="modal" aria-label="Close"><i class="i-close"></i></a>
+          <div class="content">
+            <p class="textAlign-center"><strong>Bạn có đồng ý xóa tất cả hội thoại trong mục này?</strong></p>
+            <p class="textAlign-center">Sau khi xóa sẽ không phục hồi lại được</p>
+            <div class="wrap-btn textAlign-center">
+              <div class="btn btn-primary btn--m">Đồng ý</div>
+              <div class="btn btn-default btn--m" data-dismiss="modal" aria-label="Close">Hủy bỏ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      //- $(window).on('load', function () {
+      //- 	$("#modal-confirm").modal("show");
+      //- });
+    </script>
+  </body>
+</html>

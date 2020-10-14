@@ -1,0 +1,139 @@
+/* #Page:Reset
+================================================== */
+*{margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);/* Stops flash on tap iOS */}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font:inherit;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul, ul li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+a{color:$color-main;outline:0;cursor:pointer;transition:color .4s ease, background-color .4s ease;
+	&:hover{color:$color-main;text-decoration:none}
+}
+p{margin:0}
+strong, b{font-weight:bold}
+h1, h2, h3, h4, h5, h6{margin:0;font-weight:inherit}
+img{vertical-align:top;max-width:100%}
+img.responsive-img, video.responsive-video{display:block;max-width:100%;height:auto}
+label{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none}
+ul,ol,ul ul li,ul ol li,ol ol li,ol ul li,form,fieldset,.alert>p,.alert>ul{margin-bottom:0}
+li,ul.large li,li p{line-height:$line-height}
+a, img, span, label, li{text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
+button{box-shadow:none;border:none;outline:none;cursor:pointer}
+sup{vertical-align:super;font-size:smaller}
+.clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix{zoom:1}
+.f-left{float:left}
+.f-right{float:right}
+.clear, .clearfix:after{clear:both}
+.hidden{display:none!important}
+.block{display:block!important}
+.visuallyHidden{visibility:hidden}
+.visuallyShow{visibility:visible}
+.userSelect-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.line-through{text-decoration:line-through}
+
+// Typography
+.h1, .h2, .h3, .h4, .h5, .h6{font-family:$primary-font;font-weight:700}
+
+h1{@extend .h1}
+h2{@extend .h2}
+h3{@extend .h3}
+h4{@extend .h4}
+h5{@extend .h5}
+h6{@extend .h6}
+
+// Fix focus
+a, button, img{-webkit-tap-highlight-color:rgba(0, 0, 0, 0.2)!important}
+
+/* Align */
+.v-align-m{vertical-align:middle}
+.v-align-b{vertical-align:bottom}
+.t-align-c{text-align:center}
+.t-align-l{text-align:left}
+.t-align-r{text-align:right}
+.centered{margin:0 auto}
+
+/* Space */
+.space{@include padding($gutter/3 null)}
+.space.s{@include padding(($gutter/3)*2 null)}
+.space.m{@include padding($gutter null)}
+.space.l{@include padding(($gutter/3)*4 null)}
+.space.xl{@include padding(($gutter/3)*6 null)}
+
+/* Margin/padding */
+.m-top-0{margin-top:0}
+.m-right-0{margin-right:0}
+.m-bottom-0{margin-bottom:0}
+.m-left-0{margin-left:0}
+
+.m-top-1{margin-top:$gutter/3}
+.m-right-1{margin-right:$gutter/3}
+.m-bottom-1{margin-bottom:$gutter/3}
+.m-left-1{margin-left:$gutter/3}
+
+.m-top-2{margin-top:($gutter/3)*2}
+.m-right-2{margin-right:($gutter/3)*2}
+.m-bottom-2{margin-bottom:($gutter/3)*2}
+.m-left-2{margin-left:($gutter/3)*2}
+
+.m-top-3{margin-top:$gutter}
+.m-right-3{margin-right:$gutter}
+.m-bottom-3{margin-bottom:$gutter}
+.m-left-3{margin-left:$gutter}
+
+.m-top-4{margin-top:($gutter/3)*4}
+.m-right-4{margin-right:($gutter/3)*4}
+.m-bottom-4{margin-bottom:($gutter/3)*4}
+.m-left-4{margin-left:($gutter/3)*4}
+
+.m-top-5{margin-top:($gutter/3)*5}
+.m-right-5{margin-right:($gutter/3)*5}
+.m-bottom-5{margin-bottom:($gutter/3)*5}
+.m-left-5{margin-left:($gutter/3)*5}
+
+.m-top-6{margin-top:($gutter/3)*6}
+.m-right-6{margin-right:($gutter/3)*6}
+.m-bottom-6{margin-bottom:($gutter/3)*6}
+.m-left-6{margin-left:($gutter/3)*6}
+
+/* Radius */
+.borderRadius-s{border-radius:3px}
+.borderRadius-m{border-radius:5px}
+.borderRadius-l{border-radius:10px}
+.borderRadius-circle, .circle{border-radius:100%}
+
+/* Position */
+.relative{position:relative}
+
+/* Transform */
+.textTransform-lowercase{text-transform:lowercase}
+.textTransform-uppercase{text-transform:uppercase}
+.textTransform-capitalize{text-transform:capitalize}
+
+/* Display */
+.d-table{display:table}
+.d-table-cell{display:table-cell}
+.d-inline-b{display:inline-block}
+.d-inline-middle{display:inline-block;vertical-align:middle}
+
+/* Width/ height */
+.width-100{width:100%!important;max-width:100%!important}
+.height-100{height:100%!important;max-height:100%!important}
+.width-auto{width:auto!important}
+.height-auto{height:auto!important}
+.backgroundCover--center{background-repeat:no-repeat;background-size:cover;background-position:center center}
+
+/* Bootstrap style */
+.open .popover{display:block}
+.dropdown{display:inline-block;position:relative}
+.dropdown-menu{z-index:-1;visibility:hidden;opacity:0}
+.open .dropdown-menu{display:block;z-index:1;visibility:visible;opacity:1}
+.collapse.in{display:block}
+.collapse{display:none}
+.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}
+
+/* Transition */
+.tr-all{transition:all .4s ease}
