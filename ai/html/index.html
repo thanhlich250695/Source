@@ -61,7 +61,7 @@
                   <div class="hero-container wow fadeInUp"><span class="logo-hero"></span>
                     <h1>Annual online competition for <strong>Vietnamese AI engineers</strong> to explore AI technologies and impact life in exciting new ways.</h1>
                     <div class="img-kv d-block d-lg-none"><img src="images/kv.png" alt="Project"></div>
-                    <p><strong>Final results submission</strong> in</p>
+                    <p><strong>Final results submission in</strong></p>
                     <div class="countdown-wrap">
                       <div class="j-timer"></div>
                     </div>
@@ -98,6 +98,11 @@
                             <div class="context-desc">
                               <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
                               <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
+                              <p>You are given:</p>
+                              <ul>
+                                <li>~500 articles in which events and match summary has been annotated.</li>
+                                <li> ~200 articles for testing.</li>
+                              </ul>
                             </div><span class="lstitle-heading">Evaluation Metric</span>
                             <div class="context-desc"> 
                               <p>F1 measure is used to rank competing submissions.</p>
@@ -113,18 +118,23 @@
                         <div class="inside">
                           <div class="inside-content inside-content-l"><span class="lstitle-heading">Description</span>
                             <div class="context-desc">
-                              <p>Text summarization is one of the most difficult and interesting tasks in NLP today. It helps people to acquire important information in long documents without reading their whole contents. </p>
-                              <p>This challenge focuses only on football match summarization which is a specific domain of online news summarization. </p>
-                              <p>For each input new article, you must determine whether or not it is a football match report then produce the summary of the match follow a template if it is possible. Otherwise, the result should be empty. A match summary includes several kinds of information such as participating teams, match results, goals, cards, substitutions.</p>
+                              <p>Traffic Sign Detection is an important component in autonomous systems such as drones and self-driving cars. The detection module must be fast and accurate because subsequent decisions are planned and executed based on the outputs of this system. In this challenge, you will build the best traffic sign detection system given a highly practical real-world dataset.</p>
+                              <p>You are given:</p>
+                              <ul>
+                                <li> 5,000 images of traffic signs with labels.
+                                  <ul>
+                                    <li>7 popular Vietnamese traffic signs.</li>
+                                    <li>Each traffic sign has a bounding box and an associated class.</li>
+                                  </ul>
+                                </li>
+                                <li>1,000 images for public leaderboard ranking</li>
+                                <li>2,000 private test images.</li>
+                              </ul>
                             </div>
                           </div>
-                          <div class="inside-content inside-content-r">
-                            <div class="context-desc">
-                              <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
-                              <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
-                            </div><span class="lstitle-heading">Evaluation Metric</span>
+                          <div class="inside-content inside-content-r"><span class="lstitle-heading">Evaluation Metric</span>
                             <div class="context-desc"> 
-                              <p>F1 measure is used to rank competing submissions.</p>
+                              <p>Results are computed and ranked based on the mean average precision score mAP@[.5:.95]. Competitors are encouraged to refer to [1] and [2] for additional information about the evaluation metric.</p>
                             </div>
                           </div>
                         </div>
@@ -137,18 +147,17 @@
                         <div class="inside">
                           <div class="inside-content inside-content-l"><span class="lstitle-heading">Description</span>
                             <div class="context-desc">
-                              <p>Text summarization is one of the most difficult and interesting tasks in NLP today. It helps people to acquire important information in long documents without reading their whole contents. </p>
-                              <p>This challenge focuses only on football match summarization which is a specific domain of online news summarization. </p>
-                              <p>For each input new article, you must determine whether or not it is a football match report then produce the summary of the match follow a template if it is possible. Otherwise, the result should be empty. A match summary includes several kinds of information such as participating teams, match results, goals, cards, substitutions.</p>
+                              <p>Voice verification is the process of verifying whether two given utterances belong to a single speaker. In this challenge, we want you to build a speaker text-independent verification model for Vietnamese voices.</p>
+                              <p>We provide a dataset including 10000+ utterances belonging to 500+ Vietnamese speakers, extracted from interview videos uploaded to YouTube.</p>
                             </div>
                           </div>
                           <div class="inside-content inside-content-r">
                             <div class="context-desc">
-                              <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
-                              <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
+                              <p>We allow participants to use external resources to enhance their model.</p>
                             </div><span class="lstitle-heading">Evaluation Metric</span>
                             <div class="context-desc"> 
-                              <p>F1 measure is used to rank competing submissions.</p>
+                              <p>FAR = The percentage of times a matched pair is rejected by the system </p>
+                              <p>FRR = The percentage of times an unmatched pair is accepted by the system</p>
                             </div>
                           </div>
                         </div>

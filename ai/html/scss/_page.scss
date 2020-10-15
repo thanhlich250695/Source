@@ -30,10 +30,10 @@ body{background-color:#000;font-family:$primary-font;font-size:$base-font-size;f
 	.container{max-width:960px;@include margin(0 auto)}
 	// &:after{content:'';position:absolute;top:0;right:0;left:0;width:100%;background-image:url(../images/img_bg_intro.png);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:48.9%}
 }
-.title-heading{display:block;margin-bottom:30px;color:$color-second;font-family:$primary-font;font-size:1.75em;font-weight:bold;text-align:center;
+.title-heading{display:block;margin-bottom:30px;color:$color-second;font-family:$primary-font;font-size:1.75em;font-weight:bold;
 	@include media-breakpoint-up(md){margin-bottom:40px;font-size:2.25em;line-height:1.33}
 	@include media-breakpoint-up(lg){text-align:left;margin-bottom:60px;font-size:3em;line-height:1.25}
-	&.is-white{color:#fff;margin-bottom:40px;text-align:left;}
+	&.is-white{color:#fff;margin-bottom:40px;}
 
 }
 /* Footer */

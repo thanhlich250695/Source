@@ -6804,7 +6804,6 @@ body.is-transparent .page-content {
   font-family: "SVN-Gilroy", sans-serif;
   font-size: 1.75em;
   font-weight: bold;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .title-heading {
@@ -6824,7 +6823,6 @@ body.is-transparent .page-content {
 .title-heading.is-white {
   color: #fff;
   margin-bottom: 40px;
-  text-align: left;
 }
 
 /* Footer */
@@ -7983,8 +7981,8 @@ header.is-fixed a.logo {
           align-items: center;
   position: relative;
   z-index: 1;
-  height: 60px;
-  width: 260px;
+  height: 68px;
+  width: 264px;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid rgba(0, 26, 240, 0.5);
@@ -8142,6 +8140,34 @@ header.is-fixed a.logo {
   font-size: 1em;
   margin-bottom: 20px;
   line-height: 20px;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc p + ul {
+  margin-top: -10px;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc ul {
+  margin-bottom: 15px;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc ul li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  font-size: 1em;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc ul li:before {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  content: "";
+  background-color: #65F2FF;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc ul li ul {
+  margin-top: 15px;
+}
+.context-module-challenge .content-challenge .challenge-container .inside .inside-content .context-desc ul li ul li:before {
+  border-radius: 0;
 }
 .context-module-challenge .challenge-tabs {
   display: -webkit-box;
