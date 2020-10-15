@@ -30,10 +30,10 @@ body{background-color:#000;font-family:$primary-font;font-size:$base-font-size;f
 	.container{max-width:960px;@include margin(0 auto)}
 	// &:after{content:'';position:absolute;top:0;right:0;left:0;width:100%;background-image:url(../images/img_bg_intro.png);background-size:cover;background-position:center center;background-repeat:no-repeat;padding-top:48.9%}
 }
-.title-heading{display:block;margin-bottom:30px;color:$color-second;font-family:$primary-font;font-size:1.75em;font-weight:bold;
+.title-heading{display:block;margin-bottom:30px;color:$color-second;font-family:$primary-font;font-size:1.75em;font-weight:bold;text-align:center;
 	@include media-breakpoint-up(md){margin-bottom:40px;font-size:2.25em;line-height:1.33}
-	@include media-breakpoint-up(lg){margin-bottom:60px;font-size:3em;line-height:1.25}
-	&.is-white{color:#fff;margin-bottom:40px;}
+	@include media-breakpoint-up(lg){text-align:left;margin-bottom:60px;font-size:3em;line-height:1.25}
+	&.is-white{color:#fff;margin-bottom:40px;text-align:left;}
 
 }
 /* Footer */
@@ -41,8 +41,9 @@ footer{background-color:#333;@include size(100%, auto)}
 
 /* Header */
 header{@include position(fixed,  0 0 null 0);z-index:99;@include size(100%, 60px);transition:all .4s ease;
-	a.logo{@include position(absolute, 0 null null 50%);z-index:2;display:block;@include size(230px, auto);margin-top:12px;margin-left:-115px;opacity:0;transition:all .4s ease;display:none;
+	a.logo{@include position(absolute, 0 null null 50%);z-index:2;display:block;@include size(230px, auto);margin-top:16px;margin-left:-115px;opacity:0;transition:all .4s ease;display:none;
 		i{display:block;background:url(../images/logo.1.0.1.png) 0 0 no-repeat;background-size:cover;@include size(260px, 50px);text-indent:-9999px}
+		@media only screen and(max-width:349px){width:210px;margin-top: 18px;margin-left: -110px;}
 		@include media-breakpoint-up(lg){@include position(relative, 10px null null inherit);@include margin(0);padding-top:0}
 		@include media-breakpoint-up(xl){@include position(relative, inherit null null inherit);@include size(286px, auto);@include margin(0);padding-top:0;
 			i{flex-shrink:0;@include size(286px, auto)}

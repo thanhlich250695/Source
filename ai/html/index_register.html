@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2018 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="js-toggle-left-slidebar js-menu-mobile">
+        <div class="trigger-menu"><span class="three-bars-icon"></span></div>
+      </div>
+      <div class="container max-width">
+        <div class="row top-container">
+          <div class="col-lg-10 col-l"><a class="logo" href="index.html"><img src="images/Logo.png" alt="Logo AI challenge"></a>
+            <div class="menu-wrap">
+              <nav>
+                <ul class="horizontal-list main-menu nav-container" id="top-menu">
+                  <li class="active"><a href="#intro">Home</a></li>
+                  <li><a href="#challenge">Challenges</a></li>
+                  <li><a href="#Portal">Portal</a></li>
+                  <li><a href="#timeline">Timeline</a></li>
+                  <li><a href="regulations.html">Regulations</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="user-info">
+              <div class="avatar avatar--sm"><span class="avatar-img" style="background-image:url(http://via.placeholder.com/100x100)"></span></div><a class="btn btn-primary btn--m d-none d-lg-block" href="register.html">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div canvas="container">
+      <div class="as-layout">
+        <div class="page-content">
+          <div class="vide-kv-wrap">
+            <div class="vide-kv" id="vide-kv" data-vide-bg="webm: video/video.webm, poster: images/poster.png" data-vide-options="position: center 50%"></div>
+          </div>
+          <div class="bl-module" id="intro">
+            <div class="container max-width">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <div class="hero-container wow fadeInUp"><span class="logo-hero"></span>
+                    <h1>Annual online competition for <strong>Vietnamese AI engineers</strong> to explore AI technologies and impact life in exciting new ways.</h1>
+                    <div class="img-kv d-block d-lg-none"><img src="images/kv.png" alt="Project"></div><a class="cta" href="register.html">Register Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="top-b-nav"></div>
+          <div class="bl-module" id="challenge">
+            <div class="container max-width"><span class="title-heading wow fadeInUp">Challenges</span>
+              <div class="context-module-challenge">
+                <ul class="challenge-list challenge-tabs wow fadeInUp">
+                  <li><a class="item-challenge b-nav-tab active" href="#tab1" data-tab="tab1"><i class="ico ico-c1"></i>
+                      <h4>News Summarization</h4></a></li>
+                  <li><a class="item-challenge b-nav-tab" href="#tab2" data-tab="tab2"><i class="ico ico-c2"></i>
+                      <h4>Traffic Sign Detection</h4></a></li>
+                  <li><a class="item-challenge b-nav-tab" href="#tab3" data-tab="tab3"><i class="ico ico-c3"></i>
+                      <h4>Voice Verification</h4></a></li>
+                </ul>
+                <div class="content-challenge wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="b-tab active" id="tab1">
+                    <div class="challenge-container"><span class="title-heading is-white">News Summarization</span>
+                      <div class="context-challenge">
+                        <div class="inside">
+                          <div class="inside-content inside-content-l"><span class="lstitle-heading">Description</span>
+                            <div class="context-desc">
+                              <p>Text summarization is one of the most difficult and interesting tasks in NLP today. It helps people to acquire important information in long documents without reading their whole contents. </p>
+                              <p>This challenge focuses only on football match summarization which is a specific domain of online news summarization. </p>
+                              <p>For each input new article, you must determine whether or not it is a football match report then produce the summary of the match follow a template if it is possible. Otherwise, the result should be empty. A match summary includes several kinds of information such as participating teams, match results, goals, cards, substitutions.</p>
+                            </div>
+                          </div>
+                          <div class="inside-content inside-content-r">
+                            <div class="context-desc">
+                              <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
+                              <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
+                            </div><span class="lstitle-heading">Evaluation Metric</span>
+                            <div class="context-desc"> 
+                              <p>F1 measure is used to rank competing submissions.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-tab" id="tab2">
+                    <div class="challenge-container"><span class="title-heading is-white">Traffic Sign Detection</span>
+                      <div class="context-challenge">
+                        <div class="inside">
+                          <div class="inside-content inside-content-l"><span class="lstitle-heading">Description</span>
+                            <div class="context-desc">
+                              <p>Text summarization is one of the most difficult and interesting tasks in NLP today. It helps people to acquire important information in long documents without reading their whole contents. </p>
+                              <p>This challenge focuses only on football match summarization which is a specific domain of online news summarization. </p>
+                              <p>For each input new article, you must determine whether or not it is a football match report then produce the summary of the match follow a template if it is possible. Otherwise, the result should be empty. A match summary includes several kinds of information such as participating teams, match results, goals, cards, substitutions.</p>
+                            </div>
+                          </div>
+                          <div class="inside-content inside-content-r">
+                            <div class="context-desc">
+                              <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
+                              <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
+                            </div><span class="lstitle-heading">Evaluation Metric</span>
+                            <div class="context-desc"> 
+                              <p>F1 measure is used to rank competing submissions.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-tab" id="tab3">
+                    <div class="challenge-container"><span class="title-heading is-white">Voice Verification</span>
+                      <div class="context-challenge">
+                        <div class="inside">
+                          <div class="inside-content inside-content-l"><span class="lstitle-heading">Description</span>
+                            <div class="context-desc">
+                              <p>Text summarization is one of the most difficult and interesting tasks in NLP today. It helps people to acquire important information in long documents without reading their whole contents. </p>
+                              <p>This challenge focuses only on football match summarization which is a specific domain of online news summarization. </p>
+                              <p>For each input new article, you must determine whether or not it is a football match report then produce the summary of the match follow a template if it is possible. Otherwise, the result should be empty. A match summary includes several kinds of information such as participating teams, match results, goals, cards, substitutions.</p>
+                            </div>
+                          </div>
+                          <div class="inside-content inside-content-r">
+                            <div class="context-desc">
+                              <p>A training set with labels is provided for your training. A test set contains only articles without any match annotation.</p>
+                              <p>For each article, a participating system will need to output a match result summary if it is possible, otherwise empty. Teams are scored and ranked by F1 measure on the test set.</p>
+                            </div><span class="lstitle-heading">Evaluation Metric</span>
+                            <div class="context-desc"> 
+                              <p>F1 measure is used to rank competing submissions.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container swiper-intro wow fadeIn">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider0.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider1.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider2.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider3.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider4.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider5.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider6.png)"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-intro is-img" style="background-image:url(images/img_slider7.png)"></div>
+              </div>
+            </div>
+            <div class="swiper-button-next" id="intro-next"><i class="icn icn-tail-right"></i></div>
+            <div class="swiper-button-prev" id="intro-prev"><i class="icn icn-tail-left"></i></div>
+          </div>
+          <div class="bl-module" id="will-get">
+            <div class="container max-width"><span class="title-heading wow fadeInUp">What you will get</span>
+              <div class="context-will-get">
+                <div class="bl-prize wow fadeInUp">
+                  <div class="total-prize">
+                    <h4 class="title">TOTAL PRIZE POOL</h4><span class="number">VND 400,000,000</span>
+                  </div>
+                  <div class="other-prize-list">
+                    <div class="item">
+                      <h4 class="title">FIRST PRIZE</h4><span class="number">VND 70,000,000</span>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">SECOND PRIZE</h4><span class="number">VND 30,000,000</span>
+                    </div>
+                  </div><span class="text-notice">per track plus in-kind presents</span>
+                </div>
+                <div class="bl-content wow fadeInUp" data-wow-delay="0.25s">
+                  <div class="group-desc"><span class="title">Intriguing challenges</span>
+                    <p>For the first time in Vietnam, such interesting puzzles are up for competing, opening new curiosities and possibilities of AI applications</p>
+                  </div>
+                  <div class="group-desc"><span class="title">Playground for all</span>
+                    <p>From foundation to advanced levels, the 3 challenges are guaranteed to pose intriguing problems for AI enthusiasts to solve</p>
+                  </div>
+                  <div class="group-desc"><span class="title">Consultancy</span>
+                    <p>Open discussion with our leading AI experts and top engineers in the industry</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bl-module" id="timeline">
+            <div class="container max-width">
+              <div class="context-timeline"><span class="title-heading wow fadeInUp">Timeline</span>
+                <ul class="timeline-list wow fadeInUp" data-wow-delay="0.25s">
+                  <li class="is-active">
+                    <div class="item-timeline"><span class="timer">November 1<sup>st</sup></span>
+                      <div class="group-desc"><span class="title">Challenge starts</span>
+                        <p>Development kit, data (training & public test) and evaluation software are made available</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-timeline"><span class="timer">November 23<sup>th</sup></span>
+                      <div class="group-desc"><span class="title">Submit solutions</span>
+                        <p>All teams submit solutions including: training code, testing code and models. Submission deadline before 6PM.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-timeline"><span class="timer">November 24<sup>th</sup></span>
+                      <div class="group-desc"><span class="title">Release <br>private test</span>
+                        <p>This leaderboard is provisional, based on results submitted by participating teams and subject to our verification.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-timeline"><span class="timer">November 25<sup>th</sup></span>
+                      <div class="group-desc"><span class="title">Submit <br>final result</span>
+                        <p>All teams submit solutions including: training code, testing code and models. Submission deadline before 6PM.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-timeline"><span class="timer">December 1<sup>st</sup></span>
+                      <div class="group-desc"><span class="title">Announce <br>final standing</span>
+                        <p>This leaderboard is calculated based on the 10K public test set. The final leaderboard is calculated based on a different private test set.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bl-module" id="faq">
+            <div class="container max-width"><span class="title-heading wow fadeInUp">Frequently Asked Questions</span>
+              <div class="context-faq wow fadeInUp">
+                <div class="col-faq">
+                  <div class="item-faq">
+                    <h5>Are there any requirements for participation?</h5>
+                    <p>Zalo AI Challenge is open to anyone with interest in AI. However, it is recommended that participants have basic programming knowledge.</p>
+                  </div>
+                  <div class="item-faq">
+                    <h5>I joined previous years of Zalo AI Challenge (and may or may not have won a prize). May I join this year?</h5>
+                    <p>Yes! We welcome all AI enthusiasts.</p>
+                  </div>
+                  <div class="item-faq">
+                    <h5>Is it possible to change team members after registration?</h5>
+                    <p>Once registered, teams may not add or remove members by themselves. To update team member list, contact the Organizers at aichallenge@zalo.me for support.</p>
+                  </div>
+                </div>
+                <div class="col-faq">
+                  <div class="item-faq">
+                    <h5>How do I receive technical support?</h5>
+                    <p>You may post your questions on Discussion tab or email them to aichallenge@zalo.me, and our consultants will assist you accordingly.</p>
+                  </div>
+                  <div class="item-faq">
+                    <h5>When do winners receive their cash prize?</h5>
+                    <p>Prizes will be transferred within 30 days after winners provide bank account details and proof of ID after the Awards Ceremony.</p>
+                  </div>
+                  <div class="item-faq"><a class="cta" href="#!">Visit Portal discussion </a></div>
+                </div>
+              </div>
+              <div class="context-partner"><span class="title wow fadeInUp">Media Partner</span>
+                <div class="partner-container wow fadeInUp"><img src="images/img_partner.png" alt="Img partner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="share-fixed wow fadeInUp" data-wow-delay="0.5s"><span class="label">Share</span>
+      <ul>
+        <li><a href="#!"><i class="ics ics-zalo"></i></a></li>
+        <li><a href="#!"><i class="ics ics-facebook"></i></a></li>
+        <li><a href="#!"><i class="ics ics-link"></i></a></li>
+      </ul>
+    </div>
+    <div off-canvas="slidebar-1 left overlay">
+      <div class="slidebar-container">
+        <div class="js-toggle-left-slidebar js-menu-mobile">
+          <div class="trigger-menu"><span class="three-bars-icon close"></span></div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#challenge">Challenges</a></li>
+          <li><a href="#!">Portal</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="regulations.html">Regulations</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="register.html">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/TimezZ.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      	$(window).scroll(function(){
+      		if ($(this).scrollTop() > 100) {
+      			$('header').addClass('is-fixed');
+      		}
+      		else {
+      			$('header').removeClass('is-fixed');
+      		}
+      	});
+      });
+      //- new TimezZ('.j-timer', {
+      //- 	date: 'September 29, 2020 00:00:00',
+      //- 	daysName: 'Days',
+      //- 	hoursName: 'Hours',
+      //- 	minutesName: 'Mins',
+      //- 	secondsName: 'Secs',
+      //- 	tagNumber: 'span',
+      //- 	tagLetter: 'i',
+      //- 	stop: false,
+      //- });
+      
+      $(document).ready(function () {
+      // tab content
+      	$(".b-tab").hide();
+      	$(".b-tab:first").show();
+      
+      // if in tab mode
+      	$(".b-nav-tab").click(function() {
+      		$('html, body').animate({
+      			scrollTop: $("#top-b-nav").offset().top
+      		}, 1000)
+      		$(".b-tab").hide();
+      		var activeTab = $(this).attr("href"); 
+      		$(activeTab).fadeIn();
+      
+      		$(".b-nav-tab").removeClass("active");
+      		$(this).addClass("active");
+      	});
+      });
+      $(document).ready(function(){
+      	swiper
+      	var swiper = new Swiper('.swiper-intro', {
+      		slidesPerView: 3,
+      		spaceBetween: 10,
+      		autoplay: {
+      			delay: 50000,
+      		},
+      		keyboard: {
+      			enabled: true,
+      			onlyInViewport: false,
+      		},
+      		navigation: {
+      			nextEl: '#intro-next',
+      			prevEl: '#intro-prev',
+      		},
+      		breakpoints: {
+      			// when window width is <= 768px
+      			768: {
+      			slidesPerView: 1.1,
+      			spaceBetween: 5,
+      			},
+      		},
+      	});
+      });
+      
+      var wow = new WOW(
+      {
+      	boxClass:     'wow',      // animated element css class (default is wow)
+      	animateClass: 'animated', // animation css class (default is animated)
+      	offset:       0,          // distance to the element when triggering the animation (default is 0)
+      	mobile:       false,       // trigger animations on mobile devices (default is true)
+      	live:         true,       // act on asynchronously loaded content (default is true)
+      	scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+      );
+      wow.init();
+      
+      
+      //- video
+      $(document).ready(function(){
+      	$("#modal-video").on('hide.bs.modal', function(){
+      		$('#video1')[0].pause();
+      	});
+      	$("#modal-video").on('show.bs.modal', function(){
+      		$('#video1')[0].play();
+      	});
+      });
+    </script>
+  </body>
+</html>
