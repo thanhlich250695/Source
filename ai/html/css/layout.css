@@ -6751,17 +6751,6 @@ body.is-transparent .page-content {
     padding-top: 0;
   }
 }
-@media (min-width: 992px) {
-  body.has-bg::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    right: 0;
-    left: 0;
-    background: url(../images/img_bg.png) center center no-repeat;
-    height: 100%;
-  }
-}
 
 /* All */
 .container.max-width {
