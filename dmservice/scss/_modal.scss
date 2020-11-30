@@ -1,0 +1,89 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+// Tooltip
+.bl-tooltip{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:rgba(#35425B, 0.85);overflow:hidden;
+	&.is-hidden{z-index:-1!important;opacity:0!important;visibility:hidden!important;}
+}
+.overlay-tooltip{}
+.overlay-tooltip{
+	.bl-tooltip{z-index:1001;opacity:1;visibility:visible;@extend %tr-all;
+		.tooltip-container{
+			&.is-show{bottom:0;@extend %tr-all;}
+		}
+	}
+}
+.bl-tooltip{
+	.tooltip-container{@include position(absolute, null);bottom:-100%;background-color:#fff;width:100%;border-top-left-radius:$gutter;border-top-right-radius:$gutter;overflow:hidden;
+		@include from($tablet){left:50%;width:600px;margin-left:-300px}
+		.bl-tooltip-heading{display:flex;justify-content:space-between;align-items:center;height:50px;@include padding(null $gutter);border-bottom:1px solid $border;
+			span{color:$text;font-size:$size-medium;font-weight:$weight-semibold}
+			.func-close-tooltip{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:inherit;
+				[class^=icn]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+			}
+		}
+		.bl-tooltip-context{max-height:400px;@include padding($gutter);overflow-y:scroll;-webkit-overflow-scrolling:touch;
+			
+			@media only screen and (max-height:600px){max-height:280px}
+		}
+	}
+}
+
+// Modal
+.bl-modal{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:rgba(#35425B, 0.85);overflow:hidden;
+	&.is-hidden{z-index:-1!important;opacity:0!important;visibility:hidden!important;}
+	
+}
+.overlay-modal{overflow:hidden;}
+.overlay-modal{
+	.bl-modal{z-index:1002;opacity:1;visibility:visible;@extend %tr-all;
+		.modal-container{
+			&.is-show{top:50%;transform:translateY(-50%) ;transition:all 0.35s ease;}
+		}
+	}
+}
+.bl-modal{
+	.modal-container{@include position(absolute, null $gutter);top:-100%;background-color:#fff;@extend %is-radius;overflow:hidden;
+		@include from($tablet){left:50%;width:600px;margin-left:-300px}
+		.bl-modal-heading{display:flex;justify-content:space-between;align-items:center;height:50px;@include padding(null $gutter);border-bottom:1px solid $border;
+			span{color:$text;font-size:$size-large;font-weight:$weight-semibold}
+			.func-close-modal{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:inherit;
+				img{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+			}
+		}
+		.bl-modal-context{@include padding($gutter);
+			
+		}
+	}
+}
+
+// Popup
+.bl-popup{@include position(fixed,0);background: rgba(#000,85%);@extend %tr-all; z-index:-1;opacity:0;
+	.popup-inner{@include position(absolute, 0);top:100%;@extend %tr-all;width:100%;}
+	&.is-show{z-index:999;opacity:1;
+		.popup-inner{top:40px;border-radius:16px 16px 0 0;background-color:#fff;
+			.func-close-popup{
+				&.is-fixed{@include position(absolute, -40px 20px null null);
+					[class^="icn"]{font-size:30px;color:#fff;}
+				}
+			}
+			.popup-context{overflow-y:auto;height:calc(100vh - 40px);@include padding($gutter);
+				.content-updating{
+					img{
+						display:block;margin:0 auto;max-width:768px;width:100%;
+					}
+					p{text-align:center;margin-top:24px;font-size:16px;
+						a{color:$primary;}
+					}
+				}
+			}
+		}
+	}
+}
+.overlay-popup{overflow:hidden;}
+
+@keyframes rotateBox{
+	50%{transform:scale(0.92, 1);transform-origin:center;}
+	100%{transform:scale(0.88, 0.99);transform-origin:center;}
+}
+

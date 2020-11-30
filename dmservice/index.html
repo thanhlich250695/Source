@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dream Makers Service</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Dream Makers Service">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Thanh Lịch">
+    <meta name="copyright" content="2020 Thanh Lịch">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="loading-container">
+      <div class="loading-step1"><span class="text text1">Hello!</span><span class="text text2"><small>We are</small> <br>Dream Makers <br> Services</span><span class="text text3">Get started!</span></div>
+    </div>
+    <header><a class="logo">
+        <div class="img"></div></a></header>
+    <main class="page-content">
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-inner"><span class="subtitle">Design &amp; Develop</span>
+            <h1>DREAM MAKERS</h1><a class="effect" href="#introduction">
+              <div class="lines"></div></a>
+          </div>
+        </div>
+      </section>
+      <section class="introduction" id="introduction">
+        <div class="container">
+          <div class="columns">
+            <div class="column"><span class="subtitle">WHO WE ARE</span>
+              <h2>We are top-notch <span>Mobile App, Web And Design</span> Development Team.</h2>
+            </div>
+            <div class="column">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit .Nullam mattis, diam eget pellentesque consectetur, augue lorem fringilla risus, vel laoreet neque purus at enim.  Curabitur dapibus pulvinar tortor. Praesent fermentum nisi mi, in vestibulum neque fringilla eget. Nulla placerat leo libero, a condimentum ante volutpat volutpat. Integer egt..</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container"><span class="subtitle">OUR WORK</span>
+          <div class="wrap-work">
+            <ul class="tab-list">
+              <li><a class="active" href="#!">All</a></li>
+              <li><a href="#!">Website</a></li>
+              <li><a href="#!">UX/UI Design</a></li>
+              <li><a href="#!">Graphic Design</a></li>
+              <li><a href="#!">Motion Graphics</a></li>
+              <li><a href="#!">Application</a></li>
+            </ul>
+            <div class="content-list"><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj1.png" alt="img project"></figure>
+                </div></a><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj2.png" alt="img project"></figure>
+                </div></a><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj3.png" alt="img project"></figure>
+                </div></a><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj4.png" alt="img project"></figure>
+                </div></a><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj5.png" alt="img project"></figure>
+                </div></a><a class="item-pj" href="#!">
+                <div class="content">
+                  <figure><img src="images/img_pj6.png" alt="img project"></figure>
+                </div></a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>footer</p>
+    </footer>
+    <div class="bl-popup">
+      <div class="popup-inner">
+        <div class="popup-container">
+          <div class="popup-heading">
+            <div class="func-close-popup is-fixed"><i class="icn icn-small-remove"></i></div>
+          </div>
+          <div class="popup-context">
+            <div class="content-updating"><img src="images/update.png" alt="updating">
+              <p class="text">Nội dung chi tiết đang được cập nhật. Vui lòng xem trực tiếp Sản phẩm <a href="#!" target="_blank">tại đây</a></p>
+            </div>
+          </div>
+          <div class="popup-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(window).on("scroll",function(){
+      	let sectionHero = document.getElementsByClassName("section-hero")[0];
+      	let offset = sectionHero.getBoundingClientRect().top;
+       	if(offset < -$('.section-hero').height()){
+      		 $("header").addClass("is-fixed");
+      	}
+      	else{
+      		 $("header").removeClass("is-fixed");
+      	}
+      });
+      $(".item-pj").click(function(){
+      	$('html,body').addClass('overlay-popup');
+      	$('.bl-popup').addClass('is-show')
+      });
+      $(".func-close-popup").click(function(){
+      	$('html,body').removeClass('overlay-popup');
+      	$('.bl-popup').removeClass('is-show')
+      });
+      anime({
+      	targets: '.effect .lines',
+      	translateY: 15,
+      	direction: 'alternate',
+      	loop: true,
+      	easing: 'cubicBezier(.5, .05, .1, .3)'
+      })
+      $('a[href*=\\#]:not([href$=\\#])').click(function() {
+      	event.preventDefault();
+      
+      	$('html, body').animate({
+      		scrollTop: $($.attr(this, 'href')).offset().top
+      	}, 500);
+      });
+      
+      //- loading hello
+      var animation = anime.timeline({
+      	delay: 400,
+      	easing: 'easeInOutSine',
+      	})
+      	.add({
+      	targets: '.loading-step1 .text1',
+      	width:['0','100%'],
+      	opacity:[1,0],
+      	easing: 'linear',
+      	duration:1500,
+      	})
+      	.add({
+      	targets: '.loading-step1 .text2',
+      	easing: 'linear',
+      	scale:[0,1],
+      	duration:700,
+      	})
+      	.add({
+      	targets: '.loading-step1 .text3',
+      	easing: 'linear',
+      	scale:[0,1],
+      	duration:700,
+      	})
+      $(".loading-step1").click(function(){
+      	$(".loading-container").hide();
+      });
+    </script>
+  </body>
+</html>
