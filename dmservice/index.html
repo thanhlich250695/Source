@@ -20,9 +20,6 @@
     <style></style>
   </head>
   <body>
-    <div class="loading-container">
-      <div class="loading-step1"><span class="text text1">Hello!</span><span class="text text2"><small>We are</small> <br>Dream Makers <br> Services</span><span class="text text3">Get started!</span></div>
-    </div>
     <header><a class="logo">
         <div class="img"></div></a></header>
     <main class="page-content">
@@ -46,43 +43,71 @@
           </div>
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div class="container"><span class="subtitle">OUR WORK</span>
           <div class="wrap-work">
             <ul class="tab-list">
-              <li><a class="active" href="#!">All</a></li>
-              <li><a href="#!">Website</a></li>
-              <li><a href="#!">UX/UI Design</a></li>
-              <li><a href="#!">Graphic Design</a></li>
-              <li><a href="#!">Motion Graphics</a></li>
-              <li><a href="#!">Application</a></li>
+              <li><a class="active" href="#work">All</a></li>
+              <li><a href="#work">Website</a></li>
+              <li><a href="#work">UX/UI Design</a></li>
+              <li><a href="#work">Graphic Design</a></li>
+              <li><a href="#work">Motion Graphics</a></li>
+              <li><a href="#work">Application</a></li>
             </ul>
-            <div class="content-list"><a class="item-pj" href="#!">
+            <div class="content-list">
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj1.png" alt="img project"></figure>
-                </div></a><a class="item-pj" href="#!">
+                </div>
+              </div>
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj2.png" alt="img project"></figure>
-                </div></a><a class="item-pj" href="#!">
+                </div>
+              </div>
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj3.png" alt="img project"></figure>
-                </div></a><a class="item-pj" href="#!">
+                </div>
+              </div>
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj4.png" alt="img project"></figure>
-                </div></a><a class="item-pj" href="#!">
+                </div>
+              </div>
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj5.png" alt="img project"></figure>
-                </div></a><a class="item-pj" href="#!">
+                </div>
+              </div>
+              <div class="item-pj">
                 <div class="content">
                   <figure><img src="images/img_pj6.png" alt="img project"></figure>
-                </div></a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>footer</p>
+      <div class="context">
+        <h3>Contact us</h3>
+        <div class="footer-infor">
+          <div class="contact">
+            <ul>
+              <li><span>Mail:</span><a href="mailto:thanhlich250695@gmail.com">thanhlich250695@gmail.com</a></li>
+              <li><span>Phone:</span><a href="tel:0328391129">0328391129</a></li>
+              <li><span>Address:</span><a href="#!">KCX Tân thuận</a></li>
+            </ul>
+          </div>
+          <div class="social"></div>
+        </div>
+      </div>
     </footer>
+    <div class="copy-right">
+      <p>© Design by <a href="https://www.facebook.com/DM-Services-103021701492669"> Dream Maker Service</a></p>
+    </div>
     <div class="bl-popup">
       <div class="popup-inner">
         <div class="popup-container">
@@ -104,22 +129,22 @@
     <script src="js/anime.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      $(window).on("scroll",function(){
-      	let sectionHero = document.getElementsByClassName("section-hero")[0];
-      	let offset = sectionHero.getBoundingClientRect().top;
-       	if(offset < -$('.section-hero').height()){
-      		 $("header").addClass("is-fixed");
-      	}
-      	else{
-      		 $("header").removeClass("is-fixed");
-      	}
-      });
+      //- $(window).on("scroll",function(){
+      //- 	let sectionHero = document.getElementsByClassName("section-hero")[0];
+      //- 	let offset = sectionHero.getBoundingClientRect().top;
+      //-  	if(offset < -$('.section-hero').height()){
+      //- 		 $("header").addClass("is-fixed");
+      //- 	}
+      //- 	else{
+      //- 		 $("header").removeClass("is-fixed");
+      //- 	}
+      //- });
       $(".item-pj").click(function(){
-      	$('html,body').addClass('overlay-popup');
+      	$('html').addClass('overlay-popup');
       	$('.bl-popup').addClass('is-show')
       });
       $(".func-close-popup").click(function(){
-      	$('html,body').removeClass('overlay-popup');
+      	$('html').removeClass('overlay-popup');
       	$('.bl-popup').removeClass('is-show')
       });
       anime({
@@ -129,7 +154,7 @@
       	loop: true,
       	easing: 'cubicBezier(.5, .05, .1, .3)'
       })
-      $('a[href*=\\#]:not([href$=\\#])').click(function() {
+      $('a[href*="#"]').click(function() {
       	event.preventDefault();
       
       	$('html, body').animate({
