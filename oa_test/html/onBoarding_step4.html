@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OA Manager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2020 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="body">
+        <div class="bl-onBoarding">
+          <div class="heading">
+            <div class="welcome-message">
+              <figure><img src="images/img_timesetting_step4.png" alt="image_time_setting"></figure>
+              <div class="content">
+                <h1>Thiết lập lời thoại khi hệ thống bận</h1>
+                <p>Lời thoại này được phát khi tất cả Tổng đài viên đều bận. Bạn có thể <br>thay đổi lời thoại tại mục Lời thoại tự động.</p>
+              </div>
+            </div>
+            <div class="actions"><a class="button is-primary" href="onBoarding_step5.html">Tiếp tục</a></div>
+          </div>
+          <div class="context">
+            <div class="module-speech">
+              <div class="context-speech text">
+                <h2 class="title">Mẫu lời thoại ngoài giờ làm mặc định</h2>
+                <div class="content">
+                  <div class="contenteditable" contenteditable="true" id="editable">Xin chào quý khách <span class="value" >customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value" >oa_name</span> . Hiện tất cả Tổng đài viên đều bận. Quí khách vui lòng đợi máy trong giây lát. Hoặc gọi lại trong giây lát.</div>
+                  <div class="labels-select">
+                    <div class="context-labels"><i class="icz icz-fill-parameter"></i>
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="labels-list">
+                      <div class="arrow"></div>
+                      <label class="label">Chọn nhãn</label>
+                      <ul>
+                        <li> 
+                          <p>Tên khách hàng</p>
+                        </li>
+                        <li> 
+                          <p>Tên Zalo Official Accout</p>
+                        </li>
+                        <li> 
+                          <p>Địa chỉ</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="context-speech text">
+                <h2 class="title">Mẫu phát lại</h2>
+                <div class="content"><img src="images/img_recorder_step4.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-onBoarding">
+      <div class="sidebar-container"><span class="logo"><i class="ico-logo"></i></span>
+        <h2 class="title">Kết nối đàm thoại</h2>
+        <ul class="steps-setup">
+          <li> <a class="is-done" href="#!"> <i class="num">1</i><i class="icz icz-fill-check"></i><span>Lời chào khách hàng</span></a></li>
+          <li> <a class="is-active" href="#!"> <i class="num">2</i><i class="icz icz-fill-check"></i><span>Khung giờ hoạt động</span></a></li>
+          <li> <a href="#!"> <i class="num">3</i><i class="icz icz-fill-check"></i><span>Lời thoại ngoài giờ làm</span></a></li>
+          <li> <a href="#!"> <i class="num">4</i><i class="icz icz-fill-check"></i><span>Lời thoại khi hệ thống bận</span></a></li>
+          <li> <a href="#!"> <i class="num">5</i><i class="icz icz-fill-check"></i><span>Thêm tổng đài viên</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bl-non-support">
+      <div class="context"><img src="images/img_notify_device.png" alt="OA Manager">
+        <h4>Công cụ hiện chỉ hỗ trợ trên <br>thiết bị máy vi tính.</h4>
+        <p>Phiên bản trên điện thoại sẽ được cập nhật vào thời gian sắp tới</p>
+      </div>
+    </div>
+    <div class="bl-popup">
+    </div>
+    <div class="bl-modal">
+      <div class="modal-container is-small" id="modal-alert">
+        <div class="bl-modal-heading"><span>Thông báo</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Nội dung thông báo</p>
+        </div>
+        <div class="bl-modal-footer">
+          <div class="buttons is-right">
+            <button class="button is-outlined" href="javascript:void(0)">Hủy thao tác</button>
+            <button class="button is-primary" href="javascript:void(0)">[Main Action]</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container is-tiny" id="modal-support">
+        <div class="bl-modal-context">
+          <p>Mọi vấn đề cần hỗ trợ, mời bạn liên hệ chúng tôi theo thông tin bên dưới:</p>
+          <div class="ls-support">
+            <div class="ico-wrap"><i class="icz icz-mail mr-2"></i></div><span>Email: <a href="mailto:oa@zalo.me">oa@zalo.me</a></span>
+          </div>
+        </div>
+        <div class="bl-modal-footer">
+          <div class="buttons is-centered">
+            <button class="button is-outlined func-close-modal" href="javascript:void(0)">Đóng lại</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script src="js/main.js"></script>
+    <script></script>
+  </body>
+</html>

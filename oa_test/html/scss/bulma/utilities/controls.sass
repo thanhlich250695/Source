@@ -1,0 +1,52 @@
+$control-border-width: 1px !default
+
+$control-height: 40px !default
+$control-line-height: 1.5 !default
+
+$control-padding-vertical: calc(0.5em - #{$control-border-width}) !default
+$control-padding-horizontal: calc(1em - #{$control-border-width}) !default
+
+=control
+  -moz-appearance: none
+  -webkit-appearance: none
+  align-items: center
+  border: $control-border-width solid transparent
+  border-radius: $radius-small
+  box-shadow: none
+  display: inline-flex
+  font-size: $size-normal
+  height: $control-height
+  justify-content: flex-start
+  line-height: $control-line-height
+  padding-bottom: $control-padding-vertical
+  padding-left: $control-padding-horizontal
+  padding-right: $control-padding-horizontal
+  padding-top: $control-padding-vertical
+  position: relative
+  vertical-align: top
+  // States
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active
+    outline: none
+  &[disabled],
+  fieldset[disabled] &
+    cursor: not-allowed
+
+%control
+  +control
+
+// The controls sizes use mixins so they can be used at different breakpoints
+=control-small
+  height: 32px
+  border-radius: $radius-small
+  font-size: $size-small
+=control-medium
+  height: 48px
+  border-radius: $radius
+  font-size: $size-medium
+=control-large
+  height: 2.75em
+  border-radius: $radius
+  font-size: $size-medium

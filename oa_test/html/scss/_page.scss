@@ -1,0 +1,61 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+/* Body */
+html{-webkit-font-smoothing:antialiased}
+body{background:#fff;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;font-display:swap;
+	@media only screen and (max-width:414px){font-size:calc(100% + 1 * (100vw - 360px)/ 39)}
+}
+body, html{height:100%;
+	@include from($tablet){height:auto}
+}
+
+/* Non Support */
+.bl-non-support{display:none;@include padding(3rem);
+	img{display:block;max-width:300px;width:100%;@include margin(null auto 1rem)}
+	h4{display:block;margin-bottom:1rem;color:$text;font-size:$size-large;font-weight:$weight-semibold;text-align:center}
+	p{color:$grey;font-size:$size-normal;text-align:center}
+}
+@include until($tablet){
+	.page-content{display:none}
+	.bl-non-support{display:block}
+}
+
+/* General */
+.page-content{margin-left:300px;
+	.body{@include padding(null 2.5rem);
+		@include from($fullhd){@include padding(null 7.5rem);}
+	}
+}
+.bl-onBoarding{@include padding(88px null);
+	.heading{display:flex;align-items:flex-start;padding-bottom:2.5rem;border-bottom:1px solid $grey-lightest;margin-bottom:0;}
+	.context{@include padding(2.5rem null);}
+}
+.sidebar-onBoarding{display:none;background-color:#F3F3F3;@include position(fixed, 0 null 0 0);width:300px;@include padding(1rem);
+	@include from($tablet){display:block}
+	.sidebar-container{@include padding(0.5rem);}
+	.logo{display:block;@include size(150px, 32px);margin-top:-8px;margin-bottom:2.5rem;
+		i.ico-logo{display:block;background:url(../images/logo.png) 0 0 no-repeat;background-size:cover;@include size(150px, 32px);}
+	}
+	h2.title{margin-bottom:2.5rem;font-size:$size-large;font-weight:$weight-bold;line-height:28px;}
+	ul.steps-setup{
+		li{margin-bottom:2rem;
+			a{display:flex;align-items:center;pointer-events:none;
+				&.is-active{
+					i.num{color:$primary;font-weight:$weight-semibold;border-color:$primary;border-width:2px;}
+					span{color:$primary;font-weight:$weight-bold}
+				}
+				&.is-done{pointer-events:auto;
+					span{color:$text}
+					i.num{display:none}
+					[class^=icz]{display:block}
+				}
+				i.num{display:block;background-color:$white;@include size(24px);margin-right:0.75rem;line-height:24px;text-align:center;border:1px solid $grey-lighter;color:$grey;font-size:$size-small;font-weight:$weight-medium;font-style:normal;border-radius:100%;display:flex;align-items:center;justify-content:center;}
+				span{display:block;color:$grey;font-size:$size-normal}
+				[class^=icz]{display:none;@include size(24px);margin-right:0.75rem;@include padding(2px);color:$success;font-size:1.25rem}
+			}
+		}
+	}
+}
+
+

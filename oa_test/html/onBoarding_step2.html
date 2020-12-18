@@ -1,0 +1,2683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OA Manager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2020 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="body">
+        <div class="bl-onBoarding">
+          <div class="heading">
+            <div class="welcome-message">
+              <figure><img src="images/img_timesetting.png" alt="image_time_setting"></figure>
+              <div class="content">
+                <h1>Thêm khung giờ hoạt động để phát lời chào</h1>
+                <p>Lời chào sẽ được phát vào các khung giờ hoạt động của bạn.<br>Bạn có thể thay đổi khung giờ hoạt động tại mục Lời thoại tự động.</p>
+              </div>
+            </div>
+            <div class="actions"><a class="button is-primary" href="onBoarding_step3.html">Tiếp tục</a></div>
+          </div>
+          <div class="context">
+            <div class="module-time-frame">
+              <div class="context-time-frame">
+                <h2 class="title">Mẫu lời chào mặc định</h2>
+                <div class="field time-frame-select">
+                  <div class="control">
+                    <input id="opt1" type="radio" name="frame" checked>
+                    <label for="opt1">
+                      <p>Luôn mở cửa</p><span>Lời chào sẽ luôn được phát mỗi khi khách hàng của bạn gọi đến.</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <input id="opt2" type="radio" name="frame">
+                    <label for="opt2">
+                      <p>Mở cửa theo khung giờ tùy chọn</p><span>Lời chào sẽ được phát theo khung giờ bạn tùy chọn</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="time-frame-list is-hidden">
+                  <div class="row">
+                    <div class="date"><span>Thứ 2</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                    <div class="range">
+                      <div class="field-group was-added">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Thứ ba</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Thứ tư</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Thứ năm</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Thứ sáu</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Thứ bảy</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="date"><span>Chủ nhật</span></div>
+                    <div class="range">
+                      <div class="field-group">
+                        <div class="field time is-start">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-start" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ mở cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field time is-close">
+                          <div class="control has-icons-left"><span class="icon is-small is-left"><i class="icz icz-clock"></i></span>
+                            <input class="input" type="text" id="time-close" placeholder="00:00" name="time" required>
+                            <label class="label">Giờ đóng cửa</label>
+                          </div>
+                          <div class="dropdown-menu">
+                            <div class="list is-time">
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>00:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>01:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>02:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>03:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>04:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>05:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>06:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>07:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>08:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>09:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>10:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>11:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>12:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>13:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>14:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>15:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>16:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>17:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>18:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>19:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>20:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>21:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>22:00</span></label>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <input id="time1" type="radio" name="time" checked>
+                                  <label for="time1"><span>23:00</span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="func-add"><i class="icz icz-add-circle"></i></div>
+                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-onBoarding">
+      <div class="sidebar-container"><span class="logo"><i class="ico-logo"></i></span>
+        <h2 class="title">Kết nối đàm thoại</h2>
+        <ul class="steps-setup">
+          <li> <a class="is-done" href="#!"> <i class="num">1</i><i class="icz icz-fill-check"></i><span>Lời chào khách hàng</span></a></li>
+          <li> <a class="is-active" href="#!"> <i class="num">2</i><i class="icz icz-fill-check"></i><span>Khung giờ hoạt động</span></a></li>
+          <li> <a href="#!"> <i class="num">3</i><i class="icz icz-fill-check"></i><span>Lời thoại ngoài giờ làm</span></a></li>
+          <li> <a href="#!"> <i class="num">4</i><i class="icz icz-fill-check"></i><span>Lời thoại khi hệ thống bận</span></a></li>
+          <li> <a href="#!"> <i class="num">5</i><i class="icz icz-fill-check"></i><span>Thêm tổng đài viên</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bl-non-support">
+      <div class="context"><img src="images/img_notify_device.png" alt="OA Manager">
+        <h4>Công cụ hiện chỉ hỗ trợ trên <br>thiết bị máy vi tính.</h4>
+        <p>Phiên bản trên điện thoại sẽ được cập nhật vào thời gian sắp tới</p>
+      </div>
+    </div>
+    <div class="bl-popup">
+    </div>
+    <div class="bl-modal">
+      <div class="modal-container is-small" id="modal-alert">
+        <div class="bl-modal-heading"><span>Thông báo</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+        <div class="bl-modal-context">
+          <p>Nội dung thông báo</p>
+        </div>
+        <div class="bl-modal-footer">
+          <div class="buttons is-right">
+            <button class="button is-outlined" href="javascript:void(0)">Hủy thao tác</button>
+            <button class="button is-primary" href="javascript:void(0)">[Main Action]</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container is-tiny" id="modal-support">
+        <div class="bl-modal-context">
+          <p>Mọi vấn đề cần hỗ trợ, mời bạn liên hệ chúng tôi theo thông tin bên dưới:</p>
+          <div class="ls-support">
+            <div class="ico-wrap"><i class="icz icz-mail mr-2"></i></div><span>Email: <a href="mailto:oa@zalo.me">oa@zalo.me</a></span>
+          </div>
+        </div>
+        <div class="bl-modal-footer">
+          <div class="buttons is-centered">
+            <button class="button is-outlined func-close-modal" href="javascript:void(0)">Đóng lại</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $("#opt1").change(function(event){
+      	if (this.checked){
+      		$('.time-frame-list').addClass("is-hidden");
+      	}
+      });
+      $("#opt2").change(function(event){
+      	if (this.checked){
+      		$('.time-frame-list').removeClass("is-hidden");
+      	}
+      });
+      $("#time-start,#time-close").click(function(e){
+      	e.stopPropagation();
+      	$(".dropdown-menu").removeClass('is-show');
+      	$(this).parent().parent().find(".dropdown-menu").addClass('is-show');
+      
+      });
+      $("body,html").click(function(e){
+      	$(".dropdown-menu").removeClass('is-show');
+      });
+    </script>
+  </body>
+</html>

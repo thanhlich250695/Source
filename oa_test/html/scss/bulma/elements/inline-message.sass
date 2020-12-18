@@ -1,0 +1,65 @@
+$notification-background-color: $white !default
+$notification-code-background-color: $scheme-main !default
+$notification-radius: $radius-small !default
+$notification-padding: 1rem 1rem 1rem 2.5rem !default
+
+.inline-message
+  @extend %block
+  border-radius: $notification-radius
+  padding: $notification-padding
+  position: relative
+  & + .notification
+    margin-top: -6px
+  [class^=icz]
+    @include position(absolute, 14px null null 10px)
+    width: 24px
+    padding: 4px
+    font-size: 1rem
+  .delete
+    background-color: transparent
+    transform: scale(1.5)
+    &:before
+      background-color: $border
+      height: 1px
+    &:after
+      background-color: $border
+      width: 1px
+  h4
+    display: block
+    font-size: $size-normal
+    font-weight: $weight-semibold
+  p
+    font-size: $size-normal
+  .button.is-white
+    margin-bottom: -$gutter
+    padding-left: 0
+    padding-right: 0
+      
+  a:not(.button):not(.dropdown-item)
+    color: currentColor
+    //text-decoration: underline
+  strong
+    color: currentColor
+  code,
+  pre
+    background: $notification-code-background-color
+  pre code
+    background: transparent
+  & > .delete
+    position: absolute
+    right: 0.5rem
+    top: 0.5rem
+  .title,
+  .subtitle,
+  .content
+    color: currentColor
+  // Colors
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: lighten($color, 38%)
+      [class^=icz]
+        color: $color
+    &.is-danger
+      background-color: lighten($danger, 54%)
