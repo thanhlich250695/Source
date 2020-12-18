@@ -30,14 +30,14 @@
                 <p>Lời thoại này sẽ được phát khi khách hàng gọi đến ngoài khung giờ hoạt động<br>của bạn. Bạn có thể thay đổi lời thoại tại mục Lời thoại tự động.</p>
               </div>
             </div>
-            <div class="actions"><a class="button is-primary" href="onBoarding_step4.html">Tiếp tục</a></div>
+            <div class="actions"><a class="button is-primary tipppy-notice" href="onBoarding_step4.html" disabled>Tiếp tục</a></div>
           </div>
           <div class="context">
             <div class="module-speech">
               <div class="context-speech text">
                 <h2 class="title">Mẫu lời thoại ngoài giờ làm mặc định</h2>
                 <div class="content">
-                  <div class="contenteditable" contenteditable="true" id="editable">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> . Hiện chúng tôi không làm việc vào thời gian này. Xin quý khách gọi lại vào khung giờ làm việc tiếp theo. Hoặc vui lòng để lại lời nhắn sau tiếng bíp.</div>
+                  <div class="contenteditable" contenteditable="true" id="editable" data-placeholder="Nhập lời chào của bạn.">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> . Hiện chúng tôi không làm việc vào thời gian này. Xin quý khách gọi lại vào khung giờ làm việc tiếp theo. Hoặc vui lòng để lại lời nhắn sau tiếng bíp.</div>
                   <div class="labels-select">
                     <div class="context-labels"><i class="icz icz-fill-parameter"></i>
                       <div class="arrow"></div>
@@ -90,37 +90,17 @@
     <div class="bl-popup">
     </div>
     <div class="bl-modal">
-      <div class="modal-container is-small" id="modal-alert">
-        <div class="bl-modal-heading"><span>Thông báo</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
-        <div class="bl-modal-context">
-          <p>Nội dung thông báo</p>
-        </div>
-        <div class="bl-modal-footer">
-          <div class="buttons is-right">
-            <button class="button is-outlined" href="javascript:void(0)">Hủy thao tác</button>
-            <button class="button is-primary" href="javascript:void(0)">[Main Action]</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-container is-tiny" id="modal-support">
-        <div class="bl-modal-context">
-          <p>Mọi vấn đề cần hỗ trợ, mời bạn liên hệ chúng tôi theo thông tin bên dưới:</p>
-          <div class="ls-support">
-            <div class="ico-wrap"><i class="icz icz-mail mr-2"></i></div><span>Email: <a href="mailto:oa@zalo.me">oa@zalo.me</a></span>
-          </div>
-        </div>
-        <div class="bl-modal-footer">
-          <div class="buttons is-centered">
-            <button class="button is-outlined func-close-modal" href="javascript:void(0)">Đóng lại</button>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Include Plugin-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/tippy.min.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
+    <script>
+      tippy('.actions', {
+      	theme:"bg-white",
+      	content: "Hoàn thành lời thoại ngoài giờ hoạt động của bạn để tiếp tục",
+      });
+    </script>
   </body>
 </html>

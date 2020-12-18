@@ -30,12 +30,12 @@
                 <p>Lời chào sẽ được phát vào các khung giờ hoạt động của bạn.<br>Bạn có thể thay đổi khung giờ hoạt động tại mục Lời thoại tự động.</p>
               </div>
             </div>
-            <div class="actions"><a class="button is-primary" href="onBoarding_step3.html">Tiếp tục</a></div>
+            <div class="actions"><a class="button is-primary tipppy-notice" href="onBoarding_step3.html">Tiếp tục</a></div>
           </div>
           <div class="context">
             <div class="module-time-frame">
               <div class="context-time-frame">
-                <h2 class="title">Mẫu lời chào mặc định</h2>
+                <h2 class="title">Khung giờ hoạt động</h2>
                 <div class="field time-frame-select">
                   <div class="control">
                     <input id="opt1" type="radio" name="frame" checked>
@@ -2653,14 +2653,20 @@
     <script src="js/tippy.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+      tippy('.actions', {
+      	theme:"bg-white",
+      	content: "Hoàn thành khung giờ hoạt động của bạn để tiếp tục",
+      });
       $("#opt1").change(function(event){
       	if (this.checked){
       		$('.time-frame-list').addClass("is-hidden");
+      		$(".actions .button").attr( "disabled",false )
       	}
       });
       $("#opt2").change(function(event){
       	if (this.checked){
       		$('.time-frame-list').removeClass("is-hidden");
+      		$(".actions .button").attr( "disabled",'disabled' )
       	}
       });
       $("#time-start,#time-close").click(function(e){

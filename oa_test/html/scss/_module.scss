@@ -105,7 +105,7 @@
 		.labels-select{position:relative;cursor:pointer;@include position(absolute,null 0 2px null);@include size(30px);border:1px solid $grey-lighter;border-radius:$radius-small;
 			[class^="icz"]{font-size:$size-medium}
 			.context-labels{display:flex;align-items:center;justify-content:center;@include size(100%);
-				[class^="icz"]{font-size:$size-large}
+				[class^="icz"]{font-size:$size-xlarge}
 			}
 			.arrow{@include position(absolute,12px null null -8px);border-width: 0 5px 5px;border-color: transparent;border-style: solid;border-bottom-color:$grey-lighter;transform:rotate(-90deg);
 				&:after{content: "";@include position(absolute, 2px null null -5px);border-left: 5px solid transparent;border-bottom: 5px solid $white;border-right: 5px solid transparent;}

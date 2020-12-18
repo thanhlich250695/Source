@@ -30,14 +30,14 @@
                 <p>Lời chào sẽ được tự động phát khi khách hàng gọi đến tổng đài của bạn. <br>Bạn có thể thay đổi lời chào này sau trong phần Lời thoại tự động</p>
               </div>
             </div>
-            <div class="actions"><a class="button is-primary tipppy-notice" href="onBoarding_step2.html">Tiếp tục</a></div>
+            <div class="actions"><a class="button is-primary tipppy-notice" href="#!" disabled>Tiếp tục</a></div>
           </div>
           <div class="context">
             <div class="module-speech">
               <div class="context-speech text">
                 <h2 class="title">Mẫu lời chào mặc định</h2>
                 <div class="content">
-                  <div class="contenteditable" contenteditable="true" id="editable">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> Xin vui lòng giữ máy trong giây lát để chúng tôi kết nối quý khách với Tổng đài viên.</div>
+                  <div class="contenteditable" contenteditable="true" id="editable" data-placeholder="Nhập lời chào của bạn.">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> . Xin vui lòng giữ máy trong giây lát để chúng tôi kết nối quý khách với Tổng đài viên.</div>
                   <div class="labels-select">
                     <div class="context-labels"><i class="icz icz-fill-parameter"></i>
                       <div class="arrow"></div>
@@ -130,9 +130,9 @@
     <script src="js/main.js"></script>
     <script>
       //- //- tooltip
-      tippy('.tipppy-notice', {
+      tippy('.actions', {
       	theme:"bg-white",
-      	content: "I'm a Tippy tooltip!",
+      	content: "Hoàn thành lời chào của bạn để tiếp tục.",
       });
       tippy('.contenteditable .value.is-name', {
       	theme:"bg-white",

@@ -30,14 +30,14 @@
                 <p>Lời thoại này được phát khi tất cả Tổng đài viên đều bận. Bạn có thể <br>thay đổi lời thoại tại mục Lời thoại tự động.</p>
               </div>
             </div>
-            <div class="actions"><a class="button is-primary" href="onBoarding_step5.html">Tiếp tục</a></div>
+            <div class="actions"><a class="button is-primary" href="onBoarding_step5.html" disabled>Tiếp tục</a></div>
           </div>
           <div class="context">
             <div class="module-speech">
               <div class="context-speech text">
                 <h2 class="title">Mẫu lời thoại ngoài giờ làm mặc định</h2>
                 <div class="content">
-                  <div class="contenteditable" contenteditable="true" id="editable">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> . Hiện tại tất cả Tổng đài viên đều đang bận. Xin quý khách vui lòng đợi máy trong giây lát hoặc để lại lời nhắn sau tiếng bíp.</div>
+                  <div class="contenteditable" contenteditable="true" id="editable" data-placeholder="Nhập lời chào của bạn.">Xin chào quý khách <span class="value is-name" ><i class="icz icz-fill-code"></i>customer_name</span> . Cảm ơn quý khách đã gọi đến <span class="value is-oa" ><i class="icz icz-fill-code"></i>oa_name</span> . Hiện tại tất cả Tổng đài viên đều đang bận. Xin quý khách vui lòng đợi máy trong giây lát hoặc để lại lời nhắn sau tiếng bíp.</div>
                   <div class="labels-select">
                     <div class="context-labels"><i class="icz icz-fill-parameter"></i>
                       <div class="arrow"></div>
@@ -121,6 +121,11 @@
     <script src="js/popper.min.js"></script>
     <script src="js/tippy.min.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
+    <script>
+      tippy('.actions', {
+      	theme:"bg-white",
+      	content: "Hoàn thành lời thoại khi hệ thống bận để tiếp tục",
+      });
+    </script>
   </body>
 </html>
