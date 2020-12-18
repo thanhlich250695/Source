@@ -76,7 +76,7 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 .table{
 	.table-header{
 		.table-rows{display:flex;
-			.table-col{display:flex;align-items:center;min-height:44px;@include padding(12px 1rem);background-color:$grey-lightest;border-right:1px solid $white;font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;cursor:pointer;flex-shrink:0;
+			.table-col{display:flex;align-items:center;min-height:44px;@include padding(12px 1rem);background-color:$grey-lightest;border-right:1px solid $white;font-size:$size-normal;border-bottom:1px solid $white;font-weight:$weight-semibold;line-height:20px;cursor:pointer;flex-shrink:0;
 				&:last-child{border-right:none;}
 				&.w-auto{flex-grow:1;min-width:0;}
 				.content{flex-grow:1;min-width:0}
@@ -88,8 +88,8 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 		}
 	}
 	.table-body{
-		.table-rows{display:flex;min-height:54px;border-bottom:1px solid $grey-lightest;@include padding(4px null);
-			.table-col{min-height:46px;display:flex;align-items:center;@include padding(6px 1rem);font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;cursor:pointer;flex-shrink:0;
+		.table-rows{display:flex;border-bottom:1px solid $grey-lightest;
+			.table-col{min-height:54px;display:flex;align-items:center;@include padding(6px 1rem);font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;cursor:pointer;flex-shrink:0;
 				span{}
 				&.w-auto{flex-grow:1;min-width:0;}
 			}
@@ -152,7 +152,9 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 	}
 	.list.is-time{
 		.field{margin-bottom:0;}
-		.control{min-height:40px;display:flex;align-items:center;@include padding(null 1rem);}
+		.control{min-height:40px;display:flex;align-items:center;@include padding(null 1rem);
+			&:hover{background-color:#F1F4FD}
+		}
 	}
 }
 .heading-box{display:flex;align-items:center;margin-bottom:14px;
@@ -178,7 +180,7 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 .button{
 	&.is-secondary{background-color:$grey-lightest;border-color:$grey-lightest;color:$text;}
 	&.has-icon-left{padding-left:44px;
-		[class^="icz"]{@include position(absolute, 12px null null 16px);@include size(16px);}
+		[class^="icz"]{@include position(absolute, 12px null null 16px);@include size(16px);font-size:1rem;}
 	}
 }
 /* Hidden */ 
