@@ -212,7 +212,7 @@
 				.wrap-value{display:flex;align-items:center;border-radius:$radius-small;cursor:pointer;height:40px;@include padding(null 0.75rem);
 					&:hover{background-color:#F1F4FD}
 				}
-				.value{display:block;font-size:$size-normal;line-height:20px;max-width:180px;@extend %truncate;}
+				.value{display:block;font-size:$size-normal;line-height:20px;min-width:180px;max-width:180px;@extend %truncate;}
 				[class^="icz"]{flex-shrink:0;margin-right:0.75rem;}
 				.dropdown-menu{min-width:inherit;width:100%;}
 			}
