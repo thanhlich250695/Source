@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+	<title>Do You Love Me</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #6b92b9;
+}
+canvas {
+  display: block;
+}
+
+#loveQuestion {
+  position: absolute;
+  left: 220px;
+  top: 230px;
+  font-size: 80px;
+}
+
+input {
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+#btnYes {
+  position: absolute;
+  left: 480px;
+  top: 450px;
+  background-color: #7bd806;
+  cursor: pointer;
+}
+
+#btnNo {
+  position: absolute;
+  left: 860px;
+  top: 450px;
+  background-color: #f4511e;
+  transition: 0.3s;
+}
+		
+	</style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <h1 id="loveQuestion">Cuối tháng 1 đi vũng tàu nha e iu?</h1>
+    <input type="button" id="btnYes" value="CÓ" onclick="yesClick()" />
+	<input type="button" id="btnNo" value="KHÔNG" onmouseover="noHover()" />
+	<script>
+		/*
+*/
+
+window.onload = function () {
+  //canvas init
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+
+  //canvas dimensions
+  var W = window.innerWidth;
+  var H = window.innerHeight;
+  canvas.width = W;
+  canvas.height = H;
+
+  //snowflake particles
+  var mp = 25; //max particles
+  var particles = [];
+  for (var i = 0; i < mp; i++) {
+    particles.push({
+      x: Math.random() * W, //x-coordinate
+      y: Math.random() * H, //y-coordinate
+      r: Math.random() * 4 + 1, //radius
+      d: Math.random() * mp, //density
+    });
+  }
+
+  //Lets draw the flakes
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+    ctx.beginPath();
+    for (var i = 0; i < mp; i++) {
+      var p = particles[i];
+      ctx.moveTo(p.x, p.y);
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+    }
+    ctx.fill();
+    update();
+  }
+
+  //Function to move the snowflakes
+  //angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+  var angle = 0;
+  function update() {
+    angle += 0.01;
+    for (var i = 0; i < mp; i++) {
+      var p = particles[i];
+      //Updating X and Y coordinates
+      //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+      //Every particle has its own density which can be used to make the downward movement different for each flake
+      //Lets make it more random by adding in the radius
+      p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
+      p.x += Math.sin(angle) * 2;
+
+      //Sending flakes back from the top when it exits
+      //Lets make it a bit more organic and let flakes enter from the left and right also.
+      if (p.x > W + 5 || p.x < -5 || p.y > H) {
+        if (i % 3 > 0) {
+          //66.67% of the flakes
+          particles[i] = { x: Math.random() * W, y: -10, r: p.r, d: p.d };
+        } else {
+          //If the flake is exitting from the right
+          if (Math.sin(angle) > 0) {
+            //Enter from the left
+            particles[i] = { x: -5, y: Math.random() * H, r: p.r, d: p.d };
+          } else {
+            //Enter from the right
+            particles[i] = { x: W + 5, y: Math.random() * H, r: p.r, d: p.d };
+          }
+        }
+      }
+    }
+  }
+
+  //animation loop
+  setInterval(draw, 33);
+};
+
+function yesClick() {
+  alert("Tối nay, lên hồ chơi em nhé!");
+}
+
+function noHover() {
+  var x = Math.floor(Math.random() * window.innerWidth);
+  var y = Math.floor(Math.random() * window.innerHeight);
+  document.getElementById("btnNo").style.left = x + "px";
+  document.getElementById("btnNo").style.top = y + "px";
+}
+	</script>
+  </body>
+  
+</html>
