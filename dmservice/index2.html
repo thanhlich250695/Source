@@ -61,7 +61,7 @@ input {
     <canvas id="canvas"></canvas>
     <h1 id="loveQuestion">Cuối tháng 1 đi vũng tàu nha e iu?</h1>
     <input type="button" id="btnYes" value="CÓ" onclick="yesClick()" />
-	<input type="button" id="btnNo" value="KHÔNG" onmouseover="noHover()" />
+	<input type="button" id="btnNo" value="KHÔNG" onclick="noClick()" onmouseover="noHover()" />
 	<script>
 		/*
 */
@@ -144,6 +144,9 @@ window.onload = function () {
 
 function yesClick() {
   alert("Tối nay, lên hồ chơi em nhé!");
+}
+function noClick() {
+  alert("thôi");
 }
 
 function noHover() {
