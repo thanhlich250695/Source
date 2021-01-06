@@ -1,0 +1,55 @@
+// Core variables and mixins bourbon
+@import "bourbon";
+
+// Modal
+.bl-modal{display:block;z-index:-1;opacity:0;visibility:hidden;@include position(fixed, 0);@extend %tr-all;background-color:rgba(#35425B, 0.85);overflow-y:scroll;
+	&.is-hidden{z-index:-1!important;opacity:0!important;visibility:hidden!important;}
+}
+.overlay-modal{overflow:hidden;
+	body{overflow-y:scroll}
+}
+.overlay-modal{
+	.bl-modal{z-index:1002;opacity:1;visibility:visible;@extend %tr-all;
+		.modal-container{
+			&.is-show{top:64px;transition:all 0.35s ease;}
+		}
+	}
+}
+.bl-modal{
+	.modal-container{@include position(absolute, null $gutter);top:-100%;margin-bottom:64px;
+		@include from($tablet){left:50%;width:720px;margin-left:-360px;
+			&.is-small{width:600px;margin-left:-300px}
+			&.is-tiny{width:400px;margin-left:-200px}
+			&.is-large{width:830px;margin-left:-415px;}
+		}
+		&.border-hidden{
+			.bl-modal-heading,.bl-modal-footer{border:none !important}
+		}
+		.bl-modal-heading{display:flex;justify-content:space-between;align-items:center;height:60px;@include padding(null $gutter);border-bottom:1px solid $border;background-color:#fff;border-radius:8px 8px 0 0;
+			span{color:$text;font-size:$size-large;font-weight:$weight-semibold;position:relative;
+				[class^="icz"]{color:$grey;position:absolute;top:50%;transform:translateY(-50%);right:-25px;}
+			}
+			.func-close-modal{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:$grey-light;
+				[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+				&:hover{color:$primary}
+			}
+		}
+		.bl-modal-context{min-height:70px;background-color:#fff;border-radius:8px;position:relative;overflow:hidden;
+			p{margin-bottom:$gutter/1.5;color:$text;font-size:$size-medium;line-height:24px;}
+		}
+		.bl-modal-footer{background-color:#fff;margin-top:-$gutter;@include padding(1rem);border-top:1px solid $grey-lighter;border-radius: 0 0 8px 8px;margin-bottom:64px;
+			.buttons{margin-bottom:0}
+		}
+		.bl-modal-heading + .bl-modal-context{border-radius:0;@include padding($gutter)}
+		
+	}
+}
+
+// Support
+.ls-support{display:flex;align-items:center;
+	.ico-wrap{display:block;flex-shrink:0;background-color:$grey-lightest;@include size(32px);margin-right:0.75rem;@extend %is-radius-rounded;
+		[class^=icz]{@include size(32px);@include padding(8px);font-size:1rem;}
+	}
+	span{flex-grow:1;min-width:0;font-size:$size-normal}
+}
+

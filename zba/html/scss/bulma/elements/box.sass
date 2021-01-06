@@ -1,0 +1,21 @@
+$box-background-color: $white !default
+$box-radius: $radius !default
+$box-shadow: 0 2px 5px rgba(67,86,100,0.12) !default
+$box-padding: 1.5rem !default
+$box-link-hover-shadow: none !default
+$box-link-active-shadow: none !default
+
+.box
+  @extend %block
+  background-color: $box-background-color
+  border-radius: $box-radius
+  display: block
+  padding: $box-padding
+  box-shadow: $box-shadow
+
+a.box
+  &:hover,
+  &:focus
+    box-shadow: $box-link-hover-shadow
+  &:active
+    box-shadow: $box-link-active-shadow
