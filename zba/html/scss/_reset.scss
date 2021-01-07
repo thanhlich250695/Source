@@ -38,7 +38,7 @@ h6{@extend .h6;}
 %is-radius-rounded, .is-radius-rounded{border-radius:$radius-rounded!important}
 
 %backgroundCover--center{background-repeat:no-repeat;background-size:cover;background-position:center center}
-%tr-all{transition:all .35s ease}
+%tr-all{transition:all .25s ease}
 %userSelect-none{user-select:none}
 %truncate, .truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 %is-vmiddle, .is-vmiddle{vertical-align:middle;}

@@ -74,7 +74,9 @@
 	.field-content{margin-top:2rem;
 		.label{color:$text;font-weight:$weight-bold;margin-bottom:8px;display:flex;align-items:center;
 			[class^="icz"]{margin-left:6px;font-size:0.75rem;color:$grey}
-			.limit{font-weight:$weight-normal;}
+			.limit{opacity:0;font-weight:$weight-normal;position:relative;top:4px;@extend %tr-all;
+				&.is-show{opacity:1;top:0}
+			}
 		}
 	}
 	.field-group{

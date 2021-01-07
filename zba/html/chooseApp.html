@@ -125,7 +125,7 @@
               <div class="context-create-app"><img class="img" src="images/img_virtual_2.png" alt="">
                 <h1 class="title">Tạo ứng dụng gửi ZNS mới</h1>
                 <div class="field-content">
-                  <label class="label">Tên ứng dụng<span class="limit" style="display:none">0/40</span></label>
+                  <label class="label">Tên ứng dụng<span class="limit">0/40</span></label>
                   <div class="field-group">
                     <div class="field">
                       <div class="control is-danger">
@@ -270,7 +270,6 @@
       			</div>
       		`,
       		placement: 'bottom',
-      		trigger:"click"
       	});
       	tippy('.tippy-warning', {
       		theme: 'bg-white',
@@ -309,10 +308,10 @@
       	});
       	//- modal tạo app - khi focus input thì hiện giới hạn ký tự. out focus thì tắt giới hạn ký tự
       	$(".field-group input").focusin(function(){
-      		$(".limit").css("display","block")
+      		$(".limit").addClass("is-show");
       	});
       	$(".field-group input").focusout(function(){
-      		$(".limit").css("display","none");
+      		$(".limit").removeClass("is-show");
       	});
       	// step modal
       	$(".next-step").click(function(){

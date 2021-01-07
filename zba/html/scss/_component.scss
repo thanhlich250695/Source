@@ -166,7 +166,11 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 			}
 		}
 	}
-	&:hover{border-color:$primary;@extend %is-shadow-1;}
+	&:hover{border-color:$primary;@extend %is-shadow-1;
+		.content{
+			.name-app{color:$primary}
+		}
+	}
 }
 .item-oa{display:flex;align-items:center;height:62px;@include padding(null 12px);border: 1px solid $grey-lighter;margin-bottom:0.75rem;@extend %is-radius;
 	.avatar{flex-shrink:0;}
