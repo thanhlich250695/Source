@@ -90,7 +90,7 @@ $button-static-border-color: $border !default
   // States
   &:hover,
   &.is-hovered
-    border-color: $button-hover-border-color
+    border-color: $grey
     color: $button-hover-color
   &:focus,
   &.is-focused
@@ -126,6 +126,11 @@ $button-static-border-color: $border !default
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
+    &.is-light
+      &:hover,
+      &.is-hovered
+        background-color: darken($grey-lightest,2.5% ) !important
+        border-color: $grey-lightest !important
     &.is-#{$name}
       background-color: $color
       border-color: transparent

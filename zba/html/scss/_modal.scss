@@ -10,38 +10,37 @@
 }
 .overlay-modal{
 	.bl-modal{z-index:1002;opacity:1;visibility:visible;@extend %tr-all;
-		.modal-container{
+		.modal{
 			&.is-show{top:64px;transition:all 0.35s ease;}
 		}
 	}
 }
 .bl-modal{
-	.modal-container{@include position(absolute, null $gutter);top:-100%;margin-bottom:64px;
-		@include from($tablet){left:50%;width:720px;margin-left:-360px;
-			&.is-small{width:600px;margin-left:-300px}
-			&.is-tiny{width:400px;margin-left:-200px}
+	.modal{background-color:$white;@include position(absolute, null $gutter);top:-100%;margin-bottom:64px;overflow:hidden;@extend %is-radius;
+		@include from($tablet){left:50%;width:600px;margin-left:-300px;
+			&.is-small{width:400px;margin-left:-200px;
+				.modal-card-head,.modal-card-foot{border:none !important}
+			}
 			&.is-large{width:830px;margin-left:-415px;}
 		}
-		&.border-hidden{
-			.bl-modal-heading,.bl-modal-footer{border:none !important}
+		.func-close-modal{@include position(absolute, 5px 5px null null);z-index:1;flex-shrink:0;@include size(50px);color:$grey-light;margin-left:auto;
+			[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
+			&:hover{color:$primary}
 		}
-		.bl-modal-heading{display:flex;justify-content:space-between;align-items:center;height:60px;@include padding(null $gutter);border-bottom:1px solid $border;background-color:#fff;border-radius:8px 8px 0 0;
+		.modal-card-head{display:flex;justify-content:space-between;align-items:center;height:60px;@include padding(null $gutter);border-bottom:1px solid $border;
 			span{color:$text;font-size:$size-large;font-weight:$weight-semibold;position:relative;
 				[class^="icz"]{color:$grey;position:absolute;top:50%;transform:translateY(-50%);right:-25px;}
 			}
-			.func-close-modal{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:$grey-light;
-				[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
-				&:hover{color:$primary}
+		}
+		.modal-card-body{min-height:70px;border-radius:8px;position:relative;overflow:hidden;@include padding($gutter);padding-top:($gutter * 2);
+			p{margin-bottom:$gutter/1.5;color:$text;font-size:$size-medium;
+				&:last-child{margin-bottom:0;}
 			}
 		}
-		.bl-modal-context{min-height:70px;background-color:#fff;border-radius:8px;position:relative;overflow:hidden;
-			p{margin-bottom:$gutter/1.5;color:$text;font-size:$size-medium;line-height:24px;}
+		.modal-card-foot{@include padding(1rem $gutter);border-top:1px solid $grey-lighter;display:flex;align-items:center;
+			.buttons{margin-bottom:0;margin-left:auto;}
 		}
-		.bl-modal-footer{background-color:#fff;margin-top:-$gutter;@include padding(1rem);border-top:1px solid $grey-lighter;border-radius: 0 0 8px 8px;margin-bottom:64px;
-			.buttons{margin-bottom:0}
-		}
-		.bl-modal-heading + .bl-modal-context{border-radius:0;@include padding($gutter)}
-		
+		.modal-card-head + .modal-card-body{padding-top:$gutter;}
 	}
 }
 
@@ -52,4 +51,11 @@
 	}
 	span{flex-grow:1;min-width:0;font-size:$size-normal}
 }
-
+// custom content swiper inside 
+.modal-card{transform: translateX(0);transition:all 200ms ease;}
+.modal-card#create-app-step1{
+	&.is-hidden{display:block !important;transform: translateX(-100%);@include position(absolute, 0)}
+}
+.modal-card#create-app-step2{
+	&.is-hidden{display:block !important;transform: translateX(120%);@include position(absolute, 0)}
+}

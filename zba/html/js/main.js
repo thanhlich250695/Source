@@ -158,12 +158,3 @@ $(".heading-extend").click(function(){
 	$(".content-inside-extend").addClass("is-hidden");
 });
 
-// step modal
-$(".next-step").click(function(){
-	$(".modal-context-step1").addClass("is-hidden");
-	$(".modal-context-step2").removeClass("is-hidden");
-});
-$(".back-step").click(function(){
-	$(".modal-context-step1").removeClass("is-hidden");
-	$(".modal-context-step2").addClass("is-hidden");
-});

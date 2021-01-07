@@ -27,10 +27,10 @@ header{background-color:#071643;}
 	}
 	.pos-right{margin-left:auto;
 		.navbar-account{cursor:pointer;
-			.name-account{display:block;color:$white;font-size:$size-normal;font-weight:$weight-bold;line-height:20px;}
+			.name-account{display:block;color:$white;font-size:$size-normal;max-width:150px;font-weight:$weight-bold;line-height:20px;@extend %truncate;}
 			.info-user{display:flex;align-items:center;opacity:0.5;
 				[class^="icz"]{font-size:0.75rem;color:#F0F2F6;}
-				.name-user{display:block;margin-left:6px;font-size:$size-small;color:$white;line-height:18px;}
+				.name-user{display:block;margin-left:6px;font-size:$size-small;color:$white;line-height:18px;max-width:150px;@extend %truncate;}
 			}
 			
 			.dropdown-toggle{padding-right:$gutter;
@@ -44,7 +44,7 @@ header{background-color:#071643;}
 					[class^="icz"]{@include position(absolute, 50% 0 null null);transform:translateY(-50%);}
 				}
 			}
-			.wallet{display:flex;align-items:center;background-color:$grey-lightest;border-radius:$radius;height:54px;@include padding(null 10px);margin-top:14px;
+			.wallet{display:flex;align-items:center;background-color:$grey-lightest;height:54px;@include padding(null 10px);margin-top:14px;@extend %is-radius;
 				.balance{flex-grow:1;min-width:0;padding-right:$gutter;
 					.sub{display:block;font-size:$size-small;color:$grey;line-height:18px;}
 					.money{display:block;font-size:$size-normal;font-weight:$weight-semibold;color:$text;line-height:20px}
@@ -75,7 +75,7 @@ header{background-color:#071643;}
 				}
 				.body-extend{@include padding(22px null);min-height:120px;
 					.group-field{
-						.field{margin-bottom:0.75rem;}
+						.field{margin-bottom:0.25rem;}
 						label{padding-left:0;width:100%;padding-right:$gutter;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 						
 						[type="radio"]:checked + label:after,[type="radio"]:not(:checked) + label:after, [type="radio"]:checked + label:before,[type="radio"]:not(:checked) + label:before{right:0;left:inherit}
@@ -93,7 +93,9 @@ header{background-color:#071643;}
 					}
 				}
 				.footer-extend{height:44px;display:flex;align-items:center;position:relative;
-					.create-zba{display:block;font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;}
+					.create-zba{display:block;font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;
+						&:hover{color:$primary}
+					}
 					&:after{content:'';@include position(absolute, 0 0 null 0);@include margin(null -16px);background-color:$grey-lightest;height:1px;}
 				}
 			}

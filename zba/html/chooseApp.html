@@ -19,20 +19,29 @@
     <style></style>
   </head>
   <body>
+    <div class="layer-loading">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="layer-loading-overlay"></div>
     <header>
       <div class="header-container"><span class="logo"><i class="ico-logo"></i></span>
         <div class="pos-right">
           <div class="navbar-account">
             <div class="dropdown">
               <div class="dropdown-toggle" role="button" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="name-account">ZBA CampusVNG</span>
-                <div class="info-user"><i class="icz icz-fill-account"></i><span class="name-user">Sarimi Casher</span></div><i class="icz icz-fill-triangle-down icz-toggle"></i>
+                <div class="info-user"><i class="icz icz-fill-account"></i><span class="name-user">Lâm Nguyễn</span></div><i class="icz icz-fill-triangle-down icz-toggle"></i>
               </div>
               <div class="dropdown-menu is-account dropdown-touch is-right" aria-labelledby="dropdown-account" x-placement="right-start">
                 <div class="content-inside">
                   <div class="info-account">
                     <div class="switch-account"><span class="name-account">ZBA CampusVNG</span><span class="sub">Chuyển tài khoản ZBA hoặc tạo mới</span><i class="icz icz-right"></i></div>
                     <div class="wallet">
-                      <div class="balance"><span class="sub">Số dư hiện tại</span><span class="money">10,000,000 đ</span></div>
+                      <div class="balance"><span class="sub">Số dư hiện tại</span><span class="money">10,000,000đ</span></div>
                       <div class="cash"><a class="button is-small is-success has-icon-left"><i class="icz icz-fill-dong"></i>Nạp tiền</a></div>
                     </div>
                     <div class="account"><span class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/96)"></span></span>
@@ -41,7 +50,7 @@
                   </div>
                 </div>
                 <div class="content-inside-extend is-hidden">
-                  <div class="heading-extend"><i class="icz icz-left"></i><span>Quay lại</span></div>
+                  <div class="heading-extend"><i class="icz icz-left"></i><span>Chọn Zalo Business Account</span></div>
                   <div class="body-extend">
                     <div class="group-field">
                       <div class="field">
@@ -78,7 +87,7 @@
           <div class="body-chooseApp">
             <!-- tối đa 8 item và hiển thị cta "xem tất cả"-->
             <div class="chooseApp-list"><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
-                <div class="content"><span class="name-app">Sarimi Connect 1</span><span class="connected">	7 OA đang kết nối <span class="count-people">2 người</span></span></div></a><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
+                <div class="content"><span class="name-app">Sarimi Connect 1</span><span class="connected tippy-count-oa">7 OA đang kết nối <span class="count-people">2 người</span></span></div></a><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
                 <div class="content"><span class="name-app">Sarimi Connect 1</span><span class="connected">	7 OA đang kết nối <span class="count-people">2 người</span></span></div></a><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
                 <div class="content"><span class="name-app">Sarimi Connect 1</span><span class="connected">	7 OA đang kết nối <span class="count-people">2 người</span></span></div></a><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
                 <div class="content"><span class="name-app">Sarimi Connect 1</span><span class="connected">	7 OA đang kết nối <span class="count-people">2 người</span></span></div></a><a class="item-chooseApp" href="#!"><img class="img" src="images/ico_app.png" alt="ico_app">
@@ -109,35 +118,39 @@
     <div class="bl-popup">
     </div>
     <div class="bl-modal">
-      <div class="modal-container is-small" id="modal-create-app">
-        <div class="bl-modal-context">
-          <div class="modal-context-step1">
-            <div class="heading-context"><a class="func-close-modal has-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
-            <div class="body-context"><img class="img" src="images/img_virtual_2.png" alt="">
-              <h1 class="title">Tạo ứng dụng gửi ZNS mới</h1>
-              <div class="field-content">
-                <label class="label">Tên ứng dụng<span class="limit" style="display:none">0/40</span></label>
-                <div class="field-group">
-                  <div class="field">
-                    <div class="control is-danger">
-                      <input class="input" type="text" placeholder="Nhập tên ứng dụng">
-                    </div><small class="help has-text-danger">Lorem isum</small>
+      <div class="modal" id="modal-create-app">
+        <div class="modal-card" id="create-app-step1"><a class="func-close-modal has-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a>
+          <div class="modal-card-body">
+            <div class="content">
+              <div class="context-create-app"><img class="img" src="images/img_virtual_2.png" alt="">
+                <h1 class="title">Tạo ứng dụng gửi ZNS mới</h1>
+                <div class="field-content">
+                  <label class="label">Tên ứng dụng<span class="limit" style="display:none">0/40</span></label>
+                  <div class="field-group">
+                    <div class="field">
+                      <div class="control is-danger">
+                        <input class="input" type="text" placeholder="Nhập tên ứng dụng">
+                      </div><small class="help has-text-danger">Lorem isum</small>
+                    </div>
                   </div>
-                </div>
-              </div><span class="text is-grey notice-under-field">Tên ứng dụng nên thể hiện được loại hình, mục đích sử dụng ứng dụng hoặc khu vực dịch vụ của doanh nghiệp.</span><span class="cta">Bằng việc nhấn chọn "Tiếp tục", bạn đã đồng ý với <a href ="#!" target="_blank">Chính sách nền tảng của Zalo</a></span>
-            </div>
-            <div class="footer-context">
-              <div class="step">Bước 1/2</div>
-              <div class="buttons is-right">
-                <button class="button is-primary next-step" href="javascript:void(0)">Tiếp tục</button>
+                </div><span class="text is-grey notice-under-field">Tên ứng dụng nên thể hiện được loại hình, mục đích sử dụng ứng dụng hoặc khu vực dịch vụ của doanh nghiệp.</span>
+                <p class="is-size-7 has-text-grey mt-5 mb-0">Bằng việc nhấn chọn "Tiếp tục", bạn xác nhận đã đồng ý với <a href ="#!" target="_blank" class="hyperlink">Chính sách nền tảng của Zalo</a></p>
               </div>
             </div>
           </div>
-          <div class="modal-context-step2 is-hidden">
-            <div class="heading-context">
-              <h2>Kết nối Official Account</h2><a class="func-close-modal has-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a>
+          <div class="modal-card-foot">
+            <div class="optional">
+              <div class="step is-size-7 has-text-grey">Bước 1/2</div>
             </div>
-            <div class="body-context"><span class="text is-grey">Kết nối với Official Account bạn muốn dùng khi gửi ZNS. Nếu bạn không sở hữu Official Account cần kết nối, hãy liên hệ với chủ sở hữu hoặc quản trị viên.</span>
+            <div class="buttons is-right">
+              <button class="button is-primary next-step" href="javascript:void(0)">Tiếp tục</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-card is-hidden" id="create-app-step2"><a class="func-close-modal has-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a>
+          <div class="modal-card-head"><span>Kết nối Official Account</span></div>
+          <div class="modal-card-body">
+            <div class="context-create-app"><span class="text is-grey">Kết nối với Official Account bạn muốn dùng khi gửi ZNS. Nếu bạn không sở hữu Official Account cần kết nối, hãy liên hệ với chủ sở hữu hoặc quản trị viên.</span>
               <div class="field-content">
                 <label class="label">Thêm Official Account vào danh sách <i class="icz icz-question tippy-add-oa"></i></label>
                 <div class="field-group has-action">
@@ -147,7 +160,7 @@
                     </div>
                     <div class="value-selected">
                       <div class="user">
-                        <div class="avatar avatar--m"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Heaven Gate 1</span>
+                        <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Heaven Gate 1</span>
                       </div>
                       <div class="func-reset"><i class="icz icz-fill-remove"></i></div>
                     </div>
@@ -155,7 +168,7 @@
                       <ul>
                         <li> 
                           <div class="item-oa">
-                            <div class="avatar avatar--l"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                            <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
                             <div class="info-oa">
                               <div class="name-oa"><span>Heaven Gate 1</span></div><span class="id">ID: 1234567890123456789</span>
                             </div>
@@ -174,7 +187,7 @@
                   <ul>
                     <li> 
                       <div class="item-oa">
-                        <div class="avatar avatar--l"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                        <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
                         <div class="info-oa">
                           <div class="name-oa"><span>Heaven Gate 1</span><small class="tag-oa">Đang sở hữu</small></div><span class="id">ID: 1234567890123456789</span>
                         </div>
@@ -183,9 +196,9 @@
                     </li>
                     <li> 
                       <div class="item-oa">
-                        <div class="avatar avatar--l"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                        <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
                         <div class="info-oa">
-                          <div class="name-oa"><span>Heaven Gate 1</span><small class="tag-oa">Đang sở hữu</small></div><span class="id">ID: 1234567890123456789</span>
+                          <div class="name-oa"><span>Sarimi Runner</span><small class="tag-oa">Đang sở hữu</small></div><span class="id">ID: 1234567890123456789</span>
                         </div>
                         <div class="notice is-warning tippy-warning"><i class="icz icz-fill-warning"></i></div>
                         <div class="actions"><a class="button is-small" href="#!">Kết nối</a></div>
@@ -193,37 +206,41 @@
                     </li>
                     <li> 
                       <div class="item-oa">
-                        <div class="avatar avatar--l"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                        <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
                         <div class="info-oa">
-                          <div class="name-oa"><span>Heaven Gate 1</span><small class="tag-oa">Đang sở hữu</small></div><span class="id">ID: 1234567890123456789</span>
+                          <div class="name-oa"><span>Kiki Runner</span></div><span class="id">ID: 1234567890123456789</span>
                         </div>
-                        <div class="notice is-warning tippy-warning"><i class="icz icz-fill-warning"></i></div>
                         <div class="actions"><a class="button is-small" href="#!">Chờ kết nối</a></div>
                       </div>
                     </li>
                   </ul>
                 </div>
-              </div><span class="cta">Bằng việc được cấp quyền truy cập vào Offical Account này, bạn xác nhận đã đồng ý với  <a href ="#!" target="_blank">Điều khoản và Chính sách của Zalo Business Account.</a></span>
-            </div>
-            <div class="footer-context">
-              <div class="step">Bước 2/2</div>
-              <div class="buttons is-right">
-                <button class="button back-step" href="javascript:void(0)">Quay lại</button>
-                <button class="button is-primary" href="javascript:void(0)">Tạo ứng dụng</button>
               </div>
+              <p class="is-size-7 has-text-grey mt-5 mb-0">Bằng việc được cấp quyền truy cập vào Offical Account này, bạn xác nhận đã đồng ý với  <a href ="#!" target="_blank" class="hyperlink">Điều khoản và Chính sách của Zalo Business Account.</a></p>
+            </div>
+          </div>
+          <div class="modal-card-foot">
+            <div class="optional">
+              <div class="step is-size-7 has-text-grey">Bước 2/2</div>
+            </div>
+            <div class="buttons is-right">
+              <button class="button back-step" href="javascript:void(0)">Quay lại</button>
+              <button class="button is-primary" href="javascript:void(0)">Tạo ứng dụng</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal-container is-tiny border-hidden" id="modal-confirm">
-        <div class="bl-modal-heading"><span>Huỷ</span><a class="func-close-modal close-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
-        <div class="bl-modal-context">
-          <p>Tiến trình tạo ứng dụng mới sẽ không được lưu lại. Bạn có chắc muốn hủy?</p>
-        </div>
-        <div class="bl-modal-footer">
-          <div class="buttons is-right">
-            <button class="button is-outlined close-confirm" href="javascript:void(0)">Tiếp tục tạo mới</button>
-            <button class="button is-primary func-close" href="javascript:void(0)">Xác nhận</button>
+      <div class="modal is-small" id="modal-confirm">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Hủy</span><a class="func-close-modal close-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <p>Tiến trình tạo ứng dụng mới sẽ không được lưu lại. Bạn có chắc muốn hủy?</p>
+          </div>
+          <div class="modal-card-foot">
+            <div class="buttons is-right">
+              <button class="button is-outlined close-confirm" href="javascript:void(0)">Tiếp tục tạo mới</button>
+              <button class="button is-primary func-close" href="javascript:void(0)">Xác nhận</button>
+            </div>
           </div>
         </div>
       </div>
@@ -240,6 +257,21 @@
       		theme: 'bg-white',
       		content: "ID Official Account là dãy 19 số đặc trưng cho mỗi tài khoản. Bạn có thể xem ID này tại trang Quản lý Official Account.",
       	});
+      	tippy('.tippy-count-oa', {
+      		theme: 'bg-white',
+      		allowHTML: true,
+      		content: `
+      			<div class="content-inside">
+      				<h2>OA đang kết nối</h2>
+      				<ul>
+      					<li>Sarimi Runner</li>
+      					<li>Sarimi Runner 2</li>
+      				</ul>
+      			</div>
+      		`,
+      		placement: 'bottom',
+      		trigger:"click"
+      	});
       	tippy('.tippy-warning', {
       		theme: 'bg-white',
       		content: "Official Account chưa được xác thực.",
@@ -250,7 +282,7 @@
       	});
       	$(".func-close").click(function(){
       		$("html").removeClass("overlay-modal");
-      		$(".modal-container").removeClass("is-show");
+      		$(".modal").removeClass("is-show");
       	});
       	$(".has-confirm").click(function(){
       		$("#modal-confirm").addClass("is-show");
@@ -281,6 +313,19 @@
       	});
       	$(".field-group input").focusout(function(){
       		$(".limit").css("display","none");
+      	});
+      	// step modal
+      	$(".next-step").click(function(){
+      		$(".modal-card#create-app-step1").addClass("is-hidden");
+      		$(".modal-card#create-app-step2").removeClass("is-hidden");
+      	});
+      	$(".back-step").click(function(){
+      		$(".modal-card#create-app-step1").removeClass("is-hidden");
+      		$(".modal-card#create-app-step2").addClass("is-hidden");
+      	});
+      	$(".group-field .field").click(function(){
+      		$('.layer-loading').addClass("is-active")
+      		setTimeout(function(){$('.layer-loading').removeClass("is-active")},1500)
       	});
       });
     </script>
