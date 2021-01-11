@@ -179,7 +179,8 @@
 	}
 }
 .module-add-member{min-height:400px;padding-bottom:$gutter;
-	h2.title{font-size:$size-medium;font-weight:$weight-bold;line-height:24px;margin-bottom:1rem;}
+	h2.title{font-size:$size-medium;font-weight:$weight-bold;line-height:24px;margin-bottom:2px;}
+	.caption{display:block;font-size:$size-normal;line-height:20px;color:$grey;margin-bottom:1rem;}
 	.context + .context{margin-top:2rem;}
 	.check-member{
 		.label{color:$grey;margin-bottom:6px;font-weight:$weight-bold;}

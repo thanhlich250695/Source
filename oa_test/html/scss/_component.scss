@@ -204,3 +204,22 @@ hr.line{display:block;background-color:$grey-lighter;height:1px;@include margin(
 .tippy-box[data-theme="bg-white"]{background-color:$white;color:$text;box-shadow:0px -4px 8px rgba(#435664,0.05), 0px 4px 8px rgba(#435664,0.1), 0px 8px 16px rgba(#435664,0.08);@include padding(6px 10px);max-width:200px !important;
 	.tippy-arrow:before{border-top-color:$white!important;}
 }
+
+// toast Message
+.toast-message{@include position(fixed, -200px 24px null null);z-index:10;background-color:#fff;@extend %is-radius-small; box-shadow: 0 -16px 32px 0 rgba(67,86,100,0.03), 0 16px 32px 0 rgba(67,86,100,0.17);min-width:360px;@extend %tr-all;
+	.func-close-tm{@include position(absolute, 50% 10px null null);transform:translateY(-50%);@include size(32px);display:flex;align-items:center;justify-content:center;
+		[class^='icz']{color:$grey;font-size:0.75rem;}
+	}
+	.tm-context{@include padding(16px 50px 16px 20px);display:flex;align-items:center;
+		[class^="icz"]{margin-right:0.5rem;}
+		p{font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;}
+	}
+	&:after{content:'';@include position(absolute, 0 null 0 0);width:4px;border-radius:4px 0 0 4px;}
+	&.is-success{
+		.tm-context{
+			[class^="icz"]{color:$success}
+		}
+		&:after{background-color:$success}
+	}
+	&.is-show{top:24px;}
+}
