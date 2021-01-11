@@ -77,7 +77,7 @@
 	}
 	.content{margin-left:0.75rem;
 		h1{font-size:$size-xlarge;font-weight:$weight-normal;line-height:36px;}
-		p{color:$grey-light;font-size:$size-normal;font-weight:$weight-normal;line-height:20px;margin-top:0.5rem;}
+		p{color:$grey-light;font-size:$size-normal;font-weight:$weight-normal;line-height:20px;margin-top:0.25rem;}
 	}
 }
 .module-time-frame{
@@ -189,7 +189,7 @@
 			.button{margin-left:1rem;flex-shrink:0;}
 		}
 	}
-	.group-member{
+	.group-member{margin-top:1rem;
 		li{
 			.item{margin-bottom:0.5rem}
 			&:last-child{
@@ -218,7 +218,7 @@
 				.dropdown-menu{min-width:inherit;width:100%;}
 			}
 			.actions{display:none;
-				.func-remove{color:inherit;@include position(absolute, 50% 16px null null);transform:translateY(-50%);@include size(36px);display:flex;align-items:center;justify-content:center;
+				.func-remove{color:inherit;@include position(absolute, 50% 6px null null);transform:translateY(-50%);@include size(36px);display:flex;align-items:center;justify-content:center;
 					&:hover{
 						[class^="icz"]{color:$primary}
 					}

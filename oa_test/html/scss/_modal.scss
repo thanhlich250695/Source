@@ -22,7 +22,7 @@
 			&.is-tiny{width:360px;margin-left:-180px}
 		}
 		.bl-modal-heading{display:flex;justify-content:space-between;align-items:center;height:60px;@include padding(null $gutter);border-bottom:1px solid $border;
-			span{color:$text;font-size:$size-large;font-weight:$weight-semibold;position:relative;
+			span{color:$text;font-size:$size-large;font-weight:$weight-bold;position:relative;
 				[class^="icz"]{color:$grey;position:absolute;top:50%;transform:translateY(-50%);right:-25px;}
 			}
 			.func-close-modal{flex-shrink:0;@include size(50px);margin-right:-$gutter;color:$grey-light;
