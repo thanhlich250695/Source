@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Notification Service</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2020 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="general is-alert">
+        <div class="general-alert-container">
+          <p>Cần xác thực OA Sarmi Campus để tiếp tục gửi tin. <a class="blank" href="#!" target="_blank"> Xác thực ngay <i class="icz icz-arrow-right"></i></a></p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="heading"><span class="title">Quản lý mẫu tin</span>
+          <div class="actions"><a class="button is-primary func-chooseTemplate" href="javascript:void(0);">Tạo mẫu tin</a></div>
+        </div>
+        <div class="box">
+          <div class="heading-box">
+            <div class="pos-wrap">
+              <div class="pos-left">
+                <div class="control mr-3 has-icons-left is-search">
+                  <input class="input" type="text" placeholder="Tìm kiếm theo tên hoặc ID mẫu tin"><span class="icon is-small is-left"><i class="icz icz-search"></i></span>
+                </div>
+                <div class="control mr-3 is-status-dropdown">
+                  <div class="dropdown">
+                    <button class="button dropdown-trigger dropdown-toggle has-icon-right" role="button" id="dropdown-status" data-toggle="dropdown" aria-expanded="false"><span>Trạng thái: Tất cả</span><i class="icz icz-fill-triangle-down"></i></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-m2">
+                      <div class="filter-box-context">
+                        <div class="field">
+                          <div class="control">
+                            <input id="a1" type="radio" name="ctr" checked>
+                            <label for="a1">Tất cả</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input id="a2" type="radio" name="ctr">
+                            <label for="a2">Hoạt động</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input id="a3" type="radio" name="ctr">
+                            <label for="a3">Đang chờ duyệt</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input id="a4" type="radio" name="ctr">
+                            <label for="a4">Bị từ chối</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input id="a5" type="radio" name="ctr">
+                            <label for="a5">Nháp</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input id="a6" type="radio" name="ctr">
+                            <label for="a6">Ngưng hoạt động</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pos-right">
+                <div class="control has-icons-left is-daterange">
+                  <input class="input" type="text" name="daterange" value="01/01/2020 - 30/01/2020" autocomplete="off"><span class="icon is-left"><i class="icz icz-fill-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-group">
+          <div class="table-heading"><span class="title">Danh sách</span></div>
+          <div class="table-body">
+            <div class="tui-grid-container" data-grid-id="1">
+              <div class="tui-grid-content-area">
+                <div class="tui-grid-rside-area">
+                  <div class="tui-grid-header-area">
+                    <table class="tui-grid-table">
+                      <tbody>
+                        <tr>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="240">
+                            <label>Tên mẫu tin</label><a class="tui-grid-btn-sorting tui-grid-btn-sorting-down"> </a>
+                          </th>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="130">
+                            <label>ID mẫu tn</label><a class="tui-grid-btn-sorting"></a>
+                          </th>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="190">
+                            <label>Tên OA</label><a class="tui-grid-btn-sorting"> </a>
+                          </th>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="120">
+                            <label>Ngày tạo</label><a class="tui-grid-btn-sorting"> </a>
+                          </th>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="150">
+                            <label>Trạng thái</label><a class="tui-grid-btn-sorting"> </a>
+                          </th>
+                          <th class="tui-grid-cell tui-grid-cell-header" data-column-name="date" width="">
+                            <label>Số tin đã gửi</label><a class="tui-grid-btn-sorting tui-grid-btn-sorting-up"> </a>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tui-grid-body-area">
+                    <div class="tui-grid-body-container">
+                      <div class="tui-grid-table-container">
+                        <table class="tui-grid-table">
+                          <tbody>
+                            <tr class="tui-grid-row-odd">
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="240">
+                                <div class="tui-grid-cell-content"><a class="func-open-slide" href="#!"><strong>Mẫu tin chạy tết ZaloPay</strong></a></div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="130">
+                                <div class="tui-grid-cell-content">123456</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="190">
+                                <div class="tui-grid-cell-content">
+                                  <div class="user">
+                                    <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Campus Runner</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="120">
+                                <div class="tui-grid-cell-content">02-08-2020</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="150">
+                                <div class="tui-grid-cell-content">
+                                  <div class="status is-warning">Đang chờ duyệt</div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="">
+                                <div class="tui-grid-cell-content">320</div>
+                              </td>
+                            </tr>
+                            <tr class="tui-grid-row-odd" style="padding:18px 12px">
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date" width="150">
+                                <div class="tui-grid-cell-content"><a href="#!"><strong>Mẫu tin chạy tết ZaloPay</strong></a></div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="130">
+                                <div class="tui-grid-cell-content">123456</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="190">
+                                <div class="tui-grid-cell-content">
+                                  <div class="user">
+                                    <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Campus Runner</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="120">
+                                <div class="tui-grid-cell-content">02-08-2020</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date">
+                                <div class="tui-grid-cell-content">
+                                  <div class="status is-success">Hoạt động</div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="">
+                                <div class="tui-grid-cell-content">320</div>
+                              </td>
+                            </tr>
+                            <tr class="tui-grid-row-odd" style="padding:18px 12px">
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date" width="150">
+                                <div class="tui-grid-cell-content"><a href="#!"><strong>Mẫu tin chạy tết ZaloPay</strong></a></div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="130">
+                                <div class="tui-grid-cell-content">123456</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="190">
+                                <div class="tui-grid-cell-content">
+                                  <div class="user">
+                                    <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Campus Runner</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="120">
+                                <div class="tui-grid-cell-content">02-08-2020</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date">
+                                <div class="tui-grid-cell-content">
+                                  <div class="status is-danger">Bị từ chối</div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="">
+                                <div class="tui-grid-cell-content">320</div>
+                              </td>
+                            </tr>
+                            <tr class="tui-grid-row-odd" style="padding:18px 12px">
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date" width="150">
+                                <div class="tui-grid-cell-content"><a href="#!"><strong>Mẫu tin chạy tết ZaloPay</strong></a></div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="130">
+                                <div class="tui-grid-cell-content">123456</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="190">
+                                <div class="tui-grid-cell-content">
+                                  <div class="user">
+                                    <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Campus Runner</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="120">
+                                <div class="tui-grid-cell-content">02-08-2020</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date">
+                                <div class="tui-grid-cell-content">
+                                  <div class="status is-draft">Nháp</div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="">
+                                <div class="tui-grid-cell-content">320</div>
+                              </td>
+                            </tr>
+                            <tr class="tui-grid-row-odd" style="padding:18px 12px">
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date" width="150">
+                                <div class="tui-grid-cell-content"><a href="#!"><strong>Mẫu tin chạy tết ZaloPay</strong></a></div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="130">
+                                <div class="tui-grid-cell-content">123456</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="190">
+                                <div class="tui-grid-cell-content">
+                                  <div class="user">
+                                    <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Campus Runner</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="" width="120">
+                                <div class="tui-grid-cell-content">02-08-2020</div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="date">
+                                <div class="tui-grid-cell-content">
+                                  <div class="status is-draft">Ngưng hoạt động</div>
+                                </div>
+                              </td>
+                              <td class="tui-grid-cell" data-row-key="0" data-column-name="">
+                                <div class="tui-grid-cell-content">320</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tui-pagination" id="pagination"><a class="tui-page-btn tui-first disabled" href="#!"><span class="tui-ico-first"></span></a><a class="tui-page-btn tui-prev disabled"><span class="tui-ico-prev"></span></a><a class="tui-page-btn tui-first-child tui-is-selected" href="#!">1</a><a class="tui-page-btn" href="#!">2</a><a class="tui-page-btn" href="#!">3</a><a class="tui-page-btn tui-next" href="#!"><span class="tui-ico-next"></span></a><a class="tui-page-btn tui-last" href="#!"><span class="tui-ico-last"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="heading-sidebar"><a class="func-back" href="#!"><i class="icz icz-arrow-left"></i></a>
+          <div class="wrap">
+            <h2>Gửi ZNS</h2>
+            <p class="name"> Sarimi Connect 1</p>
+          </div>
+        </div>
+        <div class="user has-notification">
+          <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Lâm Nguyễn</span>
+          <div class="dropdown"><a class="navbar-ico has-new dropdown-toggle" id="dropdown-notification" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icz icz-bell"></i>
+              <div class="dots"></div></a>
+            <div class="dropdown-menu dropdown-touch is-notification has-arrow" aria-labelledby="dropdown-notification">
+              <div class="arrow"></div>
+              <div class="content-dropdown">
+                <div class="wrapper-notification notification-extend is-hidden">
+                  <div class="heading-extend"><a class="func-back-notification" href="#!"><i class="icz icz-left"></i><span class="text">Quay lại</span></a></div>
+                  <div class="content-extend">
+                    <div class="item">
+                      <div class="ico-noti"></div>
+                      <div class="desc">
+                        <p>Mẫu tin ABC đã bị từ chối</p><span class="is-timer">1 phút trước</span>
+                      </div>
+                    </div>
+                    <div class="reject-reason"><span class="label">Lý do không thỏa các điều kiện về thông tin:</span>
+                      <ul class="reason-list">
+                        <li>Tiêu đề mẫu tin</li>
+                        <li>Tham số</li>
+                        <li>Nút thao tác</li>
+                      </ul>
+                    </div><span class="cta"><a class="button is-primary" href="#!">Chỉnh sửa mẫu tin</a></span>
+                  </div>
+                </div>
+                <div class="wrapper-notification notification-list">
+                  <div class="tabs in-dropdown"><a class="tab-item is-active" href="javascript:void(0)">Tất cả</a><a class="tab-item" href="javascript:void(0)">Đã duyệt</a><a class="tab-item" href="javascript:void(0)">Bị từ chối</a><a class="func-setting" href="#!"><i class="icz icz-fill-more"></i></a></div>
+                  <div class="content-tabs">
+                    <ul>
+                      <li class="is-new"><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Mẫu tin <strong>ABC</strong> đã bị từ chối</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                      <li><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Quảng cáo <strong>ABC</strong> đã được duyệt</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                      <li><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Quảng cáo <strong>ABC</strong> đã được duyệt</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                    </ul>
+                    <div class="func-seemore has-text-centered"><a href="javascript:void(0)">
+                        <button class="button is-small">Xem thêm</button></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar"><a class="navbar-item is-active"><i class="icz icz-chat"></i><span>Quản lý mẫu tin</span></a><a class="navbar-item"><i class="icz icz-send"></i><span>Gửi tin</span></a><a class="navbar-item"><i class="icz icz-chat"></i><span>Thống kê chi tiết </span></a><a class="navbar-item"><i class="icz icz-settings"></i><span>Cài đặt</span></a></nav>
+      </div>
+    </div>
+    <div class="bl-non-support">
+      <div class="context"><img src="images/img_notify_device.png" alt="Zalo Notification Service">
+        <h4>Công cụ hiện chỉ hỗ trợ trên <br>thiết bị máy vi tính.</h4>
+        <p>Phiên bản trên điện thoại sẽ được cập nhật vào thời gian sắp tới</p>
+      </div>
+    </div>
+    <div class="bl-popup">
+    </div>
+    <div class="bl-modal">
+      <div class="modal is-large" id="modal-chooseTemplate">
+        <div class="modal-card"><a class="func-close-modal has-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a>
+          <div class="modal-card-body">
+            <div class="module-chooseTemplate"><span class="title">Sử dụng mẫu tin đã tạo</span>
+              <div class="template-list"><a class="item" href="#!">
+                  <div class="type"><i class="icz icz-fill-chat"></i><span>Tin văn bản</span></div>
+                  <div class="content">Tin chúc tết ZaloPay</div></a><a class="item" href="#!">
+                  <div class="type"><i class="icz icz-fill-chat"></i><span>Tin OTP</span></div>
+                  <div class="content">Tin OTP đăng ký ZP</div></a></div>
+            </div>
+            <div class="module-chooseTemplate"><span class="title">Sử dụng mẫu tin đã tạo</span>
+              <div class="layoutTemplate-list"><a class="item" href="#!">
+                  <div class="image"><img src="images/img_layout.png" alt=""></div>
+                  <div class="desc">
+                    <div class="type"><i class="icz icz-fill-chat"></i><span>Tin văn bản</span></div>
+                    <div class="content">Phù hợp với dạng thông tin ngắn, đơn giản, ít tham số.</div>
+                  </div></a><a class="item" href="#!">
+                  <div class="image"><img src="images/img_layout.png" alt=""></div>
+                  <div class="desc">
+                    <div class="type"><i class="icz icz-fill-chat"></i><span>Tin OTP</span></div>
+                    <div class="content">Gửi mã xác thực OTP đến người nhận.</div>
+                  </div></a><a class="item" href="#!">
+                  <div class="image"><img src="images/img_layout.png" alt=""></div>
+                  <div class="desc">
+                    <div class="type"><i class="icz icz-fill-chat"></i><span>Tin dạng bảng</span></div>
+                    <div class="content">Phù hợp với dạng thông tin dài, nhiều tham số như cập nhật tình trạng đơn hàng, bảng điểm… </div>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-slide">
+      <div class="slide" id="slide-manage-infoTemplate">
+        <div class="slide-card">
+          <div class="slide-card-head"><a class="func-close-slide close-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a><span class="is-size-6 has-text-grey caption">Thông tin mẫu tin</span><span class="is-size-3 has-text-weight-semibold name-template">Mẫu tin chạy tết ZaloPay</span></div>
+          <div class="slide-card-body">
+            <div class="bl-infoTemplate"><span class="title">Thông tin chung</span>
+              <div class="section-info">
+                <div class="line-info"><span class="label-info">ID:</span>
+                  <div class="context-info"><span>123456789</span></div>
+                </div>
+                <div class="line-info"><span class="label-info">Ngày tạo:</span>
+                  <div class="context-info"><span>02-12-2020</span></div>
+                </div>
+                <div class="line-info"><span class="label-info">Loại:</span>
+                  <div class="context-info"><span>Tin nhắn thường</span></div>
+                </div>
+                <div class="line-info"><span class="label-info">Đơn giá chuẩn:</span>
+                  <div class="context-info"><span>200đ <small class="caption">(Đã bao gồm VAT 10%)</small></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="bl-infoTemplate"><span class="title">Nội dung hiển thị</span>
+              <div class="section-preview">
+                <div class="content-preview">
+                  <h1 class="title">Thông báo tiền điện</h1><span class="caption">Kỳ 1 tháng 04/2020 (từ ngày 20/03/2020 đến ngày 20/04/2020)</span>
+                  <ul class="table-info">
+                    <li><span class="label-info">Khách hàng</span>
+                      <div class="context">customer_name</div>
+                    </li>
+                    <li><span class="label-info">Mã Khách hàng</span>
+                      <div class="context">customer_id</div>
+                    </li>
+                    <li><span class="label-info">Địa chỉ</span>
+                      <div class="context">customer_addr</div>
+                    </li>
+                    <li><span class="label-info">Điện năng tiêu thụ</span>
+                      <div class="context">customer_used</div>
+                    </li>
+                    <li><span class="label-info">Tổng tiền</span>
+                      <div class="context">customer_amount</div>
+                    </li>
+                  </ul>
+                  <div class="button-wrap"><a class="button" href="javascript:void(0);">Nút thao tác chính</a><a class="button" href="javascript:void(0);"><i class="icz icz-phone mr-2"></i><span>Nút thao tác phụ</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bl-infoTemplate"><span class="title">Nội dung hiển thị</span>
+              <div class="section-code">
+                <div class="func-copy"><i class="icz icz-clone"></i></div><span>{</span><span>&nbsp &nbsp &nbsp &nbsp "gender","gender",</span><span>&nbsp &nbsp &nbsp &nbsp "customer_name","customer_name"</span><span>}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      	// Xem chi tiết thông báo 
+      	
+      	tippy('.func-copy', {
+      		content: "Copy",
+      	});
+      	$(".content-tabs li").click(function(){
+      		$(".notification-list").addClass("is-hidden");
+      		$(".notification-extend").removeClass("is-hidden");
+      	});
+      	$(".func-back-notification").click(function(){
+      		$(".notification-list").removeClass("is-hidden");
+      		$(".notification-extend").addClass("is-hidden");
+      	});
+      	//- js xử lý active item có dropdown và active arrow dropdown
+      	$("#dropdown-notification").click(function(){
+      		//- $(".dropdown").addClass("active-arrow");
+      		$(this).addClass("is-active");
+      		//- e.stopPropagation();
+      
+      	});
+      	
+      	//- //- tắt arrow và active item
+      	$("body,html").click(function(e){
+      		e.preventDefault();
+      		//- $(".dropdown").removeClass("active-arrow")
+      		$("#dropdown-notification").removeClass("is-active");
+      	});
+      	$(".func-open-slide").click(function(){
+      		$("#slide-manage-infoTemplate").addClass("is-show")
+      	});
+      	$(".func-close-slide").click(function(){
+      		$(".slide").removeClass("is-show")
+      	});
+      	$(".func-chooseTemplate").click(function(){
+      		$("html").addClass("overlay-modal");
+      		$("#modal-chooseTemplate").addClass("is-show");
+      	});
+      	$(".func-close-modal").click(function(){
+      		$("html").removeClass("overlay-modal");
+      		$(".modal-container").removeClass("is-show");
+      	});
+      });
+      $(function() {
+      	$('input[name="daterange"]').daterangepicker({
+      		opens: 'left',
+      		showDropdowns: true,
+      		minYear: 2019,
+      		"alwaysShowCalendars": true,
+      		locale: {
+      			format: 'DD/MM/YYYY'
+      		},
+      		ranges: {
+      			'Hôm nay': [moment(), moment()],
+      			'Hôm qua': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      			'7 ngày trước': [moment().subtract(6, 'days'), moment()],
+      			'30 ngày trước': [moment().subtract(29, 'days'), moment()],
+      			'Tháng này': [moment().startOf('month'), moment().endOf('month')],
+      			'Tháng trước': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      		},
+      		maxYear: parseInt(moment().format('YYYY'),10)
+      	});
+      });
+    </script>
+  </body>
+</html>

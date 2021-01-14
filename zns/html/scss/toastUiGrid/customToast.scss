@@ -1,0 +1,67 @@
+.tui-grid-container{@include padding(0);border:none;box-shadow:none;border-radius:0 0 $radius $radius;
+	.tui-grid-content-area{border:none;
+		.tui-grid-rside-area,.tui-grid-lside-area{
+			.tui-grid-header-area{margin-right:0;border:none;
+				.tui-grid-table{width:100%;
+					th{font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;border:none;border-bottom:1px solid $white;border-right:1px solid $white;background-color:$grey-lightest;@include padding(12px 16px);}
+				}
+			}
+			.tui-grid-body-area{overflow:auto;
+				.tui-grid-body-container{
+					.tui-grid-table-container{position:relative;
+						.tui-grid-table{width:100%;
+							tr{
+								td{border:none;border-bottom:1px solid $grey-lightest;font-size:$size-normal;font-weight:$weight-normal;@extend %truncate;
+									.tui-grid-cell-content{height:52px;
+										display:flex;
+										a{
+											strong{font-weight:$weight-semibold;}
+										}
+									}
+								}
+								&:hover{background-color:#F1F4FD;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//pagination
+.tui-pagination{margin-top:16px!important;margin-bottom:16px!important;display:flex;align-items:center;margin-left:auto;justify-content:flex-end;position:absolute;;right:0;
+	.page-count{
+		.dropdown{
+			> a{background-color:$white;border-color:transparent;
+				&:hover{color:inherit;background-color:#FAFBFD}
+			}
+		}
+	}
+	.tui-page-btn{display:block;
+		span.tui-ico-first{position:relative;display:block;@include size(100%);
+			&:after{@include position(absolute, 50% 0 null 0);color:#131820;margin:0 auto;content:"\ea6a";transform:translateY(-50%);font:normal normal normal 28px "zadicon";@include size(16px);font-size:1rem;}
+		}
+		span.tui-ico-prev{position:relative;display:block;@include size(100%);
+			&:after{@include position(absolute, 50% 0 null 0);color:#131820;margin:0 auto;content:"\ea35";transform:translateY(-50%);font:normal normal normal 28px "zadicon";@include size(16px);font-size:1rem;}
+		}
+		span.tui-ico-next{position:relative;display:block;@include size(100%);
+			&:after{@include position(absolute, 50% 0 null 0);color:#131820;margin:0 auto;content:"\ea36";transform:translateY(-50%);font:normal normal normal 28px "zadicon";@include size(16px);font-size:1rem;}
+		}
+		span.tui-ico-last{position:relative;display:block;@include size(100%);
+			&:after{@include position(absolute, 50% 0 null 0);color:#131820;margin:0 auto;content:"\ea69";transform:translateY(-50%);font:normal normal normal 28px "zadicon";@include size(16px);font-size:1rem;
+			}
+		}
+		.tui-ico-first, .tui-ico-prev, .tui-ico-next, .tui-ico-last {color:transparent!important;}
+		&.tui-page-btn{margin-left:4px;display:flex;justify-content:center;align-items:center;min-width:36px;height:36px;color:$grey;font-size:$size-normal;text-align:center;border-radius:$radius-small;
+		}
+		&.tui-is-selected{color:$text;background-color:$white;font-size:0.875rem;font-weight:$weight-semibold;border:1px solid $grey-lighter;
+		}
+		&:hover{color:$primary;}
+		&.disabled{
+			span{
+				&:after{opacity:0.25;}
+			}
+			&:hover{cursor:not-allowed;}
+		}
+	}
+}

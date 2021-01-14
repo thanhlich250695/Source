@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zalo Notification Service</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="description here">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Lam Nguyen">
+    <meta name="copyright" content="2020 Lam Nguyen">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style></style>
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="body">
+        <div class="toast is-send-success">
+          <div class="notification is-info"><i class="icz icz-fill-bulb"></i>
+            <button class="delete"></button>
+            <h4>Mẫu tin ABC của bạn đã được gửi đến số điện thoại 0967712728</h4>
+          </div>
+        </div>
+        <div class="toast is-draft">
+          <div class="notification is-info"><i class="icz icz-fill-bulb"></i>
+            <button class="delete"></button>
+            <h4>Đã lưu mẫu tin nháp thành công</h4>
+          </div>
+        </div>
+        <div class="heading">
+          <div class="name-template"><span class="value">Nhập tiêu đề mẫu tin</span>
+            <p class="contenteditable" contenteditable style="display:none">Tiêu đề mẫu tin</p>
+          </div>
+          <div class="tag">Bản nháp</div>
+          <div class="actions"><a class="button is-light save-draft" href="javascript:void(0);">Lưu nháp</a><a class="button is-light has-icon-left open-preview-table" href="javascript:void(0);"><i class="icz icz-mobile"></i><span>Gửi tin mẫu</span></a><a class="button is-primary is-create-template" href="javascript:void(0);">Tạo mẫu tin</a></div>
+        </div>
+        <div class="module-setup">
+          <div class="bl-setup-content is-active">
+            <div class="bl-heading">
+              <div class="title">Official Account gửi tin<i class="icz icz-right"></i></div>
+              <div class="func-modify"><i class="icz icz-warning-hex"></i><span> Sửa thông tin</span></div>
+              <ul class="notice-list">
+                <li>Chưa chọn Official Account gửi tin</li>
+                <li>Chưa có logo Official Account</li>
+              </ul>
+            </div>
+            <div class="bl-body">
+              <div class="group-form">
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Tên Official Account</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field dropdown select-oa">
+                      <div class="control is-danger">
+                        <button class="button is-fullwidth dropdown-trigger dropdown-toggle has-icon-right" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false"><span class="is-size-6 has-text-greyLightest"> Chọn Official Account</span><i class="icz icz-fill-triangle-down"></i>
+                          <div class="value-selected">
+                            <div class="user">
+                              <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Heaven Gate 1</span>
+                            </div>
+                          </div>
+                        </button>
+                        <div class="dropdown-menu" id="dropdown-menu" aria-labelledby="dropdown-m2">
+                          <div class="dropdown-content">
+                            <div class="oa-list">
+                              <div class="item-oa">
+                                <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                                <div class="info-oa">
+                                  <div class="name-oa"><span>Heaven Gate 1</span></div><span class="id">ID: 1234567890123456789</span>
+                                </div>
+                              </div>
+                              <div class="item-oa">
+                                <div class="avatar"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/80)"></span></div>
+                                <div class="info-oa">
+                                  <div class="name-oa"><span>Heaven Gate 1</span></div><span class="id">ID: 1234567890123456789</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="help has-text-danger">error message</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field-label">
+                    <label class="label for-media">Logo</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="content-field">
+                      <ul class="logo-list">
+                        <li>
+                          <div class="item light-mode">
+                            <div class="control">
+                              <div class="cover-input">
+                                <div class="inputfile-container">
+                                  <input class="inputfile" type="file" id="file1">
+                                  <label for="file1"></label>
+                                </div><span class="text-form">Đăng ảnh logo</span>
+                              </div>
+                            </div><span class="caption">Light mode</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item dark-mode">
+                            <div class="control">
+                              <div class="cover-input is-upload">
+                                <div class="inputfile-container">
+                                  <input class="inputfile" type="file" id="file1">
+                                  <label for="file1"></label>
+                                </div>
+                                <div class="src" style="background-image:url(https://via.placeholder.com/400x96)"></div>
+                                <div class="ico-edit"><i class="icz icz-fill-edit"></i></div><span class="text-form">Đăng ảnh logo</span>
+                              </div>
+                            </div><span class="caption">Dark mode		</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="note-under"><span class="rule">Kích thước quy định: 400x96. <a class="view-template hyperlink" href="#!">Xem mẫu</a></span><span class="notify"><i class="icz icz-c-info"></i><span class="text">Bạn sẽ không thể thay đổi logo khi đã tạo mẫu tin thành công</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bl-setup-content">
+            <div class="bl-heading">
+              <div class="title">Nội dung mẫu tin<i class="icz icz-right"></i></div>
+            </div>
+            <div class="bl-body">
+              <div class="group-form">
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Phần mở đầu</label><small class="max-length">0/60</small>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control is-danger">
+                        <input class="input" type="input" placeholder="Vd: customer_name1">
+                      </div>
+                      <p class="help has-text-danger">error message</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Nội dung </label><small class="max-length">0/150</small>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control is-danger">
+                        <textarea class="textarea" placeholder="Nhập nội dung">Cám ơn customer_name đã tin tưởng. Chúng tôi đã nhận được yêu cầu đặt hàng của bạn. Thông tin chi tiết đơn hàng</textarea>
+                      </div>
+                      <p class="help has-text-danger">error message</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Đề mục</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="content-field">
+                      <div class="group-field has-action mb-3">
+                        <div class="action"><a class="func-remove" href="#!"><i class="icz icz-minus"></i></a></div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Tên đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Nhập nội dung đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                      </div>
+                      <div class="group-field has-action mb-3">
+                        <div class="action"><a class="func-remove" href="#!"><i class="icz icz-minus"></i></a></div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Tên đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Nhập nội dung đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                      </div>
+                      <div class="group-field has-action mb-3">
+                        <div class="action"><a class="func-add" href="#!"><i class="icz icz-add-circle"></i></a></div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Tên đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Nhập nội dung đề mục" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Nút Thao tác</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="content-field"><span class="caption mt-2 mb-3">Khách hàng có thể thực hiện các tác vụ liên quan (gọi điện, truy cập đường dẫn) với nút thao tác.</span>
+                      <ul class="button-selected-list mt-3">
+                        <li>
+                          <div class="item">
+                            <div class="button-selected"><span class="caption is-size-7 has-text-weight-semibold has-text-grey">Nút chính (đường dẫn liên kết)</span>
+                              <input type="text" value="Liên hệ"><a class="func-remove" href="#!"><i class="icz icz-fill-remove"></i></a>
+                            </div>
+                            <div class="field dropdown func-button-select">
+                              <div class="control has-icons-left has-icons-right dropdown-trigger dropdown-toggle" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
+                                <input class="input" type="text" name="ctr" placeholder="Chọn đường dẫn liên kết" value="https://adtima.vn/rate-card"><span class="icon is-left is-small"><i class="icz icz-fill-link"></i></span><span class="icon is-right is-small"><i class="icz icz-fill-triangle-down"></i></span>
+                              </div>
+                              <div class="dropdown-menu add-button" id="dropdown-menu" aria-labelledby="dropdown-m2">
+                                <div class="dropdown-content">
+                                  <div class="wrapper-link wrapper-link-extend is-hidden">
+                                    <div class="heading-extend"><a class="func-back-notification" href="#!"><i class="icz icz-arrow-left"></i><span class="text">Tạo mới đường dẫn</span></a></div>
+                                    <div class="content-extend">
+                                      <div class="field mb-3">
+                                        <div class="control">
+                                          <input class="input" type="text" placeholder="Nhập đường dẫn liên kết">
+                                        </div>
+                                      </div>
+                                      <div class="field mb-3">
+                                        <div class="control">
+                                          <input class="input" type="text" placeholder="Nhập mô tả ngắn về liên kết">
+                                        </div>
+                                      </div><span class="cta"><a class="button is-primary" href="#!">Tạo mới</a></span>
+                                    </div>
+                                  </div>
+                                  <div class="wrapper-link chooseLink">
+                                    <div class="create-link"><a href="#!">Tạo mới đường dẫn</a></div>
+                                    <div class="link-list">
+                                      <div class="item-link is-active">
+                                        <div class="icon-check"><i class="icz icz-check"></i></div>
+                                        <div class="content"><span class="link">https://adtima.vn/rate-card</span><span class="desc">Trang báo giá khách hàng</span></div>
+                                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                                      </div>
+                                      <div class="item-link">
+                                        <div class="icon-check"><i class="icz icz-check"></i></div>
+                                        <div class="content"><span class="link">https://adtima.vn/rate-card</span><span class="desc">Trang báo giá khách hàng</span></div>
+                                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="help has-text-danger">error message</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <div class="button-selected"><span class="caption is-size-7 has-text-weight-semibold has-text-grey">Nút chính (số điện thoại)</span>
+                              <input type="text" value="Liên hệ"><a class="func-remove" href="#!"><i class="icz icz-fill-remove"></i></a>
+                            </div>
+                            <div class="field dropdown func-button-select">
+                              <div class="control has-icons-left has-icons-right dropdown-trigger dropdown-toggle" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
+                                <input class="input" type="text" name="ctr" placeholder="Chọn số điện thoại" value="0123456789"><span class="icon is-left is-small"><i class="icz icz-phone"></i></span><span class="icon is-right is-small"><i class="icz icz-fill-triangle-down"></i></span>
+                              </div>
+                              <div class="dropdown-menu add-button" id="dropdown-menu" aria-labelledby="dropdown-m2">
+                                <div class="dropdown-content">
+                                  <div class="wrapper-link wrapper-link-extend is-hidden">
+                                    <div class="heading-extend"><a class="func-back-notification" href="#!"><i class="icz icz-arrow-left"></i><span class="text">Tạo mới số điện thoại</span></a></div>
+                                    <div class="content-extend">
+                                      <div class="field mb-3">
+                                        <div class="control">
+                                          <input class="input" type="text" placeholder="Nhập số điện thoại">
+                                        </div>
+                                      </div>
+                                      <div class="field mb-3">
+                                        <div class="control">
+                                          <input class="input" type="text" placeholder="Nhập mô tả ngắn về số điện thoại">
+                                        </div>
+                                      </div><span class="cta"><a class="button is-primary" href="#!">Tạo mới</a></span>
+                                    </div>
+                                  </div>
+                                  <div class="wrapper-link chooseLink">
+                                    <div class="create-link"><a href="#!">Tạo mới số điện thoại</a></div>
+                                    <div class="link-list">
+                                      <div class="item-link is-active">
+                                        <div class="icon-check"><i class="icz icz-check"></i></div>
+                                        <div class="content"><span class="link">0123456789</span><span class="desc">Số điện thoại báo giá khách hàng</span></div>
+                                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                                      </div>
+                                      <div class="item-link">
+                                        <div class="icon-check"><i class="icz icz-check"></i></div>
+                                        <div class="content"><span class="link">0123456789</span><span class="desc">Số điện thoại báo giá khách hàng</span></div>
+                                        <div class="func-remove"><i class="icz icz-fill-remove"></i></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="help has-text-danger">error message</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="dropdown is-left">
+                        <div class="dropdown-trigger dropdown-toggle" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
+                          <button class="button is-small is-light"><span>Thêm nút</span></button>
+                        </div>
+                        <div class="dropdown-menu add-button" id="dropdown-menu" aria-labelledby="dropdown-m2">
+                          <div class="dropdown-content p-4"><span class="is-size-6 has-text-grey has-text-weight-bold">Chọn loại nút</span>
+                            <div class="button-list"><a class="item" href="javascript:void(0)"><i class="icz icz-fill-link"></i><span>Đường dẫn liên kết</span></a><a class="item" href="javascript:void(0)"><i class="icz icz-phone"></i><span>Số điện thoại</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field mb-5">
+                  <div class="field-label">
+                    <label class="label">Tham số <i class="icz icz-question tippy-question"></i></label>
+                  </div>
+                  <div class="field-body">
+                    <div class="content-field">
+                      <div class="group-field has-select-effect mb-3">
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Nhập giá trị" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <div class="select">
+                              <select>
+                                <option placeholder="Chọn hiệu ứng">Chọn định dạng</option>
+                                <option>Lorem isum 1</option>
+                                <option>Lorem isum 2</option>
+                                <option>Lorem isum 3</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="func-select-effect">
+                          <div class="dropdown"><a class="button is-effect dropdown-toggle" role="button" id="dropdown-add-gf" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icz icz-sticker"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-add-gf">
+                              <div class="select-list">
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đang có lỗi</span><span class="type-effect is-error">Đang có lỗi</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Thành công</span><span class="type-effect is-success">Thành công</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Cần lưu ý</span><span class="type-effect is-warning">Cần lưu ý</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đang Cập nhật</span><span class="type-effect is-neutral">Cập nhật</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Số dư</span><span class="type-effect is-positive">+1.000</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đăng nợ</span><span class="type-effect is-negative">-1.000</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Không có hiệu ứng</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group-field has-select-effect mb-3">
+                        <div class="field">
+                          <div class="control is-danger">
+                            <input class="input" type="input" placeholder="Nhập giá trị" value="">
+                          </div>
+                          <p class="help has-text-danger">error message</p>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <div class="select">
+                              <select>
+                                <option placeholder="Chọn hiệu ứng">Chọn định dạng</option>
+                                <option>Lorem isum 1</option>
+                                <option>Lorem isum 2</option>
+                                <option>Lorem isum 3</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="func-select-effect">
+                          <div class="dropdown"><a class="button is-effect dropdown-toggle" role="button" id="dropdown-add-gf" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icz icz-sticker"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-add-gf">
+                              <div class="select-list">
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đang có lỗi</span><span class="type-effect is-error">Đang có lỗi</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Thành công</span><span class="type-effect is-success">Thành công</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Cần lưu ý</span><span class="type-effect is-warning">Cần lưu ý</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đang Cập nhật</span><span class="type-effect is-neutral">Cập nhật</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Số dư</span><span class="type-effect is-positive">+1.000</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Đăng nợ</span><span class="type-effect is-negative">-1.000</span></label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="control">
+                                    <input id="a11" type="radio" name="ctr" checked>
+                                    <label for="a11"><span class="name">Không có hiệu ứng</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-preview">
+                <div class="heading-preview"><span class="is-title">Xem trước mẫu tin</span><span class="cta"><span class="text">Dark Mode</span>
+                    <label class="switch switch-theme">
+                      <input type="checkbox"><span class="slider round"></span>
+                    </label></span></div>
+                <div class="body-preview">
+                  <div class="content-preview"><img class="logo" src="https://via.placeholder.com/400x96" alt="logo preview"><img class="logo for-dark" src="https://via.placeholder.com/400x96" alt="logo preview">
+                    <h1 class="title">Nội dung phần mở đầu</h1><span class="sub-title">Cám ơn <strong>[customer_name]</strong> đã tin tưởng. Chúng tôi đã nhận được yêu cầu đặt hàng của bạn. Thông tin chi tiết đơn hàng:</span>
+                    <ul class="table-content-list is-table">
+                      <li>
+                        <div class="item"><span>Mã đơn hàng</span><span>order_code</span></div>
+                      </li>
+                      <li>
+                        <div class="item"><span>Trạng thái</span><span>payment_status</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bl-foot">
+              <div class="foot-cta">
+                <div class="usage" href="#!"> <i class="icz icz-book"></i><a class="hyperlink is-size-6 has-text-primary" href="#!" target="_blank">Các tạo mẫu tin hiệu quả</a></div>
+              </div>
+            </div>
+            <div class="bl-preview-under">
+              <div class="content-preview"><img class="logo" src="https://via.placeholder.com/400x96" alt="logo preview"><img class="logo for-dark" src="https://via.placeholder.com/400x96" alt="logo preview">
+                <h1 class="title">Nội dung phần mở đầu</h1><span class="sub-title">Cám ơn <strong>[customer_name]</strong> đã tin tưởng. Chúng tôi đã nhận được yêu cầu đặt hàng của bạn. Thông tin chi tiết đơn hàng:</span>
+                <ul class="table-content-list is-table">
+                  <li>
+                    <div class="item"><span>Mã đơn hàng</span><span>order_code</span></div>
+                  </li>
+                  <li>
+                    <div class="item"><span>Trạng thái</span><span>payment_status</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bl-setup-content is-regulations">
+            <div class="bl-heading">
+              <div class="title">Quy định gửi tin<i class="icz icz-right"></i></div>
+              <ul class="notice-list">
+                <li>Chưa thiết lập</li>
+              </ul>
+            </div>
+            <div class="bl-body">
+              <div class="group-form">
+                <div class="field mb-3">
+                  <div class="field-label">
+                    <label class="label has-text-grey has-text-weight-semibold">Bạn muốn gửi tin đến người nhận trong trường hợp nào?</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Nhập nội dung…"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <input class="input" id="a1" type="checkbox" name="ctr">
+                    <label for="a1"><span class="has-text-text">Tôi đã đọc và đồng ý với các <a class="hyperlink">Điều khoản và Chính sách sử dụng</a> của Zalo.</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="heading-sidebar"><a class="func-back" href="#!"><i class="icz icz-arrow-left"></i></a>
+          <div class="wrap">
+            <h2>Gửi ZNS</h2>
+            <p class="name"> Sarimi Connect 1</p>
+          </div>
+        </div>
+        <div class="user has-notification">
+          <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Lâm Nguyễn</span>
+          <div class="dropdown"><a class="navbar-ico has-new dropdown-toggle" id="dropdown-notification" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icz icz-bell"></i>
+              <div class="dots"></div></a>
+            <div class="dropdown-menu dropdown-touch is-notification has-arrow" aria-labelledby="dropdown-notification">
+              <div class="arrow"></div>
+              <div class="content-dropdown">
+                <div class="wrapper-notification notification-extend is-hidden">
+                  <div class="heading-extend"><a class="func-back-notification" href="#!"><i class="icz icz-left"></i><span class="text">Quay lại</span></a></div>
+                  <div class="content-extend">
+                    <div class="item">
+                      <div class="ico-noti"></div>
+                      <div class="desc">
+                        <p>Mẫu tin ABC đã bị từ chối</p><span class="is-timer">1 phút trước</span>
+                      </div>
+                    </div>
+                    <div class="reject-reason"><span class="label">Lý do không thỏa các điều kiện về thông tin:</span>
+                      <ul class="reason-list">
+                        <li>Tiêu đề mẫu tin</li>
+                        <li>Tham số</li>
+                        <li>Nút thao tác</li>
+                      </ul>
+                    </div><span class="cta"><a class="button is-primary" href="#!">Chỉnh sửa mẫu tin</a></span>
+                  </div>
+                </div>
+                <div class="wrapper-notification notification-list">
+                  <div class="tabs in-dropdown"><a class="tab-item is-active" href="javascript:void(0)">Tất cả</a><a class="tab-item" href="javascript:void(0)">Đã duyệt</a><a class="tab-item" href="javascript:void(0)">Bị từ chối</a><a class="func-setting" href="#!"><i class="icz icz-fill-more"></i></a></div>
+                  <div class="content-tabs">
+                    <ul>
+                      <li class="is-new"><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Mẫu tin <strong>ABC</strong> đã bị từ chối</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                      <li><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Quảng cáo <strong>ABC</strong> đã được duyệt</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                      <li><a href="javascript:void(0)">
+                          <div class="ico-noti"></div>
+                          <div class="desc">
+                            <p>Quảng cáo <strong>ABC</strong> đã được duyệt</p><span class="is-timer">1 phút trước</span>
+                          </div>
+                          <div class="func-read-more"><i class="icz icz-right"></i></div></a><a class="func-read" href="javascript:void(0)" data-tippy-content="Đánh dấu là đã đọc"><i></i></a></li>
+                    </ul>
+                    <div class="func-seemore has-text-centered"><a href="javascript:void(0)">
+                        <button class="button is-small">Xem thêm</button></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar"><a class="navbar-item is-active"><i class="icz icz-chat"></i><span>Quản lý mẫu tin</span></a><a class="navbar-item"><i class="icz icz-send"></i><span>Gửi tin</span></a><a class="navbar-item"><i class="icz icz-chat"></i><span>Thống kê chi tiết </span></a><a class="navbar-item"><i class="icz icz-settings"></i><span>Cài đặt</span></a></nav>
+      </div>
+    </div>
+    <div class="bl-non-support">
+      <div class="context"><img src="images/img_notify_device.png" alt="Zalo Notification Service">
+        <h4>Công cụ hiện chỉ hỗ trợ trên <br>thiết bị máy vi tính.</h4>
+        <p>Phiên bản trên điện thoại sẽ được cập nhật vào thời gian sắp tới</p>
+      </div>
+    </div>
+    <div class="bl-popup">
+    </div>
+    <div class="bl-modal">
+      <div class="modal is-small" id="modal-confirm">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Hủy</span><a class="func-close-modal close-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <p>Tiến trình tạo ứng dụng mới sẽ không được lưu lại. Bạn có chắc muốn hủy?</p>
+          </div>
+          <div class="modal-card-foot">
+            <div class="buttons is-right">
+              <button class="button is-outlined close-confirm" href="javascript:void(0)">Tiếp tục tạo mới</button>
+              <button class="button is-primary func-close" href="javascript:void(0)">Xác nhận</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal is-small" id="modal-create-success">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Tạo mẫu tin thành công</span><a class="func-close-modal close-confirm" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <p>Mẫu tin của bạn sẽ được duyệt trong thời gian sớm nhất.	</p>
+          </div>
+          <div class="modal-card-foot">
+            <div class="buttons is-centered">
+              <button class="button is-primary back-manage-template" href="manage_template_list.html">Về trang danh sách </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-confirm-template">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Thông tin mẫu tin gửi duyệt</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <div class="module-preview-mobile">
+              <div class="preview-content"><span class="title">Nội dung mẫu tin </span>
+                <div class="wrap-content">
+                  <p class="welcome">Xin chào Nguyễn Hoàng</p>
+                  <p class="content">Cám ơn customer_name đã tin tưởng. Chúng tôi đã nhận được yêu cầu đặt hàng của bạn. Thông tin chi tiết đơn hàng:</p>
+                  <ul class="table-content-list is-table">
+                    <li>
+                      <div class="item"><span>Mã đơn hàng</span>
+<span>order_code</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item"><span>Trạng thái</span>
+<span>payment_status</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notice"><i class="icz icz-c-info"></i><span>Mẫu tin của bạn sẽ được duyệt trong vòng 8 giờ làm việc sau khi gửi duyệt. Nếu bạn cần hỗ trợ, vui lòng liên hệ <a class="hyperlink" href="mailto:oa@zalo.me">oa@zalo.me</a></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-card-foot">
+            <div class="buttons is-centered">
+              <button class="button is-primary back-manage-template" href="manage_template_list.html">Xác nhận gửi duyệt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-preview-notice">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Gửi tin mẫu</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <div class="module-preview-mobile">
+              <div class="preview-content"><span class="title">Nội dung mẫu tin </span>
+                <div class="wrap-content">
+                  <p class="welcome">Xin chào <span class="edit-content">Nguyễn Hoàng <i class="icz icz-fill-edit"></i></span></p>
+                  <p class="content">Cảm ơn bạn đã mua sản phẩm <span class="edit-content">iPhone 12 Pro <i class="icz icz-fill-edit"></i></span> tại cửa hàng chúng tôi.</p>
+                  <p class="content">Chúng tôi rất vui vì trong rất nhiều lựa chọn, bạn đã luôn chọn sử dụng các sản phẩm của chúng tôi</p>
+                </div>
+              </div>
+              <div class="user-info"><span class="title">Tài khoản Zalo nhận tin mẫu</span>
+                <div class="info">
+                  <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/72)"></span></div><span class="text">0967119119</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-card-foot">
+            <div class="optional"><a class="terms hyperlink is-size-6" href="#!">Quy định &amp; điều khoản</a></div>
+            <div class="buttons is-right">
+              <button class="button is-primary" href="javascript:void(0)">Gửi đi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-preview-otp">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Gửi tin mẫu {otp}</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <div class="module-preview-mobile">
+              <div class="preview-content"><span class="title">Nội dung mẫu tin </span>
+                <div class="wrap-content">
+                  <p class="content">Mã xác thực (OTP) của bạn là</p>
+                  <p class="otp-code">565842</p>
+                  <p class="content">Tuyệt đối KHÔNG chia sẻ mã xác thực (OTP) cho bất kỳ ai dưới bất kỳ hình thức nào. Mã xác thực của <span class="edit-content">Nguyễn Minh Khoa <i class="icz icz-fill-edit"></i></span>có hiệu lực trong 5 phút.</p>
+                </div>
+              </div>
+              <div class="user-info"><span class="title">Tài khoản Zalo nhận tin mẫu</span>
+                <div class="info">
+                  <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/72)"></span></div><span class="text">0967119119</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-card-foot">
+            <div class="optional"><a class="terms hyperlink is-size-6" href="#!">Quy định &amp; điều khoản</a></div>
+            <div class="buttons is-right">
+              <button class="button is-primary" href="javascript:void(0)">Gửi đi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-preview-table">
+        <div class="modal-card">
+          <div class="modal-card-head"><span>Gửi tin mẫu {table}</span><a class="func-close-modal" href="javascript:void(0)"><i class="icz icz-close"></i></a></div>
+          <div class="modal-card-body">
+            <div class="module-preview-mobile">
+              <div class="preview-content"><span class="title">Nội dung mẫu tin </span>
+                <div class="wrap-content">
+                  <p class="welcome">Xin chào <span class="edit-content">Nguyễn Hoàng <i class="icz icz-fill-edit"></i></span></p>
+                  <p class="content">Cám ơn <span class="edit-content">customer_name <i class="icz icz-fill-edit"></i></span> đã tin tưởng. Chúng tôi đã nhận được yêu cầu đặt hàng của bạn. Thông tin chi tiết đơn hàng:</p>
+                  <ul class="table-content-list is-table">
+                    <li>
+                      <div class="item"><span class="edit-content">Mã đơn hàng <i class="icz icz-fill-edit"></i></span>
+<span class="edit-content">order_code <i class="icz icz-fill-edit"></i></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item"><span class="edit-content">Trạng thái <i class="icz icz-fill-edit"></i></span>
+<span class="edit-content">payment_status <i class="icz icz-fill-edit"></i></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-info"><span class="title">Tài khoản Zalo nhận tin mẫu</span>
+                <div class="info"><span class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/72)"></span></span><span class="text">0967119119</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-card-foot">
+            <div class="optional"><a class="terms hyperlink is-size-6" href="#!">Quy định &amp; điều khoản</a></div>
+            <div class="buttons is-right">
+              <button class="button is-primary" href="javascript:void(0)">Gửi đi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bl-slide">
+    </div>
+    <!-- Include Plugin-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tippy.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      	tippy('.view-template', {
+      		theme: 'bg-white',
+      		allowHTML: true,
+      		content: 
+      				`
+      				<img style="max-width:284px" src="images/img_view_template.png"  alt="view template"/>
+      				`,
+      	});
+      	$(".heading .name-template .value").click(function(){
+      		$(this).hide();
+      		$(this).parent().find(".contenteditable").show();
+      	});
+      	//- ấn vào icon thêm dòng nội dung 
+      	$(".func-add-row").click(function(){
+      		$(this).parent().addClass("has-row-under")
+      		$(".is-second").removeClass("is-hidden");
+      	});
+      	$(".is-second .func-add-row").click(function(){
+      		$(this).parent().addClass("has-row-under")
+      		$(".is-max").removeClass("is-hidden");
+      	});
+      
+      	$(".create-link").click(function(){
+      		$(".chooseLink").addClass("is-hidden");
+      		$(".wrapper-link-extend").removeClass("is-hidden");
+      	});
+      	$(".func-back-notification").click(function(){
+      		$(".chooseLink").removeClass("is-hidden");
+      		$(".wrapper-link-extend").addClass("is-hidden");
+      	});
+      	//- mode preview
+      	$(".switch-theme").click(function(){
+      		$(".content-preview").addClass("dark-mode");
+      	});
+      	$(".switch-theme input[type='checkbox']").change(function(event){
+      		var groupInput = document.querySelectorAll(".switch-theme input[type='checkbox']:checked");
+      		var lengthChecked = groupInput.length;
+      		for(let i = 0; i<= lengthChecked; i++){
+      			if(groupInput.length ===0){
+      				$(".content-preview").removeClass("dark-mode");
+      
+      			}
+      			else{
+      				$(".content-preview").addClass("dark-mode");
+      			}
+      		}
+      	});
+      	
+      	//- chọn item ở dropdown sẽ overwite kết quả lên input
+      	$(".dropdown-menu .item-oa").click(function(e){
+      		$(".dropdown-menu").removeClass("is-show");
+      		$(".value-selected").addClass("is-show");
+      		$(".field-group.has-action .button").removeAttr("disabled");
+      		$(".field-group.has-action input").val("");
+      		e.preventDefault();
+      	});
+      	//- xoá kết qủa đã chọn oa
+      	$(".func-reset").click(function(){
+      		$(".value-selected").removeClass("is-show");
+      	});
+      	//- chọn block tạo mẫu tin
+      	$(".bl-setup-content").click(function(){
+      		$(".bl-setup-content").removeClass("is-active")
+      		$(this).addClass("is-active");
+      	});
+      	//- save draft
+      	$(".save-draft").click(function(){
+      		$("html").removeClass("overlay-modal");
+      		$(".modal-container").removeClass("is-show");
+      		$(".toast.is-draft").addClass("is-show");
+      		setTimeout(function(){ $(".toast").removeClass("is-show");},4000)
+      	});
+      	$(".delete").click(function(){
+      		$(".toast").removeClass("is-show");
+      	});
+      	//- bật thông báo không lưu thông tin tạo mẫu tin
+      	$(".func-back").click(function(){
+      		$("html").addClass("overlay-modal");
+      		$("#modal-confirm").addClass("is-show");
+      	});
+      	//- Bật thông báo tạo template thành công
+      	$(".is-create-template").click(function(){
+      		$("html").addClass("overlay-modal");
+      		$("#modal-confirm-template").addClass("is-show");
+      	});
+      	$(".func-close-modal").click(function(){
+      		$("html").removeClass("overlay-modal");
+      		$(".modal").removeClass("is-show");
+      	});
+      	//- Xem tin mẫu
+      	$(".open-preview-table").click(function(){
+      		$("html").addClass("overlay-modal");
+      		$("#modal-preview-table").addClass("is-show");
+      	});
+      });
+    </script>
+  </body>
+</html>
