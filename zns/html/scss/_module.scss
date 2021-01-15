@@ -17,10 +17,10 @@
 	.title{margin-bottom:$gutter;}
 	&:last-child{margin-bottom:$gutter;}
 	.template-list{display:flex;
-		.item{display:block;color:inherit;margin-right:20px;@include padding(1rem);border:1px solid $grey-lighter;@extend %is-radius-small;cursor:pointer;
+		.item{display:block;color:inherit;width:245px;margin-right:24px;@include padding(1rem);border:1px solid $grey-lighter;@extend %is-radius-small;cursor:pointer;
 			&:last-child{margin-right:0;}
 			.type{display:flex;align-items:center;
-				[class^="icz"]{font-size:1rem;margin-right:6px;}
+				[class^="icz"]{font-size:0.75rem;margin-right:6px;}
 				span{font-size:$size-small;line-height:18px;}
 			}
 			.content{margin-top:0.25rem;font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;}
@@ -35,7 +35,7 @@
 			}
 			.desc{@include padding(1rem);
 				.type{display:flex;align-items:center;
-					[class^="icz"]{font-size:1rem;margin-right:6px;}
+					[class^="icz"]{font-size:0.75rem;margin-right:6px;}
 					span{font-size:$size-normal;line-height:20px;font-weight:$weight-semibold;}
 				}
 				.content{margin-top:0.5rem;font-size:$size-small;line-height:18px;}
@@ -51,7 +51,7 @@
 		}
 		&:last-child{margin-bottom:0;}
 		&:hover,&.is-active{border:1px solid $primary;box-shadow: 0 -4px 8px 0 rgba(67,86,100,0.05), 0 4px 20px 0 rgba(67,86,100,0.08);}
-		&.is-active{
+		&.is-active{cursor:inherit;
 			.bl-heading{
 				.title{
 					[class^="icz"]{transform:rotate(90deg);}
@@ -80,6 +80,7 @@
 		.bl-body{display:none;border-top:1px solid $grey-lightest;
 			.group-form{flex-grow:1;min-width:0;@include padding($gutter);max-width:60%;min-width:436px;
 				.field{
+					&.select-oa{max-width:500px}
 					.field-label{display:flex;align-items:center;text-align:inherit;flex-basis:inherit;margin-right:0;
 						.label{flex-grow:1;font-size:$size-normal;font-weight:$weight-bold;line-height:26px;color:$text;display:flex;align-items:center;margin-bottom:2px;
 							[class^="icz"]{color:$grey;font-size:0.75rem;margin-left:6px; }
@@ -140,7 +141,7 @@
 							}
 						}
 						.content-field{width:100%;
-							.group-field{display:flex;align-items:flex-start;width:80%;min-width:400px;
+							.group-field{display:flex;align-items:flex-start;width:75%;min-width:400px;
 								.field{
 									.select{width:100%;
 										select{width:100%}
@@ -163,7 +164,7 @@
 								&.has-action{padding-left:40px;position:relative;min-width:400px;width:calc(80% + 60px);justify-content:space-between ;
 									.field{width:50%;margin-right:0.75rem}
 								}
-								&.has-select-effect{padding-right:52px;position:relative;min-width:400px;width:calc(80% + 60px);justify-content:space-between ;
+								&.has-select-effect{padding-right:52px;position:relative;min-width:452px;width:calc(75% + 52px);justify-content:space-between ;
 									.field{width:50%;margin-right:0.75rem;
 										&:nth-child(2){margin-right:0;}
 									}
@@ -233,7 +234,7 @@
 											[class^="icz"]{color:$text!important;font-size:1rem;}
 										}
 										.control{width:100%;
-											input{padding-left:60px;}
+											input{padding-left:44px;}
 										}
 										&:after{content:' ';@include position(absolute, 50% null null -35px);z-index:1;@include size(25px, 1px);background-color:#DCE1E7;transform:translateY(-50%);}
 										&:before{content:' ';@include position(absolute, 0 null null -35px);z-index:1;@include size(1px, 18px);background-color:#DCE1E7;}

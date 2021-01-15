@@ -195,3 +195,7 @@ tippy('.edit-content', {
 	interactive: true,
 	placement: 'top',
 });
+$(".func-copy").click(function(){
+	$(".toast-inline").addClass("is-active");
+	setTimeout(function(){$('.toast-inline').removeClass("is-active")},2000)
+});

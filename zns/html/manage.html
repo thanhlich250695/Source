@@ -26,6 +26,12 @@
         </div>
       </div>
       <div class="body">
+        <div class="toast is-create-success">
+          <div class="notification is-info"><i class="icz icz-fill-bulb"></i>
+            <button class="delete"></button>
+            <h4>Mẫu tin Template chưa đặt tên S2 của bạn đã được tạo thành công.</h4>
+          </div>
+        </div>
         <div class="heading"><span class="title">Quản lý mẫu tin</span>
           <div class="actions"><a class="button is-primary func-chooseTemplate" href="javascript:void(0);">Tạo mẫu tin</a></div>
         </div>
@@ -38,7 +44,7 @@
                 </div>
                 <div class="control mr-3 is-status-dropdown">
                   <div class="dropdown">
-                    <button class="button dropdown-trigger dropdown-toggle has-icon-right" role="button" id="dropdown-status" data-toggle="dropdown" aria-expanded="false"><span>Trạng thái: Tất cả</span><i class="icz icz-fill-triangle-down"></i></button>
+                    <button class="button dropdown-trigger dropdown-toggle has-icon-right" role="button" id="dropdown-status" data-toggle="dropdown" aria-expanded="false"><span class="has-text-weight-normal">Trạng thái: Tất cả</span><i class="icz icz-fill-triangle-down"></i></button>
                     <div class="dropdown-menu" aria-labelledby="dropdown-m2">
                       <div class="filter-box-context">
                         <div class="field">
@@ -395,7 +401,7 @@
                   <div class="context-info"><span>Tin nhắn thường</span></div>
                 </div>
                 <div class="line-info"><span class="label-info">Đơn giá chuẩn:</span>
-                  <div class="context-info"><span>200đ <small class="caption">(Đã bao gồm VAT 10%)</small></span></div>
+                  <div class="context-info"><span>200đ <small class="caption ml-1"> (Đã bao gồm VAT 10%)</small></span></div>
                 </div>
               </div>
             </div>
@@ -426,7 +432,9 @@
             </div>
             <div class="bl-infoTemplate"><span class="title">Nội dung hiển thị</span>
               <div class="section-code">
-                <div class="func-copy"><i class="icz icz-clone"></i></div><span>{</span><span>&nbsp &nbsp &nbsp &nbsp "gender","gender",</span><span>&nbsp &nbsp &nbsp &nbsp "customer_name","customer_name"</span><span>}</span>
+                <div class="func-copy"><i class="icz icz-clone"></i>
+                  <div class="toast-inline"><span>Đã sao chép!</span></div>
+                </div><span>{</span><span>&nbsp &nbsp &nbsp &nbsp "gender","gender",</span><span>&nbsp &nbsp &nbsp &nbsp "customer_name","customer_name"</span><span>}</span>
               </div>
             </div>
           </div>
@@ -455,20 +463,7 @@
       		$(".notification-list").removeClass("is-hidden");
       		$(".notification-extend").addClass("is-hidden");
       	});
-      	//- js xử lý active item có dropdown và active arrow dropdown
-      	$("#dropdown-notification").click(function(){
-      		//- $(".dropdown").addClass("active-arrow");
-      		$(this).addClass("is-active");
-      		//- e.stopPropagation();
-      
-      	});
       	
-      	//- //- tắt arrow và active item
-      	$("body,html").click(function(e){
-      		e.preventDefault();
-      		//- $(".dropdown").removeClass("active-arrow")
-      		$("#dropdown-notification").removeClass("is-active");
-      	});
       	$(".func-open-slide").click(function(){
       		$("#slide-manage-infoTemplate").addClass("is-show")
       	});
@@ -484,6 +479,9 @@
       		$(".modal-container").removeClass("is-show");
       	});
       });
+      //- toast mở khi tạo mẫu tin thành công
+      $(".toast.is-create-success").addClass("is-show");
+      	setTimeout(function(){ $(".toast").removeClass("is-show");},4000)
       $(function() {
       	$('input[name="daterange"]').daterangepicker({
       		opens: 'left',
