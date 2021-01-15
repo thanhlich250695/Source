@@ -17,7 +17,7 @@
 	.title{margin-bottom:$gutter;}
 	&:last-child{margin-bottom:$gutter;}
 	.template-list{display:flex;
-		.item{display:block;color:inherit;width:245px;margin-right:24px;@include padding(1rem);border:1px solid $grey-lighter;@extend %is-radius-small;cursor:pointer;
+		.item{display:block;color:inherit;width:245px;margin-right:24px;@include padding(1rem);border:1px solid $grey-lighter;@extend %is-radius-small;cursor:pointer;@extend %tr-all;
 			&:last-child{margin-right:0;}
 			.type{display:flex;align-items:center;
 				[class^="icz"]{font-size:0.75rem;margin-right:6px;}
@@ -29,7 +29,7 @@
 	}
 	.layoutTemplate-list{
 		display:flex;@include margin(null -12px);
-		.item{display:block;color:inherit;width:calc(33.3333%);@include margin(null 12px);border:1px solid $grey-lighter;@extend %is-radius-small;
+		.item{display:block;color:inherit;width:calc(33.3333%);@include margin(null 12px);border:1px solid $grey-lighter;@extend %is-radius-small;@extend %tr-all;
 			.image{
 				img{display:block;width:100%;}
 			}
@@ -45,7 +45,7 @@
 	}
 }
 .module-setup{margin-top:2rem;
-	.bl-setup-content{margin-bottom:0.75rem;border:1px solid transparent;cursor:pointer;@extend %tr-all;@extend %is-radius;
+	.bl-setup-content{margin-bottom:0.75rem;border:1px solid transparent;cursor:pointer;@extend %tr-all;@extend %is-radius;@extend %tr-all;
 		&.is-regulations{
 			.bl-body{border-top:none!important;margin-top:(-$gutter)}
 		}
@@ -150,7 +150,7 @@
 									&.select-name{width:calc(40% - 12px);margin-left:auto}
 								}
 								.action{
-									[class^="func-"]{@include position(absolute, 0 null null 0);@include size(40px);display:flex;align-items:center;justify-content:center;
+									[class^="func-"]{@include position(absolute, 0 null null 0);@include size(40px);display:flex;align-items:center;justify-content:center;@extend %tr-all;
 										[class^="icz"]{font-size:1rem;}
 										&.func-remove{
 											[class^="icz"]{color:$grey;}
@@ -194,7 +194,7 @@
 									}
 								}
 								&:last-child{margin-right:0;}
-								.cover-input{position:relative;flex-shrink:0;display:flex;justify-content:center;align-items:center;width:200px;height:48px;border:1px dashed #979797;@extend %is-radius-small;
+								.cover-input{position:relative;flex-shrink:0;display:flex;justify-content:center;align-items:center;width:200px;height:48px;border:1px dashed #979797;@extend %is-radius-small;@extend %tr-all;
 									&:before{padding-top:48px;}
 									&:hover{background-color:$grey-lightest;
 										.ico-edit{background-color:rgba(255,255,255,0.25);border-radius:100%}
@@ -218,7 +218,7 @@
 								.item{margin-bottom:16px;
 									.button-selected{border:1px solid $grey-lighter;@extend %is-radius-small;@include padding(8px 12px);position:relative;
 										input{border:none;outline:none;font-size:$size-medium;line-height:24px;width:100%;padding-right:50px;}
-										.func-remove{flex-shrink:0;@include position(absolute, 50% 12px null null);transform:translateY(-50%);
+										.func-remove{flex-shrink:0;@include position(absolute, 50% 12px null null);transform:translateY(-50%);@extend %tr-all;
 											[class^="icz"]{color:$text;font-size:1rem;}
 											&:hover{
 												[class^="icz"]{color:$primary}
@@ -227,12 +227,7 @@
 									}
 								
 									.func-button-select{margin-left:35px;display:flex;margin-top:12px;border-radius:$radius-small;position:relative;
-										.icon.is-left{@include size(38px);margin-top:-19px;left:1px;
-											[class^="icz"]{@include size(38px);background-color:rgba(230,234,238,0.75);color:$text;display:flex;flex-shrink:0;align-items:center;justify-content:center;}
-										}
-										.icon.is-right{
-											[class^="icz"]{color:$text!important;font-size:1rem;}
-										}
+									
 										.control{width:100%;
 											input{padding-left:44px;}
 										}
@@ -245,7 +240,7 @@
 							}
 							.create-link{@include padding(12px 52px);font-size:$size-normal;font-weight:$weight-semibold;line-height:20px}
 							.link-list{
-								.item-link{height:62px;display:flex;align-items:center;@include padding(null 12px null 50px);position:relative;
+								.item-link{height:62px;display:flex;align-items:center;@include padding(null 12px null 50px);position:relative;@extend %tr-all;
 									.icon-check{display:none;@include position(absolute, 50% null null 18px);transform:translateY(-50%);@include size(1rem);
 										[class^="icz"]{color:$primary;font-size:1rem;}
 									}
@@ -255,7 +250,7 @@
 											&.desc{font-size:$size-small;color:$grey;line-height:18px;}
 										}
 									}
-									.func-remove{display:none;
+									.func-remove{display:none;@extend %tr-all;
 										[class^="icz"]{color:$grey-lighter;font-size:1rem;}
 										&:hover{
 											[class^="icz"]{color:$text}
@@ -273,7 +268,7 @@
 						}
 						.wrap-content{border-radius:$radius-small;width:100%;min-height:200px;position:relative;@include padding(12px null);border:1px solid $grey-lighter;
 							.row-content{display:flex;align-items:flex-start;@include padding(null 16px);
-								[class^="func-"]{flex-shrink:0;display:flex;align-items:center;position:relative;margin-top:2px;margin-right:1rem;
+								[class^="func-"]{flex-shrink:0;display:flex;align-items:center;position:relative;margin-top:2px;margin-right:1rem;@extend %tr-all;
 									[class^="icz"]{@include size(16px);border-radius:50%;font-size:1rem;color:$primary;@extend %tr-all;}
 									&:hover{
 										[class^="icz"]{color:$primary}
@@ -288,7 +283,7 @@
 								}
 								&.is-hidden{display:none;}
 								&.has-row-under{
-									[class^="func-"]{
+									[class^="func-"]{@extend %tr-all;
 										[class^="icz"]{color:#35425B;
 											&:before{content:'\ea84'}
 										}

@@ -178,6 +178,10 @@ tippy('.tippy-oa', {
 	theme: 'bg-white',
 	content: "Bạn muốn gửi tin cho Người Nhận trong trường hợp nào?",
 });
+tippy('.back-chooseApp', {
+	// theme: 'bg-white',
+	content: "Trở về danh sách Ứng dụng",
+});
 tippy('.edit-content', {
 	theme: 'interactive',
 	allowHTML: true,
@@ -198,4 +202,11 @@ tippy('.edit-content', {
 $(".func-copy").click(function(){
 	$(".toast-inline").addClass("is-active");
 	setTimeout(function(){$('.toast-inline').removeClass("is-active")},2000)
+});
+$(".func-setting").click(function(){
+	$(".setting-extend").addClass("is-show")
+});
+$(".setting-extend li").click(function(e){
+	$(".setting-extend").removeClass("is-show")
+	e.stopPropagation();
 });

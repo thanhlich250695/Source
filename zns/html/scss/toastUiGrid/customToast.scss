@@ -10,7 +10,7 @@
 				.tui-grid-body-container{
 					.tui-grid-table-container{position:relative;
 						.tui-grid-table{width:100%;
-							tr{
+							tr{@extend %tr-all;
 								td{border:none;border-bottom:1px solid $grey-lightest;font-size:$size-normal;font-weight:$weight-normal;@extend %truncate;
 									.tui-grid-cell-content{height:52px;
 										display:flex;
@@ -32,7 +32,7 @@
 .tui-pagination{margin-top:16px!important;margin-bottom:16px!important;display:flex;align-items:center;margin-left:auto;justify-content:flex-end;position:absolute;;right:0;
 	.page-count{
 		.dropdown{
-			> a{background-color:$white;border-color:transparent;
+			> a{background-color:$white;border-color:transparent;@extend %tr-all;
 				&:hover{color:inherit;background-color:#FAFBFD}
 			}
 		}

@@ -22,10 +22,10 @@ $notification-padding: 1rem 2rem 1rem 2.5rem !default
     background-color: transparent
     transform: scale(1.5)
     &:before
-      background-color: $border
+      background-color: $grey
       height: 1px
     &:after
-      background-color: $border
+      background-color: $grey
       width: 1px
   h4
     display: block
@@ -51,7 +51,12 @@ $notification-padding: 1rem 2rem 1rem 2.5rem !default
   & > .delete
     position: absolute
     right: 0.5rem
-    top: 0.5rem
+    top: 1rem
+    &:hover
+      &:after
+        background-color:$primary!important
+      &:before
+        background-color:$primary!important
   .title,
   .subtitle,
   .content

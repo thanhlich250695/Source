@@ -34,11 +34,11 @@
           </div>
         </div>
         <div class="heading">
-          <div class="name-template"><span class="value">Nhập tiêu đề mẫu tin</span>
-            <p class="contenteditable" contenteditable style="display:none">Tiêu đề mẫu tin</p>
+          <div class="name-template">
+            <p class="contenteditable" contenteditable data-placeholder="Nhập tiêu đề mẫu tin">Tiêu đề mẫu tin</p>
           </div>
           <div class="tag">Bản nháp</div>
-          <div class="actions"><a class="button is-light save-draft" href="javascript:void(0);">Lưu nháp</a><a class="button is-light has-icon-left open-preview-table" href="javascript:void(0);"><i class="icz icz-mobile"></i><span>Gửi tin mẫu</span></a><a class="button is-primary is-create-template" href="javascript:void(0);">Tạo mẫu tin</a></div>
+          <div class="actions"><a class="button is-light save-draft" href="javascript:void(0);">Lưu nháp</a><a class="button is-light has-icon-left open-preview-table" href="javascript:void(0);"><i class="icz icz-mobile"></i><span class="ml-1">Gửi tin mẫu</span></a><a class="button is-primary is-create-template" href="javascript:void(0);">Tạo mẫu tin</a></div>
         </div>
         <div class="module-setup">
           <div class="bl-setup-content is-active">
@@ -58,8 +58,8 @@
                   </div>
                   <div class="field-body">
                     <div class="field dropdown select-oa">
-                      <div class="control is-danger">
-                        <button class="button is-fullwidth dropdown-trigger dropdown-toggle has-icon-right" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false"><span class="is-size-6 has-text-weight-normal has-text-greyLightest"> Chọn Official Account</span><i class="icz icz-fill-triangle-down"></i>
+                      <div class="control">
+                        <button class="button is-fullwidth dropdown-trigger has-icon-right" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false"><span>Chọn Official Account</span><span class="icon is-right"><i class="icz icz-fill-triangle-down"></i></span>
                           <div class="value-selected">
                             <div class="user">
                               <div class="avatar is-small"><span class="avatar-img" style="background-image:url(https://via.placeholder.com/64)"></span></div><span class="name-user">Heaven Gate 1</span>
@@ -229,9 +229,7 @@
                               <input type="text" value="Liên hệ"><a class="func-remove" href="#!"><i class="icz icz-fill-remove"></i></a>
                             </div>
                             <div class="field dropdown func-button-select">
-                              <div class="control has-icons-left has-icons-right dropdown-trigger dropdown-toggle" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
-                                <input class="input" type="text" name="ctr" placeholder="Chọn đường dẫn liên kết" value="https://adtima.vn/rate-card"><span class="icon is-left is-small"><i class="icz icz-fill-link"></i></span><span class="icon is-right is-small"><i class="icz icz-fill-triangle-down"></i></span>
-                              </div>
+                              <button class="button is-fullwidth dropdown-trigger has-icon-left has-icon-right" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false"><span class="icon is-left"><i class="icz icz-fill-link"></i></span><span>Chọn đường dẫn liên kết</span><span class="icon is-right"><i class="icz icz-fill-triangle-down"></i></span></button>
                               <div class="dropdown-menu add-button" id="dropdown-menu" aria-labelledby="dropdown-m2">
                                 <div class="dropdown-content">
                                   <div class="wrapper-link wrapper-link-extend is-hidden">
@@ -276,9 +274,7 @@
                               <input type="text" value="Liên hệ"><a class="func-remove" href="#!"><i class="icz icz-fill-remove"></i></a>
                             </div>
                             <div class="field dropdown func-button-select">
-                              <div class="control has-icons-left has-icons-right dropdown-trigger dropdown-toggle" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
-                                <input class="input" type="text" name="ctr" placeholder="Chọn số điện thoại" value="0123456789"><span class="icon is-left is-small"><i class="icz icz-phone"></i></span><span class="icon is-right is-small"><i class="icz icz-fill-triangle-down"></i></span>
-                              </div>
+                              <button class="button is-fullwidth dropdown-trigger has-icon-left has-icon-right" role="button" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false"><span class="icon is-left"><i class="icz icz-fill-link"></i></span><span>Chọn số điện thoại</span><span class="icon is-right"><i class="icz icz-fill-triangle-down"></i></span></button>
                               <div class="dropdown-menu add-button" id="dropdown-menu" aria-labelledby="dropdown-m2">
                                 <div class="dropdown-content">
                                   <div class="wrapper-link wrapper-link-extend is-hidden">
@@ -923,7 +919,7 @@
             </div>
             <div class="bl-foot">
               <div class="foot-cta">
-                <div class="usage" href="#!"> <i class="icz icz-book"></i><a class="hyperlink is-size-6 has-text-primary" href="#!" target="_blank">Các tạo mẫu tin hiệu quả</a></div>
+                <div class="usage" href="#!"> <i class="icz icz-book"></i><a class="hyperlink is-size-6 has-text-primary" href="#!" target="_blank">Cách tạo mẫu tin hiệu quả</a></div>
               </div>
             </div>
             <div class="bl-preview-under">
@@ -975,7 +971,7 @@
     </div>
     <div class="sidebar">
       <div class="sidebar-container">
-        <div class="heading-sidebar"><a class="func-back" href="#!"><i class="icz icz-arrow-left"></i></a>
+        <div class="heading-sidebar"><a class="func-back back-chooseApp" href="#!"><i class="icz icz-arrow-left"></i></a>
           <div class="wrap">
             <h2>Gửi ZNS</h2>
             <p class="name"> Sarimi Connect 1</p>
@@ -1007,7 +1003,12 @@
                   </div>
                 </div>
                 <div class="wrapper-notification notification-list">
-                  <div class="tabs in-dropdown"><a class="tab-item is-active" href="javascript:void(0)">Tất cả</a><a class="tab-item" href="javascript:void(0)">Đã duyệt</a><a class="tab-item" href="javascript:void(0)">Bị từ chối</a><a class="func-setting" href="#!"><i class="icz icz-fill-more"></i></a></div>
+                  <div class="tabs in-dropdown"><a class="tab-item is-active" href="javascript:void(0)">Tất cả</a><a class="tab-item" href="javascript:void(0)">Đã duyệt</a><a class="tab-item" href="javascript:void(0)">Bị từ chối</a><a class="func-setting" href="#!"><i class="icz icz-fill-more"></i>
+                      <div class="setting-extend">
+                        <ul>
+                          <li><i class="icz icz-check"></i><span>Đánh dấu tất cả là đã đọc</span></li>
+                        </ul>
+                      </div></a></div>
                   <div class="content-tabs">
                     <ul>
                       <li class="is-new"><a href="javascript:void(0)">
@@ -1217,10 +1218,7 @@
       				<img style="max-width:284px;width:100%;" src="images/img_view_template.png"  alt="view template"/>
       				`,
       	});
-      	$(".heading .name-template .value").click(function(){
-      		$(this).hide();
-      		$(this).parent().find(".contenteditable").show();
-      	});
+      	
       	//- ấn vào icon thêm dòng nội dung 
       	$(".func-add-row").click(function(){
       		$(this).parent().addClass("has-row-under")

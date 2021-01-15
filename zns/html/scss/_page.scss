@@ -92,7 +92,7 @@ header{background-color:#071643;}
 						}
 					}
 				}
-				.footer-extend{height:44px;display:flex;align-items:center;position:relative;
+				.footer-extend{height:44px;display:flex;align-items:center;position:relative;@extend %tr-all;
 					.create-zba{display:block;font-size:$size-normal;font-weight:$weight-semibold;line-height:20px;
 						&:hover{color:$primary}
 					}
@@ -103,8 +103,8 @@ header{background-color:#071643;}
 	}
 }
 /* General */
-.page-content{margin-left:260px;border-radius: 8px 0 0 0;background-color:$white;box-shadow: 0 0 0 0.5px #CDD3E0, 0 8px 16px 0 rgba(67,86,100,0.08);min-height:100vh;
-	.body{@include padding($gutter);padding-bottom:5rem;
+.page-content{margin-left:260px;border-radius: 8px 0 0 0;background-color:$white;box-shadow: 0 0 0 0.5px #CDD3E0, 0 8px 16px 0 rgba(67,86,100,0.08);overflow-x:auto;
+	.body{@include padding($gutter);padding-bottom:5rem;min-width:920px;
 		.body-container{max-width:1058px;@include margin(null auto);}
 	}
 }
@@ -138,7 +138,7 @@ header{background-color:#071643;}
 			}
 		}
 		.navbar{@include padding($gutter null);
-			.navbar-item{display:flex;align-items:center;color:inherit;height:40px;margin-bottom:1rem;@include padding(null 12px);@extend %is-radius-small;
+			.navbar-item{display:flex;align-items:center;color:inherit;height:40px;margin-bottom:1rem;@include padding(null 12px);@extend %is-radius-small;@extend %tr-all;
 				[class^="icz"]{margin-right:15px;font-size:1.125rem;}
 				span{font-size:$size-normal;font-weight:$weight-semibold;}
 				&:hover,&.is-active{background-color:#EAECF0;

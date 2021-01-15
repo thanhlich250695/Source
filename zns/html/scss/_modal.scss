@@ -25,7 +25,7 @@
 			&.is-large{width:830px;margin-left:-415px;
 			}
 		}
-		.func-close-modal{@include position(absolute, 5px 5px null null);z-index:1;flex-shrink:0;@include size(50px);color:$grey-light;margin-left:auto;
+		.func-close-modal{@include position(absolute, 5px 5px null null);z-index:1;flex-shrink:0;@include size(50px);color:$grey-light;margin-left:auto;@extend %tr-all;
 			[class^=icz]{display:inline-block;@include size(50px);@include padding(15px);font-size:1.25rem;vertical-align:middle}
 			&:hover{color:$primary}
 		}
@@ -69,7 +69,7 @@
 	.slide{@include position(fixed,0 -100% 0 null);z-index:105;width:524px;background-color:#fff;transition:all 0.3s ease;transform:translateZ(0);box-shadow: 0 61px 84px rgba(67,86,100,0.14)!important;
 		&.is-show{right:0;}
 		.slide-card-head{@include padding(20px 32px);border-bottom:1px solid $grey-lighter;position:relative;
-			.func-close-slide{color:inherit;@include position(absolute, 20px 20px null null);
+			.func-close-slide{color:inherit;@include position(absolute, 20px 20px null null);@extend %tr-all;
 				[class^="icz"]{color:$text;font-size:1.5rem;
 					&:hover{color:$primary}
 				}
